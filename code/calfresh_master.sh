@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd /etc/calfresh
+source /etc/calfresh/venv/bin/activate
+
+git pull
+
 python /etc/calfresh/code/web_crawler.py
 
 git add .

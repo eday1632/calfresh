@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd /etc/calfresh
 source /etc/calfresh/venv/bin/activate
 
 git pull

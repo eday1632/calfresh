@@ -135,14 +135,14 @@ if __name__ == '__main__':
 	logging.info('Starting app')
 	tables = {
 		'tbl_cf296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296',
-		# 'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
-		# 'tbl_data_dashboard': 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
+		'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
+		'tbl_data_dashboard': 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
 		'tbl_dfa256': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256',
-		# 'tbl_dfa296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296',
-		# 'tbl_dfa296x': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x',
-		# 'tbl_dfa358f': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F',
-		# 'tbl_dfa358s': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S',
-		# 'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
+		'tbl_dfa296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296',
+		'tbl_dfa296x': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x',
+		'tbl_dfa358f': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F',
+		'tbl_dfa358s': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S',
+		'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
 	}
 
 	for table in tables.keys():

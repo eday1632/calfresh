@@ -56,11 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<<<<<<< HEAD
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lByZqcQjF36NGq3S6scKaVwvpQM7WiKZlNcFl3juR8CM0ubd9Eyh2aAlPN5ZNhRp93A1LV3D6LrIPMWlazBIVwmsiZ8rEEIvA32Dd1TOjKEYyeHJoY3+mzvz0aMmVNgjk+1XjSdCQdJucxnck/UssqYIkA/9C2NApXKOzyNCNrZI426CIeORrmJhMWRcSCyNdZvEvwp60US56GvnFdKOJP7EBirWEVw0P9XmFh7hk4NQYEKpddEBFcuWmzzmHQg4lixCmpFmDRySSf9wRwbDiTSflPja+7ejmdyvi8Hxg1kUjZIj" />
-=======
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="TrQ3O/dAk5yNaUZscMWehWOf6qrLjR4EQfs2644Iiyk+7oajSWbcFlaK+9+lzmhP9N4uq0BSF2/+kvqMNen65W9l+Z4jNd7dEfVDbdW0zE284BOomoz0CBj3X8E6+D+0JUkPWPKbTPiqOXLlTBTYSzjM0fnDTt1a38bEgGad+Op33NxqXf4NXlPleiMFrzsTm24m3StF1OpWIt9vxvTwPMdoA1lk+a62lp6kPSox0x/Hg+QZhP054f9fpVHGsOnArUaWSP5E7iUBh/DN4NvlN4dVxltDfgflO5/j9tnr7Oo0K6OW" />
->>>>>>> 7abc243f66d7797246bc2021b665a5a65140d069
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6NOUwLgD5rUq7nvMsjVw+8rijgPBM37hGd+NKgxk82dkIf3qwTSWbByvIxxTSOauu9is3VLcCgG7nK0Ijezf8Fe+BYUC45wT02H+NLZcHgQu4TwaCQiDoILg8mnaPbgJZT3zzOiD/g1P6ed8KQud63qcX/KZaYObrcSgxThu0mk7XKNJsy5/pztJ7aFo0d78UXEgyWYQHd0TxAfUbRNo2w0r4rKs2OnaG/Hc05PXQq5k5CKrfckhWCeL3T50tulqwUZ8E3I3cgcKwvBcMPQ1DdBLhynZeufAxNX/TwSVKP0QAp8t" />
 </div>
 
 
@@ -69,11 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-<<<<<<< HEAD
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="bTcPeYIB+4O7gk4Li8pq+GRduMPzty2kSKLuOcjQPNFFih3Ho/RJpkrza8NJ5CHqCJkXIJdNJTtBvPqwrjuNXtCAunYCRnxHAz3btzFreJLZkYR5qeBqjTbDUl7pyhwwEmIEgRFFH2KSQFERw71zcczpvXg=" />
-=======
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Y0vYWuSPEBqMKnpZaAB5lAkCytZje4pUq4tneE+UUXPNhT9+X194v+P6CO2dFHApCqEco3mGZ/RZXpmF+drTaiOEiqKQzkxqS5RcRRX0AWWA3D3cT/q9MSJzUnhpackV5RtEf7ZuLDqCwzgEjezQ52uMtzc=" />
->>>>>>> 7abc243f66d7797246bc2021b665a5a65140d069
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="jO1IpAMpOhqvUwef9QRUpvkjmzDSOh5eLN2eQlfcrOrpyJwAUmLyTidXN5xxiUI+agaUQNQ9MEP+LMm7xJb8+TEYMYOsNAxsmzWabrrhnENRqa0xzul1UIOid1ELLEPD4u3fj/s3eKSrshJKbkI0bO7ZSzc=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1291,11 +1283,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2956`,`evoq_TabId`:`2956`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296`,`evoq_UrlQuery`:`%3fTabId%3d2956%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-<<<<<<< HEAD
-        <input name="__RequestVerificationToken" type="hidden" value="ORa_cWepExXoDiqzGns9l_QpP3AssMqMTaY1rwkFxcvA2LD2fHBByh70sx1csHrjsMUKKA2" />
-=======
-        <input name="__RequestVerificationToken" type="hidden" value="4-H865sUheJ37ghAoIbgDsOvUHgN7XCWVdkLdOx_wIBGCHZVwIJvdTnI3f5fsf-N6ifEQg2" />
->>>>>>> 7abc243f66d7797246bc2021b665a5a65140d069
+        <input name="__RequestVerificationToken" type="hidden" value="C-IWcrkcBHSTt-Dveac2DdNg-6xMCI_4YqI85klZaR0D4BCbpg4rXZ6Td-uAt-xRDMH-bA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

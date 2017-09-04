@@ -1,12 +1,23 @@
 #!/usr/bin/python
 
-import time, os, sys, webbrowser, tempfile, datetime
+import os
+import datetime
+import logging
 
 import requests
 from bs4 import BeautifulSoup
 
 
-temp_dir = '/etc/calfresh/temp'
+base_dir = '/etc/calfresh/'
+temp_dir = base_dir + 'temp/'
+data_dir = base_dir + 'data/'
+
+
+logging.basicConfig(
+	filename='/etc/calfresh/temp/calfresh.log',
+	level=logging.INFO,
+	format='%(levelname)s: %(asctime)s %(message)s'
+)
 
 
 class WebCrawler(object):
@@ -23,7 +34,7 @@ class WebCrawler(object):
 		parsed_pages = PageParser(self.table, new_page, old_page)
 
 		if parsed_pages.are_different:
-			self._download_new_files(parsed_pages.updated_files)
+			self._download_new_files(parsed_pages.updated_paths)
 			self._process_new_files()
 
 	def _get_new_page(self):
@@ -41,15 +52,26 @@ class WebCrawler(object):
 		yesterday = datetime.date.today() - datetime.timedelta(days=1)
 		return os.path.join(temp_dir, self.table + '_' + str(yesterday))
 
-	def _download_new_files(self, updated_files):
+	def _download_new_files(self, updated_paths):
 		# for updated link in new page, download the file
-		for file in updated_files:
-			if 'http' not in file:
-				file = 'http://www.cdss.ca.gov' + file
-			response = requests.get(file)
-			fp = os.path.join(temp_dir, self.table + '.xls')
-			with open(fp, 'w') as output:
+		for path in updated_paths:
+			if 'http' not in path:
+				path = 'http://www.cdss.ca.gov' + path
+
+			filename = self._get_filename(path)
+			fp = os.path.join(data_dir, self.table, 'xlsx', filename)
+
+			response = requests.get(path)
+			with open(fp, 'wb') as output:
 				output.write(response.content)
+				logging.info('Downloaded %s', fp)
+
+	def _get_filename(self, path):
+		filename = path.split('/')[-1]
+		if '?ver' in path:
+			filename = filename.split('?')[0]
+
+		return filename
 
 	def _process_new_files(self):
 		# dispatch the worker to process the new files!
@@ -72,14 +94,14 @@ class PageParser(object):
 		self.old_page = old_page
 		self.new_soup = None
 		self.old_soup = None
-		self.updated_files = []
+		self.updated_paths = []
 
 		self._extract_page_content()
 		self._get_new_versions()
 
 	@property
 	def are_different(self):
-		return len(self.updated_files) > 0
+		return len(self.updated_paths) > 0
 
 	def _extract_page_content(self):
 		# open new page from file
@@ -105,29 +127,31 @@ class PageParser(object):
 
 		for link in new_file_set:
 			if link not in old_file_set:
-				self.updated_files.append(link)
+				self.updated_paths.append(link)
+				logging.info('Found a new link! %s', link)
 
 
 if __name__ == '__main__':
+	logging.info('Starting app')
 	tables = {
 		'tbl_cf296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296',
-		'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
-		'tbl_data_dashboard': 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
+		# 'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
+		# 'tbl_data_dashboard': 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
 		'tbl_dfa256': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256',
-		'tbl_dfa296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296',
-		'tbl_dfa296x': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x',
-		'tbl_dfa358f': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F',
-		'tbl_dfa358s': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S',
-		'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
-		}
+		# 'tbl_dfa296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296',
+		# 'tbl_dfa296x': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x',
+		# 'tbl_dfa358f': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F',
+		# 'tbl_dfa358s': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S',
+		# 'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
+	}
 
 	for table in tables.keys():
-		print table
+		logging.info('Working on %s', table)
 		wc = WebCrawler(table, tables[table])
 		wc.run()
 
 	wc.clean_up()
-
+	logging.info('Finished app')
 
 
 

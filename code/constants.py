@@ -3,16 +3,28 @@
 class constants(object):
     def __init__(self):
 
+        self.CF15 = ''
+        self.CF296 = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296'
+        self.CHURNDATA = 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center'
+        self.DATADASHBOARD = 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard'
+        self.DFA256 = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256'
+        self.DFA296 = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296'
+        self.DFA296X = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x'
+        self.DFA358F = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F'
+        self.DFA358S = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S'
+        self.STAT47 = 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47'
+        self.STAT48 = ''
+
         self.county_dict = {
             'Statewide':  'Statewide',
             'California': 'California',
-            'Alameda':'Alameda',
+            'Alameda': 'Alameda',
             'Alpine': 'Alpine',
             'Amador': 'Amador',
             'Butte':  'Butte',
             'Calaveras':  'Calaveras',
             'Colusa': 'Colusa',
-            'ContraCosta':'Contra Costa',
+            'ContraCosta': 'Contra Costa',
             'DelNorte':   'Del Norte',
             'ElDorado':   'El Dorado',
             'Fresno': 'Fresno',
@@ -71,7 +83,7 @@ class constants(object):
 
         self.CF15NumColumns = []
 
-        self.CF15FinalColumns = [] 
+        self.CF15FinalColumns = []
 
 
 
@@ -85,12 +97,17 @@ class constants(object):
         self.ChurnDataPercentColumns = ['pct_reapps_churning','pct_reapps_churning_in_30d','pct_recerts_churning','pct_recerts_churning_in_30d']
 
 
+        self.DataDashboardPercentColumns = ['unemployment_pct','qtr_timeliness_exp_pct','qtr_30d_churn_reapps_pct','qtr_90d_churn_reapps_pct','qtr_30d_churn_recerts_pct','qtr_90d_churn_recerts_pct','mth_timeliness_30d_pct','mth_timeliness_exp_pct','mth_active_error_rate_pct','qtr_medical_rcv_calfresh_pct','qtr_calfresh_persons_rcv_medical_pct','pri_us_census_est_pct']
 
+        self.DataDashboardAnnualColumns = ['county','consortium','year','state_fiscal_year','ann_calfresh_hh_sfy_avg','ann_calfresh_hh_cy_avg','ann_calfresh_persons_sfy_avg','ann_calfresh_persons_cy_avg','ann_elderly','ann_children','ann_child_only_hh','ann_esl','ann_tot_pop','ann_elderly_over60','ann_children_under18','ann_tot_esl_over5','ann_tot_ssi_recipients','unemployment_pct','ann_calfresh_eligibles','month']
 
-        self.DataDashboardColumns = ['county','qtr_calfresh_hh_ly','qtr_calfresh_hh_prev_qtr','qtr_calfresh_hh_curr_qtr','qtr_calfresh_pers_ly','qtr_calfresh_pers_prev_qtr','qtr_calfresh_pers_curr_qtr','qtr_medical_rcv_calfresh_ly','qtr_medical_rcv_calfresh_prev_qtr','qtr_medical_rcv_calfresh_curr_qtr','qtr_calfresh_rcv_medical_ly','qtr_calfresh_rcv_medical_prev_qtr','qtr_calfresh_rcv_medical_curr_qtr','qtr_pct_calfresh_rcv_medical_ly','qtr_pct_calfresh_rcv_medical_prev_qtr','qtr_pct_calfresh_rcv_medical_curr_qtr','qtr_timeliness_30d_ly','qtr_timeliness_30d_prev_qtr','qtr_timeliness_30d_curr_qtr','qtr_timeliness_exp_ly','qtr_timeliness_exp_prev_qtr','qtr_timeliness_exp_curr_qtr','qtr_active_err_rt_ly','qtr_active_err_rt_prev_qtr','qtr_active_err_rt_curr_qtr','qtr_30d_churn_reapps_ly','qtr_30d_churn_reapps_prev_qtr','qtr_30d_churn_reapps_curr_qtr','qtr_90d_churn_reapps_ly','qtr_90d_churn_reapps_prev_qtr','qtr_90d_churn_reapps_curr_qtr','qtr_30d_churn_recerts_ly','qtr_30d_churn_recerts_prev_qtr','qtr_30d_churn_recerts_curr_qtr','qtr_90d_churn_recerts_ly','qtr_90d_churn_recerts_prev_qtr','qtr_90d_churn_recerts_curr_qtr','ann_hh_2yr_prior','ann_hh_1yr_prior','ann_hh_yr_of_report','ann_pers_2yr_prior','ann_pers_1yr_prior','ann_pers_yr_of_report','ann_elderly_2yr_prior','ann_elderly_1yr_prior','ann_elderly_yr_of_report','ann_children_2yr_prior','ann_children_1yr_prior','ann_children_yr_of_report','ann_child_only_hh_2yr_prior','ann_child_only_hh_1yr_prior','ann_child_only_hh_yr_of_report','ann_child_only_pers_2yr_prior','ann_child_only_pers_1yr_prior','ann_child_only_pers_yr_of_report','ann_esl_2yr_prior','ann_esl_1yr_prior','ann_esl_yr_of_report','ann_tot_pop_2yr_prior','ann_tot_pop_1yr_prior','ann_tot_pop_yr_of_report','ann_elderly_over60_2yr_prior','ann_elderly_over60_1yr_prior','ann_elderly_over60_yr_of_report','ann_children_less18_2yr_prior','ann_children_less18_1yr_prior','ann_children_less18_yr_of_report','ann_tot_pop_greater5_2yr_prior','ann_tot_pop_greater5_1yr_prior','ann_tot_pop_greater5_yr_of_report','ann_tot_esl_greater5_2yr_prior','ann_tot_esl_greater5_1yr_prior','ann_tot_esl_greater5_yr_of_report','ann_medical_2yr_prior','ann_medical_1yr_prior','ann_medical_yr_of_report','ann_ssi_rcpt_2yr_prior','ann_ssi_rcpt_1yr_prior','ann_ssi_rcpt_yr_of_report','ann_unempl_pct_2yr_prior','ann_unempl_pct_1yr_prior','ann_unempl_pct_yr_of_report','ann_calfresh_eligibles_2yr_prior','ann_calfresh_eligibles_1yr_prior','ann_calfresh_eligibles_yr_of_report','ann_eligibles_excl_undocs_ssi_2yr_prior','ann_eligibles_excl_undocs_ssi_1yr_prior','ann_eligibles_excl_undocs_ssi_yr_of_report','year','month']
+        self.DataDashboardQuarterlyColumns = ['county','consortium','quarter','year','federal_fiscal_year','state_fiscal_year','qtr_timeliness_exp_pct','qtr_30d_churn_reapps_pct','qtr_90d_churn_reapps_pct','qtr_30d_churn_recerts_pct','qtr_90d_churn_recerts_pct']
 
-        self.DataDashboardPercentColumns = ['qtr_pct_calfresh_rcv_medical_ly','qtr_pct_calfresh_rcv_medical_prev_qtr','qtr_pct_calfresh_rcv_medical_curr_qtr','qtr_timeliness_30d_ly','qtr_timeliness_30d_prev_qtr','qtr_timeliness_30d_curr_qtr','qtr_timeliness_exp_ly','qtr_timeliness_exp_prev_qtr','qtr_timeliness_exp_curr_qtr','qtr_active_err_rt_ly','qtr_active_err_rt_prev_qtr','qtr_active_err_rt_curr_qtr','qtr_30d_churn_reapps_ly','qtr_30d_churn_reapps_prev_qtr','qtr_30d_churn_reapps_curr_qtr','qtr_90d_churn_reapps_ly','qtr_90d_churn_reapps_prev_qtr','qtr_90d_churn_reapps_curr_qtr','qtr_30d_churn_recerts_ly','qtr_30d_churn_recerts_prev_qtr','qtr_30d_churn_recerts_curr_qtr','qtr_90d_churn_recerts_ly','qtr_90d_churn_recerts_prev_qtr','qtr_90d_churn_recerts_curr_qtr','ann_unempl_pct_2yr_prior','ann_unempl_pct_1yr_prior','ann_unempl_pct_yr_of_report','ann_eligibles_excl_undocs_ssi_2yr_prior','ann_eligibles_excl_undocs_ssi_1yr_prior','ann_eligibles_excl_undocs_ssi_yr_of_report']
+        self.DataDashboardMonthlyColumns = ['county','consortium','month','year','federal_fiscal_year','state_fiscal_year','mth_calfresh_hh','mth_calfresh_persons','mth_medical_enrollment','mth_timeliness_30d_pct','mth_timeliness_exp_pct','mth_active_error_rate_pct']
 
+        self.DataDashboard3MthColumns = ['county','consortium','month','year','federal_fiscal_year','state_fiscal_year','qtr_medical_rcv_calfresh_pct','qtr_calfresh_persons_rcv_medical','qtr_calfresh_persons_rcv_medical_pct']
+
+        self.DataDashboardPRIRawColumns = ['county','consortium','year','pri_est_frequency','calfresh_persons_cy_avg','calfresh_eligibles','five_yr_est_range','pri_us_census_est_pct','month']
 
 
 

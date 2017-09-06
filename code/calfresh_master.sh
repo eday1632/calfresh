@@ -2,6 +2,8 @@
 
 source /etc/calfresh/venv/bin/activate
 
+cd /etc/calfresh
+
 git pull
 
 python /etc/calfresh/code/web_crawler.py

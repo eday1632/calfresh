@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SE8Spqm465L+0lCNjf7TiCmTOPI1UezpAG3NazQyc/3Ar3BxgzOnSN8/WTZbJCkUx1n7aI54vPBbcPYcBt1pdU2WenYT4xygo1tLyEpbMyYZEC2IV6kyEbhzeceJE9lHzcNHJ1KSUsZrr34sntEoXHc+7sqQgSxSM4WCHrxwTpQ3YP90tiBu3mQZAYLpcDbB2yAQtcWqBMz7DPVD/GQ1uBVl/UfX74QX7UCYQ/5BK+WKRZkjCOpfegjCkNxr93Bczrkjj8qDUjEON4sGJRl3gR1p80W5fh+kK3wOafMH1qp8eAdK" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DiRH4X+UNEG2/jDEH0xH7YWD0fRrVPeFSgIIY95BE4/L45t54wXL4l/Yi+Md4DoWjkfakeLDI1lfx5tVRE5OZfSd7ngPKbU4WfVT/l9gn6d+Swdh2wzOwC2KrMjrXz5ZPniSLW/GVTkw+Cy96FfMxEkvvkzPmoMk2u+hynJDZlpspkmO/9EMtjmD23GMHh0azmJoxjJIPYukkMp4rji8yQKsfmDDX44bQPsqKYPdJtOVqB55qYHA3yeZKLcNPAeqZ92JUWvTHSNJNeAiHKeaC75Zo6TH13V8ncb2yVfdUTIpf3jj" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="P10IAyA9V4k1BmHokw85NwGzXx6ceSY/ICfsQKS7tsd0xZgplOL8x0t31hP05kf/7SqV9BKPmSjmMSJoSxC2N5OXOaB3NFBodhPYPBfBYZcoRSEu5UFKwDaJSh98Y/4Q41SYpGh2g4E6pPN1W3QqsyxIzFY=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="DNpMHRUgr/pbk/q8NSvMTJuPX8ckFLFjs89p3n0LHYz2fkDOje+FN4cMXxgs+qho7zwTRhSEvOAH+0VEY1xpZk6yhVzBqgCSiuhCJ8/tcstk9ACvFY2H1v4VZTC6atxX/fXkdkjDPeU49031qBPVeXvUxzg=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1107,6 +1107,8 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
 	</th>
 	<th>File
 	</th>
+	<th>
+	</th>
 </tr>
 <tr>
 	<td><strong>CalFresh Dashboard</strong>
@@ -1114,6 +1116,8 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
 	<td>07/27/17
 	</td>
 	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2017-07-27-073101-183">Excel</a>
+	</td>
+	<td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><u>Getting Started</u></a>
 	</td>
 </tr>
 </tbody>
@@ -1204,7 +1208,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="9sxinIUQkNZP3_PGEwmv9dGkC5pAaiekAMW49wcFhvQmXJtEqW-r5nLM--gKogUxKyVA6w2" />
+        <input name="__RequestVerificationToken" type="hidden" value="qvMYp24Kb-ocMfWdZg865dFGVEvz3rG43Unhu1hiLO33ouYP8Ka_MXsoIryMHRiKWJgmwg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

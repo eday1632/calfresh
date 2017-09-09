@@ -18,6 +18,10 @@ import editdistance
 from constants import constants
 
 
+logging.config.fileConfig(code_dir + 'logging.conf')
+logger = logging.getLogger('file_factory')
+
+
 def initialize(item):
     """Initializes the proper FileFactory object based on the source directory
     of the item

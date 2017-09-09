@@ -30,8 +30,10 @@ from os import walk
 from os.path import join
 from xlrd import open_workbook
 import sys
+import logging
 from csv import writer
 from shutil import move
+import ConfigParser
 
 from openpyxl import load_workbook
 import pandas as pd
@@ -39,7 +41,13 @@ import pandas as pd
 from file_factory import initialize
 
 
-INPATH = '/etc/calfresh/data'
+config = ConfigParser.RawConfigParser()
+config.read('/etc/calfresh/code/calfresh.conf')
+
+logging.config.fileConfig(config.get('filepaths', 'config'))
+logger = logging.getLogger('worker')
+
+INPATH = config.get('filepaths', 'data')
 OUTPATH = '/etc/calfresh/8_30_17_update'
 DIRECTORIES = ['tbl_cf15', 'tbl_cf296', 'tbl_churn_data', 'tbl_data_dashboard', 'tbl_dfa256', 'tbl_dfa296', 'tbl_dfa296x', 'tbl_dfa358f', 'tbl_dfa358s', 'tbl_dfa358tot', 'tbl_stat47', 'tbl_stat48']
 FLAGS = ['-etoc', '-r', '-m']
@@ -269,7 +277,7 @@ def runProcessor(paths):
         if item['source'] not in DIRECTORIES:
             continue
 
-        print 'input:', item['filename']
+        logger.info('Processing file: %s', item['filename'])
         factory = initialize(item)
         if item['filename'] in ['CFDashboard-Annual.csv','CFDashboard-Quarterly.csv','CFDashboard-Every_Mth.csv','CFDashboard-Every_3_Mth.csv','CFDashboard-PRI_Raw.csv']:
             if item['filename'] == 'CFDashboard-Annual.csv':
@@ -312,7 +320,7 @@ def mergeForUploading(paths):
             sibling = item['source']
 
     old.to_csv(join(OUTPATH, sibling + '.csv'), index=False)
-    print 'output:', sibling
+    logger.info('Merged files for %s', sibling)
 
     for tbl in DIRECTORIES:
         if tbl in ['tbl_dfa358f', 'tbl_dfa358s']:

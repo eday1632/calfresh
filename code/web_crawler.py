@@ -3,27 +3,30 @@
 import os
 import datetime
 import logging
+import logging.config
+import ConfigParser
 
 import requests
 from bs4 import BeautifulSoup
 
 
-base_dir = '/etc/calfresh/'
-temp_dir = base_dir + 'temp/'
-data_dir = base_dir + 'data/'
+config = ConfigParser.RawConfigParser()
+config.read('/etc/calfresh/code/calfresh.conf')
 
+temp_dir = config.get('filepaths', 'temp')
+data_dir = config.get('filepaths', 'data')
 
-logging.basicConfig(
-	filename='/etc/calfresh/logs/calfresh.log',
-	level=logging.INFO,
-	format='%(levelname)s: %(asctime)s %(message)s'
-)
+logging.config.fileConfig(config.get('filepaths', 'config'))
+logger = logging.getLogger('web_crawler')
+
+new_files = []
 
 
 class WebCrawler(object):
 	"""docstring for WebCrawler"""
 	def __init__(self, table, url):
 		super(WebCrawler, self).__init__()
+		logger.info('Retrieving page for %s', table)
 		self.table = table
 		self.url = url
 
@@ -31,21 +34,30 @@ class WebCrawler(object):
 		new_page = self._get_new_page()
 		old_page = self._get_old_page()
 
-		parsed_pages = PageParser(self.table, new_page, old_page)
+		# if we successfully received today's page
+		if new_page:
+			parsed_pages = PageParser(self.table, new_page, old_page)
 
-		if parsed_pages.are_different:
-			self._download_new_files(parsed_pages.updated_paths)
-			self._process_new_files()
+			if parsed_pages.are_different:
+				self._download_new_files(parsed_pages.updated_paths)
+				self._process_new_files()
+				new_files.append(self.table)
 
 	def _get_new_page(self):
 		# request page
 		page = requests.get(self.url)
-		# save new page to file
-		fp = os.path.join(temp_dir, self.table + '_' + str(datetime.date.today()))
-		with open(fp, 'w') as f:
-			f.write(page.text.encode('ascii', 'ignore'))
 
-		return fp
+		if page.status_code != 200:
+			logger.error('Requested page not received! \
+				Page: {}, Status code: {}'.format(self.url, page.status_code))
+			return None
+		else:
+			# save new page to file
+			fp = os.path.join(temp_dir, self.table + '_' + str(datetime.date.today()))
+			with open(fp, 'w') as f:
+				f.write(page.text.encode('ascii', 'ignore'))
+
+			return fp
 
 	def _get_old_page(self):
 		# return yesterday's file pointer
@@ -64,7 +76,7 @@ class WebCrawler(object):
 			response = requests.get(path)
 			with open(fp, 'wb') as output:
 				output.write(response.content)
-				logging.info('Downloaded %s', fp)
+				logger.info('Downloaded %s', fp)
 
 	def _get_filename(self, path):
 		filename = path.split('/')[-1]
@@ -128,11 +140,10 @@ class PageParser(object):
 		for link in new_file_set:
 			if link not in old_file_set:
 				self.updated_paths.append(link)
-				logging.info('Found a new link! %s', link)
+				logger.info('Found a new link! %s', link)
 
 
 if __name__ == '__main__':
-	logging.info('Starting app')
 	tables = {
 		'tbl_cf296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296',
 		'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
@@ -146,12 +157,12 @@ if __name__ == '__main__':
 	}
 
 	for table in tables.keys():
-		logging.info('Working on %s', table)
 		wc = WebCrawler(table, tables[table])
 		wc.run()
 
 	wc.clean_up()
-	logging.info('Finished app')
+
+	exit(new_files)
 
 
 

@@ -9,6 +9,7 @@ TODOs:
 
 from string import digits
 from abc import ABCMeta, abstractmethod
+import logging
 
 import pandas as pd
 import numpy as np

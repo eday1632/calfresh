@@ -14,7 +14,7 @@ data_dir = base_dir + 'data/'
 
 
 logging.basicConfig(
-	filename='/etc/calfresh/temp/calfresh.log',
+	filename='/etc/calfresh/logs/calfresh.log',
 	level=logging.INFO,
 	format='%(levelname)s: %(asctime)s %(message)s'
 )

@@ -346,7 +346,7 @@ def combine358FandS():
 
 if __name__ == '__main__':
 
-    """parse system arguments"""
+    """parse system arrrrgs!"""
     specifiedDirs = []
     specifiedFlags = []
     for arg in sys.argv[1:]:

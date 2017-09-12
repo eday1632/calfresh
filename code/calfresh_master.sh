@@ -6,7 +6,7 @@ cd /etc/calfresh
 
 git pull
 
-python /etc/calfresh/code/web_crawler.py
+python /etc/calfresh/code/app.py
 
 git add .
 

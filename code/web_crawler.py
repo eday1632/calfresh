@@ -11,15 +11,13 @@ from bs4 import BeautifulSoup
 
 
 config = ConfigParser.RawConfigParser()
-config.read('/etc/calfresh/code/calfresh.conf')
+config.read('/etc/calfresh/calfresh.conf')
 
 temp_dir = config.get('filepaths', 'temp')
 data_dir = config.get('filepaths', 'data')
 
 logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('web_crawler')
-
-new_files = []
 
 
 class WebCrawler(object):
@@ -30,7 +28,7 @@ class WebCrawler(object):
 		self.table = table
 		self.url = url
 
-	def run(self):
+	def crawl(self):
 		new_page = self._get_new_page()
 		old_page = self._get_old_page()
 
@@ -41,7 +39,7 @@ class WebCrawler(object):
 			if parsed_pages.are_different:
 				self._download_new_files(parsed_pages.updated_paths)
 				self._process_new_files()
-				new_files.append(self.table)
+				return self.table
 
 	def _get_new_page(self):
 		# request page
@@ -141,28 +139,6 @@ class PageParser(object):
 			if link not in old_file_set:
 				self.updated_paths.append(link)
 				logger.info('Found a new link! %s', link)
-
-
-if __name__ == '__main__':
-	tables = {
-		'tbl_cf296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296',
-		'tbl_churn_data': 'http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data',
-		'tbl_data_dashboard': 'http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
-		'tbl_dfa256': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256',
-		'tbl_dfa296': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296',
-		'tbl_dfa296x': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x',
-		'tbl_dfa358f': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F',
-		'tbl_dfa358s': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358S',
-		'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
-	}
-
-	for table in tables.keys():
-		wc = WebCrawler(table, tables[table])
-		wc.run()
-
-	wc.clean_up()
-
-	exit(new_files)
 
 
 

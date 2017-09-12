@@ -18,7 +18,6 @@ import editdistance
 from constants import constants
 
 
-logging.config.fileConfig(code_dir + 'logging.conf')
 logger = logging.getLogger('file_factory')
 
 

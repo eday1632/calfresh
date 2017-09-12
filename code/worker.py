@@ -42,7 +42,7 @@ from file_factory import initialize
 
 
 config = ConfigParser.RawConfigParser()
-config.read('/etc/calfresh/code/calfresh.conf')
+config.read('/etc/calfresh/calfresh.conf')
 
 logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('worker')
@@ -51,6 +51,16 @@ INPATH = config.get('filepaths', 'data')
 OUTPATH = '/etc/calfresh/8_30_17_update'
 DIRECTORIES = ['tbl_cf15', 'tbl_cf296', 'tbl_churn_data', 'tbl_data_dashboard', 'tbl_dfa256', 'tbl_dfa296', 'tbl_dfa296x', 'tbl_dfa358f', 'tbl_dfa358s', 'tbl_dfa358tot', 'tbl_stat47', 'tbl_stat48']
 FLAGS = ['-etoc', '-r', '-m']
+
+
+class Worker(object):
+    def __init__(self, tables, flags=None):
+        self.tables = tables
+        self.flags = flags
+
+    def work(self):
+        print "worked"
+        return self.tables
 
 
 def getCSVInput():

@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# CalFresh stuff
-./temp/calfresh.log
-
 # C extensions
 *.so
 

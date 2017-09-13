@@ -38,7 +38,6 @@ class WebCrawler(object):
 
 			if parsed_pages.are_different:
 				self._download_new_files(parsed_pages.updated_paths)
-				self._process_new_files()
 				return self.table
 
 	def _get_new_page(self):

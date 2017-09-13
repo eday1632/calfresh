@@ -26,7 +26,7 @@ TODOs:
 """
 
 
-from os import walk
+from os import walk, remove
 from os.path import join
 from xlrd import open_workbook
 import logging
@@ -182,7 +182,8 @@ class Worker(object):
 
         for name in worksheets:
             sheet = workbook[name]
-            with open(join(INPATH, item['source'], 'csv_in', filename+'-'+name+'.csv'), 'wb') as handle:
+            with open(join(INPATH, item['source'], 'csv_in',
+                            filename + '-' + name + '.csv'), 'wb') as handle:
                 author = writer(handle)
                 author.writerows([unicode(value).encode('utf-8') for value in sheet.iter_rows()])
 
@@ -194,7 +195,7 @@ class Worker(object):
             if item['source'] != self.table:
                 continue
 
-            print 'converting:', item['filename']
+            logger.info('converting: %s', item['filename'])
             self.convertExcelFile(item)
 
     def redistributeDataDashboardFiles(self, paths):
@@ -213,71 +214,70 @@ class Worker(object):
     def removeJunkFiles(self, paths):
         """remove files known to not to contain data"""
 
-        junkfolder = '/etc/calfresh/junk'
         for path in paths:
             if path['source'] == 'tbl_cf15':
                 continue
 
             elif path['source'] == 'tbl_cf296':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_churn_data':
                 continue
 
             elif path['source'] == 'tbl_data_dashboard':
                 if 'Trend' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Updates' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'PRI_eval' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Pivot' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Main' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa256':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa296':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa296x':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa358f':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa358s':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_stat47':
                 if 'Statewide' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
                 elif 'Release Summary' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_stat48':
                 if '0.csv' in path['filename']:
-                    move(path['path'], join(junkfolder, path['filename']))
+                    remove(path['path'])
 
     def runProcessor(self, paths):
         """process all the csv files in the directories specified"""
@@ -323,7 +323,6 @@ class Worker(object):
                 old = pd.merge(old, new, how='outer')
             else:
                 old.to_csv(join(OUTPATH, sibling + '.csv'), index=False)
-                print 'output:', sibling
                 old = new
                 sibling = item['source']
 
@@ -332,7 +331,6 @@ class Worker(object):
 
         if self.table in ['tbl_dfa358f', 'tbl_dfa358s']:
             self.combine358FandS()
-            print 'output: tbl_dfa358tot'
 
     def combine358FandS(self):
         """combines the tbl_dfa358f and tbl_dfa358s files for uploading to the database
@@ -357,27 +355,6 @@ class Worker(object):
             raise ValueError
 
         df3.to_csv(join(OUTPATH, 'tbl_dfa358tot.csv'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

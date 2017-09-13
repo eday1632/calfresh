@@ -1,12 +1,17 @@
 #!/usr/bin/python
 
+import ConfigParser
+import logging
+
 from web_crawler import WebCrawler
 from worker import Worker
 from data_loader import DataLoader
 
-# run webcrawler
-# pass webcrawler's results to worker
-# pass worker's results to dataloader
+config = ConfigParser.RawConfigParser()
+config.read('/etc/calfresh/calfresh.conf')
+
+# logging.config.fileConfig(config.get('filepaths', 'config'))
+logger = logging.getLogger('root')
 
 
 if __name__ == '__main__':
@@ -23,14 +28,17 @@ if __name__ == '__main__':
     }
 
     for table in tables.keys():
-        crawler = WebCrawler(table, tables[table])
-        result = crawler.crawl()
-        if result:
-            worker = Worker(result)
-            processed_tables = worker.work()
+        try:
+            crawler = WebCrawler(table, tables[table])
+            result = crawler.crawl()
+            if result:
+                worker = Worker(result)
+                processed_tables = worker.work()
 
-            loader = DataLoader(processed_tables)
-            result = loader.load()
+                loader = DataLoader(processed_tables)
+                result = loader.load()
+        except Exception as ex:
+            logger.exception(ex)
 
     crawler.clean_up()
 

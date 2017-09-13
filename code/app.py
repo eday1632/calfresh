@@ -28,12 +28,11 @@ if __name__ == '__main__':
         crawler = WebCrawler(table, tables[table])
         result = crawler.crawl()
         if result:
-            updated_tables.append(result)
+            worker = Worker(result)
+            processed_tables = worker.work()
+
+            loader = DataLoader(processed_tables)
+            result = loader.load()
 
     crawler.clean_up()
 
-    worker = Worker(updated_tables)
-    processed_tables = worker.work()
-
-    loader = DataLoader(processed_tables)
-    result = loader.load()

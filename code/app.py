@@ -22,8 +22,6 @@ if __name__ == '__main__':
         'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
     }
 
-    updated_tables = []
-
     for table in tables.keys():
         crawler = WebCrawler(table, tables[table])
         result = crawler.crawl()

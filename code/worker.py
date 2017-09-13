@@ -47,13 +47,12 @@ logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('worker')
 
 INPATH = config.get('filepaths', 'data')
-OUTPATH = '/etc/calfresh/8_30_17_update'
+OUTPATH = '/etc/calfresh/9_13_17_update'
 
 
 class Worker(object):
-    def __init__(self, table, flags=None):
+    def __init__(self, table):
         self.table = table
-        self.flags = flags
 
     def work(self):
         # convert excel files to csv

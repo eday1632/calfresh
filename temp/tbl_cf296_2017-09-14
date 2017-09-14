@@ -43,7 +43,7 @@ window.onload = function(){
 
 </script>
 <title>
-	Info & Resources > Data Portal > Research and Data > CalFresh Data Dashboard
+	Info & Resources > Data Portal > Research and Data > CalFresh Data Tables > CF296
 </title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=391" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=391" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=391" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=391" type="text/javascript"></script><script type='text/javascript'>
 //<![CDATA[
     var analytics_page_startTime = (new Date()).getTime();
@@ -52,11 +52,11 @@ window.onload = function(){
 <link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
 <body id="Body">
     
-    <form method="post" action="/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard" id="Form" enctype="multipart/form-data">
+    <form method="post" action="/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8imyocxphfzGSnvgUacXo06Ba3nf946MrEuIufB3CVHGpHMmWBLl+enC/9PaCvO4zTAJnj3yoqhM0zTpzjbqGxNYTPbaGu/mEsnKtrxHrQ7gaUBqS/cDcEhLBjhIB2Pbne/qAyM1j60L1nSqzSCFg8hJpOOgEKmPpeYXtiRHOKntM2cxP0+nhsJmnaUND58NqNk332yL54CF3SEZkFO1oDCyVTEXitWWxkYFraa59tYE1OBW1KPV/5wPaZihyU9BU+vkCmjlnHrRA8KKE5GXBCFBjRa8P11OtmKRFDWmsLTPo+TD" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EaVYkslZfdJppvicQTzdNz2cEJZ8TOWlJ1fqDwmQCyv5OSJsNk/YmJmhzp9CHblcsNHBohECWUm2we+MXDABRIUi43AwYe3bUOS24SLkFDA0kcj/FnF9zd5S5Yc6+RzhEfpGC78YUKiDO5AlPj7KNwkN34CQJ0LfLfBMgkTA1UELSZDVWZfUCipPLlbU79lAD9scYxVyHIiuwFnYfrwtQsSZiIl83T9QJT26GKrGzMAZtD7zk0Cqr600luohUQyUOLFwbSTcP0Gq4rBNwTNmJRcdsWB/9zD95pXG9Dy6JrfNT6cy" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="rFeQUPD0biMlnO91/OFBOmsiz+PBS8sdeoCyFCcbI6uxsd8YQDf7WG4i59re3ADBsyedRQWujgp10G/t7uyIZa7YfhzawWDMX1+e/6JNt+AVEDD7miYHNTQLOqE1Q8N8o48p+dcQ74AwMmsRygEWgzC3CnI=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="NEmr56NWN9wslYGC9/OSn2SKGM3KbUiIARWmKD8dJQJYC/OkSWRArPm1Zep5FXEy2UvstbmgAffNViQKeo9xTLNjF8MT1w9ARD66W+MM7gnCTUnGepODKrW2oqB9jrQhBTMqxu+sktYv2vDii6VfdX8sjIg=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1080,66 +1080,35 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <div class="wrapper">
       <div class="main-primary">
       <div class="BreadcrumbPane">
-        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Dashboard</span></a><meta itemprop="position" content="3" /></span></span></span></div>
-        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-8038 DnnVersionableControl"><a name="8038"></a><div id="dnn_ctr8038_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_8038 --><div id="dnn_ctr8038_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr8038_HtmlModule_lblContent"><h2>CalFresh Data Dashboard</h2>
-<p>Welcome to the CalFresh Data Dashboard. This is a full
-service, one-stop dashboard where you can find all of the most current CalFresh
-data. CDSS strives to deliver excellent services and resources to our internal
-and external partners. This dashboard will provide you with information to
-analyze trends in CalFresh demographics, participation rates, timeliness,
-benefit accuracy and churn rates by county. Please refer to the
-	<em>Resources
-and Tools
-	</em> section available in the dashboard for additional assistance.<br>
-	<br>
-	Contact Us<br>
-	If you have additional questions regarding the CalFresh Data
-Dashboard, please title your email CalFresh Data Dashboard Question to
-	<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.
+        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Tables</span></a><meta itemprop="position" content="3" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296" class="Breadcrumb" itemprop="item"><span itemprop="name">CF296</span></a><meta itemprop="position" content="4" /></span></span></span></div>
+        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9453 DnnVersionableControl"><a name="9453"></a><div id="dnn_ctr9453_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9453 --><div id="dnn_ctr9453_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr9453_HtmlModule_lblContent"><h2>CF 296 - CalFresh Monthly Caseload Movement Statistical Report</h2>
+<p><strong></strong>The CF 296 replaces the DFA 296 and DFA 296X reports effective July 2016 report month (ACL 16-39). The monthly CF 296 report contains data on the number of CalFresh applications received, approved, denied and withdrawn. This includes data on the number of CalFresh applications processed under expedited service (ES), processing timeframes and discontinuances due to recipients failure to complete the application process for ongoing CalFresh benefits. The report also includes the number of cases eligible; Inter-County Transfers (ICT) received; restoration of prorated benefits; recertifications disposed of and the number of overdue recertifications during the month.
 </p>
 <table>
 <tbody>
 <tr>
-	<th>
+	<th>Report Period
 	</th>
-	<th>Updated   
-	</th>
-	<th>File
-	</th>
-	<th>
+	<th>Updated
 	</th>
 </tr>
 <tr>
-	<td><strong>CalFresh Dashboard</strong>
+	<td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY17-18.xls?ver=2017-08-14-080944-660"><u>Fiscal Year2017-18</u></a></strong>
 	</td>
-	<td>07/27/17
+	<td>09/13/17
 	</td>
-	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2017-07-27-073101-183">Excel</a>
+</tr>
+<tr>
+	<td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY16-17.xls?ver=2017-08-14-080944-660"><u>Fiscal Year2016-17</u></a></strong>
 	</td>
-	<td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><u>Getting Started</u></a>
+	<td>08/14/17
 	</td>
 </tr>
 </tbody>
 </table>
 <p>
-</p>
-<style>
-    table.styled-table {
-    width: 100%;
-    }
-    table.styled-table td {
-    vertical-align: top;
-    }
-</style>
-<style>
-    table.styled-table {
-    width: 100%;
-    }
-    table.styled-table td {
-    vertical-align: top;
-    }
-</style></div>
+</p></div>
 
 
 
@@ -1149,12 +1118,22 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
 
 
 
-</div><!-- End_Module_8038 --></div>
+</div><!-- End_Module_9453 --></div>
 
 </div></div>
       </div>
-      <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-8042 DnnVersionableControl"><a name="8042"></a><div id="dnn_ctr8042_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_8042 --><div id="dnn_ctr8042_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr8042_HtmlModule_lblContent"><br></div>
+      <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9454 DnnVersionableControl"><a name="9454"></a><div id="dnn_ctr9454_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9454 --><div id="dnn_ctr9454_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr9454_HtmlModule_lblContent"><h1>Contact Us</h1>
+<p>For questions regarding this report, contact the Data Systems and Survey Design Bureau at <a href="mailto:admcf296@dss.ca.gov?subject=CF296 Website Inquiry">admcf296@dss.ca.gov</a>.
+</p>
+<p><a style="font-weight: bold;" href="/inforesources/Research-and-Data/CalFresh-Data-Tables"><u>CalFresh Data Tables</u><br></a>
+</p>
+<p><a href="/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296">CalFresh Monthly Caseload (Prior to July 2016)</a><br><a href="/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x">CalFresh Expedited Service</a>
+</p>
+<p><a href="/inforesources/Research-and-Data/CalFresh-Data-Trends"><strong><u>CalFresh Data Trends</u></strong></a><br><a href="/calfresh">CalFresh Applications</a><br>
+</p>
+<p><a href="/inforesources/Research-and-Data/Report-Form-and-Instructions"><strong><u>Report Form and Instructions</u></strong></a>
+</p></div>
 
 
 
@@ -1164,7 +1143,7 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
 
 
 
-</div><!-- End_Module_8042 --></div>
+</div><!-- End_Module_9454 --></div>
 
 </div></div>
     </div>
@@ -1181,7 +1160,7 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
     <!--<div class="LoginPane">
       
 <div id="dnn_dnnLOGIN_loginGroup" class="loginGroup">
-    <a id="dnn_dnnLOGIN_enhancedLoginLink" title="Login" class="Login" rel="nofollow" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Login?returnurl=/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Login?returnurl=%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard">Login</a>
+    <a id="dnn_dnnLOGIN_enhancedLoginLink" title="Login" class="Login" rel="nofollow" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Login?returnurl=/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Login?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fCF296">Login</a>
 </div>
     </div>-->
   </footer>
@@ -1207,8 +1186,8 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
-        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="Tymv1vsczeJ1MpEanaeAHpkRwhg0xb_OXaE0PidkZDJql9y3mfjt0OrvM3pMo_86SeCw_A2" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3036`,`evoq_TabId`:`3036`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fCF296`,`evoq_UrlQuery`:`%3fTabId%3d3036%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="kn0DX2QX71M6O37th4nXhmfooruTD_IU6jII1-W4SBy1BVKYd9l5Rt6A705OAdMUnfV-4Q2" />
     
 <script type='text/javascript'>
 //<![CDATA[

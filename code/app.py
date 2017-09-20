@@ -10,7 +10,6 @@ from data_loader import DataLoader
 config = ConfigParser.RawConfigParser()
 config.read('/etc/calfresh/calfresh.conf')
 
-# logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('root')
 
 

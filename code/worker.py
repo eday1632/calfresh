@@ -26,13 +26,14 @@ TODOs:
 """
 
 
-from os import walk, remove
-from os.path import join
+from os import walk, remove, makedirs
+from os.path import join, exists
 from xlrd import open_workbook
 import logging
 from csv import writer
 from shutil import move
 import ConfigParser
+from datetime import datetime
 
 from openpyxl import load_workbook
 import pandas as pd
@@ -47,7 +48,10 @@ logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('worker')
 
 INPATH = config.get('filepaths', 'data')
-OUTPATH = '/etc/calfresh/9_13_17_update'
+now = datetime.now()
+OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
+if not exists(OUTPATH):
+    makedirs(OUTPATH)
 
 
 class Worker(object):

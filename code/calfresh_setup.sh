@@ -1,26 +1,8 @@
 #!/bin/bash
-# Script to add a user to Linux system
-if [ $(id -u) -eq 0 ]; then
-        read -p "Enter username : " username
-        read -s -p "Enter password : " password
-        egrep "^$username" /etc/passwd >/dev/null
-        if [ $? -eq 0 ]; then
-                echo "$username exists!"
-                exit 1
-        else
-                pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
-                useradd -m -p $pass $username
-                [ $? -eq 0 ] && echo "User has been added to system!" || echo "Failed to add a user!"
-        fi
-else
-        echo "Only root may add a user to the system"
-        exit 2
-fi
 
+apt-get upgrade
+apt-get update
 
-usermod -aG sudo $username
-
-su - $username
 mkdir ~/.ssh
 chmod 700 ~/.ssh
 
@@ -30,7 +12,14 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPsypvuXjEiE59dFCb02gfDB4s8LKGqM1lpu/grstr
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBNSAkGNJ7An9x9TywWYnUenmlH1aY0FmEfZJs5ecP7sq9AmMjniWQiq8YKBHo2rFrgWA3n+QW6p21KKBqufnqJJ2I9xncnuny6MIACX0LZy27clXBxhvtG2pU2/8UUzIgmoBZP/Cd6uxcqzCOGV0ndWkl/MI7+aW5231ftMkqoWKoQKSTpzNwR7gf2KLlAsluYDo9K6ziVJ1YaxbW9lp4LMghzs4iDdN0u6fYefwwAzfUwnNdUthEa+2Lgx5tB2itLSBFpYQclH1gQowGtfQDNyVsi6PZoEsscHAjqJZKIB/EI+AIkOX4TjN6fLtwpmNmTH6+bKPKF8S4B9d9Z9iT root@CalFreshMaster" > ~/.ssh/authorized_keys
 
 chmod 600 ~/.ssh/authorized_keys
-exit
 
-sed -i sed 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
+ufw allow OpenSSH
+ufw enable
 
+cd /etc
+git clone https://github.com/eday1632/calfresh.git
+
+mkdir /etc/calfresh/logs
+
+git config --global user.email "eric.day87@gmail.com"
+git confid --global user.name "Eric Day"

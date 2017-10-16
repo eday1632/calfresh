@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2016, by DNN Corporation -->
+<!--*********************************************-->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+<style>
+	footer a {
+	padding:2px 1.4%;
+	margin-right:8px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	white-space: nowrap;
+	color: #fff !important;
+	text-decoration: underline;
+}
+</style>
+<script type='text/javascript'>
+
+window.onload = function(){
+  var links = document.createElement("div");
+  links.style["padding-bottom"] = "10px";
+  links.innerHTML = '<a href="#head-search">Back to Top</a> ' +
+  '<a href="/Conditions-of-Use">Conditions of Use</a> ' +
+  '<a href="/Privacy-Policy">Privacy Policy</a> ' +
+  '<a href="/Notice-on-Collection">Notice on Collection</a> ' +
+  '<a href="/Accessibility">Accessibility</a> ' +
+  '<a href="/Tips-for-Using-Adobe-PDF-Files">Adobe Reader</a> ' +
+  '<a href="/Contact-Us">Contact Us</a>';
+  
+  var footerSection = document.getElementById('footer');
+  footerSection.insertBefore(links, footerSection.childNodes[0]); 
+  
+  // added to set focus to login field if present
+  if (document.getElementById("dnn_ctr_Login_Login_DNN_txtUsername")) {
+    document.getElementById("dnn_ctr_Login_Login_DNN_txtUsername").focus();
+  }
+};
+
+</script>
+<title>
+	Info & Resources > Data Portal > Research and Data > CalFresh Data Dashboard
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=391" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=391" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=391" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=391" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=391" type="text/javascript"></script><script type='text/javascript'>
+//<![CDATA[
+    var analytics_page_startTime = (new Date()).getTime();
+//]]>
+</script>
+<link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
+<body id="Body">
+    
+    <form method="post" action="/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="OgIwK7EWKreTkyoRku2Pkr1RbkxVD+ysqn+SZ+74Hm6pzxK+nCPtzK332dL5kcyBlFpejp0cNXXkj9Itwog9Nk/vkNgDwbXczGjmtVmZbQz+DLHGidOkVqN/YD3ODQvaUUeIwD/6Lf0awB8zPUT8WRswjmWh+RsIQNTngTiJDhkTGLu8NQ+Qqpe5GGsf7d5lVdjZi7cH7sNfCp9gM1x4b9/2cKEcfL5o9wDQr8CqO0MgD52CiP4JgD9QS2epi9t+u23HHDwmQ0u/tdsiYq7bcj6Sf3/yNgHQatzkVrzfStf09ALN" />
+</div>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a93a6b8ed-f453-4cc5-9080-8017894b33b0%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="vZmrT+rVXOGW6ga8ixV63NCqd8Km2K5gRG9lqtNYU8HXRIGhIY200JjEsXoKb4n0gSoh8x+b6vroNTx1uHOdnAzJgSW8rSS83GXbTxsNYjAmYCJEC7qYjujYYCYWax/uI2dTS5TYw8IgIWltOb0sr8mhAxk=" />
+</div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+
+
+
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- head content, for all pages -->
+<!-- Use highest compatibility mode, enable Chrome Frame -->
+
+<!-- For all browsers -->
+<!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=391)-->
+<!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=391)-->
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//css/custom.css">
+
+<!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="/js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- modernizr.com, feature detection -->
+<script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/libs/modernizr-2.0.6.min.js"></script>
+<!-- Activate ClearType for Mobile IE -->
+<!--[if]>
+<meta http-equiv="cleartype" content="on">
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/js/libs/html5shiv.min.js"></script>
+  <script src="/js/libs/respond.min.js"></script>
+<![endif]-->
+
+
+<div class="two-column colTwo">
+  <header role="banner" id="header" class="global-header"> 
+    <!-- Include Branding --> 
+    <!-- header branding -->
+    <div class="branding">
+      <div class="skip-to-content">
+        <a href="#main-content">Skip to Content</a>
+      </div>
+      <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="/portals/_default/skins/cagov-santabarbara - partner/images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
+      <div class="header-organization-banner">
+        <a id="dnn_dnnLOGOd_hypLogo" title="Info &amp; Resources" href="http://www.cdss.ca.gov/inforesources"><img id="dnn_dnnLOGOd_imgLogo" src="/Portals/9/cdss-logo.png?ver=2016-10-04-165132-000" alt="Info &amp; Resources" /></a>
+        <span class="header-text hidden-xs hidden-sm">Department of Social Services</span>
+        <span class="header-text hidden-lg hidden-md">Social Services</span>
+      </div>
+    </div>
+    
+    <!-- Include Mobile Controls --> 
+    <!-- mobile navigation controls -->
+    <div class="mobile-controls"> <span class="mobile-control cagov-logo"><span class="ca-gov-icon-logo" aria-hidden="false"></span></span> <span class="mobile-control toggle-menu"><span class="ca-gov-icon-menu" aria-hidden="true"></span><span class="sr-only">Menu</span></span> <span class="mobile-control-group mobile-header-icons"> <span class="mobile-control contact-link"><span class="ca-gov-icon-chat" aria-hidden="true"></span><span class="sr-only">Contact</span></span> 
+      <!-- Add more mobile controls here. These will be on the right side of the mobile page header section --> 
+      </span> <span class="mobile-control toggle-search"><span class="ca-gov-icon-search" aria-hidden="true"></span><span class="sr-only">Search</span></span> <span class="mobile-control-group mobile-menu-icons"> 
+      <!-- Add more mobile controls here. These will be on the top right section of the expanded mobile menu --> 
+      </span> </div>
+    <div class="navigation-search">
+      <div id="head-search" class="ca-search-container SearchPane">
+        <span id="dnn_dnnSEARCH_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="NormalTextBox" title="Enter text to search for" aria-label="Text to search for" autocomplete="off" placeholder="Search..." />
+		<!-- Comment out the following non-visible Clear Text button for Accessibility. -->
+        <!--a class="dnnSearchBoxClearText" title="Clear search text"></a-->
+    </span>
+    <a id="dnn_dnnSEARCH_cmdSearch" class="SearchInput" title="Do search" aria-label="Do search" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH$cmdSearch&#39;,&#39;&#39;)"></a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+      </div>
+      <div id="translate-box">
+        <div id="google_translate_element"></div>
+        <a href="/Translation-Disclaimer" title="Google Translate Disclaimer">Disclaimer</a>
+      </div>
+      
+      <!-- Include Navigation -->
+      
+      <nav id="navigation" class="main-navigation single off-canvas auto-highlight">
+        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container"></span><span class="sr-only">Home</span></div></div></a>
+          <div id="dnnMenu">
+	<ul class="rootMenu">
+		<li class="home-link item"></li>
+		
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Guide" target=""><div><div>Information &amp; Resources</div></div></a>
+		
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Rules-Regulations" target=""><div><div>Letters/Regulations</div></div></a>
+		
+        <div class="subMenu">
+			<ul>
+				 
+	<li class="item first haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-and-Notices" target=""><div>Letters and Notices</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Information-Notices" target=""><div>All County Information Notices</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target=""><div>All County Letters</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Letters" target=""><div>County Fiscal Letters</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices" target=""><div>County Fiscal Information Notices</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Notice-Of-Forms-Changes" target=""><div>Notice Of Forms Changes</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Letters" target=""><div>County Letters</div></a>
+			
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters" target=""><div>Individual County Letters</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel" target=""><div>Adoptions County Counsel</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2000-2001" target=""><div>2000-2001</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2001-2002" target=""><div>2001-2002</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2002-2003" target=""><div>2002-2003</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2003-2004" target=""><div>2003-2004</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation" target=""><div>CalWORKs Statewide Evaluation</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2000-2001" target=""><div>2000-2001</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2001-2002" target=""><div>2001-2002</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2002-2003" target=""><div>2002-2003</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Employment-Readiness-Development" target=""><div>Employment Readiness Development</div></a>
+			
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery" target=""><div>Options for Recovery</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery/2000-2001" target=""><div>2001-2002</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery/2002-2003" target=""><div>2002-2003</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Non-Custodial-Parents-Demo" target=""><div>Non Custodial Parents Demo</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Recipient-Child-Care-Pilot-Project" target=""><div>Recipient Child Care Pilot Project</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Federal-Funding-Provisions" target=""><div>Federal Funding Provisions</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item last haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Legislation-and-Regulations" target=""><div>Legislation and Regulations</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/CDSS-Regulations-Home-Page" target=""><div>CDSS Regulations Home Page</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations" target=""><div>Community Care Licensing Regulations</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CalWORKs-CalFresh-Regulations" target=""><div>CalWORKs/CalFresh Regulations</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Foster-Care-Regulations" target=""><div>Foster Care Regulations</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adoptions-Regulations" target=""><div>Adoptions Regulations</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations" target=""><div>Child Welfare Services Regulations</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adult-Services-Regulations" target=""><div>Adult Services Regulations</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target=""><div>CDSS Regulation Changes In Process and Completed Regulations</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+				<div class="clearfix"></div>
+			</ul>
+			<div class="menuImage"></div>
+			<div class="clearfix"></div>
+         </div>
+		
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures" target=""><div><div>Forms/Brochures</div></div></a>
+		
+        <div class="subMenu">
+			<ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Forms-Alphabetic-List" target=""><div>Forms - Alphabetic List</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Forms-by-Program" target=""><div>Forms - by Program</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Translated-Forms-and-Publications" target=""><div>Translated Forms and Publications</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Notices-of-Action" target=""><div>Notices of Action</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/How-to-Order-Forms" target=""><div>How to Order Forms</div></a>
+			
+	</li>
+
+				<div class="clearfix"></div>
+			</ul>
+			<div class="menuImage"></div>
+			<div class="clearfix"></div>
+         </div>
+		
+	</li>
+
+	<li class="item haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial" target=""><div><div>Fiscal/Financial</div></div></a>
+		
+        <div class="subMenu">
+			<ul>
+				 
+	<li class="item first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates" target=""><div>Local Assistance Estimates</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Budget-and-Fiscal-News" target=""><div>Budget and Fiscal News</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities" target=""><div>Grants and Opportunities</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Legislative-Requests" target=""><div>Legislative Requests</div></a>
+			
+	</li>
+
+				<div class="clearfix"></div>
+			</ul>
+			<div class="menuImage"></div>
+			<div class="clearfix"></div>
+         </div>
+		
+	</li>
+
+	<li class="item last TWbreadcrumb haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal" target=""><div><div>Data Portal</div></div></a>
+		
+        <div class="subMenu">
+			<ul>
+				 
+	<li class="item first TWbreadcrumb">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" target=""><div>Research and Data</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Plans" target=""><div>State Plans</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Realignment" target=""><div>Realignment</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/Audit-Reports" target=""><div>Audit Reports</div></a>
+			
+	</li>
+
+	<li class="item">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports" target=""><div>County Data Reports</div></a>
+			
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics" target=""><div>State Hearings Data Statistics</div></a>
+			
+	</li>
+
+				<div class="clearfix"></div>
+			</ul>
+			<div class="menuImage"></div>
+			<div class="clearfix"></div>
+         </div>
+		
+	</li>
+
+	</ul>
+</div>
+
+
+        </div>
+        <div class="MobileNav visible-xs"><a class="twMobHomeLink  visible-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container2"></span><span class="sr-only">Home</span></div></div></a>
+          <div class="collapseaa" id="CollapseMenuMob">
+	<ul>
+		<li class="home-link item MobileHomeLink"></li>
+		
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Guide" target="" >
+				Information &amp; Resources
+			</a>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu626"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Rules-Regulations" target="" >
+				Letters/Regulations
+			</a>
+		
+			<ul id="mobmenu626" class="collapse subMenu ">
+			
+		<li class="menuItem first haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1721"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-and-Notices" target="" >
+				Letters and Notices
+			</a>
+		
+			<ul id="mobmenu1721" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Information-Notices" target="" >
+				All County Information Notices
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target="" >
+				All County Letters
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Letters" target="" >
+				County Fiscal Letters
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices" target="" >
+				County Fiscal Information Notices
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Notice-Of-Forms-Changes" target="" >
+				Notice Of Forms Changes
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Letters" target="" >
+				County Letters
+			</a>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1728"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters" target="" >
+				Individual County Letters
+			</a>
+		
+			<ul id="mobmenu1728" class="collapse subMenu ">
+			
+		<li class="menuItem first haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu2587"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel" target="" >
+				Adoptions County Counsel
+			</a>
+		
+			<ul id="mobmenu2587" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2000-2001" target="" >
+				2000-2001
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2001-2002" target="" >
+				2001-2002
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2002-2003" target="" >
+				2002-2003
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Adoptions-County-Counsel/2003-2004" target="" >
+				2003-2004
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu2588"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation" target="" >
+				CalWORKs Statewide Evaluation
+			</a>
+		
+			<ul id="mobmenu2588" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2000-2001" target="" >
+				2000-2001
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2001-2002" target="" >
+				2001-2002
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/CalWORKs-Statewide-Evaluation/2002-2003" target="" >
+				2002-2003
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Employment-Readiness-Development" target="" >
+				Employment Readiness Development
+			</a>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu2590"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery" target="" >
+				Options for Recovery
+			</a>
+		
+			<ul id="mobmenu2590" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery/2000-2001" target="" >
+				2001-2002
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Options-for-Recovery/2002-2003" target="" >
+				2002-2003
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Non-Custodial-Parents-Demo" target="" >
+				Non Custodial Parents Demo
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Individual-County-Letters/Recipient-Child-Care-Pilot-Project" target="" >
+				Recipient Child Care Pilot Project
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Federal-Funding-Provisions" target="" >
+				Federal Funding Provisions
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem last haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1720"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Legislation-and-Regulations" target="" >
+				Legislation and Regulations
+			</a>
+		
+			<ul id="mobmenu1720" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/CDSS-Regulations-Home-Page" target="" >
+				CDSS Regulations Home Page
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations" target="" >
+				Community Care Licensing Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CalWORKs-CalFresh-Regulations" target="" >
+				CalWORKs/CalFresh Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Foster-Care-Regulations" target="" >
+				Foster Care Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adoptions-Regulations" target="" >
+				Adoptions Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations" target="" >
+				Child Welfare Services Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adult-Services-Regulations" target="" >
+				Adult Services Regulations
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target="" >
+				CDSS Regulation Changes In Process and Completed Regulations
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu627"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures" target="" >
+				Forms/Brochures
+			</a>
+		
+			<ul id="mobmenu627" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Forms-Alphabetic-List" target="" >
+				Forms - Alphabetic List
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Forms-by-Program" target="" >
+				Forms - by Program
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Translated-Forms-and-Publications" target="" >
+				Translated Forms and Publications
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/Notices-of-Action" target="" >
+				Notices of Action
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Forms-Brochures/How-to-Order-Forms" target="" >
+				How to Order Forms
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu628"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial" target="" >
+				Fiscal/Financial
+			</a>
+		
+			<ul id="mobmenu628" class="collapse subMenu ">
+			
+		<li class="menuItem first">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates" target="" >
+				Local Assistance Estimates
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Budget-and-Fiscal-News" target="" >
+				Budget and Fiscal News
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities" target="" >
+				Grants and Opportunities
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Legislative-Requests" target="" >
+				Legislative Requests
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+		<li class="menuItem last menubreadcrumb haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1219"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal" target="" >
+				Data Portal
+			</a>
+		
+			<ul id="mobmenu1219" class="collapse subMenu  in">
+			
+		<li class="menuItem first menubreadcrumb">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" target="" >
+				Research and Data
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Plans" target="" >
+				State Plans
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Realignment" target="" >
+				Realignment
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/Audit-Reports" target="" >
+				Audit Reports
+			</a>
+		
+		</li>
+	
+		<li class="menuItem">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports" target="" >
+				County Data Reports
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics" target="" >
+				State Hearings Data Statistics
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	</ul>
+	
+</div>
+
+        </div>
+      </nav>
+    </div>
+    <div class="header-decoration"></div>
+  </header>
+  <div id="main-content" class="main-content">
+    <div class="wrapper">
+      <div class="main-primary">
+      <div class="BreadcrumbPane">
+        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Dashboard</span></a><meta itemprop="position" content="3" /></span></span></span></div>
+        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-8038 DnnVersionableControl"><a name="8038"></a><div id="dnn_ctr8038_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_8038 --><div id="dnn_ctr8038_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr8038_HtmlModule_lblContent"><h2>CalFresh Data Dashboard</h2>
+<p>Welcome to the CalFresh Data Dashboard. This is a full
+service, one-stop dashboard where you can find all of the most current CalFresh
+data. CDSS strives to deliver excellent services and resources to our internal
+and external partners. This dashboard will provide you with information to
+analyze trends in CalFresh demographics, participation rates, timeliness,
+benefit accuracy and churn rates by county. Please refer to the
+	<em>Resources
+and Tools
+	</em> section available in the dashboard for additional assistance.<br>
+	<br>
+	Contact Us<br>
+	If you have additional questions regarding the CalFresh Data
+Dashboard, please title your email CalFresh Data Dashboard Question to
+	<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.
+</p>
+<table>
+<tbody>
+<tr>
+	<th>
+	</th>
+	<th>Updated   
+	</th>
+	<th>File
+	</th>
+	<th>
+	</th>
+</tr>
+<tr>
+	<td><strong>CalFresh Dashboard</strong>
+	</td>
+	<td>07/27/17
+	</td>
+	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2017-07-27-073101-183">Excel</a>
+	</td>
+	<td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><u>Getting Started</u></a>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<style>
+    table.styled-table {
+    width: 100%;
+    }
+    table.styled-table td {
+    vertical-align: top;
+    }
+</style>
+<style>
+    table.styled-table {
+    width: 100%;
+    }
+    table.styled-table td {
+    vertical-align: top;
+    }
+</style></div>
+
+
+
+
+
+
+
+
+
+</div><!-- End_Module_8038 --></div>
+
+</div></div>
+      </div>
+      <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-8042 DnnVersionableControl"><a name="8042"></a><div id="dnn_ctr8042_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_8042 --><div id="dnn_ctr8042_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr8042_HtmlModule_lblContent"><br></div>
+
+
+
+
+
+
+
+
+
+</div><!-- End_Module_8042 --></div>
+
+</div></div>
+    </div>
+  </div>
+  
+  <!-- Global Footer -->
+  <footer id="footer" class="global-footer">
+    
+    <!-- Copyright Statement -->
+    <div class="copyright">
+      <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="Copyright">Copyright  2017 State of California</span>
+
+    </div>
+    <!--<div class="LoginPane">
+      
+<div id="dnn_dnnLOGIN_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLOGIN_enhancedLoginLink" title="Login" class="Login" rel="nofollow" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Login?returnurl=/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Login?returnurl=%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard">Login</a>
+</div>
+    </div>-->
+  </footer>
+  
+  <!-- Extra Decorative Content -->
+  <div class="decoration-last">&nbsp;</div>
+</div><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/cagov.core.js"></script> 
+<script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/common.js "></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77698819-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-77698819-4'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="W9cvmBvyl39s-oVfdOEXbFFaIFSRaYyHw4MdtXu9yCbgzIocU9TG73AGARjXaUsxzOXinQ2" />
+    
+<script type='text/javascript'>
+//<![CDATA[
+(function() {
+
+  var analyticsSettings;
+  var initAnalyticsSettings = function (e) {
+    analyticsSettings = {
+      pageStart: analytics_page_startTime,
+      servicesFramework: $.ServicesFramework(-1)
+    };
+  };
+  if(window.addEventListener) {
+    window.addEventListener('load', initAnalyticsSettings, false);
+  } else {
+    window.attachEvent('onload', initAnalyticsSettings);
+  };
+
+  var eventName = (window.onpagehide || window.onpagehide === null) ? 'pagehide' : 'unload';
+  if (window.addEventListener) {
+    window.addEventListener(eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    }, false);
+  } else {
+    window.attachEvent('on' + eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    });
+  }
+
+})();
+//]]>
+</script>
+</form>
+    <!--CDF(Javascript|/js/dnncore.js?cdv=391)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=391)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=391)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=391)--><!--CDF(Css|/Portals/9/portal.css?cdv=391)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=391)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=391)--><!--CDF(Javascript|/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391)--><!--CDF(Javascript|/js/dnn.js?cdv=391)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=391)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=391)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=391)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=391)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=391)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=391)-->
+    
+</body>
+</html>

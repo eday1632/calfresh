@@ -17,7 +17,6 @@ import editdistance
 
 from constants import constants
 
-
 logger = logging.getLogger('file_factory')
 
 

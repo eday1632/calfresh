@@ -63,7 +63,7 @@ class Worker(object):
         self.excelToCSV()
         paths = self.getCSVInput()
         self.removeJunkFiles(paths)
-        self.redistributeDataDashboardFiles(paths)
+#        self.redistributeDataDashboardFiles(paths)
 
         # run the processor
         paths = self.getCSVInput()

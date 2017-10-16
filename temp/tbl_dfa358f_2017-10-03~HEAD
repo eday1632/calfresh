@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EbjT31RBzvVKy1ZMuZHIUQCjfRHxa6T3uMPw6105mfLFIsvhFSNJeDZa3qP87Fwm8vsOcVb9ibQRqOcALpT/yDUdaLiISR2585j5KBWAHEKmnim65xxotZs+d/GyBADY9HRTCNe/AuvJyyDkjjs8tj0R09fwo72MJbyK0tr/5rxr5ueXRYxoxkPpB8Jg9JB+kv2jfnr34590t32Y/aQtBUAFsv/igrH4e0w4WbkvFeVyiluU2iQWNyQO3kKUjaRsRXzMqUCXPHnILaSicEWpH2vsli+MJlBCx0M1n/NtH2HSWFZ1" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="sJTyTxxuWEw8DyAiP/kHv8zR+1LY17bzMN+m4Nk+eli6pxdeqI/yeQPFn9FkFLmw9HKJEP+oXL/jaBUJPbFHBNANZP9V/YYzCeOZBsbllPJt6HodRaXb0L/W3eWynvzCgYn8vzOiskXNNn8mkjB1pKKVNosZs5DeGcyBoMC4F8guNrtJpBZyUXDutokEtVoJPzqcU4GRrOq8u/RHoiHSYvQMbsT2pxxHHnd59FnyKPBy7dN95H5INdmDG6SaecVeC0/44hQiDjELyFDc0eqR6Imfy5Ay5zByARvh/kwSW8Kqi0dX" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="VhaOj4NiqHTVS0xelYjkk084OhL08amyxG9LccH8VCuxjaAm92LZDKY2uDJ5oLSCWcpEULQipFU4i6f+FoCAYbGyLLNOebtBi6oYcrgNjzaZZZtnpUR3auFvEPOKibCLvKC7DzfrXxbRtfSnZN5UgDrhbbM=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Gp21n9DR1QwTKbZrOQLX7lKQKQNe85EEc4YZzm/LtxTX7tCROdiCQ45neNfj99/GUlLvvi822boKEHXXq/KEId+ojrLFwOAySKEv4aqZNoRFGpDZcYt1AsVFmWlYEcywcEAPBNIIoOVpMh8X88ftcC0TOnc=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1083,7 +1083,8 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Tables</span></a><meta itemprop="position" content="3" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA358F" class="Breadcrumb" itemprop="item"><span itemprop="name">DFA358F</span></a><meta itemprop="position" content="4" /></span></span></span></div>
         <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9243 DnnVersionableControl"><a name="9243"></a><div id="dnn_ctr9243_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9243 --><div id="dnn_ctr9243_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr9243_HtmlModule_lblContent"><h2>DFA 358F -&nbsp;CalFresh Participants by Race/Ethnicity - Federal-Only and Combined Households</h2>
-<p>This annual report includes data on the number of Federal and Federal/State combined households participating in CalFresh during the month of July by race/ethnicity and assistance status.</p>
+<p>This annual report includes data on the number of Federal and Federal/State combined households participating in CalFresh during the month of July by race/ethnicity and assistance status.
+</p>
 <table>
     <tbody>
         <tr height="40">
@@ -1093,7 +1094,14 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
             </th>
         </tr>
         <tr>
-            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA358FJul16.xls?ver=2017-03-28-091246-690"><span style="text-decoration: underline;">July 2016</span></a></strong>	</td>
+            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA358FJul17.xls?ver=2017-09-27-14410200"><span style="text-decoration: underline;">July 2017</span></a></strong>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA358FJul16.xls?ver=2017-03-28-091246-690"><span style="text-decoration: underline;">July 2016</span></a></strong>
+            </td>
             <td>
             </td>
         </tr>
@@ -1276,7 +1284,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2958`,`evoq_TabId`:`2958`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA358F`,`evoq_UrlQuery`:`%3fTabId%3d2958%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="TRahfALOpdqSDEs_Lzuv7VG5cf2rU3MjBCAKBxUrCtlc2cmKhY9NStysDWapFvzVBs4SfQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="eVr1wgTnUcMGN5bVlwx0xX_tHlX_nyjvDrQFx2kkT-HE56cewbHhrp3ESe-H7ev1NXVHRg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

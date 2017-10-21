@@ -57,6 +57,7 @@ if not exists(OUTPATH):
 class Worker(object):
     def __init__(self, table):
         self.table = table
+        print "working on", self.table
 
     def work(self):
         # convert excel files to csv

@@ -10,5 +10,5 @@ class DataLoader(object):
         self.tables = tables
 
     def load(self):
-        print "loaded"
+        print "loaded", self.tables
         return "result"

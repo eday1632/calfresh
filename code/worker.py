@@ -50,14 +50,17 @@ logger = logging.getLogger('worker')
 INPATH = config.get('filepaths', 'data')
 now = datetime.now()
 OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
-if not exists(OUTPATH):
-    makedirs(OUTPATH)
 
 
 class Worker(object):
     def __init__(self, table):
         self.table = table
+<<<<<<< Updated upstream
         print "working on", self.table
+=======
+        if not exists(OUTPATH):
+            makedirs(OUTPATH)
+>>>>>>> Stashed changes
 
     def work(self):
         # convert excel files to csv

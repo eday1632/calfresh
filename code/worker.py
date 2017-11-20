@@ -222,6 +222,9 @@ class Worker(object):
             if path['source'] == 'tbl_cf15':
                 continue
 
+            elif 'DataDictionary' in path['filename']:
+                remove(path['path'])
+
             elif path['source'] == 'tbl_cf296':
                 if 'Statewide' in path['filename']:
                     remove(path['path'])

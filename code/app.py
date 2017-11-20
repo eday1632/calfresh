@@ -40,4 +40,3 @@ if __name__ == '__main__':
             logger.exception(ex)
 
     crawler.clean_up()
-

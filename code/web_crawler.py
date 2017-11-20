@@ -24,7 +24,6 @@ class WebCrawler(object):
     """docstring for WebCrawler"""
     def __init__(self, table, url):
         super(WebCrawler, self).__init__()
-        logger.info('Retrieving page for %s', table)
         self.table = table
         self.url = url
 

@@ -343,7 +343,6 @@ class ChurnDataFactory(FileFactory):
 class DataDashboardAnnualFactory(FileFactory):
     """builds the DataDashboardAnnualFactory"""
     def __init__(self, item):
-
         super(DataDashboardAnnualFactory, self).__init__(item)
 
     def buildSpecific(self):

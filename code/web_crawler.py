@@ -57,7 +57,7 @@ class WebCrawler(object):
 
     def _get_old_page(self):
         # return yesterday's file pointer
-        yesterday = '2017-11-13' #datetime.date.today() - datetime.timedelta(days=1)
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
         return os.path.join(temp_dir, self.table + '_' + str(yesterday))
 
     def _download_new_files(self, updated_paths):

@@ -26,6 +26,7 @@ if __name__ == '__main__':
         'tbl_stat47': 'http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/STAT-47',
     }
 
+    logger.info('starting...')
     for table in tables.keys():
         try:
             crawler = WebCrawler(table, tables[table])
@@ -40,3 +41,4 @@ if __name__ == '__main__':
             logger.exception(ex)
 
     crawler.clean_up()
+    logger.info('finished')

@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PTLKpSnRzIoDO5HHsppCIG+GY8RMoft5VB+uhLogpbSYdF04QaXw+4Ab6n6WpXmPPn6HdhnD/gV7mclWWuqlzd3KxgkL7KszbQ7OGjXZ/9PRbcNpWHikoBBf2hVTafuUujmNAKO+ovRswag+fmohfYpTR6zO2WyIzx1dgHWU8nFXa+G8WiY/CEuX6J1+DUEaRzHGTGbxDwvjNHhronD0IDAga7F2GXbWU33rq+gC8cV4zSHXIQb40y11O46EgDIsU3YoJGIBklgu+9Y2ztQBMZ0Ul9Mus8iYIE/vpgz+CrbY/BfG" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="UzGKehR64zo+sHNViaFPAx2hPXVJZ2niTUlbIdJom8Ep18D4YZAHqWldD2b7P/mXUrG9InsmcLwQIfDm/iipsDK2B7Jnmu9hV/MtCvtrL7XMi1R/ieaAO1o0sExXYo8bbK6NNNvRk5A0iYE46tErUp84z/b5v9/lKr0agaAXW1aBaFQl49FdwBvZoa49ia/TkbtWB5CJiStKiY2RZ5x3Ry4jpzzY+bXyi5epnNnLjb4sN/iuLKhxmA8n6VHuY9LFrpWKdyN/L63rCRK8dkMPq3qmgClKVyjUMf3o17/84GMBvWbS" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="IgwQXHDAbnnT7GgcnQ5b7DLZASvVAjqawkERy19VlRG4cWYeo+dyFRNXsGsWxNecVpe1wXeC1Mo8s/CDUBXGy09L5ONEMQE4qNEFkpNk6sNyh5fVhkYou29TJXdN4qJLYtGgXK8ZLXhlflIlHB4tUIFSW4Q=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ulNV0oESeaEfuwxYd09DQ8hfgIcevICpPm18nXYNh2zxWiR1cg8eKmsEW47pII/Mj6vGWAd6/q7a5J1yIy7ZTUGG9ZXZak6lYo1pP0zDBbLPlWRdgcdgNpa42DNQDO67JPSDntjygc3HFr34T4ioZyz0Dyk=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -218,16 +218,42 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 	    <div class="subMenuRight">
 			 <ul>
 				 
-	<li class="item first">
+	<li class="item first haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Information-Notices" target=""><div>All County Information Notices</div></a>
 			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Information-Notices" target=""><div>2018 All County Information Notices</div></a>
+			<span class="menuDescription">2018 All County Information Notices</span>
 	</li>
 
-	<li class="item">
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+	<li class="item haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target=""><div>All County Letters</div></a>
 			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Letters" target=""><div>2018 All County Letters</div></a>
+			<span class="menuDescription">2018 All County Letters</span>
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
 	</li>
 
 	<li class="item">
@@ -628,19 +654,43 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 			<ul id="mobmenu1721" class="collapse subMenu ">
 			
-		<li class="menuItem first">
-		
+		<li class="menuItem first haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1722"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Information-Notices" target="" >
 				All County Information Notices
 			</a>
 		
+			<ul id="mobmenu1722" class="collapse subMenu ">
+			
+		<li class="menuItem first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Information-Notices" target="" >
+				2018 All County Information Notices
+			</a>
+		
 		</li>
 	
-		<li class="menuItem">
+			</ul>
 		
+		</li>
+	
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1723"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target="" >
 				All County Letters
 			</a>
+		
+			<ul id="mobmenu1723" class="collapse subMenu ">
+			
+		<li class="menuItem first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Letters" target="" >
+				2018 All County Letters
+			</a>
+		
+		</li>
+	
+			</ul>
 		
 		</li>
 	
@@ -1187,7 +1237,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3036`,`evoq_TabId`:`3036`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fCF296`,`evoq_UrlQuery`:`%3fTabId%3d3036%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="9_UtPTWKNVbkbysc7dAGcvhPI_z1jyLhgkv4uO49OjUkf_SqFAI0lHOSQKhReh0O35onaQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="JxpkgJuRbKmskj6PqWZqDkmJWyWAHaEKvubRQ4K0awHxNrvgVcXlsq2dgswWIx2ui4JsaQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[

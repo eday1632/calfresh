@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="G2C9Z/YuA+JfIy0GeXTs0QI+cIYgp1u/QZPi30TkNq+T9rFnsfOZ6PZKIAEL4Pan/dH1MqcPzEDsdXhTOKZk3IkYx9g51qd9Z/+gbTP7Jl9RUvzahJadL9C8F9ZfZ5CxUmrzVenCwtzClhWmMwCIAKFXZaP1BHfHjPyozcFCEh3x1nB4KV/yimD2Z2sJuVsThaBd3vGhZqkYRhiRIcAtm5G7LVFnTFmRAvIVX361R4NbpvcJTqj3AmBDjWNTw0oWwhNBYbfTKOXM767RvPJHYG+A50ojORwMteia6L3F6/2UMwJt" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="oEYMvKk/r3Mvhqo2RSuCY9S2WD18nmE6EF/3J2QTuBectghhvEFM1P8JZgbf/r5C5b5xGNmq7ow675f5/mx99OU0vYf0yyLOAjJ8tr+osIDG8Jke/tdShpmEERfIivK2+C4ZhmKlOhHLNW8/0LO/MHb744rkkHjKFMDSbzTbtm4VlBLJczayYqwo/YZeB9CFosnoZ/M7m5rDP+lI/jzkKOfvztgL8M2gS/kArjXHA2vFnbmKpacJZGsbbUhYYxcE1EMyiOsXm1pOb167oLcqk/c2XCBRR7AuUpkXr2sgdbvmng0v" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="p3O/IIkja6R1A73lreO6LuLbF+z85DDX1tAlVOKym+OmInn+I5bKwt3Y/y+JSqoX7UHu/zFul+qdp23UyaTt7Ox4Ntui7Ki3xviAHnyNzNm701qwjxWgpL/lxdtNBEjVV4vR8WHzpf75VXzOus4IRJAxi64=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="UtFnmU1cKPwJUWLqNDUASWsl4XmOfynIq/ke2rQGZdn0sHQ8d6N1Tuu6+AooRpHljEwh4CgYEM1UCT9TeqnQOCNvYc3NfaDTjPKFG4x0X7f2JXqmsnaLsu3gvgEqeeHaJbpF9pj0jWyIvUVY2m7Hv29xn64=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -442,10 +442,23 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 			
 	</li>
 
-	<li class="item">
+	<li class="item haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations" target=""><div>Community Care Licensing Regulations</div></a>
 			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations/Home-Care-Services-Consumer-Protection" target=""><div>Home Care Services Consumer Protection</div></a>
+			<span class="menuDescription">Home Care Services Consumer Protection</span>
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
 	</li>
 
 	<li class="item">
@@ -936,11 +949,23 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 		</li>
 	
-		<li class="menuItem">
-		
+		<li class="menuItem haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1884"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations" target="" >
 				Community Care Licensing Regulations
 			</a>
+		
+			<ul id="mobmenu1884" class="collapse subMenu ">
+			
+		<li class="menuItem first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Regulations/Home-Care-Services-Consumer-Protection" target="" >
+				Home Care Services Consumer Protection
+			</a>
+		
+		</li>
+	
+			</ul>
 		
 		</li>
 	
@@ -1405,7 +1430,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="oCFuMMpOdGj-rN6xxfL48vq5WyYyJgBaUVwbDRFb1z2-YIr_nYBV2Dn2OP4mwQJnPrpaEg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="E5PnCAy9oGCsd8YwHqdn05onAkWPltdu2HImCRjHdggv-BH9OofQXFv9YcCGONaWdmwbUg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

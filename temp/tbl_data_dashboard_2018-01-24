@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="jUFTmljq6Q5PP0XS3M7ZriboCaOaufRhzG69RZESHXtC7aywkcNNAVdrbXXQnUy/FATcU1Si+eVHs9rn9n16M/b3DPA4gRgn5BI/0zJcC5zL5Gt3LhgfuzDwuQeNBz2UmBBegHNxUhDdd1I3+BOYrleyvjN/+uuvFJgh/SCx5ZtSd8LOrr4Bstrs8VTxQEiLlsdpP26PQbiEyWIgU5QPMmPaGvHcL7+n+u7qUHpOigTNf07l39WK6DsaLlb8prgOmBhEIgrhlMX5jQ0c38270IJTw+esmtGbAsy1ZD4pys8YaAGU" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="muct+0x/PdWuuHObIZd4mYxEP7HBHI5o5/Vay0LNBlPxN7EPs6lMgomjZLT8+8HPTDnH0PWNmOoQmVtl+GIgEE3mUPCMTygkJyJR3oualR+Xop60EjzTtZr6moGTtEsPt/cHFP3F+JWdVvYWZz2dAH8g1d5RED3dyiTVA/BHaepIKiWt6aHiZV1fB5BLrs2ZQGv6SkuCKsdjE26mMPBuKP5DIxssi0J/7UiHmZucpZeXgc2sxXFecCNQfBZMbeEE8v6A+ZofRjOVnnXifh9RBqNhlEU5Elj1lVc+ORYj9Ms/8u55" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="yIZn/OVfZl6j+xgWJz+/MlYCq7t9SlI+TC99vprt4adEey3tWdEVbTVewLZCgrJiX0BbZUis/mxAIfCdfd9h3zflV21yvwM5fp9YAZujrCj5t30JeZo9HjFaE3mOkZP9PndWkDUNjRpPvU/GuDGrGFxgkuo=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="O53E+CuyMAZX5cl2iBdXKTLiA833ZmtTi+hJsWGPjQv/BBJZtnZubo38ZjSS74+D80fO57UWEXf7vLFzhYiiEo1uDyTlVM8tQC+dRs0FEeRciq3DjhVTfYBgL5TV4rDrArnWVosZAh83G845Dy7fOkGw/Rk=" />
 </div><script src="/js/dnn.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=391" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=391" type="text/javascript"></script><script src="/js/dnncore.js?cdv=391" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=391" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=391" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=391" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=391" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1214,38 +1214,38 @@ data. CDSS strives to deliver excellent services and resources to our internal
 and external partners. This dashboard will provide you with information to
 analyze trends in CalFresh demographics, participation rates, timeliness,
 benefit accuracy and churn rates by county. Please refer to the
-	<em>Resources
+<em>Resources
 and Tools
-	</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalFresh/CF_Geomaps_Guide.pdf?ver=2018-01-10-152055-187">.</a><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CF_Geomaps_Guide.pdf?ver=2018-01-10-152055-187"><br>
-	</a><br>
-	Contact Us<br>
-	If you have additional questions regarding the CalFresh Data
-Dashboard, please title your email CalFresh Data Dashboard Question to
-	<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.
+</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-01-23-125426-893">.</a><a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-01-23-125426-893"><br />
+</a><br />
+Contact Us<br />
+If you have additional questions regarding the CalFresh Data
+Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo; to
+<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.&nbsp;&nbsp;
 </p>
 <table>
-<tbody>
-<tr>
-	<th>
-	</th>
-	<th>Updated   
-	</th>
-	<th>File
-	</th>
-	<th>
-	</th>
-</tr>
-<tr>
-	<td><strong>CalFresh Dashboard</strong>
-	</td>
-	<td>01/10/18
-	</td>
-	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2018-01-10-152941-713">Excel</a>
-	</td>
-	<td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><u>Getting Started</u></a>
-	</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <th>
+            </th>
+            <th>Updated &nbsp; &nbsp; &nbsp;&nbsp;
+            </th>
+            <th>File
+            </th>
+            <th>
+            </th>
+        </tr>
+        <tr>
+            <td><strong>CalFresh Dashboard</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>01/10/18&nbsp;&nbsp;&nbsp;
+            </td>
+            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2018-01-10-152941-713">Excel</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><span style="text-decoration: underline;">Getting Started</span></a>&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p>
 </p>
@@ -1333,7 +1333,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="MOsdZoPAAuyxvIMGKT6NzIpk5nLXW_sCyuqZmWyhS0-nBh9KFIXFfD9bvbn5weZzjLVt1w2" />
+        <input name="__RequestVerificationToken" type="hidden" value="sOBAGWDT-U5fK8mprFG8aCg5nrH9qsJSPl723nys3A-deCY6YWJgWNL3CCVnaLEkxCjhqQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[

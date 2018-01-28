@@ -245,6 +245,8 @@ class Worker(object):
                     remove(path['path'])
                 elif 'Main' in path['filename']:
                     remove(path['path'])
+                elif 'Geomap' in path['filename']:
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_dfa256':
                 if 'Statewide' in path['filename']:

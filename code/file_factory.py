@@ -456,6 +456,7 @@ class DFA256Factory(FileFactory):
 
         self.df['big_six'] = False
         self.df = self.df.sort_values(by='total_households', ascending=False)
+        self.df = self.df.reset_index(drop=True)
         i = 1
         while i < 7:
             self.df.at[i, 'big_six'] = True

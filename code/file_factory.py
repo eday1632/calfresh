@@ -462,8 +462,6 @@ class DFA256Factory(FileFactory):
             self.df.at[i, 'big_six'] = True
             i += 1
 
-        import ipdb; ipdb.set_trace()
-
 
 class DFA296Factory(FileFactory):
     """builds the DFA296Factory"""

@@ -99,7 +99,7 @@ class constants(object):
 
         self.DataDashboardPercentColumns = ['unemployment_pct','qtr_timeliness_exp_pct','qtr_30d_churn_reapps_pct','qtr_90d_churn_reapps_pct','qtr_30d_churn_recerts_pct','qtr_90d_churn_recerts_pct','mth_timeliness_30d_pct','mth_timeliness_exp_pct','mth_active_error_rate_pct','qtr_medical_rcv_calfresh_pct','qtr_calfresh_persons_rcv_medical_pct','pri_us_census_est_pct']
 
-        self.DataDashboardAnnualColumns = ['county','consortium','year','state_fiscal_year','ann_calfresh_hh_sfy_avg','ann_calfresh_hh_cy_avg','ann_calfresh_persons_sfy_avg','ann_calfresh_persons_cy_avg','ann_elderly','ann_children','ann_child_only_hh','ann_esl','ann_tot_pop','ann_elderly_over60','ann_children_under18','ann_tot_esl_over5','ann_tot_ssi_recipients','unemployment_pct','ann_calfresh_eligibles','month']
+        self.DataDashboardAnnualColumns = ['county','consortium','year','state_fiscal_year','ann_calfresh_hh_sfy_avg','ann_calfresh_hh_cy_avg','ann_calfresh_persons_sfy_avg','ann_calfresh_persons_cy_avg','ann_elderly','ann_children','ann_child_only_hh','ann_esl','ann_wic_calfresh_reachable','ann_calfresh_in_wic','ann_tot_pop','ann_elderly_over60','ann_children_under18','ann_tot_esl_over5','ann_tot_ssi_recipients','unemployment_pct','ann_calfresh_eligibles','month']
 
         self.DataDashboardQuarterlyColumns = ['county','consortium','quarter','year','federal_fiscal_year','state_fiscal_year','qtr_timeliness_exp_pct','qtr_30d_churn_reapps_pct','qtr_90d_churn_reapps_pct','qtr_30d_churn_recerts_pct','qtr_90d_churn_recerts_pct']
 

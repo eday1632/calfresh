@@ -13,7 +13,7 @@ mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --column
 
 
 DataDashboardAnnual -- loaded 1/28/18
-mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,consortium,year,state_fiscal_year,ann_calfresh_hh_sfy_avg,ann_calfresh_hh_cy_avg,ann_calfresh_persons_sfy_avg,ann_calfresh_persons_cy_avg,ann_elderly,ann_children,ann_child_only_hh,ann_esl,ann_tot_pop,ann_elderly_over60,ann_children_under18,ann_tot_esl_over5,ann_tot_ssi_recipients,unemployment_pct,ann_calfresh_eligibles,month,quarter,fulldate' -u eday calfreshdb /home/eday/tbl_data_dashboard_annual.csv
+mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,consortium,year,state_fiscal_year,ann_calfresh_hh_sfy_avg,ann_calfresh_hh_cy_avg,ann_calfresh_persons_sfy_avg,ann_calfresh_persons_cy_avg,ann_elderly,ann_children,ann_child_only_hh,ann_esl,ann_wic_calfresh_reachable,ann_calfresh_in_wicann_tot_pop,ann_elderly_over60,ann_children_under18,ann_tot_esl_over5,ann_tot_ssi_recipients,unemployment_pct,ann_calfresh_eligibles,month,quarter,fulldate' -u eday calfreshdb /home/eday/tbl_data_dashboard_annual.csv
 
 
 DataDashboardQuarterly -- loaded 1/28/18

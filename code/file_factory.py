@@ -458,7 +458,7 @@ class DFA256Factory(FileFactory):
         self.df = self.df.sort_values(by='total_households', ascending=False)
         i = 1
         while i < 7:
-            self.df.ix['big_six', i] = True
+            self.df.at[i, 'big_six'] = True
             i += 1
 
         import ipdb; ipdb.set_trace()

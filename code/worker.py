@@ -65,6 +65,7 @@ class Worker(object):
         self.removeJunkFiles(paths)
 #        self.redistributeDataDashboardFiles(paths)
 
+        import ipdb; ipdb.set_trace()
         # run the processor
         paths = self.getCSVInput()
         self.runProcessor(paths)
@@ -246,6 +247,10 @@ class Worker(object):
                 elif 'Main' in path['filename']:
                     remove(path['path'])
                 elif 'Geomap' in path['filename']:
+                    remove(path['path'])
+                elif 'Dual_Part' in path['filename']:
+                    remove(path['path'])
+                elif 'Tiered' in path['filename']:
                     remove(path['path'])
 
             elif path['source'] == 'tbl_dfa256':

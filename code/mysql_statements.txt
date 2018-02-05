@@ -32,7 +32,7 @@ DataDashboardPRIRaw -- loaded 1/28/18
 mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,consortium,year,pri_est_frequency,calfresh_persons_cy_avg,calfresh_eligibles,five_yr_est_range,pri_us_census_est_pct,month,quarter,fulldate' -u eday calfreshdb /home/eday/tbl_data_dashboard_pri_raw.csv
 
 
-DFA256 -- loaded 1/28/18
+DFA256 -- loaded 2/5/18
 mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,num_hh_pub_asst_fed,num_hh_pub_asst_fed_st,num_hh_pub_asst_st,num_hh_nonpub_asst_fed,num_hh_nonpub_asst_fed_st,num_hh_nonpub_asst_st,num_hh_both_fed,num_hh_both_fed_st,num_hh_both_st,num_pers_fedonly_pub_asst,num_pers_fedonly_nonpub_asst,num_pers_fedonly_both,num_pers_fed_st_pub_asst_fed,num_pers_fed_st_pub_asst_st,num_pers_fed_st_nonpub_asst_fed,num_pers_fed_st_nonpub_asst_st,num_pers_fed_st_both_fed,num_pers_fed_st_both_st,num_pers_stonly_pub_asst,num_pers_stonly_nonpub_asst,num_pers_stonly_both,issuances_mail,issuances_contract_otc,issuances_other_otc,issuances_ebt,issuances_total,issuances_ebt_conv_coupon,val_issuances_fed_only,val_issuences_st_only,val_issuances_tot_all,year,month,quarter,fulldate,val_issuances_fed_st_fed,val_issuances_fed_st_st,val_issuances_tot_fed,val_issuances_tot_st,issuances_mail_ebt' -u eday calfreshdb /home/eday/tbl_dfa256.csv
 
 

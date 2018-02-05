@@ -445,6 +445,15 @@ class DFA256Factory(FileFactory):
         else:
             self.df.columns = self.constants.DFA256Columns3
 
+        self.df['total_households'] = (
+            self.df.num_hh_pub_asst_fed +
+            self.df.num_hh_pub_asst_fed_st +
+            self.df.num_hh_pub_asst_st +
+            self.df.num_hh_nonpub_asst_fed +
+            self.df.num_hh_nonpub_asst_fed_st +
+            self.df.num_hh_nonpub_asst_st
+        )
+
 
 class DFA296Factory(FileFactory):
     """builds the DFA296Factory"""

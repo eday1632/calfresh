@@ -445,6 +445,24 @@ class DFA256Factory(FileFactory):
         else:
             self.df.columns = self.constants.DFA256Columns3
 
+        self.df['total_households'] = (
+            self.df.num_hh_pub_asst_fed +
+            self.df.num_hh_pub_asst_fed_st +
+            self.df.num_hh_pub_asst_st +
+            self.df.num_hh_nonpub_asst_fed +
+            self.df.num_hh_nonpub_asst_fed_st +
+            self.df.num_hh_nonpub_asst_st
+        )
+
+        self.df['big_six'] = False
+        self.df = self.df.sort_values(by='total_households', ascending=False)
+        i = 1
+        while i < 7:
+            self.df.ix['big_six', i] = True
+            i += 1
+
+        import ipdb; ipdb.set_trace()
+
 
 class DFA296Factory(FileFactory):
     """builds the DFA296Factory"""

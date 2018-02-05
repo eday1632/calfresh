@@ -64,7 +64,7 @@ class Worker(object):
         paths = self.getCSVInput()
         self.removeJunkFiles(paths)
 #        self.redistributeDataDashboardFiles(paths)
-        import ipdb; ipdb.set_trace()
+
         # run the processor
         paths = self.getCSVInput()
         self.runProcessor(paths)

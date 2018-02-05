@@ -21,7 +21,7 @@ mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --column
 
 
 DataDashboardMonthly -- loaded 1/28/18
-mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,consortium,month,year,federal_fiscal_year,state_fiscal_year,mth_calfresh_hh,mth_calfresh_persons,mth_medical_enrollment,mth_timeliness_30d_pct,mth_timeliness_exp_pct,mth_active_error_rate_pct,quarter,fulldate' -u eday calfreshdb /home/eday/tbl_data_dashboard_monthly.csv
+mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,consortium,month,year,federal_fiscal_year,state_fiscal_year,mth_calfresh_hh,mth_calfresh_persons,mth_medical_enrollment,mth_timeliness_30d_pct,mth_timeliness_exp_pct,mth_negative_error_completed_cases,mth_negative_error_pct,mth_active_error_rate_pct,quarter,fulldate' -u eday calfreshdb /home/eday/tbl_data_dashboard_monthly.csv
 
 
 DataDashboard3Month -- loaded 1/28/18

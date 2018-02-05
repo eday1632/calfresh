@@ -103,7 +103,7 @@ class constants(object):
 
         self.DataDashboardQuarterlyColumns = ['county','consortium','quarter','year','federal_fiscal_year','state_fiscal_year','qtr_timeliness_exp_pct','qtr_30d_churn_reapps_pct','qtr_90d_churn_reapps_pct','qtr_30d_churn_recerts_pct','qtr_90d_churn_recerts_pct']
 
-        self.DataDashboardMonthlyColumns = ['county','consortium','month','year','federal_fiscal_year','state_fiscal_year','mth_calfresh_hh','mth_calfresh_persons','mth_medical_enrollment','mth_timeliness_30d_pct','mth_timeliness_exp_pct','mth_active_error_rate_pct']
+        self.DataDashboardMonthlyColumns = ['county','consortium','month','year','federal_fiscal_year','state_fiscal_year','mth_calfresh_hh','mth_calfresh_persons','mth_medical_enrollment','mth_timeliness_30d_pct','mth_timeliness_exp_pct','mth_negative_error_completed_cases','mth_negative_error_pct','mth_active_error_rate_pct']
 
         self.DataDashboard3MthColumns = ['county','consortium','month','year','federal_fiscal_year','state_fiscal_year','qtr_medical_rcv_calfresh_pct','qtr_calfresh_persons_rcv_medical','qtr_calfresh_persons_rcv_medical_pct']
 

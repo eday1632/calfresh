@@ -297,7 +297,6 @@ class CF296Factory(FileFactory):
     def __init__(self, item):
         super(CF296Factory, self).__init__(item)
 
-
     def buildSpecific(self):
         self.checkNumbers()
         self.addYear(self.filename[-6:-4])

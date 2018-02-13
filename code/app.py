@@ -32,6 +32,7 @@ if __name__ == '__main__':
             crawler = WebCrawler(table, tables[table])
             result = crawler.crawl()
             if result:
+                import ipdb; ipdb.set_trace()
                 worker = Worker(result)
                 processed_tables = worker.work()
 

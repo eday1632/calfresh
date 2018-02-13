@@ -1,12 +1,20 @@
-"""this is the main file for converting excel to csv files, processing those csv files, and merging them for upload to calfreshdb
+"""this is the main file for converting excel to csv files, processing those
+csv files, and merging them for upload to calfreshdb
 
 Args:
     <none> : if nothing is specified, run the entire program on all directories
 
-    <directory> : if no flags are specified, run the entire program on this directory of files, where directory is one of the following: ['tbl_cf15','tbl_cf296','tbl_churn_data','tbl_data_dashboard','tbl_dfa256','tbl_dfa296','tbl_dfa296x','tbl_dfa358f','tbl_dfa358s','tbl_stat47','tbl_stat48']
+    <directory> : if no flags are specified, run the entire program on this
+    directory of files, where directory is one of the following:
+    ['tbl_cf15','tbl_cf296','tbl_churn_data','tbl_data_dashboard','tbl_dfa256',
+    'tbl_dfa296','tbl_dfa296x','tbl_dfa358f','tbl_dfa358s','tbl_stat47',
+    'tbl_stat48']
 
 
-    the flags below run on all directories if no directories are specified, otherwise they run only on those passed in. multiple flags must be passed in order to run multiple processor functions, otherwise only the process specified by the flag will be run
+    the flags below run on all directories if no directories are specified,
+    otherwise they run only on those passed in. multiple flags must be passed in
+     order to run multiple processor functions, otherwise only the process
+     specified by the flag will be run
 
     -etoc : convert excel files to csv
 
@@ -79,7 +87,8 @@ class Worker(object):
         """search directories for unprocessed csv files
 
         Returns:
-            paths (list of dicts): contains the dict objects representing the path, source, and filename of each csv file to be processed
+            paths (list of dicts): contains the dict objects representing
+            the path, source, and filename of each csv file to be processed
         """
 
         paths = []
@@ -98,7 +107,8 @@ class Worker(object):
         """search directories for processed csv files
 
         Returns:
-            paths (list of dicts): contains the dict objects representing the path, source, and filename of each csv file to be merged
+            paths (list of dicts): contains the dict objects representing
+            the path, source, and filename of each csv file to be merged
         """
 
         paths = []
@@ -120,7 +130,8 @@ class Worker(object):
             inpath (str): the path to recursively search for excel files
 
         Returns:
-            paths (list of dicts): contains the dict objects representing the path, source, and filename of each excel file to be converted
+            paths (list of dicts): contains the dict objects representing
+            the path, source, and filename of each excel file to be converted
         """
         paths = []
         for root, dirs, files in walk(INPATH):
@@ -309,17 +320,43 @@ class Worker(object):
                 elif item['filename'] == 'CFDashboard-Every_Mth.csv':
                     factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_monthly.csv'), index=False)
                 elif item['filename'] == 'CFDashboard-Every_3_Mth.csv':
-                    factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_3mth.csv'), index=False)
+                    factory.df.to_csv(
+                        join(
+                            INPATH,
+                            item['source'],
+                            'csv_out',
+                            'tbl_data_dashboard_3mth.csv',
+                        ),
+                        index=False
+                    )
                 elif item['filename'] == 'CFDashboard-PRI_Raw.csv':
-                    factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_pri_raw.csv'), index=False)
+                    factory.df.to_csv(
+                        join(
+                            INPATH,
+                            item['source'],
+                            'csv_out',
+                            'tbl_data_dashboard_pri_raw.csv',
+                        ),
+                        index=False
+                    )
             else:
-                factory.df.to_csv(join(INPATH, item['source'], 'csv_out', item['filename']), index=False)
+                factory.df.to_csv(
+                    join(
+                        INPATH,
+                        item['source'],
+                        'csv_out',
+                        item['filename'],
+                    ),
+                    index=False
+                )
 
     def mergeForUploading(self, paths):
         """merge all the csv files in the directories specified for uploading to the database
 
         Args:
-            paths (list of dicts): each dict has a path, source, and filename to be used to read in csv files and then merge them according to their source
+            paths (list of dicts): each dict has a path, source, and filename
+            to be used to read in csv files and then merge them according
+            to their source
 
         Output:
             writes merged csv files out to the outpath
@@ -346,7 +383,8 @@ class Worker(object):
             self.combine358FandS()
 
     def combine358FandS(self):
-        """combines the tbl_dfa358f and tbl_dfa358s files for uploading to the database
+        """combines the tbl_dfa358f and tbl_dfa358s files for uploading
+        to the database
 
         Args:
             outpath (str): path to the directory of the tbl_dfa358f and tbl_dfa358s files
@@ -368,10 +406,3 @@ class Worker(object):
             raise ValueError
 
         df3.to_csv(join(OUTPATH, 'tbl_dfa358tot.csv'))
-
-
-
-
-
-
-

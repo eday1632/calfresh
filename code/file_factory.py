@@ -314,13 +314,18 @@ class ChurnDataFactory(FileFactory):
         self.checkNumbers()
         self.addYear(self.filename[4:6])
 
-        if self.filename.endswith('0.csv'):
+        Q1 = ['Q1', 'JAN']
+        Q2 = ['Q2', 'APRIL']
+        Q3 = ['Q3', 'JUL']
+        Q4 = ['Q4', 'OCT']
+
+        if any(indicator in self.filename for indicator in Q1):
             self.addMonth('MAR')
-        elif self.filename.endswith('1.csv'):
+        elif any(indicator in self.filename for indicator in Q2):
             self.addMonth('JUN')
-        elif self.filename.endswith('2.csv'):
+        elif any(indicator in self.filename for indicator in Q3):
             self.addMonth('SEP')
-        elif self.filename.endswith('3.csv'):
+        elif any(indicator in self.filename for indicator in Q4):
             self.addMonth('DEC')
 
         self.df.columns = self.constants.ChurnDataColumns

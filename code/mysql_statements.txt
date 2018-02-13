@@ -5,7 +5,7 @@ mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --column
 
 
 ChurnData -- loaded 8/30/17
-mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,snap_apps_rcvd,init_apps,apps_rcvd_bene_prev_30d,apps_rcvd_bene_prev_60d,apps_rcvd_bene_prev_90d,apps_rcvd_bene_over_90d,ave_days_apprv_bene,cases_sched_recert,recert_rcvd_snap_follow_mth,recert_not_rcvd_snap_follow_mth,incomp_recert_no_bene_reapp,incomp_recert_no_bene_reapp_30d,incomp_recert_no_bene_reapp_60d,incomp_recert_no_bene_reapp_90d,avg_days_btw_notice_recert,pct_reapps_churning,pct_reapps_churning_in_30d,pct_recerts_churning,pct_recerts_churning_in_30d,year,month,pct_apps_rcvd_from_this_county,pct_cases_sched_recert_this_county,quarter,fulldate' -u eday calfreshdb /etc/calfresh/10_16_2017/tbl_churn_data.csv
+mysqlimport --local --replace --fields-terminated-by=, --ignore-lines=1 --columns='county,snap_apps_rcvd,init_apps,apps_rcvd_bene_prev_30d,apps_rcvd_bene_prev_60d,apps_rcvd_bene_prev_90d,apps_rcvd_bene_over_90d,ave_days_apprv_bene,cases_sched_recert,recert_rcvd_snap_follow_mth,recert_not_rcvd_snap_follow_mth,incomp_recert_no_bene_reapp,incomp_recert_no_bene_reapp_30d,incomp_recert_no_bene_reapp_60d,incomp_recert_no_bene_reapp_90d,avg_days_btw_notice_recert,pct_reapps_churning,pct_reapps_churning_in_30d,pct_recerts_churning,pct_recerts_churning_in_30d,year,month,pct_apps_rcvd_from_this_county,pct_cases_sched_recert_this_county,quarter,fulldate' -u eday calfreshdb /etc/calfresh/2_13_2018/tbl_churn_data.csv
 
 
 DataDashboard -- loaded 6/13/17

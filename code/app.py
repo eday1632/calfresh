@@ -31,13 +31,14 @@ if __name__ == '__main__':
         try:
             crawler = WebCrawler(table, tables[table])
             result = crawler.crawl()
+
             if result:
-                import ipdb; ipdb.set_trace()
                 worker = Worker(result)
                 processed_tables = worker.work()
 
                 loader = DataLoader(processed_tables)
                 result = loader.load()
+
         except Exception as ex:
             logger.exception(ex)
 

@@ -116,10 +116,10 @@ class FileFactory(object):
 
         self.buildSpecific()
 
+        self.df = self.df.fillna(value='\N')
+
         self.addQuarter()
         self.addFullDate()
-
-        self.df = self.df.fillna(value='\N')
 
     def __str__(self):
         """returns the first ten rows of the df attribute"""

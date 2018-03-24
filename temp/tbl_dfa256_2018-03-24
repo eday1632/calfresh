@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="zadbNm9pWtKmsjrNCm3Hwfi4dcRoWweYZmNe/YZOC4lZMWLURSIzXhpwT++eKjqnZitRJq3RTH1gWdHcSgc+iD749AlqtAnAHXD5IvNZIl3cULaGBlCmqd/RgfpHuQhvyfeH/OFKXVbnJgUzLLevKWIg6V4Us+0Ri9CeaXnlWH8JFrjhmyeqm17zQvJFYyQU9o117t5rxGT0VC7zfepWwmRIJN/vV9CRKJo/DWberBo7ZgTYNBuV5ukXySaCwMfNcP+/8uAqoeh80wWtlaOga/HP40G+xn3a7awmbwAqDbAVVAHw" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="KD5UxoVBqhGD/4c2/NabNmGMlA62UqnG2NTtUdOyG4tP6AUBel8FiqfU7FpRwku51a8XGUM9MBFYYKxjOac9O4igSZuynZXlreIIx6IQeZH7amUjKrZYs4KRgDSK+HFuJkx4iNjfavJ0IT1uV98qQKX+BrrtAMvTkRWUv9jPORkn9DYihooh8n2VZVb2ZqoRzxMrJoxuW9kOBv6oDtKbXR9gl0SLMd03ld7TE5hZpTQBG54OL6FG9LRf4VNQCIi4XAn7U4d3mwyoXJ30J+YjocKZ+8UN9wNitwUDgtp0QCbox4kf" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="cyEXQlcM8PJWHRRFn9FP00TgdkCktn5dzl8C4knURnDZmRUdrE4ICyP4BAw4hvIjeDlI1tSNff1oMOp18PKHwKYp+Pyf7XpSY5YrFHHkTXGjZO5IMiOAm4dVQWD4BeRXFvixtzy6z7Rtvue7wcOMTv8N1yA=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/22D/jYpz7amAG4Gah6uCODlX2bMB1mWf3NT+JMFJg6IJzGk5HMR1IVlK8/WYOq4lyVVfhZeFBK8KokG6sEkhwJdnoJpJwAYPT78kwQBILL95S6EiSZeVTirFg4IYCu8dqVLBob8l340mDwEA3bQLp1FG8g=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1208,125 +1208,125 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Tables</span></a><meta itemprop="position" content="3" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256" class="Breadcrumb" itemprop="item"><span itemprop="name">DFA256</span></a><meta itemprop="position" content="4" /></span></span></span></div>
         <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-11142 DnnVersionableControl"><a name="11142"></a><div id="dnn_ctr11142_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_11142 --><div id="dnn_ctr11142_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr11142_HtmlModule_lblContent"><h2>DFA 256 - Food Stamp Program Participation and Benefit Issuance Report</h2>
-<p>This monthly report includes data on the number of Food Stamp Public Assistance and Non-Public Assistance households and persons participating in the federal and state Food Stamp programs; the number of issuances provided by mail and contracted over the counter; and the value of documented coupon issuances.<br>
-	<br>
-	<strong></strong><strong></strong>
-	<strong>County
+<p>This monthly report includes data on the number of Food Stamp Public Assistance and Non-Public Assistance households and persons participating in the federal and state Food Stamp programs; the number of issuances provided by mail and contracted over the counter; and the value of documented coupon issuances.<br />
+<br />
+<strong></strong><strong></strong>
+<strong>County
 revisions may be submitted for current and prior years. Please check this page
 regularly for updated data.
-	</strong>
+</strong>
 </p>
 <table>
-<tbody>
-<tr height="40">
-	<th>Report Period
-	</th>
-	<th>Updated
-	</th>
-</tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY17-18.xlsx"><u>Fiscal Year 2017-18</u></a></strong>
-	</td>
-	<td>03/20/18
-	</td>
-</tr>
-<tr>
-	<td><strong><u><a href="/Portals/9/DSSDB/DataTables/DFA256FY16-17.xlsx">Fiscal Year 2016-17</a></u></strong>
-	</td>
-	<td>03/06/18
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY15-16.xls?ver=2017-08-04-083104-747"><u>Fiscal Year 2015-16</u></a></strong>
-	</td>
-	<td>09/01/17
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY14-15.xls?ver=2017-08-04-083012-853"><u>Fiscal Year 2014-15</u></a></strong>
-	</td>
-	<td>08/04/17
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY13-14.xls"><u>Fiscal Year 2013-14</u></a></strong>
-	</td>
-	<td>10/13/14
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY12-13.xls"><u>Fiscal Year 2012-13</u></a></strong>
-	</td>
-	<td>08/13/13
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY11-12.xls"><u>Fiscal Year 2011-12</u></a></strong>
-	</td>
-	<td>02/06/13
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY10-11.xls"><u>Fiscal Year 2010-11</u></a></strong>
-	</td>
-	<td>02/06/13
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY09-10.xls"><u>Fiscal Year 2009-10</u></a></strong>
-	</td>
-	<td>05/09/12
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY08-09.xls"><u>Fiscal Year 2008-09</u></a></strong>
-	</td>
-	<td>05/01/12
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY07-08.xls"><u>Fiscal Year 2007-08</u></a></strong>
-	</td>
-	<td>03/24/09
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY06-07.xls"><u>Fiscal Year 2006-07</u></a></strong>
-	</td>
-	<td>09/09/08
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY05-06.xls"><u>Fiscal Year 2005-06</u></a></strong>
-	</td>
-	<td>09/09/08
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY04-05.xls"><u>Fiscal Year 2004-05</u></a></strong>
-	</td>
-	<td>09/28/07
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY03-04.xls"><u>Fiscal Year 2003-04</u></a></strong>
-	</td>
-	<td>03/17/06
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY02-03.xls"><u>Fiscal Year 2002-03</u></a></strong>
-		
-	</td>
-	<td>08/25/05
-	</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr height="40">
+            <th>Report Period
+            </th>
+            <th>Updated
+            </th>
+        </tr>
+        <tr>
+            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY17-18.xlsx?ver=2018-03-22-144439-267"><span style="text-decoration: underline;">Fiscal Year 2017-18</span></a></strong>
+            </td>
+            <td>03/20/18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong><span style="text-decoration: underline;"><a href="/Portals/9/DSSDB/DataTables/DFA256FY16-17.xlsx">Fiscal Year 2016-17</a></span></strong>
+            </td>
+            <td>03/06/18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY15-16.xls?ver=2017-08-04-083104-747"><span style="text-decoration: underline;">Fiscal Year 2015-16</span></a></strong>
+            </td>
+            <td>09/01/17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY14-15.xls?ver=2017-08-04-083012-853"><span style="text-decoration: underline;">Fiscal Year 2014-15</span></a></strong>
+            </td>
+            <td>08/04/17
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY13-14.xls"><span style="text-decoration: underline;">Fiscal Year 2013-14</span></a></strong>
+            </td>
+            <td>10/13/14
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY12-13.xls"><span style="text-decoration: underline;">Fiscal Year 2012-13</span></a></strong>
+            </td>
+            <td>08/13/13
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY11-12.xls"><span style="text-decoration: underline;">Fiscal Year 2011-12</span></a></strong>
+            </td>
+            <td>02/06/13
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY10-11.xls"><span style="text-decoration: underline;">Fiscal Year 2010-11</span></a></strong>
+            </td>
+            <td>02/06/13
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY09-10.xls"><span style="text-decoration: underline;">Fiscal Year 2009-10</span></a></strong>
+            </td>
+            <td>05/09/12
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY08-09.xls"><span style="text-decoration: underline;">Fiscal Year 2008-09</span></a></strong>
+            </td>
+            <td>05/01/12
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY07-08.xls"><span style="text-decoration: underline;">Fiscal Year 2007-08</span></a></strong>
+            </td>
+            <td>03/24/09
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY06-07.xls"><span style="text-decoration: underline;">Fiscal Year 2006-07</span></a></strong>
+            </td>
+            <td>09/09/08
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY05-06.xls"><span style="text-decoration: underline;">Fiscal Year 2005-06</span></a></strong>
+            </td>
+            <td>09/09/08
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY04-05.xls"><span style="text-decoration: underline;">Fiscal Year 2004-05</span></a></strong>
+            </td>
+            <td>09/28/07
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY03-04.xls"><span style="text-decoration: underline;">Fiscal Year 2003-04</span></a></strong>
+            </td>
+            <td>03/17/06
+            </td>
+        </tr>
+        <tr>
+            <td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY02-03.xls"><span style="text-decoration: underline;">Fiscal Year 2002-03</span></a></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>08/25/05
+            </td>
+        </tr>
+    </tbody>
 </table>
-<p><a href="/Tips-for-Using-Adobe-PDF-Files"><br>
-	Help</a>is available for questions regarding theExcelfile format.
+<p><a href="/Tips-for-Using-Adobe-PDF-Files"><br />
+Help</a>&nbsp;is available for questions regarding the&nbsp;Excel&nbsp;file format.
 </p>
-<br>
+<br />
 <p>
 </p>
 <style>
@@ -1429,7 +1429,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="TnAPGjj8DW9D-g45MtTZU3P3prmnfY6vFWZ77l1yznbgQLlwdp039kUc77wpAmUaH2i73A2" />
+        <input name="__RequestVerificationToken" type="hidden" value="lJMo-ijY7fA53LWYqp_qrv01tnMRE5AmPS8wv-3tCNBvdwH2dptTF9JnykjLC8PqzzLqZQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[

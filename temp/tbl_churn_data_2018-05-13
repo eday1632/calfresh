@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="p462o8vqimqIlDD+xY0GgCdtQJPv/EZ/wfRaGKG5yR0I52Y1XTq9lsv/iS9ZM1uYLGyvCMUuo6CN+oXtjr6wQPFB0CEYZUu+6fDKiaclSOD5EAhwhD7nuxBEFMJ/pg1WWJfkyPZsRtFo6TVQ4KHTlqTYvE8p9nnAFGK7wQIOGqP8QrNzaThHW12gTkmCRcQQ2CGr+aBLSCJdp/DEeZ9oauatB7DqTuCiVwxF2C21V8OKc0a2c0f9yrB6vcu48QZvjrSGH2xoJxJipnVES/MrLMSgsaqzHaTkJdQy80iSJeJmcJi6" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6ezzT0PBW55/h8Xv22cNmCPFXwuVv1/2gvrRcodNGL9MP8dYVbcYCXFR1u/mKUdjIW6nPuwkKm4dkcVqB5Isx1VVRCfls3K7gecEUcaUiwbkhbxXFcYr+GOp7KPbhBFtd2TBfX6Cx1q7z7kNsGugZzWuxSdhoAlXlW14pysdMYxOE7xv4lrHn41L3M2usonvLS3Jtjk4KLGYoi5DYlBJBSXIBzHuLrDapg44Q5tYfFfAYHyrsEVZeZV7YN5m97AAq1J9S6ji6VAn26J2iDRDNRNLoryWwoYlR2cegsykb59M1Qlz" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="RyQ32dpKMGKZounUfODjmbxEADBqcBnaC/itD0uwJZ5AcWoOk+WJM+IcKa65A33rgCrZRhW6j5fVgcvuzea7w43AOEtcQGGT56FfQaDCWtNCJoJ5hM4AKrlaNL9yWBZsGAg8LjKGUA9aX1sn5P5plVedvx8=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="R31thqkewXk5AgfMlc1/LC6T6+KOfj+jXGojoNogTkZvYQXo++mXZRyIjkgfC4w8f+KuUHI4WAcy7owCKcjIu2suYyFvm/qausCsHc8rMHaEZ004/E31by+QZfjb8e1PWfuNQ13fXuEvioiGePfxlH83Cag=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -570,10 +570,16 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 	    <div class="subMenuRight">
 			 <ul>
 				 
-	<li class="item first last">
+	<li class="item first">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates/Local-Assistance-Estimates-for-the-2018-19-Governors-Budget" target=""><div>Local Assistance Estimates for the 2018-19 Governors Budget</div></a>
 			<span class="menuDescription">Local Assistance Estimates for the 2018-19 Governors Budget</span>
+	</li>
+
+	<li class="item last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Local-Assistance-Estimates/2018-May-Revision-of-the-2018-19-Governors-Budget" target=""><div>2018 May Revision for the 2018-19 Governor&#39;s Budget</div></a>
+			<span class="menuDescription">2018 May Revision for the 2018-19 Governor&#39;s Budget </span>
 	</li>
 
 			 </ul>
@@ -1093,10 +1099,18 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 			<ul id="mobmenu1588" class="collapse subMenu ">
 			
-		<li class="menuItem first last">
+		<li class="menuItem first">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates/Local-Assistance-Estimates-for-the-2018-19-Governors-Budget" target="" >
 				Local Assistance Estimates for the 2018-19 Governors Budget
+			</a>
+		
+		</li>
+	
+		<li class="menuItem last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Local-Assistance-Estimates/2018-May-Revision-of-the-2018-19-Governors-Budget" target="" >
+				2018 May Revision for the 2018-19 Governor&#39;s Budget
 			</a>
 		
 		</li>
@@ -1312,7 +1326,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3350`,`evoq_TabId`:`3350`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fCalFresh-Resource-Center%2fData`,`evoq_UrlQuery`:`%3fTabId%3d3350%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="gW1KPN7zjKP8rGSQcTLyoC9zzXSd71jdnPKoWL7g-mpPVw7ljbt2QqDHWS0y-yCzuXPqSw2" />
+        <input name="__RequestVerificationToken" type="hidden" value="B8g7lcSVURwXqxtD87RRwK4bFssEZEuXE5dqLRY7Bq81UjGLiwmrcxxua2mvHh60nf257g2" />
     
 <script type='text/javascript'>
 //<![CDATA[

@@ -241,6 +241,8 @@ class Worker(object):
                     remove(path['path'])
                 elif 'Release Summary' in path['filename']:
                     remove(path['path'])
+                elif 'Report View' in path['filename']:
+                    remove(path['path'])
 
             elif path['source'] == 'tbl_churn_data':
                 continue
@@ -267,6 +269,8 @@ class Worker(object):
                 if 'Statewide' in path['filename']:
                     remove(path['path'])
                 elif 'Release Summary' in path['filename']:
+                    remove(path['path'])
+                elif 'Report View' in path['filename']:
                     remove(path['path'])
 
             elif path['source'] == 'tbl_dfa296':

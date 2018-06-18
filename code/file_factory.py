@@ -102,10 +102,6 @@ class FileFactory(object):
         """
         super(FileFactory, self).__init__()
 
-        self.df = pd.read_csv(item['path'])
-        if self.df.empty:
-            raise ValueError
-
         self.filename = item['filename']
         self.constants = constants()
 
@@ -297,6 +293,10 @@ class CF15Factory(FileFactory):
 class CF296Factory(FileFactory):
     """builds the CF296Factory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(CF296Factory, self).__init__(item)
 
     def buildSpecific(self):
@@ -310,6 +310,10 @@ class CF296Factory(FileFactory):
 class ChurnDataFactory(FileFactory):
     """builds the ChurnDataFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(ChurnDataFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -349,6 +353,10 @@ class ChurnDataFactory(FileFactory):
 class DataDashboardAnnualFactory(FileFactory):
     """builds the DataDashboardAnnualFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DataDashboardAnnualFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -366,6 +374,10 @@ class DataDashboardAnnualFactory(FileFactory):
 class DataDashboardQuarterlyFactory(FileFactory):
     """builds the DataDashboardQuarterlyFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DataDashboardQuarterlyFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -382,6 +394,10 @@ class DataDashboardQuarterlyFactory(FileFactory):
 class DataDashboardMonthlyFactory(FileFactory):
     """builds the DataDashboardMonthlyFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DataDashboardMonthlyFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -398,6 +414,10 @@ class DataDashboardMonthlyFactory(FileFactory):
 class DataDashboard3MthFactory(FileFactory):
     """builds the DataDashboard3MthFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DataDashboard3MthFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -414,6 +434,10 @@ class DataDashboard3MthFactory(FileFactory):
 class DataDashboardPRIRawFactory(FileFactory):
     """builds the DataDashboardPRIRawFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DataDashboardPRIRawFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -431,6 +455,10 @@ class DataDashboardPRIRawFactory(FileFactory):
 class DFA256Factory(FileFactory):
     """builds the DFA256Factory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DFA256Factory, self).__init__(item)
 
     def buildSpecific(self):
@@ -472,6 +500,10 @@ class DFA256Factory(FileFactory):
 class DFA296Factory(FileFactory):
     """builds the DFA296Factory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DFA296Factory, self).__init__(item)
 
     def buildSpecific(self):
@@ -496,6 +528,10 @@ class DFA296Factory(FileFactory):
 class DFA296XFactory(FileFactory):
     """builds the DFA296XFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DFA296XFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -523,6 +559,10 @@ class DFA296XFactory(FileFactory):
 class DFA358FFactory(FileFactory):
     """builds the DFA358FFactory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(DFA358FFactory, self).__init__(item)
 
     def buildSpecific(self):
@@ -545,6 +585,10 @@ class DFA358SFactory(DFA358FFactory):
 class Stat47Factory(FileFactory):
     """builds the Stat47Factory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(Stat47Factory, self).__init__(item)
 
     def buildSpecific(self):
@@ -561,6 +605,10 @@ class Stat47Factory(FileFactory):
 class Stat48Factory(FileFactory):
     """builds the Stat48Factory"""
     def __init__(self, item):
+        self.df = pd.read_csv(item['path'])
+        if self.df.empty:
+            raise ValueError
+
         super(Stat48Factory, self).__init__(item)
 
     def buildSpecific(self):

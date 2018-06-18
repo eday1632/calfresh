@@ -221,7 +221,10 @@ class FileFactory(object):
         self._trimNonCountyRows(col)
 
         # make sure all the counties are present
-        if not self._completeCountySet(col):
+        observed, reference = self._completeCountySet(col)
+        if not observed == reference:
+            logging.error('Observed: %s', str(observed))
+            logging.error('Counties not found: %s', str(reference.difference(observed)))
             raise ValueError
 
     def _trimNonCountyRows(self, col):
@@ -234,10 +237,8 @@ class FileFactory(object):
         observed = set(self.df[col].values)
         # remove Statewide from the reference set since it was replaced with California
         reference.remove('Statewide')
-        # print reference, '\n', observed
-
-        # return the equality of the sets
-        return observed == reference
+        # return the two sets
+        return observed, reference
 
     def _cleanCountyNames(self, col):
         self.df[col] = self.df[col].str.strip()
@@ -478,12 +479,30 @@ class DFA256Factory(FileFactory):
         if self.df.empty:
             raise ValueError
 
+        self.df.drop(
+            [
+                self.df.columns[0],
+                self.df.columns[2],
+                self.df.columns[3],
+                self.df.columns[4],
+                self.df.columns[5],
+            ],
+            axis=1,
+            inplace=True,
+        )
+
         super(DFA256Factory, self).__init__(item)
 
     def buildSpecific(self):
         self.checkNumbers()
-        self.addYear(self.filename[-6:-4])
-        self.addMonth(self.filename[-9:-6])
+        date_info = [
+            xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
+        ]
+
+        self.df['year'] = [pydate.strftime('%Y').upper() for pydate in date_info]
+        self.df['month'] = [pydate.strftime('%b').upper() for pydate in date_info]
+
+        self.df.drop(self.df.columns[1], axis=1, inplace=True)
 
         if self.df.year.unique()[0] == 2002 or \
                 (self.df.year.unique()[0] == 2003 and

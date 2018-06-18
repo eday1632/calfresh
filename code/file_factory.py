@@ -14,6 +14,7 @@ import logging
 import pandas as pd
 import numpy as np
 import editdistance
+from xlrd.xldate import xldate_as_datetime
 
 from constants import constants
 
@@ -276,7 +277,7 @@ class FileFactory(object):
     def trimBogusColumns(self):
         rowcount = self.df.shape[0] / 4
         while self.df[self.df.columns[-1]].isnull().sum() > rowcount:
-            self.df.drop(self.df.columns[-1], 1, inplace=True)
+            self.df.drop(self.df.columns[-1], axis=1, inplace=True)
 
     def trimBogusRows(self):
         colcount = self.df.shape[1] / 2
@@ -297,13 +298,31 @@ class CF296Factory(FileFactory):
         if self.df.empty:
             raise ValueError
 
+        self.df.drop(
+            [
+                self.df.columns[0],
+                self.df.columns[2],
+                self.df.columns[3],
+                self.df.columns[4],
+                self.df.columns[5],
+            ],
+            axis=1,
+            inplace=True,
+        )
+
         super(CF296Factory, self).__init__(item)
 
     def buildSpecific(self):
         self.checkNumbers()
-        self.addYear(self.filename[-6:-4])
-        self.addMonth(self.filename[-9:-6])
 
+        date_info = [
+            xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
+        ]
+
+        self.df['year'] = [pydate.strftime('%Y').upper() for pydate in date_info]
+        self.df['month'] = [pydate.strftime('%b').upper() for pydate in date_info]
+
+        self.df.drop(self.df.columns[1], axis=1, inplace=True)
         self.df.columns = self.constants.CF296Columns
 
 

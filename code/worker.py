@@ -1,3 +1,6 @@
+#!/usr/bin/python
+
+
 """this is the main file for converting excel to csv files, processing those
 csv files, and merging them for upload to calfreshdb
 
@@ -37,7 +40,7 @@ TODOs:
 from os import walk, remove, makedirs
 from os.path import join, exists
 from xlrd import open_workbook
-import logging
+import logging.config
 from csv import writer
 from shutil import move
 import ConfigParser

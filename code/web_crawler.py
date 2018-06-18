@@ -2,7 +2,6 @@
 
 import os
 import datetime
-import logging
 import logging.config
 import ConfigParser
 

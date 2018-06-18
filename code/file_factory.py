@@ -147,6 +147,7 @@ class FileFactory(object):
             ValueError: If the year is earlier than 2002 or later than 2017
         """
         if int('20' + year) > 2017 or int('20' + year) < 2002:
+            logging.error('Bad year value: %s', year)
             raise ValueError
 
         self.df['year'] = int('20' + year)
@@ -186,6 +187,7 @@ class FileFactory(object):
         try:
             return float(num)
         except ValueError:
+            logging.info('Value can not convert to float: %s', num)
             return self._convertToNumber(num)
 
     def _convertToNumber(self, num):

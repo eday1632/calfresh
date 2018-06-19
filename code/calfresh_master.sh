@@ -1,18 +1,18 @@
 #!/bin/bash
 
-source /etc/calfresh/venv/bin/activate
+source /srv/calfresh/venv/bin/activate
 
-rm /etc/calfresh/logs/calfresh.log
-touch /etc/calfresh/logs/calfresh.log
+rm /var/log/calfresh.log
+touch /var/log/calfresh.log
 
-cd /etc/calfresh
+cd /srv/calfresh
 
 git pull
 
-python /etc/calfresh/code/app.py
+python /srv/calfresh/code/app.py
 
 git add .
 git commit -am "ran the daily check. updating files."
 git push
 
-cat /etc/calfresh/logs/calfresh.log | mail -s 'Daily Log' ericday87@gmail.com
+cat /var/log/calfresh.log | mail -s 'Daily Log' ericday87@gmail.com

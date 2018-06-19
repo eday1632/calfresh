@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 
 config = ConfigParser.RawConfigParser()
-config.read('/etc/calfresh/calfresh.conf')
+config.read('/srv/calfresh/calfresh.conf')
 
 temp_dir = config.get('filepaths', 'temp')
 data_dir = config.get('filepaths', 'data')

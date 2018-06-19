@@ -8,7 +8,7 @@ from worker import Worker
 from data_loader import DataLoader
 
 config = ConfigParser.RawConfigParser()
-config.read('/etc/calfresh/calfresh.conf')
+config.read('/srv/calfresh/calfresh.conf')
 
 logger = logging.getLogger('root')
 

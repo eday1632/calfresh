@@ -53,14 +53,14 @@ from file_factory import initialize
 
 
 config = ConfigParser.RawConfigParser()
-config.read('/srv/calfresh/calfresh.conf')
+config.read('/etc/calfresh/calfresh.conf')
 
 logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('worker')
 
 INPATH = config.get('filepaths', 'data')
 now = datetime.now()
-OUTPATH = '/srv/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
+OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
 
 
 class Worker(object):

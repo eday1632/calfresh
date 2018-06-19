@@ -247,6 +247,7 @@ class FileFactory(object):
         i = 0
         for county in self.df[col]:
             if not self._isValidCounty(county):
+                logging.info('Invalid county: %s', county)
                 if type(county) == str:
                     county = county.replace(' ','')
                     closest = self._getClosestSpelledCounty(county)

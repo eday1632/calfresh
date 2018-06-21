@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """This is the main file for converting excel to csv files, processing those
 csv files, and merging them for upload to calfreshdb
 
@@ -31,8 +32,8 @@ TODOs:
     Finish and clean up documentation
     Build tests
     Refactor as necessary to write better tests
-"""
 
+"""
 
 from csv import writer
 from datetime import datetime
@@ -60,15 +61,15 @@ OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
 
 
 class Worker(object):
-    """The worker performs the data cleaning and standardization
-    Args:
-        table (str): the table type the data to process belongs to
-
-    Returns:
-        table (str): the table, so the data loader knows what to load
-    """
-
     def __init__(self, table):
+        """The worker performs the data cleaning and standardization
+        Args:
+            table (str): the table type the data to process belongs to
+
+        Returns:
+            table (str): the table, so the data loader knows what to load
+        """
+
         self.table = table
         if not exists(OUTPATH):
             makedirs(OUTPATH)

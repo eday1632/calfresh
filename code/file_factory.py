@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 """FileFactory module containing base and subclasses
 TODOs:
     Finish documentation
@@ -16,7 +16,7 @@ import editdistance
 import numpy as np
 import pandas as pd
 
-from constants import constants
+import constants
 
 logger = logging.getLogger('file_factory')
 
@@ -25,16 +25,16 @@ def initialize(item):
     """Initializes the proper FileFactory object based on the source directory
     of the item
 
-        Args:
-            item (dict): object with path, source and filename keys
+    Args:
+        item (dict): object with path, source and filename keys
 
-        Returns:
-            FileFactory: subclass corresponding to the source of the item
+    Returns:
+        FileFactory: subclass corresponding to the source of the item
 
-        Raises:
-            ValueError: If the source of the item is unknown
+    Raises:
+        ValueError: If the source of the item is unknown
+
     """
-
     if item['source'] == 'tbl_cf15':
         return CF15Factory(item)
     if item['source'] == 'tbl_cf296':
@@ -71,7 +71,7 @@ def initialize(item):
 
 class FileFactory(object):
     """Base class for all the file factories: CF15Factory, CF296Factory, \
-     ChurnDataFactory, DataDashboardFactory, DFA256Factory, DFA296Factory, \
+     ChurnDataFactory, DataDashboard*Factory, DFA256Factory, DFA296Factory, \
      DFA296XFactory, DFA358FFactory, DFA358SFactory, Stat47Factory, \
      Stat48Factory
 
@@ -102,7 +102,6 @@ class FileFactory(object):
         super(FileFactory, self).__init__()
 
         self.filename = item['filename']
-        self.constants = constants()
 
         self.trimBogusRows()
         self.trimBogusColumns()
@@ -118,18 +117,15 @@ class FileFactory(object):
 
     def __str__(self):
         """Returns the first ten rows of the df attribute"""
-
         return str(self.df.head(10))
 
     @abstractmethod
     def buildSpecific(self):
         """Process class specific info, such as column names, year, month, etc."""
-
         return
 
     def addFullDate(self):
         """Convert the month and year to valid datetime"""
-
         self.df['fulldate'] = self.df.month + '/' + self.df.year.map(str)
         self.df.fulldate = pd.to_datetime(self.df.fulldate)
 
@@ -146,8 +142,8 @@ class FileFactory(object):
 
         Raises:
             ValueError: If the year is earlier than 2002 or later than 2018
-        """
 
+        """
         if int('20' + year) > 2018 or int('20' + year) < 2002:
             logging.error('Bad year value: %s', year)
             raise ValueError
@@ -156,12 +152,10 @@ class FileFactory(object):
 
     def addMonth(self, month):
         """Month is passed in as a string or slice of the filename"""
-
         self.df['month'] = month.upper()
 
     def addQuarter(self):
         """Map the month to the quarter"""
-
         quarters = {
             'JAN': 1.0,
             'FEB': 1.0,
@@ -186,9 +180,9 @@ class FileFactory(object):
             startCol (int): the first column to start looking for, enforcing numerics
 
         Outputs:
-            a squeaky clean set of columns filled with numeric or None values
-        """
+            A squeaky clean set of columns filled with numeric or None values
 
+        """
         for col in self.df.columns[startCol:]:
             i = 0
             for row in self.df[col]:
@@ -204,8 +198,8 @@ class FileFactory(object):
         Returns:
             float or None: float if there were numeric values in the arg,
             or None if it was just junk
-        """
 
+        """
         try:
             return float(num)
         except ValueError:
@@ -214,7 +208,6 @@ class FileFactory(object):
 
     def _convertToNumber(self, num):
         """Remove all non-digit chars from the input"""
-
         temp = num
         for c in temp:
             if c not in digits + '.':
@@ -229,7 +222,6 @@ class FileFactory(object):
     def checkPercents(self, cols):
         """
         """
-
         for col in cols:
             if col in self.df.columns:
                 i = 0
@@ -241,7 +233,6 @@ class FileFactory(object):
     def checkCounties(self, col=0):
         """
         """
-
         # get the column name
         col = self.df.columns[col]
         # remove padding and correct misspellings
@@ -260,15 +251,13 @@ class FileFactory(object):
 
     def _trimNonCountyRows(self, col):
         """Remove any blank row from the county column"""
-
         self.df = self.df.dropna(subset=[col]).reset_index(drop=True)
 
     def _completeCountySet(self, col):
         """
         """
-
         # get the reference set and observed set of counties
-        reference = set(self.constants.county_dict.values())
+        reference = set(constants.county_dict.values())
         observed = set(self.df[col].values)
         # remove Statewide from the reference set since it was replaced with California
         reference.remove('Statewide')
@@ -278,11 +267,10 @@ class FileFactory(object):
     def _cleanCountyNames(self, col):
         """
         """
-
         self.df[col] = self.df[col].str.strip()
         i = 0
         for county in self.df[col]:
-            if county not in self.constants.county_set:
+            if county not in constants.county_set:
                 logging.info('Invalid county: %s', county)
                 if type(county) == str:
                     county = county.replace(' ', '')
@@ -295,9 +283,8 @@ class FileFactory(object):
     def _getNearestSpelledCounties(self, county):
         """
         """
-
         vals = {}
-        for key in self.constants.county_dict.keys():
+        for key in constants.county_dict.keys():
             county = str(county)
             if len(county) < (len(key) + 3) and len(county) > (len(key) - 3):
                 vals[key] = editdistance.eval(key, county)
@@ -307,7 +294,6 @@ class FileFactory(object):
     def _getClosestSpelledCounty(self, county):
         """
         """
-
         potentials = self._getNearestSpelledCounties(county)
         if not potentials:
             return np.nan
@@ -315,14 +301,13 @@ class FileFactory(object):
         closest = min(potentials, key=potentials.get)
 
         if potentials[closest] < 3L:
-            return self.constants.county_dict[closest]
+            return constants.county_dict[closest]
         else:
             return np.nan
 
     def trimBogusColumns(self):
         """
         """
-
         rowcount = self.df.shape[0] / 4
         while self.df[self.df.columns[-1]].isnull().sum() > rowcount:
             self.df.drop(self.df.columns[-1], axis=1, inplace=True)
@@ -330,7 +315,6 @@ class FileFactory(object):
     def trimBogusRows(self):
         """
         """
-
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
             self.df.drop(self.df.index[-1], inplace=True)
@@ -338,14 +322,12 @@ class FileFactory(object):
 
 class CF15Factory(FileFactory):
     """Builds the CF15Factory"""
-
     def __init__(self, item):
         super(CF15Factory, self).__init__(item)
 
 
 class CF296Factory(FileFactory):
     """Builds the CF296Factory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -376,12 +358,11 @@ class CF296Factory(FileFactory):
         self.df['month'] = [pydate.strftime('%b').upper() for pydate in date_info]
 
         self.df.drop(self.df.columns[1], axis=1, inplace=True)
-        self.df.columns = self.constants.CF296Columns
+        self.df.columns = constants.CF296Columns
 
 
 class ChurnDataFactory(FileFactory):
     """Builds the ChurnDataFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -407,9 +388,9 @@ class ChurnDataFactory(FileFactory):
         elif any(indicator in self.filename for indicator in Q4):
             self.addMonth('DEC')
 
-        self.df.columns = self.constants.ChurnDataColumns
+        self.df.columns = constants.ChurnDataColumns
 
-        self.checkPercents(self.constants.ChurnDataPercentColumns)
+        self.checkPercents(constants.ChurnDataPercentColumns)
 
         self.addAdditionalPercentages()
 
@@ -426,7 +407,6 @@ class ChurnDataFactory(FileFactory):
 
 class DataDashboardAnnualFactory(FileFactory):
     """Builds the DataDashboardAnnualFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -439,16 +419,15 @@ class DataDashboardAnnualFactory(FileFactory):
 
         self.addMonth('DEC')
 
-        self.df.columns = self.constants.DataDashboardAnnualColumns
+        self.df.columns = constants.DataDashboardAnnualColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
 
-        self.checkPercents(self.constants.DataDashboardPercentColumns)
+        self.checkPercents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardQuarterlyFactory(FileFactory):
     """Builds the DataDashboardQuarterlyFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -459,17 +438,16 @@ class DataDashboardQuarterlyFactory(FileFactory):
     def buildSpecific(self):
         self.checkNumbers(startCol=3)
 
-        self.df.columns = self.constants.DataDashboardQuarterlyColumns
+        self.df.columns = constants.DataDashboardQuarterlyColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df['month'] = self.df.quarter.str[:3].str.upper()
 
-        self.checkPercents(self.constants.DataDashboardPercentColumns)
+        self.checkPercents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardMonthlyFactory(FileFactory):
     """Builds the DataDashboardMonthlyFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -480,17 +458,16 @@ class DataDashboardMonthlyFactory(FileFactory):
     def buildSpecific(self):
         self.checkNumbers(startCol=6)
 
-        self.df.columns = self.constants.DataDashboardMonthlyColumns
+        self.df.columns = constants.DataDashboardMonthlyColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df.month = self.df.month.str[:3].str.upper()
 
-        self.checkPercents(self.constants.DataDashboardPercentColumns)
+        self.checkPercents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboard3MthFactory(FileFactory):
     """Builds the DataDashboard3MthFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -501,17 +478,16 @@ class DataDashboard3MthFactory(FileFactory):
     def buildSpecific(self):
         self.checkNumbers(startCol=3)
 
-        self.df.columns = self.constants.DataDashboard3MthColumns
+        self.df.columns = constants.DataDashboard3MthColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df.month = self.df.month.str[:3].str.upper()
 
-        self.checkPercents(self.constants.DataDashboardPercentColumns)
+        self.checkPercents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardPRIRawFactory(FileFactory):
     """Builds the DataDashboardPRIRawFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -524,16 +500,15 @@ class DataDashboardPRIRawFactory(FileFactory):
 
         self.addMonth('DEC')
 
-        self.df.columns = self.constants.DataDashboardPRIRawColumns
+        self.df.columns = constants.DataDashboardPRIRawColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
 
-        self.checkPercents(self.constants.DataDashboardPercentColumns)
+        self.checkPercents(constants.DataDashboardPercentColumns)
 
 
 class DFA256Factory(FileFactory):
     """Builds the DFA256Factory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -567,15 +542,15 @@ class DFA256Factory(FileFactory):
         if self.df.year.unique()[0] == 2002 or \
                 (self.df.year.unique()[0] == 2003 and
                     self.df.month.unique()[0] in ['JAN', 'FEB', 'MAR']):
-            self.df.columns = self.constants.DFA256Columns1
+            self.df.columns = constants.DFA256Columns1
 
         elif self.df.year.unique()[0] == 2003 and \
                 self.df.month.unique()[0] in \
                 ['APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT']:
-            self.df.columns = self.constants.DFA256Columns2
+            self.df.columns = constants.DFA256Columns2
 
         else:
-            self.df.columns = self.constants.DFA256Columns3
+            self.df.columns = constants.DFA256Columns3
 
         self.df['total_households'] = (
             self.df.num_hh_pub_asst_fed +
@@ -597,7 +572,6 @@ class DFA256Factory(FileFactory):
 
 class DFA296Factory(FileFactory):
     """Builds the DFA296Factory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -611,16 +585,15 @@ class DFA296Factory(FileFactory):
         self.addMonth(self.filename[-9:-6])
 
         if self.df.year.unique()[0] <= 2011:
-            self.df.columns = self.constants.DFA296Columns1
+            self.df.columns = constants.DFA296Columns1
         else:
-            self.df.columns = self.constants.DFA296Columns2
+            self.df.columns = constants.DFA296Columns2
 
-        self.sumColumns(self.constants.DFA296SumColumns)
+        self.sumColumns(constants.DFA296SumColumns)
 
     def sumColumns(self, tuples):
         """
         """
-
         for tup in tuples:
             if tup[1] in self.df.columns and tup[2] in self.df.columns:
                 self.df[tup[0]] = \
@@ -629,7 +602,6 @@ class DFA296Factory(FileFactory):
 
 class DFA296XFactory(FileFactory):
     """Builds the DFA296XFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -645,7 +617,7 @@ class DFA296XFactory(FileFactory):
         if self.df.year.unique()[0] < 2004 or \
                 (self.df.year.unique()[0] == 2004 and
                     self.df.month.unique()[0] in ['JAN', 'APR', 'JUL']):
-            self.df.columns = self.constants.DFA296XColumns1
+            self.df.columns = constants.DFA296XColumns1
 
         elif (self.df.year.unique()[0] == 2004 and
                 self.df.month.unique()[0] == 'OCT') or \
@@ -653,15 +625,14 @@ class DFA296XFactory(FileFactory):
                     [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012])\
                 or (self.df.year.unique()[0] == 2013 and
                     self.df.month.unique()[0] in ['JAN', 'APR']):
-            self.df.columns = self.constants.DFA296XColumns2
+            self.df.columns = constants.DFA296XColumns2
 
         else:
-            self.df.columns = self.constants.DFA296XColumns3
+            self.df.columns = constants.DFA296XColumns3
 
 
 class DFA358FFactory(FileFactory):
     """Builds the DFA358FFactory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -675,21 +646,19 @@ class DFA358FFactory(FileFactory):
         self.addMonth(self.filename[-9:-6])
 
         if self.df.year.unique()[0] < 2007:
-            self.df.columns = self.constants.DFA358Columns1
+            self.df.columns = constants.DFA358Columns1
         else:
-            self.df.columns = self.constants.DFA358Columns2
+            self.df.columns = constants.DFA358Columns2
 
 
 class DFA358SFactory(DFA358FFactory):
     """Builds the DFA358SFactory, but actually just inherits from DFA358F"""
-
     def __init__(self, item):
         super(DFA358SFactory, self).__init__(item)
 
 
 class Stat47Factory(FileFactory):
     """Builds the Stat47Factory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -703,14 +672,13 @@ class Stat47Factory(FileFactory):
         self.addMonth(self.filename[18:21])
 
         if '(Items 1-14)' in self.filename:
-            self.df.columns = self.constants.Stat47Columns1
+            self.df.columns = constants.Stat47Columns1
         else:
-            self.df.columns = self.constants.Stat47Columns2
+            self.df.columns = constants.Stat47Columns2
 
 
 class Stat48Factory(FileFactory):
     """Builds the Stat48Factory"""
-
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -723,4 +691,4 @@ class Stat48Factory(FileFactory):
         self.addYear(self.filename[-8:-6])
         self.addMonth(self.filename[-11:-8])
 
-        self.df.columns = self.constants.Stat48Columns
+        self.df.columns = constants.Stat48Columns

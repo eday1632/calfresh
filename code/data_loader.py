@@ -1,6 +1,5 @@
-#!/usr/bin/python
-
-"""this service loads the processed data from the worker and its file factories
+# -*- coding: utf-8 -*-
+"""This service loads the processed data from the worker and its file factories
 into the database
 """
 

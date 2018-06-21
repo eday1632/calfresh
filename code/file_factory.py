@@ -7,14 +7,14 @@ TODOs:
 
 """
 
-from string import digits
 from abc import ABCMeta, abstractmethod
+from string import digits
 import logging
 
-import pandas as pd
-import numpy as np
-import editdistance
 from xlrd.xldate import xldate_as_datetime
+import editdistance
+import numpy as np
+import pandas as pd
 
 from constants import constants
 
@@ -218,7 +218,7 @@ class FileFactory(object):
         # remove padding and correct misspellings
         self._cleanCountyNames(col)
         # replace Statewide with California to standardize
-        self.df[col] = self.df[col].replace({'Statewide':'California'})
+        self.df[col] = self.df[col].replace({'Statewide': 'California'})
         # remove any rows that don't contain a county name
         self._trimNonCountyRows(col)
 
@@ -246,13 +246,14 @@ class FileFactory(object):
         self.df[col] = self.df[col].str.strip()
         i = 0
         for county in self.df[col]:
-            if not self._isValidCounty(county):
+            if county not in self.constants.county_set:
                 logging.info('Invalid county: %s', county)
                 if type(county) == str:
-                    county = county.replace(' ','')
+                    county = county.replace(' ', '')
                     closest = self._getClosestSpelledCounty(county)
                     self.df.loc[i, col] = closest
-                else: self.df.loc[i, col] = np.nan
+                else:
+                    self.df.loc[i, col] = np.nan
             i += 1
 
     def _isValidCounty(self, county):
@@ -269,7 +270,8 @@ class FileFactory(object):
 
     def _getClosestSpelledCounty(self, county):
         potentials = self._getNearestSpelledCounties(county)
-        if not potentials: return np.nan
+        if not potentials:
+            return np.nan
 
         closest = min(potentials, key=potentials.get)
 
@@ -370,7 +372,8 @@ class ChurnDataFactory(FileFactory):
 
         self.df['pct_cases_sched_recert_this_county'] = 0.0
         total = self.df['cases_sched_recert'].where(self.df['county'] == 'California')[0]
-        self.df['pct_cases_sched_recert_this_county'] = self.df['cases_sched_recert'] / total
+        self.df['pct_cases_sched_recert_this_county'] = \
+            self.df['cases_sched_recert'] / total
 
 
 class DataDashboardAnnualFactory(FileFactory):
@@ -658,28 +661,3 @@ class Stat48Factory(FileFactory):
         self.addMonth(self.filename[-11:-8])
 
         self.df.columns = self.constants.Stat48Columns
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

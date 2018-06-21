@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-
 """this is the main file for converting excel to csv files, processing those
 csv files, and merging them for upload to calfreshdb
 
@@ -37,14 +34,14 @@ TODOs:
 """
 
 
+from csv import writer
+from datetime import datetime
 from os import walk, remove, makedirs
 from os.path import join, exists
-from xlrd import open_workbook
-import logging.config
-from csv import writer
 from shutil import move
+from xlrd import open_workbook
 import ConfigParser
-from datetime import datetime
+import logging.config
 
 from openpyxl import load_workbook
 import pandas as pd
@@ -64,6 +61,13 @@ OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
 
 
 class Worker(object):
+    """the worker performs the data cleaning and standardization
+    Args:
+        table (str): the table type the data to process belongs to
+
+    Returns:
+        table (str): the table, so the data loader knows what to load
+    """
     def __init__(self, table):
         self.table = table
         if not exists(OUTPATH):
@@ -166,10 +170,20 @@ class Worker(object):
 
         for name in worksheets:
             sheet = workbook.sheet_by_name(name)
-            with open(join(INPATH, item['source'], 'csv_in', filename + '-' + name + '.csv'), 'wb') as handle:
+            with open(
+                join(
+                    INPATH,
+                    item['source'],
+                    'csv_in',
+                    filename + '-' + name + '.csv',
+                ),
+                'wb'
+            ) as handle:
                 author = writer(handle)
                 for row in xrange(sheet.nrows):
-                    author.writerow([unicode(value).encode('utf-8') for value in sheet.row_values(row)])
+                    author.writerow([
+                        unicode(value).encode('utf-8') for value in sheet.row_values(row)
+                    ])
 
     def stripFilename(self, filename):
         """removes the suffix from excel files
@@ -186,7 +200,7 @@ class Worker(object):
         """convert excel files ending in .xlsx, representing excel versions >2010
 
         Args:
-            item (dict): dict with keys path, source, and filename of excel files ending in .xls
+            item (dict): dict with keys path, source, and filename of .xls excel files
 
         Output:
             writes each tab of the file out to csv
@@ -200,10 +214,19 @@ class Worker(object):
 
         for name in worksheets:
             sheet = workbook[name]
-            with open(join(INPATH, item['source'], 'csv_in',
-                            filename + '-' + name + '.csv'), 'wb') as handle:
+            with open(
+                    join(
+                        INPATH,
+                        item['source'],
+                        'csv_in',
+                        filename + '-' + name + '.csv'
+                    ),
+                    'wb'
+            ) as handle:
                 author = writer(handle)
-                author.writerows([unicode(value).encode('utf-8') for value in sheet.iter_rows()])
+                author.writerows([
+                    unicode(value).encode('utf-8') for value in sheet.iter_rows()
+                ])
 
     def excelToCSV(self):
         """convert all excel files to csvs in the source directories"""
@@ -219,15 +242,30 @@ class Worker(object):
     def redistributeDataDashboardFiles(self, paths):
         for path in paths:
             if path['filename'] == 'CFDashboard-Annual.csv':
-                move(path['path'], join(INPATH, 'tbl_data_dashboard_annual/csv_in', path['filename']))
+                move(
+                    path['path'],
+                    join(INPATH, 'tbl_data_dashboard_annual/csv_in', path['filename'])
+                )
             elif path['filename'] == 'CFDashboard-Quarterly.csv':
-                move(path['path'], join(INPATH, 'tbl_data_dashboard_quarterly/csv_in', path['filename']))
+                move(
+                    path['path'],
+                    join(INPATH, 'tbl_data_dashboard_quarterly/csv_in', path['filename'])
+                )
             elif path['filename'] == 'CFDashboard-Every_Mth.csv':
-                move(path['path'], join(INPATH, 'tbl_data_dashboard_monthly/csv_in', path['filename']))
+                move(
+                    path['path'],
+                    join(INPATH, 'tbl_data_dashboard_monthly/csv_in', path['filename'])
+                )
             elif path['filename'] == 'CFDashboard-Every_3_Mth.csv':
-                move(path['path'], join(INPATH, 'tbl_data_dashboard_3mth/csv_in', path['filename']))
+                move(
+                    path['path'],
+                    join(INPATH, 'tbl_data_dashboard_3mth/csv_in', path['filename'])
+                )
             elif path['filename'] == 'CFDashboard-PRI_Raw.csv':
-                move(path['path'], join(INPATH, 'tbl_data_dashboard_pri_raw/csv_in', path['filename']))
+                move(
+                    path['path'],
+                    join(INPATH, 'tbl_data_dashboard_pri_raw/csv_in', path['filename'])
+                )
 
     def removeJunkFiles(self, paths):
         """remove files known to not to contain data"""
@@ -319,13 +357,37 @@ class Worker(object):
 
             logger.info('Processing file: %s', item['filename'])
             factory = initialize(item)
-            if item['filename'] in ['CFDashboard-Annual.csv','CFDashboard-Quarterly.csv','CFDashboard-Every_Mth.csv','CFDashboard-Every_3_Mth.csv','CFDashboard-PRI_Raw.csv']:
+            if item['filename'] in [
+                'CFDashboard-Annual.csv',
+                'CFDashboard-Quarterly.csv',
+                'CFDashboard-Every_Mth.csv',
+                'CFDashboard-Every_3_Mth.csv',
+                'CFDashboard-PRI_Raw.csv',
+            ]:
                 if item['filename'] == 'CFDashboard-Annual.csv':
-                    factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_annual.csv'), index=False)
+                    factory.df.to_csv(
+                        join(
+                            INPATH,
+                            item['source'],
+                            'csv_out',
+                            'tbl_data_dashboard_annual.csv',
+                        ), index=False)
                 elif item['filename'] == 'CFDashboard-Quarterly.csv':
-                    factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_quarterly.csv'), index=False)
+                    factory.df.to_csv(
+                        join(
+                            INPATH,
+                            item['source'],
+                            'csv_out',
+                            'tbl_data_dashboard_quarterly.csv',
+                        ), index=False)
                 elif item['filename'] == 'CFDashboard-Every_Mth.csv':
-                    factory.df.to_csv(join(INPATH, item['source'], 'csv_out', 'tbl_data_dashboard_monthly.csv'), index=False)
+                    factory.df.to_csv(
+                        join(
+                            INPATH,
+                            item['source'],
+                            'csv_out',
+                            'tbl_data_dashboard_monthly.csv',
+                        ), index=False)
                 elif item['filename'] == 'CFDashboard-Every_3_Mth.csv':
                     factory.df.to_csv(
                         join(
@@ -407,7 +469,9 @@ class Worker(object):
         df2 = pd.read_csv(join(OUTPATH, 'tbl_dfa358s.csv'))
 
         df3 = df1.append(df2, ignore_index=True)
-        df3 = df3.groupby([df3.county, df3.fulldate, df3.year, df3.quarter, df3.month]).sum()
+        df3 = df3.groupby(
+            [df3.county, df3.fulldate, df3.year, df3.quarter, df3.month]
+        ).sum()
 
         if df3.empty:
             raise ValueError

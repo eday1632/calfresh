@@ -1,11 +1,10 @@
-#!/usr/bin/python
 
-import os
+import ConfigParser
 import datetime
 import logging.config
-import ConfigParser
-
+import os
 import requests
+
 from bs4 import BeautifulSoup
 
 
@@ -27,6 +26,8 @@ class WebCrawler(object):
         self.url = url
 
     def crawl(self):
+        """do the needful: get all the html pages, identify new urls, and return them"""
+
         new_page = self._get_new_page()
         old_page = self._get_old_page()
 
@@ -80,11 +81,9 @@ class WebCrawler(object):
 
         return filename
 
-    def _process_new_files(self):
-        # dispatch the worker to process the new files!
-        pass
-
     def clean_up(self):
+        """remove the html files that are older than yesterday's"""
+
         two_days_ago = datetime.date.today() - datetime.timedelta(days=2)
         for root, dirs, files in os.walk(temp_dir):
             for file in files:
@@ -93,7 +92,14 @@ class WebCrawler(object):
 
 
 class PageParser(object):
-    """docstring for PageParser"""
+    """this class looks for new Excel files by comparing today's and yesterday's pages
+
+    Args:
+        table (str): the table whose pages to get
+        new_page (str): a link to the saved html
+        old_page (str): another link to saved html
+    """
+
     def __init__(self, table, new_page, old_page):
         super(PageParser, self).__init__()
         self.table = table
@@ -103,14 +109,16 @@ class PageParser(object):
         self.old_soup = None
         self.updated_paths = []
 
-        self._extract_page_content()
-        self._get_new_versions()
+        self._load_page_content()
+        self._get_new_urls()
 
     @property
     def are_different(self):
+        """were any new excel links found?"""
+
         return len(self.updated_paths) > 0
 
-    def _extract_page_content(self):
+    def _load_page_content(self):
         # open new page from file
         with open(self.new_page, 'r') as new:
             self.new_soup = BeautifulSoup(new.read(), 'html.parser')
@@ -118,37 +126,30 @@ class PageParser(object):
         with open(self.old_page, 'r') as old:
             self.old_soup = BeautifulSoup(old.read(), 'html.parser')
 
-    def _get_xls_links(self, link_list):
-        file_set = set()
-        for link in link_list:
-            if '.xls' in link:
-                file_set.add(link)
-        return file_set
+    def _get_all_xls_urls(self, url_list):
+        """extract the urls to excel files from all urls found
 
-    def _get_new_versions(self):
-        all_new_links = [str(link.get('href')) for link in self.new_soup.find_all('a')]
-        all_old_links = [str(link.get('href')) for link in self.old_soup.find_all('a')]
+        Args:
+            url_list (list of str): all the urls found on the page
 
-        new_file_set = self._get_xls_links(all_new_links)
-        old_file_set = self._get_xls_links(all_old_links)
+        Returns:
+            file_urls (set of str): all the urls to excel files
+        """
 
-        for link in new_file_set:
-            if link not in old_file_set:
-                self.updated_paths.append(link)
-                logger.info('Found a new link! %s', link)
+        file_urls = set()
+        for url in url_list:
+            if '.xls' in url:
+                file_urls.add(url)
+        return file_urls
 
+    def _get_new_urls(self):
+        all_new_urls = [str(url.get('href')) for url in self.new_soup.find_all('a')]
+        all_old_urls = [str(url.get('href')) for url in self.old_soup.find_all('a')]
 
+        new_xls_url_set = self._get_all_xls_urls(all_new_urls)
+        old_xls_url_set = self._get_all_xls_urls(all_old_urls)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for url in new_xls_url_set:
+            if url not in old_xls_url_set:
+                self.updated_paths.append(url)
+                logger.info('Found a new url! %s', url)

@@ -2,36 +2,8 @@
 """This is the main file for converting excel to csv files, processing those
 csv files, and merging them for upload to calfreshdb
 
-Args:
-    <none> : if nothing is specified, run the entire program on all directories
-
-    <directory> : if no flags are specified, run the entire program on this
-    directory of files, where directory is one of the following:
-    ['tbl_cf15','tbl_cf296','tbl_churn_data','tbl_data_dashboard','tbl_dfa256',
-    'tbl_dfa296','tbl_dfa296x','tbl_dfa358f','tbl_dfa358s','tbl_stat47',
-    'tbl_stat48']
-
-
-    the flags below run on all directories if no directories are specified,
-    otherwise they run only on those passed in. multiple flags must be passed in
-     order to run multiple processor functions, otherwise only the process
-     specified by the flag will be run
-
-    -etoc : convert excel files to csv
-
-    -r : run the processor
-
-    -m : merge csv files for uploading to database
-
-    --help : print this docstring and end the program
-
 Output:
     writes files to the <outpath> defined after the import statements
-
-TODOs:
-    Finish and clean up documentation
-    Build tests
-    Refactor as necessary to write better tests
 
 """
 
@@ -47,7 +19,6 @@ from openpyxl import load_workbook
 import pandas as pd
 
 from file_factory import initialize
-
 
 config = ConfigParser.RawConfigParser()
 config.read('/etc/calfresh/calfresh.conf')
@@ -68,15 +39,14 @@ class Worker(object):
 
         Returns:
             table (str): the table, so the data loader knows what to load
-        """
 
+        """
         self.table = table
         if not exists(OUTPATH):
             makedirs(OUTPATH)
 
     def work(self):
         """Do the needful: convert the files, run the factories, merge the output"""
-
         # convert excel files to csv
         self.excelToCSV()
         paths = self.getCSVInput()
@@ -90,7 +60,7 @@ class Worker(object):
         paths = self.getCSVOutput()
         self.mergeForUploading(paths)
 
-        return self.table
+        return OUTPATH
 
     def getCSVInput(self):
         """Search directories for unprocessed csv files
@@ -98,8 +68,8 @@ class Worker(object):
         Returns:
             paths (list of dicts): contains the dict objects representing
             the path, source, and filename of each csv file to be processed
-        """
 
+        """
         paths = []
         for root, dirs, files in walk(INPATH):
             for name in files:
@@ -118,8 +88,8 @@ class Worker(object):
         Returns:
             paths (list of dicts): contains the dict objects representing
             the path, source, and filename of each csv file to be merged
-        """
 
+        """
         paths = []
         for root, dirs, files in walk(INPATH):
             for name in files:
@@ -141,8 +111,8 @@ class Worker(object):
         Returns:
             paths (list of dicts): contains the dict objects representing
             the path, source, and filename of each excel file to be converted
-        """
 
+        """
         paths = []
         for root, dirs, files in walk(INPATH):
             for name in files:
@@ -163,8 +133,8 @@ class Worker(object):
 
         Output:
             writes each tab of the file out to csv
-        """
 
+        """
         workbook = open_workbook(item['path'])
 
         filename = self.stripFilename(item['filename'])
@@ -196,8 +166,8 @@ class Worker(object):
 
         Returns:
             substring of filename ending before '.xls'
-        """
 
+        """
         return filename.split('.xls')[0]
 
     def convertNewExcelFile(self, item):
@@ -208,8 +178,8 @@ class Worker(object):
 
         Output:
             writes each tab of the file out to csv
-        """
 
+        """
         workbook = load_workbook(item['path'])
 
         filename = self.stripFilename(item['filename'])
@@ -234,7 +204,6 @@ class Worker(object):
 
     def excelToCSV(self):
         """Convert all excel files to csvs in the source directories"""
-
         paths = self.getExcelFiles()
         for item in paths:
             if item['source'] != self.table:
@@ -248,8 +217,8 @@ class Worker(object):
 
         Args:
             paths (list of str): the file paths to search for junk files
-        """
 
+        """
         for path in paths:
             if path['source'] == 'tbl_cf15':
                 continue
@@ -333,8 +302,8 @@ class Worker(object):
 
         Args:
             paths (list of str): all the file paths to process in the factories
-        """
 
+        """
         for item in paths:
             if item['source'] != self.table:
                 continue
@@ -413,8 +382,8 @@ class Worker(object):
 
         Output:
             writes merged csv files out to the outpath
-        """
 
+        """
         sibling = paths[0]['source']
         old = pd.read_csv(paths[0]['path'])
 
@@ -446,8 +415,8 @@ class Worker(object):
 
         Raises:
             ValueError: If the combined file is empty, something went wrong
-        """
 
+        """
         df1 = pd.read_csv(join(OUTPATH, 'tbl_dfa358f.csv'))
         df2 = pd.read_csv(join(OUTPATH, 'tbl_dfa358s.csv'))
 

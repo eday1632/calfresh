@@ -29,14 +29,14 @@ if __name__ == '__main__':
     for table in table_url_map.keys():
         try:
             crawler = WebCrawler(table, table_url_map[table])
-            result = crawler.crawl()
+            new_table_data = crawler.crawl()
 
-            if result:
-                worker = Worker(result)
-                processed_tables = worker.work()
+            if new_table_data:
+                worker = Worker(new_table_data)
+                datapath = worker.work()
 
-                loader = DataLoader(processed_tables)
-                result = loader.load()
+                loader = DataLoader(datapath)
+                loader.load()
 
         except Exception as ex:
             logger.exception(ex)

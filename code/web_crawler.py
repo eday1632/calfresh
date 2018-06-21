@@ -18,7 +18,6 @@ import requests
 
 from bs4 import BeautifulSoup
 
-
 config = ConfigParser.RawConfigParser()
 config.read('/etc/calfresh/calfresh.conf')
 

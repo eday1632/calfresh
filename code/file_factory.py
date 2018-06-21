@@ -9,7 +9,8 @@ TODOs:
 
 from abc import ABCMeta, abstractmethod
 from string import digits
-import logging
+import ConfigParser
+import logging.config
 
 from xlrd.xldate import xldate_as_datetime
 import editdistance
@@ -18,6 +19,10 @@ import pandas as pd
 
 import constants
 
+config = ConfigParser.RawConfigParser()
+config.read('/etc/calfresh/calfresh.conf')
+
+logging.config.fileConfig(config.get('filepaths', 'config'))
 logger = logging.getLogger('file_factory')
 
 
@@ -85,8 +90,8 @@ class FileFactory(object):
         year (int): the year (yyyy) pertaining to the data within the factory
         quarter (int) the quarter pertaining to the data within the factory
         month (str): the month (MMM) pertaining to the data within the factory
-    """
 
+    """
     __metaclass__ = ABCMeta
 
     def __init__(self, item):
@@ -98,6 +103,7 @@ class FileFactory(object):
 
         Raises:
             ValueError: If the DataFrame object is empty, we're in trouble
+
         """
         super(FileFactory, self).__init__()
 
@@ -220,7 +226,11 @@ class FileFactory(object):
             return np.nan
 
     def checkPercents(self, cols):
-        """
+        """Check and standardize all percentages to fall between -1.00 and 1.00
+
+        Args:
+            cols (list of str): columns that should contain percent values
+
         """
         for col in cols:
             if col in self.df.columns:
@@ -231,7 +241,17 @@ class FileFactory(object):
                     i += 1
 
     def checkCounties(self, col=0):
-        """
+        """Make sure all counties are present
+
+        This function checks that all counties are there and if any are misspelled
+        it tries to identify which county it might be
+
+        Args:
+            col (int): the column to scan for county names
+
+        Raises:
+            ValueError if after its best effort a county is still missing
+
         """
         # get the column name
         col = self.df.columns[col]
@@ -271,7 +291,7 @@ class FileFactory(object):
         i = 0
         for county in self.df[col]:
             if county not in constants.county_set:
-                logging.info('Invalid county: %s', county)
+                logger.info('Invalid county: %s', county)
                 if type(county) == str:
                     county = county.replace(' ', '')
                     closest = self._getClosestSpelledCounty(county)
@@ -306,15 +326,13 @@ class FileFactory(object):
             return np.nan
 
     def trimBogusColumns(self):
-        """
-        """
+        """Drop columns off the end of the table with more than a quarter empty rows"""
         rowcount = self.df.shape[0] / 4
         while self.df[self.df.columns[-1]].isnull().sum() > rowcount:
             self.df.drop(self.df.columns[-1], axis=1, inplace=True)
 
     def trimBogusRows(self):
-        """
-        """
+        """Drop rows off the bottom of the table with more than half empty values"""
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
             self.df.drop(self.df.index[-1], inplace=True)
@@ -332,7 +350,7 @@ class CF296Factory(FileFactory):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
+        # drop columns with data we don't need
         self.df.drop(
             [
                 self.df.columns[0],
@@ -349,7 +367,7 @@ class CF296Factory(FileFactory):
 
     def buildSpecific(self):
         self.checkNumbers()
-
+        # dates in this column come in excel number format
         date_info = [
             xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
         ]

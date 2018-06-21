@@ -23,21 +23,22 @@ class DataLoader(object):
         self.datapath = datapath
 
     def load(self):
-        for root, dirs, files in walk(self.datapath):
-            for table_name in files:
-                logger.info('Loading %s', table_name)
-                with open(join(self.datapath, table_name)) as csvfile:
-                    header = csv.reader(csvfile, delimiter=',').next()
-                    result = subprocess.call([
-                        'mysqlimport',
-                        '--local',
-                        '--replace',
-                        '--fields-terminated-by=,',
-                        '--ignore-lines=1',
-                        '--columns=' + ','.join(header),  # dynamic
-                        '-u',
-                        'eday',
-                        'calfreshdb',
-                        join(self.datapath, table_name),  # dynamic
-                    ])
-                    logger.info('Load result: %s', result)
+        with open('/etc/calfresh/logs/calfresh.log') as logfile:
+            for root, dirs, files in walk(self.datapath):
+                for table_name in files:
+                    logger.info('Loading %s', table_name)
+                    with open(join(self.datapath, table_name)) as csvfile:
+                        header = csv.reader(csvfile, delimiter=',').next()
+                        result = subprocess.call([
+                            'mysqlimport',
+                            '--local',
+                            '--replace',
+                            '--fields-terminated-by=,',
+                            '--ignore-lines=1',
+                            '--columns=' + ','.join(header),  # dynamic
+                            '-u',
+                            'eday',
+                            'calfreshdb',
+                            join(self.datapath, table_name),  # dynamic
+                        ], stdout=logfile)
+                        logger.info('Load result: %s', result)

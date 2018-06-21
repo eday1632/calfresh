@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""This service loads the processed data from the worker and its file factories
-into the database
+"""Loads the processed data from the worker and its factories into the database
 
 """
 

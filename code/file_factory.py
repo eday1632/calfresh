@@ -144,9 +144,9 @@ class FileFactory(object):
             year (int): converts the year argument to a number
 
         Raises:
-            ValueError: If the year is earlier than 2002 or later than 2017
+            ValueError: If the year is earlier than 2002 or later than 2018
         """
-        if int('20' + year) > 2017 or int('20' + year) < 2002:
+        if int('20' + year) > 2018 or int('20' + year) < 2002:
             logging.error('Bad year value: %s', year)
             raise ValueError
 

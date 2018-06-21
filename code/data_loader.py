@@ -23,7 +23,7 @@ class DataLoader(object):
         self.datapath = datapath
 
     def load(self):
-        with open('/etc/calfresh/logs/calfresh.log') as logfile:
+        with open('/etc/calfresh/logs/calfresh.log', 'a') as logfile:
             for root, dirs, files in walk(self.datapath):
                 for table_name in files:
                     logger.info('Loading %s', table_name)

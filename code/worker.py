@@ -1,4 +1,4 @@
-"""this is the main file for converting excel to csv files, processing those
+"""This is the main file for converting excel to csv files, processing those
 csv files, and merging them for upload to calfreshdb
 
 Args:
@@ -38,7 +38,6 @@ from csv import writer
 from datetime import datetime
 from os import walk, remove, makedirs
 from os.path import join, exists
-from shutil import move
 from xlrd import open_workbook
 import ConfigParser
 import logging.config
@@ -61,28 +60,30 @@ OUTPATH = '/etc/calfresh/{}_{}_{}'.format(now.month, now.day, now.year)
 
 
 class Worker(object):
-    """the worker performs the data cleaning and standardization
+    """The worker performs the data cleaning and standardization
     Args:
         table (str): the table type the data to process belongs to
 
     Returns:
         table (str): the table, so the data loader knows what to load
     """
+
     def __init__(self, table):
         self.table = table
         if not exists(OUTPATH):
             makedirs(OUTPATH)
 
     def work(self):
+        """Do the needful: convert the files, run the factories, merge the output"""
+
         # convert excel files to csv
         self.excelToCSV()
         paths = self.getCSVInput()
         self.removeJunkFiles(paths)
-#        self.redistributeDataDashboardFiles(paths)
 
-        # run the processor
+        # run the factories for processing
         paths = self.getCSVInput()
-        self.runProcessor(paths)
+        self.runFactories(paths)
 
         # merge the files
         paths = self.getCSVOutput()
@@ -91,7 +92,7 @@ class Worker(object):
         return self.table
 
     def getCSVInput(self):
-        """search directories for unprocessed csv files
+        """Search directories for unprocessed csv files
 
         Returns:
             paths (list of dicts): contains the dict objects representing
@@ -111,7 +112,7 @@ class Worker(object):
         return paths
 
     def getCSVOutput(self):
-        """search directories for processed csv files
+        """Search directories for processed csv files
 
         Returns:
             paths (list of dicts): contains the dict objects representing
@@ -131,7 +132,7 @@ class Worker(object):
         return paths
 
     def getExcelFiles(self):
-        """search directories for excel files
+        """Search directories for excel files
 
         Args:
             inpath (str): the path to recursively search for excel files
@@ -140,6 +141,7 @@ class Worker(object):
             paths (list of dicts): contains the dict objects representing
             the path, source, and filename of each excel file to be converted
         """
+
         paths = []
         for root, dirs, files in walk(INPATH):
             for name in files:
@@ -153,7 +155,7 @@ class Worker(object):
         return paths
 
     def convertExcelFile(self, item):
-        """convert excel files ending in .xls and .xlsx
+        """Convert excel files ending in .xls and .xlsx
 
         Args:
             item (dict): dict with keynames path, source, and filename
@@ -186,7 +188,7 @@ class Worker(object):
                     ])
 
     def stripFilename(self, filename):
-        """removes the suffix from excel files
+        """Removes the suffix from excel files
 
         Args:
             filename (str): filename ending in .xls or .xlsx
@@ -194,10 +196,11 @@ class Worker(object):
         Returns:
             substring of filename ending before '.xls'
         """
+
         return filename.split('.xls')[0]
 
     def convertNewExcelFile(self, item):
-        """convert excel files ending in .xlsx, representing excel versions >2010
+        """Convert excel files ending in .xlsx, representing excel versions >2010
 
         Args:
             item (dict): dict with keys path, source, and filename of .xls excel files
@@ -229,7 +232,7 @@ class Worker(object):
                 ])
 
     def excelToCSV(self):
-        """convert all excel files to csvs in the source directories"""
+        """Convert all excel files to csvs in the source directories"""
 
         paths = self.getExcelFiles()
         for item in paths:
@@ -239,36 +242,12 @@ class Worker(object):
             logger.info('converting: %s', item['filename'])
             self.convertExcelFile(item)
 
-    def redistributeDataDashboardFiles(self, paths):
-        for path in paths:
-            if path['filename'] == 'CFDashboard-Annual.csv':
-                move(
-                    path['path'],
-                    join(INPATH, 'tbl_data_dashboard_annual/csv_in', path['filename'])
-                )
-            elif path['filename'] == 'CFDashboard-Quarterly.csv':
-                move(
-                    path['path'],
-                    join(INPATH, 'tbl_data_dashboard_quarterly/csv_in', path['filename'])
-                )
-            elif path['filename'] == 'CFDashboard-Every_Mth.csv':
-                move(
-                    path['path'],
-                    join(INPATH, 'tbl_data_dashboard_monthly/csv_in', path['filename'])
-                )
-            elif path['filename'] == 'CFDashboard-Every_3_Mth.csv':
-                move(
-                    path['path'],
-                    join(INPATH, 'tbl_data_dashboard_3mth/csv_in', path['filename'])
-                )
-            elif path['filename'] == 'CFDashboard-PRI_Raw.csv':
-                move(
-                    path['path'],
-                    join(INPATH, 'tbl_data_dashboard_pri_raw/csv_in', path['filename'])
-                )
-
     def removeJunkFiles(self, paths):
-        """remove files known to not to contain data"""
+        """Remove files that don't contain relevant data
+
+        Args:
+            paths (list of str): the file paths to search for junk files
+        """
 
         for path in paths:
             if path['source'] == 'tbl_cf15':
@@ -348,8 +327,12 @@ class Worker(object):
                 if '0.csv' in path['filename']:
                     remove(path['path'])
 
-    def runProcessor(self, paths):
-        """process all the csv files in the directories specified"""
+    def runFactories(self, paths):
+        """Process all the csv files in the directories specified
+
+        Args:
+            paths (list of str): all the file paths to process in the factories
+        """
 
         for item in paths:
             if item['source'] != self.table:
@@ -420,7 +403,7 @@ class Worker(object):
                 )
 
     def mergeForUploading(self, paths):
-        """merge all the csv files in the directories specified for uploading to the database
+        """Merge all the csv files in the directories specified for uploading to the database
 
         Args:
             paths (list of dicts): each dict has a path, source, and filename
@@ -452,8 +435,7 @@ class Worker(object):
             self.combine358FandS()
 
     def combine358FandS(self):
-        """combines the tbl_dfa358f and tbl_dfa358s files for uploading
-        to the database
+        """Combines the tbl_dfa358f and tbl_dfa358s files for uploading
 
         Args:
             outpath (str): path to the directory of the tbl_dfa358f and tbl_dfa358s files

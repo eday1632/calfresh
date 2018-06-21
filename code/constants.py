@@ -1,7 +1,7 @@
 """As the name suggests, this file contains (almost?) all the constants we need:
     - The tablenames and their web urls
-    - the county sets
-    - column names for all the tables
+    - The county sets
+    - Column names for all the tables
 """
 
 

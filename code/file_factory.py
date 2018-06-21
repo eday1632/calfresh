@@ -85,8 +85,6 @@ class FileFactory(object):
         year (int): the year (yyyy) pertaining to the data within the factory
         quarter (int) the quarter pertaining to the data within the factory
         month (str): the month (MMM) pertaining to the data within the factory
-
-
     """
 
     __metaclass__ = ABCMeta
@@ -119,21 +117,24 @@ class FileFactory(object):
         self.addFullDate()
 
     def __str__(self):
-        """returns the first ten rows of the df attribute"""
+        """Returns the first ten rows of the df attribute"""
+
         return str(self.df.head(10))
 
     @abstractmethod
     def buildSpecific(self):
-        """process class specific info, such as column names, year, month, etc."""
+        """Process class specific info, such as column names, year, month, etc."""
+
         return
 
     def addFullDate(self):
-        """convert the month and year to valid datetime"""
+        """Convert the month and year to valid datetime"""
+
         self.df['fulldate'] = self.df.month + '/' + self.df.year.map(str)
         self.df.fulldate = pd.to_datetime(self.df.fulldate)
 
     def addYear(self, year):
-        """add the year to the df and set the year attribute
+        """Add the year to the df and set the year attribute
 
         Args:
             year (str): is passed in as a slice of the filename
@@ -146,6 +147,7 @@ class FileFactory(object):
         Raises:
             ValueError: If the year is earlier than 2002 or later than 2018
         """
+
         if int('20' + year) > 2018 or int('20' + year) < 2002:
             logging.error('Bad year value: %s', year)
             raise ValueError
@@ -153,11 +155,13 @@ class FileFactory(object):
         self.df['year'] = int('20' + year)
 
     def addMonth(self, month):
-        """month is passed in as a string or slice of the filename"""
+        """Month is passed in as a string or slice of the filename"""
+
         self.df['month'] = month.upper()
 
     def addQuarter(self):
-        """map the month to the quarter"""
+        """Map the month to the quarter"""
+
         quarters = {
             'JAN': 1.0,
             'FEB': 1.0,
@@ -176,7 +180,15 @@ class FileFactory(object):
         self.df['quarter'] = self.df.month.map(quarters)
 
     def checkNumbers(self, startCol=1):
-        """check the type of all values in the input columns"""
+        """Check the type of all values in the input columns
+
+        Args:
+            startCol (int): the first column to start looking for, enforcing numerics
+
+        Outputs:
+            a squeaky clean set of columns filled with numeric or None values
+        """
+
         for col in self.df.columns[startCol:]:
             i = 0
             for row in self.df[col]:
@@ -184,6 +196,16 @@ class FileFactory(object):
                 i += 1
 
     def _getValidNumber(self, num):
+        """Extract a number from the input arg or return None
+
+        Args:
+            num (int): a value from a cell assumed to be a numeric
+
+        Returns:
+            float or None: float if there were numeric values in the arg,
+            or None if it was just junk
+        """
+
         try:
             return float(num)
         except ValueError:
@@ -191,7 +213,8 @@ class FileFactory(object):
             return self._convertToNumber(num)
 
     def _convertToNumber(self, num):
-        """remove all non-digit chars from the input"""
+        """Remove all non-digit chars from the input"""
+
         temp = num
         for c in temp:
             if c not in digits + '.':
@@ -204,6 +227,9 @@ class FileFactory(object):
             return np.nan
 
     def checkPercents(self, cols):
+        """
+        """
+
         for col in cols:
             if col in self.df.columns:
                 i = 0
@@ -213,6 +239,9 @@ class FileFactory(object):
                     i += 1
 
     def checkCounties(self, col=0):
+        """
+        """
+
         # get the column name
         col = self.df.columns[col]
         # remove padding and correct misspellings
@@ -230,10 +259,14 @@ class FileFactory(object):
             raise ValueError
 
     def _trimNonCountyRows(self, col):
-        """remove any blank row from the county column"""
+        """Remove any blank row from the county column"""
+
         self.df = self.df.dropna(subset=[col]).reset_index(drop=True)
 
     def _completeCountySet(self, col):
+        """
+        """
+
         # get the reference set and observed set of counties
         reference = set(self.constants.county_dict.values())
         observed = set(self.df[col].values)
@@ -243,6 +276,9 @@ class FileFactory(object):
         return observed, reference
 
     def _cleanCountyNames(self, col):
+        """
+        """
+
         self.df[col] = self.df[col].str.strip()
         i = 0
         for county in self.df[col]:
@@ -256,10 +292,10 @@ class FileFactory(object):
                     self.df.loc[i, col] = np.nan
             i += 1
 
-    def _isValidCounty(self, county):
-        return county in self.constants.county_dict.keys()
-
     def _getNearestSpelledCounties(self, county):
+        """
+        """
+
         vals = {}
         for key in self.constants.county_dict.keys():
             county = str(county)
@@ -269,6 +305,9 @@ class FileFactory(object):
         return vals
 
     def _getClosestSpelledCounty(self, county):
+        """
+        """
+
         potentials = self._getNearestSpelledCounties(county)
         if not potentials:
             return np.nan
@@ -281,24 +320,32 @@ class FileFactory(object):
             return np.nan
 
     def trimBogusColumns(self):
+        """
+        """
+
         rowcount = self.df.shape[0] / 4
         while self.df[self.df.columns[-1]].isnull().sum() > rowcount:
             self.df.drop(self.df.columns[-1], axis=1, inplace=True)
 
     def trimBogusRows(self):
+        """
+        """
+
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
             self.df.drop(self.df.index[-1], inplace=True)
 
 
 class CF15Factory(FileFactory):
-    """builds the CF15Factory"""
+    """Builds the CF15Factory"""
+
     def __init__(self, item):
         super(CF15Factory, self).__init__(item)
 
 
 class CF296Factory(FileFactory):
-    """builds the CF296Factory"""
+    """Builds the CF296Factory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -333,7 +380,8 @@ class CF296Factory(FileFactory):
 
 
 class ChurnDataFactory(FileFactory):
-    """builds the ChurnDataFactory"""
+    """Builds the ChurnDataFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -377,7 +425,8 @@ class ChurnDataFactory(FileFactory):
 
 
 class DataDashboardAnnualFactory(FileFactory):
-    """builds the DataDashboardAnnualFactory"""
+    """Builds the DataDashboardAnnualFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -398,7 +447,8 @@ class DataDashboardAnnualFactory(FileFactory):
 
 
 class DataDashboardQuarterlyFactory(FileFactory):
-    """builds the DataDashboardQuarterlyFactory"""
+    """Builds the DataDashboardQuarterlyFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -418,7 +468,8 @@ class DataDashboardQuarterlyFactory(FileFactory):
 
 
 class DataDashboardMonthlyFactory(FileFactory):
-    """builds the DataDashboardMonthlyFactory"""
+    """Builds the DataDashboardMonthlyFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -438,7 +489,8 @@ class DataDashboardMonthlyFactory(FileFactory):
 
 
 class DataDashboard3MthFactory(FileFactory):
-    """builds the DataDashboard3MthFactory"""
+    """Builds the DataDashboard3MthFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -458,7 +510,8 @@ class DataDashboard3MthFactory(FileFactory):
 
 
 class DataDashboardPRIRawFactory(FileFactory):
-    """builds the DataDashboardPRIRawFactory"""
+    """Builds the DataDashboardPRIRawFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -479,7 +532,8 @@ class DataDashboardPRIRawFactory(FileFactory):
 
 
 class DFA256Factory(FileFactory):
-    """builds the DFA256Factory"""
+    """Builds the DFA256Factory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -542,7 +596,8 @@ class DFA256Factory(FileFactory):
 
 
 class DFA296Factory(FileFactory):
-    """builds the DFA296Factory"""
+    """Builds the DFA296Factory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -563,6 +618,9 @@ class DFA296Factory(FileFactory):
         self.sumColumns(self.constants.DFA296SumColumns)
 
     def sumColumns(self, tuples):
+        """
+        """
+
         for tup in tuples:
             if tup[1] in self.df.columns and tup[2] in self.df.columns:
                 self.df[tup[0]] = \
@@ -570,7 +628,8 @@ class DFA296Factory(FileFactory):
 
 
 class DFA296XFactory(FileFactory):
-    """builds the DFA296XFactory"""
+    """Builds the DFA296XFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -601,7 +660,8 @@ class DFA296XFactory(FileFactory):
 
 
 class DFA358FFactory(FileFactory):
-    """builds the DFA358FFactory"""
+    """Builds the DFA358FFactory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -621,13 +681,15 @@ class DFA358FFactory(FileFactory):
 
 
 class DFA358SFactory(DFA358FFactory):
-    """builds the DFA358SFactory"""
+    """Builds the DFA358SFactory, but actually just inherits from DFA358F"""
+
     def __init__(self, item):
         super(DFA358SFactory, self).__init__(item)
 
 
 class Stat47Factory(FileFactory):
-    """builds the Stat47Factory"""
+    """Builds the Stat47Factory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -647,7 +709,8 @@ class Stat47Factory(FileFactory):
 
 
 class Stat48Factory(FileFactory):
-    """builds the Stat48Factory"""
+    """Builds the Stat48Factory"""
+
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:

@@ -19,14 +19,16 @@ logger = logging.getLogger('web_crawler')
 
 
 class WebCrawler(object):
-    """docstring for WebCrawler"""
+    """
+    """
+
     def __init__(self, table, url):
         super(WebCrawler, self).__init__()
         self.table = table
         self.url = url
 
     def crawl(self):
-        """do the needful: get all the html pages, identify new urls, and return them"""
+        """Do the needful: get all the html pages, identify new urls, and return them"""
 
         new_page = self._get_new_page()
         old_page = self._get_old_page()
@@ -40,6 +42,9 @@ class WebCrawler(object):
                 return self.table
 
     def _get_new_page(self):
+        """
+        """
+
         # request page
         page = requests.get(self.url)
 
@@ -56,12 +61,14 @@ class WebCrawler(object):
             return fp
 
     def _get_old_page(self):
-        # return yesterday's file pointer
+        """Return yesterday's file pointer"""
+
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         return os.path.join(temp_dir, self.table + '_' + str(yesterday))
 
     def _download_new_files(self, updated_paths):
-        # for updated link in new page, download the file
+        """For updated link in new page, download the file"""
+
         for path in updated_paths:
             if 'http' not in path:
                 path = 'http://www.cdss.ca.gov' + path
@@ -75,6 +82,9 @@ class WebCrawler(object):
                 logger.info('Downloaded %s', fp)
 
     def _get_filename(self, path):
+        """
+        """
+
         filename = path.split('/')[-1]
         if '?ver' in path:
             filename = filename.split('?')[0]
@@ -82,7 +92,7 @@ class WebCrawler(object):
         return filename
 
     def clean_up(self):
-        """remove the html files that are older than yesterday's"""
+        """Remove the html files that are older than yesterday's"""
 
         two_days_ago = datetime.date.today() - datetime.timedelta(days=2)
         for root, dirs, files in os.walk(temp_dir):
@@ -92,7 +102,7 @@ class WebCrawler(object):
 
 
 class PageParser(object):
-    """this class looks for new Excel files by comparing today's and yesterday's pages
+    """This class looks for new Excel files by comparing today's and yesterday's pages
 
     Args:
         table (str): the table whose pages to get
@@ -114,11 +124,14 @@ class PageParser(object):
 
     @property
     def are_different(self):
-        """were any new excel links found?"""
+        """Were any new excel links found?"""
 
         return len(self.updated_paths) > 0
 
     def _load_page_content(self):
+        """
+        """
+
         # open new page from file
         with open(self.new_page, 'r') as new:
             self.new_soup = BeautifulSoup(new.read(), 'html.parser')
@@ -127,7 +140,7 @@ class PageParser(object):
             self.old_soup = BeautifulSoup(old.read(), 'html.parser')
 
     def _get_all_xls_urls(self, url_list):
-        """extract the urls to excel files from all urls found
+        """Extract the urls to excel files from all urls found
 
         Args:
             url_list (list of str): all the urls found on the page
@@ -143,6 +156,9 @@ class PageParser(object):
         return file_urls
 
     def _get_new_urls(self):
+        """
+        """
+
         all_new_urls = [str(url.get('href')) for url in self.new_soup.find_all('a')]
         all_old_urls = [str(url.get('href')) for url in self.old_soup.find_all('a')]
 

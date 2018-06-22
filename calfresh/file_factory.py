@@ -375,7 +375,6 @@ class CF296Factory(FileFactory):
     def buildSpecific(self):
         self.checkNumbers()
         # dates in this column come in excel number format
-        import ipdb; ipdb.set_trace()
         date_info = [
             xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
         ]

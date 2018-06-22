@@ -59,6 +59,7 @@ class Worker(object):
 
         # merge the files
         paths = self.getCSVOutput()
+        import ipdb; ipdb.set_trace()
         if self.table == 'tbl_data_dashboard':
             self.redistributeDataDashboardFiles(paths)
         else:
@@ -221,27 +222,27 @@ class Worker(object):
             if path['filename'] == 'CFDashboard-Annual.csv':
                 move(
                     path['path'],
-                    join(OUTPATH, path['filename'])
+                    OUTPATH,
                 )
             elif path['filename'] == 'CFDashboard-Quarterly.csv':
                 move(
                     path['path'],
-                    join(OUTPATH, path['filename'])
+                    OUTPATH,
                 )
             elif path['filename'] == 'CFDashboard-Every_Mth.csv':
                 move(
                     path['path'],
-                    join(OUTPATH, path['filename'])
+                    OUTPATH,
                 )
             elif path['filename'] == 'CFDashboard-Every_3_Mth.csv':
                 move(
                     path['path'],
-                    join(OUTPATH, path['filename'])
+                    OUTPATH,
                 )
             elif path['filename'] == 'CFDashboard-PRI_Raw.csv':
                 move(
                     path['path'],
-                    join(OUTPATH, path['filename'])
+                    OUTPATH,
                 )
 
     def removeJunkFiles(self, paths):

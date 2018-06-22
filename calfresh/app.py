@@ -37,7 +37,7 @@ if __name__ == '__main__':
                 datapath = worker.work()
 
                 loader = DataLoader()
-                loader.load(join(datapath, table))
+                loader.load(join(datapath, table, '.csv'))
 
         except Exception as ex:
             logger.exception(ex)

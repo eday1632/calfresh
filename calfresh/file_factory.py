@@ -333,7 +333,7 @@ class FileFactory(object):
             return np.nan
 
         closest = min(potentials, key=potentials.get)
-
+        # Needs to have fewer than three edits made
         if potentials[closest] < 3L:
             return self.constants.county_dict[closest]
         else:

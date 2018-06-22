@@ -10,9 +10,9 @@ url_prefix = 'http://www.cdss.ca.gov/inforesources/'
 
 table_url_map = {
     # 'tbl_cf296': url_prefix + 'Research-and-Data/CalFresh-Data-Tables/CF296',
-    'tbl_churn_data': url_prefix + 'CalFresh-Resource-Center/Data',
-    # 'tbl_data_dashboard':
-    #     url_prefix + 'Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
+    # 'tbl_churn_data': url_prefix + 'CalFresh-Resource-Center/Data',
+    'tbl_data_dashboard':
+        url_prefix + 'Data-Portal/Research-and-Data/CalFresh-Data-Dashboard',
     # 'tbl_dfa256': url_prefix + 'Research-and-Data/CalFresh-Data-Tables/DFA256',
     # 'tbl_dfa296x': url_prefix + 'Research-and-Data/CalFresh-Data-Tables/DFA296x',
     # 'tbl_dfa358f': url_prefix + 'Research-and-Data/CalFresh-Data-Tables/DFA358F',

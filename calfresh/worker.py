@@ -11,6 +11,7 @@ from csv import writer
 from datetime import datetime
 from os import walk, remove, makedirs
 from os.path import join, exists
+from shutil import move
 import ConfigParser
 import logging.config
 
@@ -58,7 +59,10 @@ class Worker(object):
 
         # merge the files
         paths = self.getCSVOutput()
-        self.mergeForUploading(paths)
+        if self.table == 'tbl_data_dashboard':
+            self.redistributeDataDashboardFiles(paths)
+        else:
+            self.mergeForUploading(paths)
 
         return OUTPATH
 
@@ -211,6 +215,34 @@ class Worker(object):
 
             logger.info('converting: %s', item['filename'])
             self.convertExcelFile(item)
+
+    def redistributeDataDashboardFiles(self, paths):
+        for path in paths:
+            if path['filename'] == 'CFDashboard-Annual.csv':
+                move(
+                    path['path'],
+                    join(OUTPATH, path['filename'])
+                )
+            elif path['filename'] == 'CFDashboard-Quarterly.csv':
+                move(
+                    path['path'],
+                    join(OUTPATH, path['filename'])
+                )
+            elif path['filename'] == 'CFDashboard-Every_Mth.csv':
+                move(
+                    path['path'],
+                    join(OUTPATH, path['filename'])
+                )
+            elif path['filename'] == 'CFDashboard-Every_3_Mth.csv':
+                move(
+                    path['path'],
+                    join(OUTPATH, path['filename'])
+                )
+            elif path['filename'] == 'CFDashboard-PRI_Raw.csv':
+                move(
+                    path['path'],
+                    join(OUTPATH, path['filename'])
+                )
 
     def removeJunkFiles(self, paths):
         """Remove files that don't contain relevant data

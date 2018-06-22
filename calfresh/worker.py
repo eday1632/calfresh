@@ -59,7 +59,7 @@ class Worker(object):
 
         # merge the files
         paths = self.getCSVOutput()
-        import ipdb; ipdb.set_trace()
+
         if self.table == 'tbl_data_dashboard':
             self.redistributeDataDashboardFiles(paths)
         else:

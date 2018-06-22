@@ -87,7 +87,6 @@ county_dict = {
 }
 
 county_set = set([
-    'Statewide',
     'California',
     'Alameda',
     'Alpine',

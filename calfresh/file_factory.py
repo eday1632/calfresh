@@ -37,7 +37,7 @@ def initialize(item):
         FileFactory: subclass corresponding to the source of the item
 
     Raises:
-        ValueError: If the source of the item is unknown
+        ValueError: If the source of the item is unrecognized
 
     """
     if item['source'] == 'tbl_cf15':
@@ -75,10 +75,7 @@ def initialize(item):
 
 
 class FileFactory(object):
-    """Base class for all the file factories: CF15Factory, CF296Factory, \
-     ChurnDataFactory, DataDashboard*Factory, DFA256Factory, DFA296Factory, \
-     DFA296XFactory, DFA358FFactory, DFA358SFactory, Stat47Factory, \
-     Stat48Factory
+    """Base class for all the file factories
 
     Attributes:
         df (pandas DataFrame): the csv file passed in converted to a \
@@ -213,13 +210,20 @@ class FileFactory(object):
             return self._convertToNumber(num)
 
     def _convertToNumber(self, num):
-        """Remove all non-digit chars from the input"""
+        """Remove all non-numeric characters from the input
+
+        Args:
+            num (str): a string representation of a number
+
+        Returns:
+            float stripped of all non-numerics or None
+
+        """
         temp = num
         for c in temp:
             if c not in digits + '.':
                 num = num.replace(c, '')
 
-        # convert the remaining value to a number or NaN
         try:
             return float(num)
         except ValueError:
@@ -255,37 +259,33 @@ class FileFactory(object):
         """
         # get the column name
         col = self.df.columns[col]
-        # remove padding and correct misspellings
+
         self._cleanCountyNames(col)
-        # replace Statewide with California to standardize
+
         self.df[col] = self.df[col].replace({'Statewide': 'California'})
-        # remove any rows that don't contain a county name
+
         self._trimNonCountyRows(col)
 
         # make sure all the counties are present
-        observed, reference = self._completeCountySet(col)
-        if not observed == reference:
+        observed = set(self.df[col].values)
+        if not observed == constants.county_set:
             logging.error('Observed: %s', str(observed))
-            logging.error('Counties not found: %s', str(reference.difference(observed)))
+            logging.error(
+                'Counties not found: %s',
+                str(constants.county_set.difference(observed))
+            )
             raise ValueError
 
     def _trimNonCountyRows(self, col):
         """Remove any blank row from the county column"""
         self.df = self.df.dropna(subset=[col]).reset_index(drop=True)
 
-    def _completeCountySet(self, col):
-        """
-        """
-        # get the reference set and observed set of counties
-        reference = set(constants.county_dict.values())
-        observed = set(self.df[col].values)
-        # remove Statewide from the reference set since it was replaced with California
-        reference.remove('Statewide')
-        # return the two sets
-        return observed, reference
-
     def _cleanCountyNames(self, col):
-        """
+        """Fill each cell with a valid county name or None
+
+        Args:
+            col (str): the column with observable county names
+
         """
         self.df[col] = self.df[col].str.strip()
         i = 0
@@ -301,29 +301,40 @@ class FileFactory(object):
             i += 1
 
     def _getNearestSpelledCounties(self, county):
-        """
+        """Get county names with the shortest edit distance to the county arg
+
+        Args:
+            county (str): the invalid county name
+
+        Returns:
+            A dict of county names whose edit distance is less than 3 from the arg
+
         """
         vals = {}
         for key in constants.county_dict.keys():
             county = str(county)
+            # Less than three is best since some counties only have four letters
             if len(county) < (len(key) + 3) and len(county) > (len(key) - 3):
                 vals[key] = editdistance.eval(key, county)
 
         return vals
 
     def _getClosestSpelledCounty(self, county):
-        """
+        """Get the county with the smallest edit distance or None
+
+        Args:
+            county (str): invalid county name to replace
+
+        Returns:
+            A valid county name or None if there were none within 3 edits
+
         """
         potentials = self._getNearestSpelledCounties(county)
         if not potentials:
             return np.nan
 
         closest = min(potentials, key=potentials.get)
-
-        if potentials[closest] < 3L:
-            return constants.county_dict[closest]
-        else:
-            return np.nan
+        return constants.county_dict[closest]
 
     def trimBogusColumns(self):
         """Drop columns off the end of the table with more than a quarter empty rows"""
@@ -332,20 +343,19 @@ class FileFactory(object):
             self.df.drop(self.df.columns[-1], axis=1, inplace=True)
 
     def trimBogusRows(self):
-        """Drop rows off the bottom of the table with more than half empty values"""
+        """Drop rows off the bottom of the table with more than half empty columns"""
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
             self.df.drop(self.df.index[-1], inplace=True)
 
 
 class CF15Factory(FileFactory):
-    """Builds the CF15Factory"""
+    """Never to be implemented?"""
     def __init__(self, item):
         super(CF15Factory, self).__init__(item)
 
 
 class CF296Factory(FileFactory):
-    """Builds the CF296Factory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -380,7 +390,6 @@ class CF296Factory(FileFactory):
 
 
 class ChurnDataFactory(FileFactory):
-    """Builds the ChurnDataFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -413,6 +422,7 @@ class ChurnDataFactory(FileFactory):
         self.addAdditionalPercentages()
 
     def addAdditionalPercentages(self):
+        """These are figures we precompute for a better user experience"""
         self.df['pct_apps_rcvd_from_this_county'] = 0.0
         total = self.df['snap_apps_rcvd'].where(self.df['county'] == 'California')[0]
         self.df['pct_apps_rcvd_from_this_county'] = self.df['snap_apps_rcvd'] / total
@@ -424,7 +434,6 @@ class ChurnDataFactory(FileFactory):
 
 
 class DataDashboardAnnualFactory(FileFactory):
-    """Builds the DataDashboardAnnualFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -445,7 +454,6 @@ class DataDashboardAnnualFactory(FileFactory):
 
 
 class DataDashboardQuarterlyFactory(FileFactory):
-    """Builds the DataDashboardQuarterlyFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -465,7 +473,6 @@ class DataDashboardQuarterlyFactory(FileFactory):
 
 
 class DataDashboardMonthlyFactory(FileFactory):
-    """Builds the DataDashboardMonthlyFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -485,7 +492,6 @@ class DataDashboardMonthlyFactory(FileFactory):
 
 
 class DataDashboard3MthFactory(FileFactory):
-    """Builds the DataDashboard3MthFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -505,7 +511,6 @@ class DataDashboard3MthFactory(FileFactory):
 
 
 class DataDashboardPRIRawFactory(FileFactory):
-    """Builds the DataDashboardPRIRawFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -515,7 +520,7 @@ class DataDashboardPRIRawFactory(FileFactory):
 
     def buildSpecific(self):
         self.checkNumbers(startCol=7)
-
+        # This file is only updated at the end of the year
         self.addMonth('DEC')
 
         self.df.columns = constants.DataDashboardPRIRawColumns
@@ -526,12 +531,11 @@ class DataDashboardPRIRawFactory(FileFactory):
 
 
 class DFA256Factory(FileFactory):
-    """Builds the DFA256Factory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
+        # drop columns with data we don't need
         self.df.drop(
             [
                 self.df.columns[0],
@@ -548,6 +552,7 @@ class DFA256Factory(FileFactory):
 
     def buildSpecific(self):
         self.checkNumbers()
+        # dates in this column come in excel number format
         date_info = [
             xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
         ]
@@ -556,7 +561,7 @@ class DFA256Factory(FileFactory):
         self.df['month'] = [pydate.strftime('%b').upper() for pydate in date_info]
 
         self.df.drop(self.df.columns[1], axis=1, inplace=True)
-
+        # some logic for determining columns in the file based on date follows...
         if self.df.year.unique()[0] == 2002 or \
                 (self.df.year.unique()[0] == 2003 and
                     self.df.month.unique()[0] in ['JAN', 'FEB', 'MAR']):
@@ -569,7 +574,7 @@ class DFA256Factory(FileFactory):
 
         else:
             self.df.columns = constants.DFA256Columns3
-
+        # we precompute this for ease of user analysis
         self.df['total_households'] = (
             self.df.num_hh_pub_asst_fed +
             self.df.num_hh_pub_asst_fed_st +
@@ -578,7 +583,7 @@ class DFA256Factory(FileFactory):
             self.df.num_hh_nonpub_asst_fed_st +
             self.df.num_hh_nonpub_asst_st
         )
-
+        # this is also something we precompute for users
         self.df['big_six'] = False
         self.df = self.df.sort_values(by='total_households', ascending=False)
         self.df = self.df.reset_index(drop=True)
@@ -589,7 +594,6 @@ class DFA256Factory(FileFactory):
 
 
 class DFA296Factory(FileFactory):
-    """Builds the DFA296Factory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -610,8 +614,7 @@ class DFA296Factory(FileFactory):
         self.sumColumns(constants.DFA296SumColumns)
 
     def sumColumns(self, tuples):
-        """
-        """
+        """About 30 data types are split by PACF and NACF, so we add TOTALS"""
         for tup in tuples:
             if tup[1] in self.df.columns and tup[2] in self.df.columns:
                 self.df[tup[0]] = \
@@ -619,7 +622,6 @@ class DFA296Factory(FileFactory):
 
 
 class DFA296XFactory(FileFactory):
-    """Builds the DFA296XFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -631,7 +633,7 @@ class DFA296XFactory(FileFactory):
         self.checkNumbers()
         self.addYear(self.filename[-6:-4])
         self.addMonth(self.filename[-13:-10])
-
+        # some logic for determining columns in the file based on date follows...
         if self.df.year.unique()[0] < 2004 or \
                 (self.df.year.unique()[0] == 2004 and
                     self.df.month.unique()[0] in ['JAN', 'APR', 'JUL']):
@@ -650,7 +652,6 @@ class DFA296XFactory(FileFactory):
 
 
 class DFA358FFactory(FileFactory):
-    """Builds the DFA358FFactory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -670,13 +671,11 @@ class DFA358FFactory(FileFactory):
 
 
 class DFA358SFactory(DFA358FFactory):
-    """Builds the DFA358SFactory, but actually just inherits from DFA358F"""
     def __init__(self, item):
         super(DFA358SFactory, self).__init__(item)
 
 
 class Stat47Factory(FileFactory):
-    """Builds the Stat47Factory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
@@ -696,7 +695,6 @@ class Stat47Factory(FileFactory):
 
 
 class Stat48Factory(FileFactory):
-    """Builds the Stat48Factory"""
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
         if self.df.empty:

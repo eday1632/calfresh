@@ -206,7 +206,6 @@ class FileFactory(object):
         try:
             return float(num)
         except ValueError:
-            logging.info('Value can not convert to float: %s', num)
             return self._convertToNumber(num)
 
     def _convertToNumber(self, num):
@@ -347,12 +346,6 @@ class FileFactory(object):
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
             self.df.drop(self.df.index[-1], inplace=True)
-
-
-class CF15Factory(FileFactory):
-    """Never to be implemented?"""
-    def __init__(self, item):
-        super(CF15Factory, self).__init__(item)
 
 
 class CF296Factory(FileFactory):
@@ -593,34 +586,6 @@ class DFA256Factory(FileFactory):
             i += 1
 
 
-class DFA296Factory(FileFactory):
-    def __init__(self, item):
-        self.df = pd.read_csv(item['path'])
-        if self.df.empty:
-            raise ValueError
-
-        super(DFA296Factory, self).__init__(item)
-
-    def buildSpecific(self):
-        self.checkNumbers()
-        self.addYear(self.filename[-6:-4])
-        self.addMonth(self.filename[-9:-6])
-
-        if self.df.year.unique()[0] <= 2011:
-            self.df.columns = constants.DFA296Columns1
-        else:
-            self.df.columns = constants.DFA296Columns2
-
-        self.sumColumns(constants.DFA296SumColumns)
-
-    def sumColumns(self, tuples):
-        """About 30 data types are split by PACF and NACF, so we add TOTALS"""
-        for tup in tuples:
-            if tup[1] in self.df.columns and tup[2] in self.df.columns:
-                self.df[tup[0]] = \
-                    self.df[tup[1]].apply(float) + self.df[tup[2]].apply(float)
-
-
 class DFA296XFactory(FileFactory):
     def __init__(self, item):
         self.df = pd.read_csv(item['path'])
@@ -692,19 +657,3 @@ class Stat47Factory(FileFactory):
             self.df.columns = constants.Stat47Columns1
         else:
             self.df.columns = constants.Stat47Columns2
-
-
-class Stat48Factory(FileFactory):
-    def __init__(self, item):
-        self.df = pd.read_csv(item['path'])
-        if self.df.empty:
-            raise ValueError
-
-        super(Stat48Factory, self).__init__(item)
-
-    def buildSpecific(self):
-        self.checkNumbers()
-        self.addYear(self.filename[-8:-6])
-        self.addMonth(self.filename[-11:-8])
-
-        self.df.columns = constants.Stat48Columns

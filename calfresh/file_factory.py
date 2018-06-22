@@ -264,7 +264,7 @@ class FileFactory(object):
         self.df[col] = self.df[col].replace({'Statewide': 'California'})
 
         self._trimNonCountyRows(col)
-
+        constants.county_set.discard('Statewide')  # since we just changed it to Cali'
         # make sure all the counties are present
         observed = set(self.df[col].values)
         if not observed == constants.county_set:

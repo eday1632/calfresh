@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """Loads the processed data from the worker and its factories into the database
 
+Attributes:
+    Just your standard config and logging stuff
+
 """
 
 from os import walk
@@ -18,13 +21,25 @@ logger = logging.getLogger('data_loader')
 
 
 class DataLoader(object):
-    """
+    """Load the data into the database!
+
+    This simple class takes a datapath to the latest processed files and then
+    loads these into their respective tables in the database
+
+    Args:
+        datapath (str): formatted as '/etc/calfresh/MM_DD_YYYY'
+
     """
     def __init__(self, datapath):
         self.datapath = datapath
 
     def load(self):
-        """
+        """Load the data in the date-named directory using a subprocess
+
+        Here we extract the filenames from the directory, get the headers for each,
+        and then load them into the MySQL database with a system command through
+        python's subprocess module
+
         """
         with open('/etc/calfresh/logs/calfresh.log', 'a') as logfile:
             for root, dirs, files in walk(self.datapath):

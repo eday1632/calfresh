@@ -21,6 +21,8 @@ table_url_map = {
     'tbl_stat47': url_prefix + 'Research-and-Data/CalFresh-Data-Tables/STAT-47',
 }
 
+# county_dict has keys stripped of all whitespace for use in the cleanCounties function
+# in the file_factory module
 county_dict = {
     'Statewide': 'Statewide',
     'California': 'California',

@@ -14,9 +14,9 @@ import ConfigParser
 import datetime
 import logging.config
 import os
-import requests
 
 from bs4 import BeautifulSoup
+import requests
 
 config = ConfigParser.RawConfigParser()
 config.read('/etc/calfresh/calfresh.conf')

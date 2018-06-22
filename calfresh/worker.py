@@ -50,7 +50,6 @@ class Worker(object):
         # convert excel files to csv
         self.excelToCSV()
         paths = self.getCSVInput()
-        import ipdb; ipdb.set_trace()
         self.removeJunkFiles(paths)
 
         # run the factories for processing

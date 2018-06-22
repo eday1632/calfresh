@@ -6,8 +6,6 @@ Attributes:
 
 """
 
-from os import walk
-from os.path import join
 import ConfigParser
 import csv
 import logging.config

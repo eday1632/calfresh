@@ -290,7 +290,6 @@ class FileFactory(object):
         i = 0
         for county in self.df[col]:
             if county not in constants.county_set:
-                logger.info('Invalid county: %s', county)
                 if type(county) == str:
                     county = county.replace(' ', '')
                     closest = self._getClosestSpelledCounty(county)

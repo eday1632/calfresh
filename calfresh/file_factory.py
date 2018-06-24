@@ -584,12 +584,12 @@ class DFA256Factory(FileFactory):
             self.df.num_hh_nonpub_asst_st
         )
         # this is also something we precompute for users
-        self.df['big_six'] = False
+        self.df['big_six'] = 0
         self.df = self.df.sort_values(by='total_households', ascending=False)
         self.df = self.df.reset_index(drop=True)
         i = 1
         while i < 7:
-            self.df.at[i, 'big_six'] = True
+            self.df.at[i, 'big_six'] = 1
             i += 1
 
 

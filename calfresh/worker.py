@@ -322,7 +322,7 @@ class Worker(object):
             logger.info('Processing file: %s', item['filename'])
             factory = initialize(item)
 
-            factory.build(item)
+            factory.build()
 
             if item['filename'] in [
                 'CFDashboard-Annual.csv',

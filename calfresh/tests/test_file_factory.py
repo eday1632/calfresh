@@ -1,7 +1,9 @@
 
 import unittest
 
-from file_factory import FileFactory, initialize
+from file_factory import CF296Factory, FileFactory, initialize
+
+
 
 
 class TestFileFactories(unittest.TestCase):
@@ -74,7 +76,15 @@ class TestFileFactories(unittest.TestCase):
         pass
 
     def testAddYear(self):
-        pass
+        valid_years = ['19', '03', '10']
+        invalid_years = ['20', '02', 'blah']
+        file_factory = CF296Factory()
+
+        for year in valid_years:
+            self.assertEqual(type(file_factory.addYear(year)), int)
+
+        for year in invalid_years:
+            self.assertRaises(ValueError, file_factory.addYear, year)
 
     def testAddMonth(self):
         pass

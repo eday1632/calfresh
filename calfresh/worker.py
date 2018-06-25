@@ -48,16 +48,13 @@ class Worker(object):
 
     def work(self):
         """Do the needful: convert the files, run the factories, merge the output"""
-        # convert excel files to csv
         self.excelToCSV()
         paths = self.getCSVInput()
         self.removeJunkFiles(paths)
 
-        # run the factories for processing
         paths = self.getCSVInput()
         self.runFactories(paths)
 
-        # merge the files
         paths = self.getCSVOutput()
 
         if self.table == 'tbl_data_dashboard':

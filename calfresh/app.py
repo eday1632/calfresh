@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     logger.info('starting...')
 
-    datapaths = []
+    datapath = None
     for table in table_url_map.keys():
         try:
             crawler = WebCrawler(table, table_url_map[table])
@@ -35,15 +35,15 @@ if __name__ == '__main__':
 
             if new_table_data:
                 worker = Worker(new_table_data)
-                datapaths.append(worker.work())
+                datapaths = worker.work()
 
         except Exception as ex:
             logger.exception(ex)
 
-    for path in datapaths:
+    if datapath:
         try:
             loader = DataLoader()
-            loader.load(path)
+            loader.load(datapath)
         except Exception as ex:
             logger.exception(ex)
 

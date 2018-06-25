@@ -139,7 +139,20 @@ class TestFileFactories(unittest.TestCase):
             )
 
     def test_convertToNumber(self):
-        pass
+        self.assertEqual(
+            self.file_factory._convertToNumber('1a2b3c.4d'),
+            123.4
+        )
+
+        numpy.testing.assert_equal(
+            self.file_factory._convertToNumber(''),
+            numpy.nan,
+        )
+
+        numpy.testing.assert_equal(
+            self.file_factory._convertToNumber(None),
+            numpy.nan,
+        )
 
     def testCheckPercents(self):
         pass

@@ -182,7 +182,7 @@ class FileFactory(object):
         """Extract a number from the input arg or return None
 
         Args:
-            num (int): a value from a cell assumed to be a numeric
+            num (str): a value from a cell assumed to contain numeric values
 
         Returns:
             float or None: float if there were numeric values in the arg,
@@ -207,6 +207,9 @@ class FileFactory(object):
             float stripped of all non-numerics or None
 
         """
+        if num is None:
+            return np.nan
+
         temp = num
         for c in temp:
             if c not in digits + '.':

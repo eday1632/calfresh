@@ -200,7 +200,7 @@ class Worker(object):
                         'csv_in',
                         filename + '-' + name + '.csv'
                     ),
-                    'wb'
+                    'wb',
             ) as handle:
                 author = writer(handle)
                 author.writerows([
@@ -219,7 +219,7 @@ class Worker(object):
 
     def redistributeDataDashboardFiles(self, paths):
         for path in paths:
-            move(path['path'], OUTPATH)
+            move(path['path'], join(OUTPATH, path['filename']))
 
     def removeJunkFiles(self, paths):
         """Remove files that don't contain relevant data

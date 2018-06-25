@@ -9,9 +9,6 @@ class TestWebCrawler(unittest.TestCase):
     def setUp(self):
         pass
 
-    def tearDown(self):
-        pass
-
     def testCrawl(self):
         pass
 
@@ -34,9 +31,6 @@ class TestWebCrawler(unittest.TestCase):
 class TestPageParser(unittest.TestCase):
 
     def setUp(self):
-        pass
-
-    def tearDown(self):
         pass
 
     def test_are_different(self):

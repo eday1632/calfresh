@@ -6,6 +6,8 @@ Attributes:
 
 """
 
+from os import walk
+from os.path import join
 import ConfigParser
 import csv
 import logging.config
@@ -32,6 +34,31 @@ class DataLoader(object):
             datapath (str): formatted as '/etc/calfresh/MM_DD_YYYY'
 
         """
+
+        with open('/etc/calfresh/logs/calfresh.log', 'a') as logfile:
+            for root, dirs, files in walk(datapath):
+                import ipdb; ipdb.set_trace()
+                for table_name in files:
+                    logger.info('Loading %s', table_name)
+                    with open(join(datapath, table_name)) as csvfile:
+                        header = csv.reader(csvfile, delimiter=',').next()
+                        try:
+                            result = subprocess.call([
+                                'mysqlimport',
+                                '--local',
+                                '--replace',
+                                '--fields-terminated-by=,',
+                                '--ignore-lines=1',
+                                '--columns=' + ','.join(header),
+                                '-u',
+                                'eday',
+                                'calfreshdb',
+                                join(datapath, table_name),
+                            ], stdout=logfile)
+                            logger.info('Load result: %s', result)
+                        except Exception as ex:
+                            logger.exception(ex)
+
         with open('/etc/calfresh/logs/calfresh.log', 'a') as logfile:
             logger.info('Loading %s', datapath)
             with open(datapath) as csvfile:

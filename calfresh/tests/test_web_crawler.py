@@ -34,10 +34,10 @@ class TestWebCrawler(unittest.TestCase):
 class TestPageParser(unittest.TestCase):
 
     def setUp(self):
-        print 'some web crawler setup bullshit'
+        pass
 
     def tearDown(self):
-        print 'and some teardown bullshit too'
+        pass
 
     def test_are_different(self):
         pass

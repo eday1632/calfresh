@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
             if new_table_data:
                 worker = Worker(new_table_data)
-                datapaths = worker.work()
+                datapath = worker.work()
 
         except Exception as ex:
             logger.exception(ex)

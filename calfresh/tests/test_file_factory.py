@@ -13,7 +13,62 @@ class TestFileFactories(unittest.TestCase):
         pass
 
     def testInitialize(self):
-        pass
+        valid_tables = [
+            {
+                'source': 'tbl_cf296',
+                'filename': 'tbl_cf296',
+            },
+            {
+                'source': 'tbl_churn_data',
+                'filename': 'tbl_churn_data',
+            },
+            {
+                'source': 'CFDashboard-Annual.csv',
+                'filename': 'CFDashboard-Annual.csv',
+            },
+            {
+                'source': 'CFDashboard-Quarterly.csv',
+                'filename': 'CFDashboard-Quarterly.csv',
+            },
+            {
+                'source': 'CFDashboard-Every_Mth.csv',
+                'filename': 'CFDashboard-Every_Mth.csv',
+            },
+            {
+                'source': 'CFDashboard-Every_3_Mth.csv',
+                'filename': 'CFDashboard-Every_3_Mth.csv',
+            },
+            {
+                'source': 'CFDashboard-PRI_Raw.csv',
+                'filename': 'CFDashboard-PRI_Raw.csv',
+            },
+            {
+                'source': 'tbl_dfa256',
+                'filename': 'tbl_dfa256',
+            },
+            {
+                'source': 'tbl_dfa296x',
+                'filename': 'tbl_dfa296x',
+            },
+            {
+                'source': 'tbl_dfa358f',
+                'filename': 'tbl_dfa358f',
+            },
+            {
+                'source': 'tbl_dfa358s',
+                'filename': 'tbl_dfa358s',
+            },
+            {
+                'source': 'tbl_stat47',
+                'filename': 'tbl_stat47',
+            },
+        ]
+
+        for table in valid_tables:
+            self.assertEqual(type(initialize(table).__class__), type(FileFactory))
+
+        invalid_table = {'source': 'unknown', 'filename': 'unknown'}
+        self.assertRaises(ValueError, initialize, invalid_table)
 
     def testAddFullDate(self):
         pass

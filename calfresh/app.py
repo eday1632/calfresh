@@ -9,7 +9,6 @@ Attributes:
 
 """
 
-from os.path import join
 import ConfigParser
 import logging
 
@@ -37,8 +36,7 @@ if __name__ == '__main__':
                 datapath = worker.work()
 
                 loader = DataLoader()
-                table += '.csv'
-                loader.load(join(datapath, table))
+                loader.load(datapath)
 
         except Exception as ex:
             logger.exception(ex)

@@ -40,36 +40,30 @@ def initialize(item):
         ValueError: If the source of the item is unrecognized
 
     """
-    if item['source'] == 'tbl_cf15':
-        return CF15Factory(item)
     if item['source'] == 'tbl_cf296':
-        return CF296Factory(item)
+        return CF296Factory()
     if item['source'] == 'tbl_churn_data':
-        return ChurnDataFactory(item)
+        return ChurnDataFactory()
     if item['filename'] == 'CFDashboard-Annual.csv':
-        return DataDashboardAnnualFactory(item)
+        return DataDashboardAnnualFactory()
     if item['filename'] == 'CFDashboard-Quarterly.csv':
-        return DataDashboardQuarterlyFactory(item)
+        return DataDashboardQuarterlyFactory()
     if item['filename'] == 'CFDashboard-Every_Mth.csv':
-        return DataDashboardMonthlyFactory(item)
+        return DataDashboardMonthlyFactory()
     if item['filename'] == 'CFDashboard-Every_3_Mth.csv':
-        return DataDashboard3MthFactory(item)
+        return DataDashboard3MthFactory()
     if item['filename'] == 'CFDashboard-PRI_Raw.csv':
-        return DataDashboardPRIRawFactory(item)
+        return DataDashboardPRIRawFactory()
     if item['source'] == 'tbl_dfa256':
-        return DFA256Factory(item)
-    if item['source'] == 'tbl_dfa296':
-        return DFA296Factory(item)
+        return DFA256Factory()
     if item['source'] == 'tbl_dfa296x':
-        return DFA296XFactory(item)
+        return DFA296XFactory()
     if item['source'] == 'tbl_dfa358f':
-        return DFA358FFactory(item)
+        return DFA358FFactory()
     if item['source'] == 'tbl_dfa358s':
-        return DFA358SFactory(item)
+        return DFA358SFactory()
     if item['source'] == 'tbl_stat47':
-        return Stat47Factory(item)
-    if item['source'] == 'tbl_stat48':
-        return Stat48Factory(item)
+        return Stat47Factory()
 
     raise ValueError
 
@@ -91,21 +85,11 @@ class FileFactory(object):
     """
     __metaclass__ = ABCMeta
 
-    def __init__(self, item):
-        """This function basically calls everything needed to setup the factory
-         and its attributes
+    def __str__(self):
+        """Returns the first ten rows of the df attribute"""
+        return str(self.df.head(10))
 
-        Args:
-            item (dict): object with path, source and filename keys
-
-        Raises:
-            ValueError: If the DataFrame object is empty, we're in trouble
-
-        """
-        super(FileFactory, self).__init__()
-
-        self.filename = item['filename']
-
+    def build(self):
         self.trimBogusRows()
         self.trimBogusColumns()
 
@@ -117,10 +101,6 @@ class FileFactory(object):
 
         self.addQuarter()
         self.addFullDate()
-
-    def __str__(self):
-        """Returns the first ten rows of the df attribute"""
-        return str(self.df.head(10))
 
     @abstractmethod
     def buildSpecific(self):
@@ -352,7 +332,9 @@ class FileFactory(object):
 
 
 class CF296Factory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
@@ -368,8 +350,7 @@ class CF296Factory(FileFactory):
             axis=1,
             inplace=True,
         )
-
-        super(CF296Factory, self).__init__(item)
+        super(CF296Factory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()
@@ -386,12 +367,13 @@ class CF296Factory(FileFactory):
 
 
 class ChurnDataFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(ChurnDataFactory, self).__init__(item)
+        super(ChurnDataFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()
@@ -433,12 +415,13 @@ class ChurnDataFactory(FileFactory):
 
 
 class DataDashboardAnnualFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DataDashboardAnnualFactory, self).__init__(item)
+        super(DataDashboardAnnualFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers(startCol=4)
@@ -453,12 +436,13 @@ class DataDashboardAnnualFactory(FileFactory):
 
 
 class DataDashboardQuarterlyFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DataDashboardQuarterlyFactory, self).__init__(item)
+        super(DataDashboardQuarterlyFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers(startCol=3)
@@ -472,12 +456,13 @@ class DataDashboardQuarterlyFactory(FileFactory):
 
 
 class DataDashboardMonthlyFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DataDashboardMonthlyFactory, self).__init__(item)
+        super(DataDashboardMonthlyFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers(startCol=6)
@@ -491,12 +476,13 @@ class DataDashboardMonthlyFactory(FileFactory):
 
 
 class DataDashboard3MthFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DataDashboard3MthFactory, self).__init__(item)
+        super(DataDashboard3MthFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers(startCol=3)
@@ -510,12 +496,13 @@ class DataDashboard3MthFactory(FileFactory):
 
 
 class DataDashboardPRIRawFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DataDashboardPRIRawFactory, self).__init__(item)
+        super(DataDashboardPRIRawFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers(startCol=7)
@@ -530,7 +517,9 @@ class DataDashboardPRIRawFactory(FileFactory):
 
 
 class DFA256Factory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
@@ -546,8 +535,7 @@ class DFA256Factory(FileFactory):
             axis=1,
             inplace=True,
         )
-
-        super(DFA256Factory, self).__init__(item)
+        super(DFA256Factory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()
@@ -593,12 +581,13 @@ class DFA256Factory(FileFactory):
 
 
 class DFA296XFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DFA296XFactory, self).__init__(item)
+        super(DFA296XFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()
@@ -623,12 +612,13 @@ class DFA296XFactory(FileFactory):
 
 
 class DFA358FFactory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(DFA358FFactory, self).__init__(item)
+        super(DFA358FFactory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()
@@ -642,17 +632,18 @@ class DFA358FFactory(FileFactory):
 
 
 class DFA358SFactory(DFA358FFactory):
-    def __init__(self, item):
-        super(DFA358SFactory, self).__init__(item)
+    def __init__(self):
+        super(DFA358SFactory, self).__init__()
 
 
 class Stat47Factory(FileFactory):
-    def __init__(self, item):
+
+    def build(self, item):
+        self.filename = item['filename']
         self.df = pd.read_csv(item['path'])
         if self.df.empty:
             raise ValueError
-
-        super(Stat47Factory, self).__init__(item)
+        super(Stat47Factory, self).build()
 
     def buildSpecific(self):
         self.checkNumbers()

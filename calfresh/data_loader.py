@@ -34,7 +34,6 @@ class DataLoader(object):
             datapath (str): formatted as '/etc/calfresh/MM_DD_YYYY'
 
         """
-
         with open('/etc/calfresh/logs/calfresh.log', 'a') as logfile:
             for root, dirs, files in walk(datapath):
                 for table_name in files:

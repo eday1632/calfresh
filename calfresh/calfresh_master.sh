@@ -9,6 +9,8 @@ cd /etc/calfresh
 
 git pull
 
+python setup.py sdist
+
 python /etc/calfresh/calfresh/app.py
 
 git add .

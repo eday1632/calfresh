@@ -158,13 +158,30 @@ class TestFileFactories(unittest.TestCase):
         pass
 
     def test_check_counties(self):
-        pass
+        good_counties = self.file_factory.df.columns[0]
+
+        # returns None because nothing bad happened
+        self.assertIsNone(self.file_factory.check_counties(col=0))
+        self.assertNotIn('Statewide', self.file_factory.df[good_counties])
+        self.assertEqual(len(self.file_factory.df[good_counties]), 59)
+        self.assertRaises(ValueError, self.file_factory.check_counties, col=1)
 
     def test_trim_noncounty_rows(self):
         pass
 
     def test_clean_county_names(self):
-        pass
+        good_counties = self.file_factory.df.columns[0]
+        bad_counties = self.file_factory.df.columns[1]
+
+        self.file_factory._clean_county_names(good_counties)
+        self.assertIn('Statewide', self.file_factory.df[good_counties])
+        self.assertIn('Alameda', self.file_factory.df[good_counties])
+
+        self.file_factory._clean_county_names(bad_counties)
+        self.assertEqual(self.file_factory.df[good_counties].isnull().sum(), 4)
+
+
+
 
     def test_get_nearest_spelled_counties(self):
         too_few_letters = 'SantaCl'

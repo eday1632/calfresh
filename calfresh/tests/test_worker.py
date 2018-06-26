@@ -9,41 +9,35 @@ class TestWorker(unittest.TestCase):
     def setUp(self):
         pass
 
-    def tearDown(self):
+    def test_work(self):
         pass
 
-    def testWork(self):
+    def test_get_csv_input(self):
         pass
 
-    def testGetCSVInput(self):
+    def test_get_csv_output(self):
         pass
 
-    def testGetCSVOutput(self):
+    def test_get_excel_files(self):
         pass
 
-    def testGetExcelFiles(self):
+    def test_convert_excel_file(self):
         pass
 
-    def testConvertExcelFile(self):
+    def test_strip_filename(self):
         pass
 
-    def testStripFilename(self):
+    def test_excel_to_csv(self):
         pass
 
-    def testConvertNewExcelFile(self):
+    def test_remove_junk_files(self):
         pass
 
-    def testExcelToCSV(self):
+    def test_run_factories(self):
         pass
 
-    def testRemoveJunkFiles(self):
+    def test_merge_for_uploading(self):
         pass
 
-    def testRunFactories(self):
-        pass
-
-    def testMergeForUploading(self):
-        pass
-
-    def testCombine358FandS(self):
+    def test_combine_358F_and_S(self):
         pass

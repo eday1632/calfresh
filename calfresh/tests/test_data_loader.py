@@ -12,5 +12,5 @@ class TestDataLoader(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testLoad(self):
+    def test_load(self):
         pass

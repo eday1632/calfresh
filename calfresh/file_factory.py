@@ -97,29 +97,29 @@ class FileFactory(object):
         return str(self.df.head(10))
 
     def build(self):
-        self.trimBogusRows()
-        self.trimBogusColumns()
+        self.trim_bogus_rows()
+        self.trim_bogus_columns()
 
-        self.checkCounties()
+        self.check_counties()
 
-        self.buildSpecific()
+        self.build_specific()
 
         self.df = self.df.fillna(value='\N')
 
-        self.addQuarter()
-        self.addFullDate()
+        self.add_quarter()
+        self.add_full_date()
 
     @abstractmethod
-    def buildSpecific(self):
+    def build_specific(self):
         """Process class specific info, such as column names, year, month, etc."""
         return
 
-    def addFullDate(self):
+    def add_full_date(self):
         """Convert the month and year to valid datetime"""
         self.df['fulldate'] = self.df.month + '/' + self.df.year.map(str)
         self.df.fulldate = pd.to_datetime(self.df.fulldate)
 
-    def addYear(self, year):
+    def add_year(self, year):
         """Add the year to the df
 
         Args:
@@ -139,11 +139,11 @@ class FileFactory(object):
 
         self.df['year'] = int('20' + year)
 
-    def addMonth(self, month):
+    def add_month(self, month):
         """Month is passed in as a string or slice of the filename"""
         self.df['month'] = month.upper()
 
-    def addQuarter(self):
+    def add_quarter(self):
         """Map the month to the quarter"""
         quarters = {
             'JAN': 1.0,
@@ -162,7 +162,7 @@ class FileFactory(object):
 
         self.df['quarter'] = self.df.month.map(quarters)
 
-    def checkNumbers(self, startCol=1):
+    def check_numbers(self, startCol=1):
         """Check the type of all values in the input columns
 
         Args:
@@ -175,10 +175,10 @@ class FileFactory(object):
         for col in self.df.columns[startCol:]:
             i = 0
             for row in self.df[col]:
-                self.df.loc[i, col] = self._getValidNumber(row)
+                self.df.loc[i, col] = self._get_valid_number(row)
                 i += 1
 
-    def _getValidNumber(self, num):
+    def _get_valid_number(self, num):
         """Extract a number from the input arg or return None
 
         Args:
@@ -195,9 +195,9 @@ class FileFactory(object):
         try:
             return float(num)
         except ValueError:
-            return self._convertToNumber(num)
+            return self._convert_to_number(num)
 
-    def _convertToNumber(self, num):
+    def _convert_to_number(self, num):
         """Remove all non-numeric characters from the input
 
         Args:
@@ -220,7 +220,7 @@ class FileFactory(object):
         except ValueError:
             return np.nan
 
-    def checkPercents(self, cols):
+    def check_percents(self, cols):
         """Check and standardize all percentages to fall between -1.00 and 1.00
 
         Args:
@@ -235,7 +235,7 @@ class FileFactory(object):
                         self.df.loc[i, col] = row / 100.0
                     i += 1
 
-    def checkCounties(self, col=0):
+    def check_counties(self, col=0):
         """Make sure all counties are present
 
         This function checks that all counties are there and if any are misspelled
@@ -251,11 +251,11 @@ class FileFactory(object):
         # get the column name
         col = self.df.columns[col]
 
-        self._cleanCountyNames(col)
+        self._clean_county_names(col)
 
         self.df[col] = self.df[col].replace({'Statewide': 'California'})
 
-        self._trimNonCountyRows(col)
+        self._trim_noncounty_rows(col)
         constants.county_set.discard('Statewide')  # since we just changed it to Cali'
         # make sure all the counties are present
         observed = set(self.df[col].values)
@@ -267,11 +267,11 @@ class FileFactory(object):
             )
             raise ValueError
 
-    def _trimNonCountyRows(self, col):
+    def _trim_noncounty_rows(self, col):
         """Remove any blank row from the county column"""
         self.df = self.df.dropna(subset=[col]).reset_index(drop=True)
 
-    def _cleanCountyNames(self, col):
+    def _clean_county_names(self, col):
         """Fill each cell with a valid county name or None
 
         Args:
@@ -284,13 +284,13 @@ class FileFactory(object):
             if county not in constants.county_set:
                 if type(county) == str:
                     county = county.replace(' ', '')
-                    closest = self._getClosestSpelledCounty(county)
+                    closest = self._get_closest_spelled_county(county)
                     self.df.loc[i, col] = closest
                 else:
                     self.df.loc[i, col] = np.nan
             i += 1
 
-    def _getNearestSpelledCounties(self, county):
+    def _get_nearest_spelled_counties(self, county):
         """Get county names with the shortest edit distance to the county arg
 
         Args:
@@ -309,7 +309,7 @@ class FileFactory(object):
 
         return vals
 
-    def _getClosestSpelledCounty(self, county):
+    def _get_closest_spelled_county(self, county):
         """Get the county with the smallest edit distance or None
 
         Args:
@@ -319,7 +319,7 @@ class FileFactory(object):
             A valid county name or None if there were none within 3 edits
 
         """
-        potentials = self._getNearestSpelledCounties(county)
+        potentials = self._get_nearest_spelled_counties(county)
         if not potentials:
             return np.nan
 
@@ -330,13 +330,13 @@ class FileFactory(object):
         else:
             return np.nan
 
-    def trimBogusColumns(self):
+    def trim_bogus_columns(self):
         """Drop columns off the end of the table with more than a quarter empty rows"""
         rowcount = self.df.shape[0] / 4
         while self.df[self.df.columns[-1]].isnull().sum() > rowcount:
             self.df.drop(self.df.columns[-1], axis=1, inplace=True)
 
-    def trimBogusRows(self):
+    def trim_bogus_rows(self):
         """Drop rows off the bottom of the table with more than half empty columns"""
         colcount = self.df.shape[1] / 2
         while self.df.iloc[-1].isnull().sum() > colcount:
@@ -360,8 +360,8 @@ class CF296Factory(FileFactory):
         )
         super(CF296Factory, self).build()
 
-    def buildSpecific(self):
-        self.checkNumbers()
+    def build_specific(self):
+        self.check_numbers()
         # dates in this column come in excel number format
         date_info = [
             xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
@@ -376,12 +376,12 @@ class CF296Factory(FileFactory):
 
 class ChurnDataFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers()
+    def build_specific(self):
+        self.check_numbers()
         if self.filename[0] in digits:
-            self.addYear(self.filename[2:4])
+            self.add_year(self.filename[2:4])
         else:
-            self.addYear(self.filename[4:6])
+            self.add_year(self.filename[4:6])
 
         Q1 = ['Q1', 'JAN']
         Q2 = ['Q2', 'APRIL']
@@ -389,21 +389,21 @@ class ChurnDataFactory(FileFactory):
         Q4 = ['Q4', 'OCT']
 
         if any(indicator in self.filename for indicator in Q1):
-            self.addMonth('MAR')
+            self.add_month('MAR')
         elif any(indicator in self.filename for indicator in Q2):
-            self.addMonth('JUN')
+            self.add_month('JUN')
         elif any(indicator in self.filename for indicator in Q3):
-            self.addMonth('SEP')
+            self.add_month('SEP')
         elif any(indicator in self.filename for indicator in Q4):
-            self.addMonth('DEC')
+            self.add_month('DEC')
 
         self.df.columns = constants.ChurnDataColumns
 
-        self.checkPercents(constants.ChurnDataPercentColumns)
+        self.check_percents(constants.ChurnDataPercentColumns)
 
-        self.addAdditionalPercentages()
+        self.add_additional_percentages()
 
-    def addAdditionalPercentages(self):
+    def add_additional_percentages(self):
         """These are figures we precompute for a better user experience"""
         self.df['pct_apps_rcvd_from_this_county'] = 0.0
         total = self.df['snap_apps_rcvd'].where(self.df['county'] == 'California')[0]
@@ -417,69 +417,69 @@ class ChurnDataFactory(FileFactory):
 
 class DataDashboardAnnualFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers(startCol=4)
+    def build_specific(self):
+        self.check_numbers(startCol=4)
 
-        self.addMonth('DEC')
+        self.add_month('DEC')
 
         self.df.columns = constants.DataDashboardAnnualColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
 
-        self.checkPercents(constants.DataDashboardPercentColumns)
+        self.check_percents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardQuarterlyFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers(startCol=3)
+    def build_specific(self):
+        self.check_numbers(startCol=3)
 
         self.df.columns = constants.DataDashboardQuarterlyColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df['month'] = self.df.quarter.str[:3].str.upper()
 
-        self.checkPercents(constants.DataDashboardPercentColumns)
+        self.check_percents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardMonthlyFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers(startCol=6)
+    def build_specific(self):
+        self.check_numbers(startCol=6)
 
         self.df.columns = constants.DataDashboardMonthlyColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df.month = self.df.month.str[:3].str.upper()
 
-        self.checkPercents(constants.DataDashboardPercentColumns)
+        self.check_percents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboard3MthFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers(startCol=3)
+    def build_specific(self):
+        self.check_numbers(startCol=3)
 
         self.df.columns = constants.DataDashboard3MthColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
         self.df.month = self.df.month.str[:3].str.upper()
 
-        self.checkPercents(constants.DataDashboardPercentColumns)
+        self.check_percents(constants.DataDashboardPercentColumns)
 
 
 class DataDashboardPRIRawFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers(startCol=7)
+    def build_specific(self):
+        self.check_numbers(startCol=7)
         # This file is only updated at the end of the year
-        self.addMonth('DEC')
+        self.add_month('DEC')
 
         self.df.columns = constants.DataDashboardPRIRawColumns
 
         self.df.year = pd.to_numeric(self.df.year, downcast='integer')
 
-        self.checkPercents(constants.DataDashboardPercentColumns)
+        self.check_percents(constants.DataDashboardPercentColumns)
 
 
 class DFA256Factory(FileFactory):
@@ -499,8 +499,8 @@ class DFA256Factory(FileFactory):
         )
         super(DFA256Factory, self).build()
 
-    def buildSpecific(self):
-        self.checkNumbers()
+    def build_specific(self):
+        self.check_numbers()
         # dates in this column come in excel number format
         date_info = [
             xldate_as_datetime(xldate, 0) for xldate in self.df[self.df.columns[1]]
@@ -544,10 +544,10 @@ class DFA256Factory(FileFactory):
 
 class DFA296XFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers()
-        self.addYear(self.filename[-6:-4])
-        self.addMonth(self.filename[-13:-10])
+    def build_specific(self):
+        self.check_numbers()
+        self.add_year(self.filename[-6:-4])
+        self.add_month(self.filename[-13:-10])
         # some logic for determining columns in the file based on date follows...
         if self.df.year.unique()[0] < 2004 or \
                 (self.df.year.unique()[0] == 2004 and
@@ -568,10 +568,10 @@ class DFA296XFactory(FileFactory):
 
 class DFA358FFactory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers()
-        self.addYear(self.filename[-6:-4])
-        self.addMonth(self.filename[-9:-6])
+    def build_specific(self):
+        self.check_numbers()
+        self.add_year(self.filename[-6:-4])
+        self.add_month(self.filename[-9:-6])
 
         if self.df.year.unique()[0] < 2007:
             self.df.columns = constants.DFA358Columns1
@@ -586,10 +586,10 @@ class DFA358SFactory(DFA358FFactory):
 
 class Stat47Factory(FileFactory):
 
-    def buildSpecific(self):
-        self.checkNumbers()
-        self.addYear(self.filename[25:27])
-        self.addMonth(self.filename[18:21])
+    def build_specific(self):
+        self.check_numbers()
+        self.add_year(self.filename[25:27])
+        self.add_month(self.filename[18:21])
 
         if '(Items 1-14)' in self.filename:
             self.df.columns = constants.Stat47Columns1

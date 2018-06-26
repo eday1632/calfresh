@@ -48,23 +48,23 @@ class Worker(object):
 
     def work(self):
         """Do the needful: convert the files, run the factories, merge the output"""
-        self.excelToCSV()
-        paths = self.getCSVInput()
-        self.removeJunkFiles(paths)
+        self.excel_to_csv()
+        paths = self.get_csv_input()
+        self.remove_junk_files(paths)
 
-        paths = self.getCSVInput()
-        self.runFactories(paths)
+        paths = self.get_csv_input()
+        self.run_factories(paths)
 
-        paths = self.getCSVOutput()
+        paths = self.get_csv_output()
 
         if self.table == 'tbl_data_dashboard':
-            self.redistributeDataDashboardFiles(paths)
+            self.redistribute_data_dashboard_files(paths)
         else:
-            self.mergeForUploading(paths)
+            self.merge_for_uploading(paths)
 
         return OUTPATH
 
-    def getCSVInput(self):
+    def get_csv_input(self):
         """Search directories for unprocessed csv files
 
         Returns:
@@ -84,7 +84,7 @@ class Worker(object):
                                      })
         return paths
 
-    def getCSVOutput(self):
+    def get_csv_output(self):
         """Search directories for processed csv files
 
         Returns:
@@ -104,7 +104,7 @@ class Worker(object):
                                      })
         return paths
 
-    def getExcelFiles(self):
+    def get_excel_files(self):
         """Search directories for excel files
 
         Args:
@@ -127,7 +127,7 @@ class Worker(object):
                                      })
         return paths
 
-    def convertExcelFile(self, item):
+    def convert_excel_file(self, item):
         """Convert excel files ending in .xls and .xlsx
 
         Args:
@@ -139,7 +139,7 @@ class Worker(object):
         """
         workbook = open_workbook(item['path'])
 
-        filename = self.stripFilename(item['filename'])
+        filename = self.strip_filename(item['filename'])
 
         worksheets = workbook.sheet_names()
 
@@ -160,7 +160,7 @@ class Worker(object):
                         unicode(value).encode('utf-8') for value in sheet.row_values(row)
                     ])
 
-    def stripFilename(self, filename):
+    def strip_filename(self, filename):
         """Removes the suffix from excel files
 
         Args:
@@ -172,53 +172,21 @@ class Worker(object):
         """
         return filename.split('.xls')[0]
 
-    def convertNewExcelFile(self, item):
-        """Convert excel files ending in .xlsx, representing excel versions >2010
-
-        Args:
-            item (dict): dict with keys path, source, and filename of .xls excel files
-
-        Output:
-            writes each tab of the file out to csv
-
-        """
-        workbook = load_workbook(item['path'])
-
-        filename = self.stripFilename(item['filename'])
-
-        worksheets = workbook.sheetnames
-
-        for name in worksheets:
-            sheet = workbook[name]
-            with open(
-                    join(
-                        INPATH,
-                        item['source'],
-                        'csv_in',
-                        filename + '-' + name + '.csv'
-                    ),
-                    'wb',
-            ) as handle:
-                author = writer(handle)
-                author.writerows([
-                    unicode(value).encode('utf-8') for value in sheet.iter_rows()
-                ])
-
-    def excelToCSV(self):
+    def excel_to_csv(self):
         """Convert all excel files to csvs in the source directories"""
-        paths = self.getExcelFiles()
+        paths = self.get_excel_files()
         for item in paths:
             if item['source'] != self.table:
                 continue
 
             logger.info('converting: %s', item['filename'])
-            self.convertExcelFile(item)
+            self.convert_excel_file(item)
 
-    def redistributeDataDashboardFiles(self, paths):
+    def redistribute_data_dashboard_files(self, paths):
         for path in paths:
             move(path['path'], join(OUTPATH, path['filename']))
 
-    def removeJunkFiles(self, paths):
+    def remove_junk_files(self, paths):
         """Remove files that don't contain relevant data
 
         Args:
@@ -305,7 +273,7 @@ class Worker(object):
                 if '0.csv' in path['filename']:
                     remove(path['path'])
 
-    def runFactories(self, paths):
+    def run_factories(self, paths):
         """Process all the csv files in the directories specified
 
         Args:
@@ -383,7 +351,7 @@ class Worker(object):
                     index=False
                 )
 
-    def mergeForUploading(self, paths):
+    def merge_for_uploading(self, paths):
         """Merge all the csv files in the directories specified for uploading to the database
 
         Args:
@@ -413,9 +381,9 @@ class Worker(object):
         logger.info('Merged files for %s', sibling)
 
         if self.table in ['tbl_dfa358f', 'tbl_dfa358s']:
-            self.combine358FandS()
+            self.combine_358F_and_S()
 
-    def combine358FandS(self):
+    def combine_358F_and_S(self):
         """Combines the tbl_dfa358f and tbl_dfa358s files for uploading
 
         Args:

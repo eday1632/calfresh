@@ -9,7 +9,7 @@ class TestWebCrawler(unittest.TestCase):
     def setUp(self):
         pass
 
-    def testCrawl(self):
+    def test_crawl(self):
         pass
 
     def test_get_new_page(self):

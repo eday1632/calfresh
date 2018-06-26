@@ -41,11 +41,8 @@ if __name__ == '__main__':
             logger.exception(ex)
 
     if datapath:
-        try:
-            loader = DataLoader()
-            loader.load(datapath)
-        except Exception as ex:
-            logger.exception(ex)
+        loader = DataLoader()
+        loader.load(datapath)
 
     crawler.clean_up()
     logger.info('finished')

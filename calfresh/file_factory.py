@@ -248,7 +248,7 @@ class FileFactory(object):
             ValueError if after its best effort a county is still missing
 
         """
-        # get the column name
+        # get the string value of the column name
         col = self.df.columns[col]
 
         self._clean_county_names(col)
@@ -268,7 +268,12 @@ class FileFactory(object):
             raise ValueError
 
     def _trim_noncounty_rows(self, col):
-        """Remove any blank row from the county column"""
+        """Remove any blank row from the county column
+
+        Args:
+            col (str): the column with observable county names
+
+        """
         self.df = self.df.dropna(subset=[col]).reset_index(drop=True)
 
     def _clean_county_names(self, col):

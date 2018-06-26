@@ -167,7 +167,7 @@ class TestFileFactories(unittest.TestCase):
         pass
 
     def test_get_nearest_spelled_counties(self):
-        too_few_letters = 'Santa C'
+        too_few_letters = 'SantaCl'
         too_many_letters = 'SantaClaraWUT?'
         just_enough_letters = 'SantaClara/a'
         exact_letters = 'SSSSSSSSSS'
@@ -181,6 +181,9 @@ class TestFileFactories(unittest.TestCase):
         self.assertNotIn('SantaClara', too_many)
         self.assertIn('SantaClara', just_enough)
         self.assertIn('SantaClara', exact)
+
+        self.assertEqual(just_enough['SantaClara'], 2L)
+        self.assertEqual(exact['SantaClara'], 9L)
 
     def test_get_closest_spelled_county(self):
         pass

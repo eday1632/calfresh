@@ -186,7 +186,27 @@ class TestFileFactories(unittest.TestCase):
         self.assertEqual(exact['SantaClara'], 9L)
 
     def test_get_closest_spelled_county(self):
-        pass
+        too_few_letters = 'S'
+        too_many_letters = 'SantaClaraWUTa;lksdjfl;kasdjaslkdj?'
+        exact_letters = 'SSSSSSSSSS'
+        just_enough_letters = 'SantaClara/a'
+
+        numpy.testing.assert_equal(
+            self.file_factory._get_closest_spelled_county(too_few_letters),
+            numpy.nan,
+        )
+        numpy.testing.assert_equal(
+            self.file_factory._get_closest_spelled_county(too_many_letters),
+            numpy.nan,
+        )
+        numpy.testing.assert_equal(
+            self.file_factory._get_closest_spelled_county(exact_letters),
+            numpy.nan,
+        )
+        self.assertEqual(
+            self.file_factory._get_closest_spelled_county(just_enough_letters),
+            'Santa Clara'
+        )
 
     def test_trim_bogus_columns(self):
         df_width = self.file_factory.df.shape[1]

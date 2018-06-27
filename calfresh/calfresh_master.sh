@@ -2,7 +2,7 @@
 
 source /etc/calfresh/venv/bin/activate
 
-rm /etc/calfresh/logs/calfresh.log
+rm -f /etc/calfresh/logs/calfresh.log
 touch /etc/calfresh/logs/calfresh.log
 
 cd /etc/calfresh

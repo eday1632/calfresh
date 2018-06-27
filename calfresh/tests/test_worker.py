@@ -8,6 +8,11 @@ class TestWorker(unittest.TestCase):
 
     def setUp(self):
         pass
+        # setup dir of bum files
+
+    def tearDown(self):
+        pass
+        # destroy directory
 
     def test_work(self):
         pass

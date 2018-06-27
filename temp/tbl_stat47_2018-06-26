@@ -56,7 +56,11 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<<<<<<< HEAD:temp/tbl_stat47_2018-06-26
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Bjn9RpnTBJR1zEnXh5U1dqtSRkManaIgUgkK0n0aarKom4NPdrqohysgACO9FbzGls0qg1k4+PBipqgtZl9kR/bkQd9Q1I+kgk9ah6ZUAAu2pVZ7og9zNit+lyTTX1vhN5kLHhEWkteJW8ZvvGW9W68et5G47K0F1wTRl1fRzbye8KUE0fNbe4zCj1W2rcLZ5B5/tNEvg5KLxt5z0AwhN6p8QFFaYdVQ6kOOXF7/k01VutTqlOsh5Gh6OqDu/dft4OmcaLLGPS1Cc0abd58wpXXXT5e+RlzlVb7Va+0Ef/nQUEU5" />
+=======
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Ldijbw/tS2pckDnmxMrYGQov8F2pmogR+zg6u5O5YhoiRmMae005V/oHC75x5WbAjTZS1lbraLXH0/jHEQHGIZgB2YKn1cAlvPrUK+TdT1w9Y4w7DBWyVPp3Iv/5asnBWr4T1Z716aAaGj2wdsoVpQ3TG+WEztJ3p1YTH2agoGgJRJ6u7hOlt0Yl7dhTMhL+Bzs7SwfnpNgEvZ9NvMqpB4pvHTGziF3SJgYkoUk+UJ6fFhBcv46xjMgfxxnFLjZZvEBgH913kafMES/5SsO9Jzeab7Zu1Rx9oPDvQElz57VmBLYH" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_stat47_2018-06-26
 </div>
 
 
@@ -65,7 +69,11 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<<<<<<< HEAD:temp/tbl_stat47_2018-06-26
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="oNeHR/JRgIUgeG1IDdw77TgXnnQr2uXkGd8t5lVwhqh4oNSMm2fNwJZJ2tau5hBqKpahor7/XxbRIuqD8nGZIGM6aeCzBy+kKfRqBibJMH01Qzqr7Dvrpzs7bF5OcIiuZkSbp/Fu4usLCLFOTp97Anbedqg=" />
+=======
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HVm2JzBXTMhVlUzb93cATA8bScIJNtJgTnACgbJtHWU2g7Xj7khxtE3AurWP646KSGj1xx8h0magWyoaT11ttPFSO9Tg32SSNr0rLVdC50yO/S3qggXLe8Lu/CMW1DiWDH8eps3C+2MN0gi/ZOVJc6Occ88=" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_stat47_2018-06-26
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1466,7 +1474,11 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2962`,`evoq_TabId`:`2962`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fSTAT-47`,`evoq_UrlQuery`:`%3fTabId%3d2962%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+<<<<<<< HEAD:temp/tbl_stat47_2018-06-26
         <input name="__RequestVerificationToken" type="hidden" value="Wg1xg8dDuX6HA-h3KBLWIzRuviz6v1rgDXa2NMTNgmTOUb3ijw1f26TuAKfVEJqEfZSZEA2" />
+=======
+        <input name="__RequestVerificationToken" type="hidden" value="0PcSc4G-7DPh8yFF8mDwYWqTU9tnaX5m1lFQzXo4seDCoNmjNl7mqfhfRbJRvVzoo-oUyw2" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_stat47_2018-06-26
     
 <script type='text/javascript'>
 //<![CDATA[

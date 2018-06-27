@@ -56,7 +56,11 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<<<<<<< HEAD:temp/tbl_dfa256_2018-06-26
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hFePQVDQ0VhXLDSARUsXFb+CPSwZWHZorXMsvMgLI6AHT/2rtnJuBUFb57oO9W33LJ0zlyvrEtquGDBauyQ3+OCyS06KHtoAhlFKy7ZkmQh0SWmxrKw00EYWc0UlelCJDeo+9UaG5LbLvdxaJtusAtrZiNzXdvYMI6XvCm7qh9xpjquGnldhGim8ELBctfLGoZxlJ3FVl5Z/YKxzpEmE4s4axGnTyXyV4xBuCENlBWkig9qUdvxNQYO5rA+KOzp5HTgcevCjnGZqFMNjGM3IuWzScdmfjkUji4l2u4kD0aC4f7Wz" />
+=======
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="eXVKw6+tDyIRXGK/XcIWMq3EfDlJba2mmtnyea49gpEsF1w73TzQR75wba+vCtdevaPxCvTM9JJv2i0xxsza4318MD7DkmaZZdJOedPSvmkq/epvPb9I78v8byh1KJy8kWNYlkLKR0pH3a5Su9j8s21zEtn+fjZXS2OwebrKl+BX5DxLH3hEteqs+PEZBS6zmT95mPOV/PEv0p3JFqplKCuc/4nt99onW4Az/hcJidFoWFCPiPIGyJ5X4io=" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_dfa256_2018-06-26
 </div>
 
 
@@ -65,7 +69,11 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<<<<<<< HEAD:temp/tbl_dfa256_2018-06-26
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="eTvzlk/JD1c9aNwBMyW8sep4Fznwpk9rN3UABESmNlmN42KFHVseCT52USCoRpYJJLIs6UzGsiAdaKcrRXVAAssP3lMDt6TXEUcZgD2WNynQvpd9fLI40d5PmuUdD0RCWk5M8knQO8kZ1O9sS1C356CBz5I=" />
+=======
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="EQ9tI47kzUPW7RMzeepoS06SJ5LnbppFFEd3Wa9w0NQEK4a/xDltELnRsPakrP9cslPaW4XG48qg1dDpgJ0eHIGg+AH3RZMMUzBtXHqZDyheVeWRxH2sj/3Gp90RQY4L0PHW5Nhgs61ySpQtJKLclkiMjpA=" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_dfa256_2018-06-26
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1493,7 +1501,11 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+<<<<<<< HEAD:temp/tbl_dfa256_2018-06-26
         <input name="__RequestVerificationToken" type="hidden" value="sNJ7WkMffwO-f5W1_-0VJx2AAf9xjJAOombWTLQCTxYh6eRAgbXhlFf_GCiAwWCxbQIkjw2" />
+=======
+        <input name="__RequestVerificationToken" type="hidden" value="ff-bdGtl1dObBXWSdsF4QnDWU_tsOCfohjts391npFmcYhjZZ4rbxKsHnkMpqzsN-TFvwg2" />
+>>>>>>> 2b1f2228c577e15a732863659b383614e0c980f9:temp/tbl_dfa256_2018-06-26
     
 <script type='text/javascript'>
 //<![CDATA[

@@ -489,7 +489,7 @@ class DataDashboardPRIRawFactory(FileFactory):
 
 class DFA256Factory(FileFactory):
 
-    def build(self, item):
+    def build(self):
         # drop columns with data we don't need
         self.df.drop(
             [

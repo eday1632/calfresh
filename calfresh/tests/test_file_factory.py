@@ -123,7 +123,7 @@ class TestFileFactories(unittest.TestCase):
         self.assertEqual(self.file_factory.df['quarter'][0], 1.0)
 
     def test_check_numbers(self):
-        pass
+
 
     def test_get_valid_number(self):
         valid_numbers = [1, 0.234, -1.123, '100', '1a2b3c']

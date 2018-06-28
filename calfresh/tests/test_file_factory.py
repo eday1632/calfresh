@@ -123,7 +123,17 @@ class TestFileFactories(unittest.TestCase):
         self.assertEqual(self.file_factory.df['quarter'][0], 1.0)
 
     def test_check_numbers(self):
+        self.assertEqual(self.file_factory.df['good_ints'].isnull().sum(), 53)
+        self.assertEqual(self.file_factory.df['bad_ints'].isnull().sum(), 56)
+        self.assertEqual(self.file_factory.df['good_decimals'].isnull().sum(), 54)
+        self.assertEqual(self.file_factory.df['bad_decimals'].isnull().sum(), 56)
 
+        self.file_factory.check_numbers(startCol=2, endCol=6)
+
+        self.assertEqual(self.file_factory.df['good_ints'].isnull().sum(), 55)
+        self.assertEqual(self.file_factory.df['bad_ints'].isnull().sum(), 61)
+        self.assertEqual(self.file_factory.df['good_decimals'].isnull().sum(), 56)
+        self.assertEqual(self.file_factory.df['bad_decimals'].isnull().sum(), 61)
 
     def test_get_valid_number(self):
         valid_numbers = [1, 0.234, -1.123, '100', '1a2b3c']
@@ -155,7 +165,18 @@ class TestFileFactories(unittest.TestCase):
         )
 
     def test_check_percents(self):
-        pass
+        self.file_factory.check_numbers(startCol=6, endCol=8)
+
+        self.file_factory.check_percents(['good_percents'])
+        self.assertEqual(self.file_factory.df['good_percents'][0], 0.01)
+        self.assertEqual(self.file_factory.df['good_percents'][1], 1)
+        self.assertEqual(self.file_factory.df['good_percents'][2], -1)
+        self.assertEqual(self.file_factory.df['good_percents'][3], 0)
+
+        self.file_factory.check_percents(['bad_percents'])
+        self.assertEqual(self.file_factory.df['bad_percents'][0], 1.01)
+        self.assertEqual(self.file_factory.df['bad_percents'][1], -1.01)
+        self.assertEqual(self.file_factory.df['bad_percents'][2], 0.015)
 
     def test_check_counties(self):
         good_counties = self.file_factory.df.columns[0]

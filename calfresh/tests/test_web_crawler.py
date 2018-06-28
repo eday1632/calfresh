@@ -57,7 +57,25 @@ class TestWebCrawler(unittest.TestCase):
         self.assertEqual(good_filename2, 'DFA256FY14-15.xls')
 
     def test_clean_up(self):
-        pass
+        two_days_ago = str(datetime.date.today() - datetime.timedelta(days=2))
+        filepath1 = os.path.join('/etc/calfresh/temp', 'junk1_' + two_days_ago)
+        filepath2 = os.path.join('/etc/calfresh/temp', 'junk2_' + two_days_ago)
+
+        with open(filepath1, 'w') as fd:
+            fd.write('test1')
+        with open(filepath2, 'w') as fd:
+            fd.write('test2')
+
+        for root, dirs, files in os.walk('/etc/calfresh/temp'):
+            self.assertIn('junk1_' + two_days_ago, files)
+            self.assertIn('junk2_' + two_days_ago, files)
+            for file in files:
+                if file.endswith(str(two_days_ago)):
+                    os.remove(os.path.join('/etc/calfresh/temp', file))
+
+        for root, dirs, files in os.walk('/etc/calfresh/temp'):
+            self.assertNotIn('junk1_' + two_days_ago, files)
+            self.assertNotIn('junk2_' + two_days_ago, files)
 
 
 class TestPageParser(unittest.TestCase):

@@ -120,7 +120,7 @@ class WebCrawler(object):
 
         """
         filename = path.split('/')[-1]
-        if '?ver' in path:
+        if '?' in path:
             filename = filename.split('?')[0]
 
         return filename

@@ -52,10 +52,11 @@ class WebCrawler(object):
 
         # if we successfully received today's page
         if new_page:
-            parsed_pages = PageParser(self.table, new_page, old_page)
+            parser = PageParser(self.table, new_page, old_page)
+            parser.parse()
 
-            if parsed_pages.are_different:
-                self._download_new_files(parsed_pages.updated_paths)
+            if len(self.updated_paths) > 0:  # if there's new urls
+                self._download_new_files(parser.updated_paths)
                 return self.table
 
     def _get_new_page(self):
@@ -68,7 +69,6 @@ class WebCrawler(object):
                 Page: {}, Status code: {}'.format(self.url, page.status_code))
             return None
         else:
-            # save new page to file
             fp = os.path.join(temp_dir, self.table + '_' + str(datetime.date.today()))
             with open(fp, 'w') as f:
                 f.write(page.text.encode('ascii', 'ignore'))
@@ -136,6 +136,9 @@ class PageParser(object):
         old_page (str): another link to saved html
 
     Attributes:
+        new_soup (BeautifulSoup obj): parsed html from today's page
+        old_soup (BeautifulSoup obj): parsed html from yesterday's page
+        updated_paths (list of str): all the new excel file urls
 
     """
     def __init__(self, table, new_page, old_page):
@@ -147,20 +150,16 @@ class PageParser(object):
         self.old_soup = None
         self.updated_paths = []
 
+    def parse(self):
+        """Load the html into BeautifulSoup and get the new excel urls"""
         self._load_page_content()
         self._get_new_urls()
 
-    @property
-    def are_different(self):
-        """(bool): Were any new excel links found?"""
-        return len(self.updated_paths) > 0
-
     def _load_page_content(self):
         """Extract the new and old html into beautiful soup objects"""
-        # open new page from file
         with open(self.new_page, 'r') as new:
             self.new_soup = BeautifulSoup(new.read(), 'html.parser')
-        # open old page from file
+
         with open(self.old_page, 'r') as old:
             self.old_soup = BeautifulSoup(old.read(), 'html.parser')
 

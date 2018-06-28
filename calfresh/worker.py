@@ -15,7 +15,6 @@ from shutil import move
 import ConfigParser
 import logging.config
 
-from openpyxl import load_workbook
 from xlrd import open_workbook
 import pandas as pd
 

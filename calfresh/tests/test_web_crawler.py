@@ -1,8 +1,11 @@
 
+import datetime
+import os
 import unittest
 
 from bs4 import BeautifulSoup
 
+from constants import table_url_map
 from web_crawler import WebCrawler, PageParser
 
 
@@ -11,17 +14,31 @@ class TestWebCrawler(unittest.TestCase):
     def setUp(self):
         self.crawler = WebCrawler(
             table='tbl_dfa256',
-            url=None,
+            url=table_url_map['tbl_dfa256'],
         )
 
     def test_crawl(self):
         pass
 
     def test_get_new_page(self):
-        pass
+        filepath = os.path.join(
+            '/etc/calfresh/temp',
+            self.crawler.table + '_' + str(datetime.date.today()),
+        )
+
+        new_page_path = self.crawler._get_new_page()
+        self.assertEqual(new_page_path, filepath)
 
     def test_get_old_page(self):
-        pass
+        filepath = os.path.join(
+            '/etc/calfresh/temp',
+            self.crawler.table + '_' + str(
+                datetime.date.today() - datetime.timedelta(days=1)
+            ),
+        )
+
+        old_page_path = self.crawler._get_old_page()
+        self.assertEqual(old_page_path, filepath)
 
     def test_download_new_files(self):
         pass

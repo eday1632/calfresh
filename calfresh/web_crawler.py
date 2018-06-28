@@ -61,22 +61,25 @@ class WebCrawler(object):
 
     def _get_new_page(self):
         """Get the html page as it exists today"""
-        # request page
-        page = requests.get(self.url)
+        page = requests.request('GET', self.url)
 
         if page.status_code != 200:
-            logger.error('Requested page not received! \
-                Page: {}, Status code: {}'.format(self.url, page.status_code))
-            return None
+            logger.error('Requested page not received! Page: {}, Status code: {}'.format(
+                self.url,
+                page.status_code,
+            ))
         else:
-            fp = os.path.join(temp_dir, self.table + '_' + str(datetime.date.today()))
-            with open(fp, 'w') as f:
+            filepath = os.path.join(
+                temp_dir,
+                self.table + '_' + str(datetime.date.today()),
+            )
+            with open(filepath, 'w') as f:
                 f.write(page.text.encode('ascii', 'ignore'))
 
-            return fp
+            return filepath
 
     def _get_old_page(self):
-        """Return yesterday's file pointer"""
+        """Return the string path of yesterday's file"""
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         return os.path.join(temp_dir, self.table + '_' + str(yesterday))
 

@@ -29,6 +29,9 @@ class TestWebCrawler(unittest.TestCase):
         new_page_path = self.crawler._get_new_page()
         self.assertEqual(new_page_path, filepath)
 
+        self.crawler.url = None
+        self.assertIsNone(self.crawler._get_new_page())
+
     def test_get_old_page(self):
         filepath = os.path.join(
             '/etc/calfresh/temp',
@@ -44,9 +47,16 @@ class TestWebCrawler(unittest.TestCase):
         pass
 
     def test_get_filename(self):
-        pass
+        good_url1 = '/9/DSSDB/DataTables/DFA256FY17-18.xlsx?ver=2018-06-08-125617-450'
+        good_url2 = '/9/DSSDB/DataTables/DFA256FY14-15.xls'
 
-    def testClean_up(self):
+        good_filename1 = self.crawler._get_filename(good_url1)
+        good_filename2 = self.crawler._get_filename(good_url2)
+
+        self.assertEqual(good_filename1, 'DFA256FY17-18.xlsx')
+        self.assertEqual(good_filename2, 'DFA256FY14-15.xls')
+
+    def test_clean_up(self):
         pass
 
 

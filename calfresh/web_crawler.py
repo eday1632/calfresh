@@ -61,7 +61,11 @@ class WebCrawler(object):
 
     def _get_new_page(self):
         """Get the html page as it exists today"""
-        page = requests.request('GET', self.url)
+        try:
+            page = requests.request('GET', self.url)
+        except Exception as ex:
+            logger.exception(ex)
+            return
 
         if page.status_code != 200:
             logger.error('Requested page not received! Page: {}, Status code: {}'.format(

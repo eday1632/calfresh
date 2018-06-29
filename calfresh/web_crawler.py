@@ -55,7 +55,7 @@ class WebCrawler(object):
             parser = PageParser(self.table, new_page, old_page)
             parser.parse()
 
-            if len(self.updated_paths) > 0:  # if there's new urls
+            if len(parser.updated_paths) > 0:  # if there's new urls
                 self._download_new_files(parser.updated_paths)
                 return self.table
 

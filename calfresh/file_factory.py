@@ -162,7 +162,7 @@ class FileFactory(object):
 
         self.df['quarter'] = self.df.month.map(quarters)
 
-    def check_numbers(self, endCol, startCol=1):
+    def check_numbers(self, startCol=1, endCol=None):
         """Check the type of all values in the input columns
 
         Args:

@@ -7,6 +7,7 @@ touch /etc/calfresh/logs/calfresh.log
 
 cd /etc/calfresh
 
+git config credential.helper store
 git pull
 
 python setup.py sdist

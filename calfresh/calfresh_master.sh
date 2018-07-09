@@ -5,9 +5,10 @@ source /etc/calfresh/venv/bin/activate
 rm -f /etc/calfresh/logs/calfresh.log
 touch /etc/calfresh/logs/calfresh.log
 
+cd
+git config credential.helper store
 cd /etc/calfresh
 
-git config credential.helper store
 git pull
 
 python setup.py sdist

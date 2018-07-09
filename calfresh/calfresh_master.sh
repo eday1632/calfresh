@@ -15,7 +15,7 @@ python setup.py sdist
 python /etc/calfresh/calfresh/app.py
 
 git add .
-git commit -am "ran the daily check. updating files."
+git commit -am "Ran the daily check and updated files."
 git push
 
 cat /etc/calfresh/logs/calfresh.log | mail -s 'Daily Log' ericday87@gmail.com

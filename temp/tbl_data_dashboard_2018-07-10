@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="w31KHJqmA6y3sB2zfOX0t19QtX4sz+MRUVmw7+C/vTfwmlSFUbgEC5y4zlsz3Ci1qtAODQXHmhyiu1gbNGX7xpaHwl7spm9mXFuZPtpAMgKivvY3+HR5g3XkFyjh1ABafiJ2/NSjB1R5ERLwwsyetIYWD1zaaPA1Sl9U4nGDZVbwSz4K" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="WkLyIljQOwussQLL4lsMG/5LAEcQLKL5oon7EdthTw2aefrSL9r8BMGxOaaSXVCfvLTfBtUOY9deHKb3EzvciuXZI0Oy2bCBK+XM2wJtNUhL4RB/gydlD6naQ1/APlS9QhLMBk4VS8JRTTXubjgFW52k0iImkztUmql71tth8LUec3Sm" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="vJMT5inTNyEv9RIdL6DDSOz/0PrtfU4irnYvG+neUaYCOPMbDABn8hcdvLJeYpFEMjeeFUImbD+7/kF9XswxH5jNJYuC+SWV4AuvqQjI1rt3QxR/cWcreYDyMWC97ZUJS78kaBlX5eNZtW36/uOnpS8Ap2A=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ns2LTlhM+Pfgi1fY27TVM96+WVUUJqzfEHVf9sxqUOIUzEk+OybgB3kI3yLaoJgC4WL8j64+VB9bvs6U2JFa5gLU1Eb0zJsOEdfeW1Hbr1ij+B/a8hFFVtwFQXoQgzaouYr6V+ItM+U8E7I97Cm8qDpRECU=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -728,7 +728,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem first haschild">
 		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1722"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Information-Notices" target="" >
-				All County Information Notices 
+				All County Information Notices
 			</a>
 		
 			<ul id="mobmenu1722" class="collapse subMenu ">
@@ -748,7 +748,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem haschild">
 		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1723"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target="" >
-				All County Letters 
+				All County Letters
 			</a>
 		
 			<ul id="mobmenu1723" class="collapse subMenu ">
@@ -768,7 +768,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Letters" target="" >
-				County Fiscal Letters 
+				County Fiscal Letters
 			</a>
 		
 		</li>
@@ -776,7 +776,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices" target="" >
-				County Fiscal Information Notices 
+				County Fiscal Information Notices
 			</a>
 		
 		</li>
@@ -784,7 +784,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem haschild">
 		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1726"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/Notice-Of-Forms-Changes" target="" >
-				Notice Of Forms Changes 
+				Notice Of Forms Changes
 			</a>
 		
 			<ul id="mobmenu1726" class="collapse subMenu ">
@@ -804,7 +804,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/County-Letters" target="" >
-				County Letters 
+				County Letters
 			</a>
 		
 		</li>
@@ -1056,7 +1056,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem last">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target="" >
-				CDSS Regulation Changes In Process and Completed Regulations 
+				CDSS Regulation Changes In Process and Completed Regulations
 			</a>
 		
 		</li>
@@ -1148,7 +1148,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		<li class="menuItem last">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Local-Assistance-Estimates/2018-May-Revision-of-the-2018-19-Governors-Budget" target="" >
-				2018 May Revision for the 2018-19 Governor&#39;s Budget 
+				2018 May Revision for the 2018-19 Governor&#39;s Budget
 			</a>
 		
 		</li>
@@ -1397,7 +1397,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="i1ctWh_MEBSkxuC_OGG9Q6X6yGRcYMDbxGef22qkbCREUM29mSh1gUoJpamFdZrifNOOrA2" />
+        <input name="__RequestVerificationToken" type="hidden" value="oZUNFqaXYJWb5nieBevY9inRo0wJVGSSCgIMEPhtgWoO3jYgv-iMxPQ3IY1D0zSHhkc3Rg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

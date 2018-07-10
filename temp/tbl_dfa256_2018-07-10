@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="MEpmEOwepHzQgmo1vz6aR4QVARQR8DxPU73dKpDXSKYRknrplXwASgnZnnwQAne27jGhqO0+TNM8VbUAjMLEcBRcE7GZvEhcJ7buEkpTdXkJpm4F/4+2F3cEuBX5nWG5XDLXuZ9nP6NFyCBBx4sgE7PkyJWwLaeCaM3pn3Tzf9m8mcuUF6y8UWXjVSCdzvzmkP29GjPQ8z52fXaVJsqpNAyXEA2A7rbMGmpgy+M+KHNdTd6HRnkGalq3B6MHXg2jeT05/M8GSQgFZCDevBocR+NVK66DaZdF/o4TR0jLxSD0sDEz" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="c6JktdwUDQESGrTaHuCFD/v7eNoDuodYSpSJWp2s2RhshA1pPjdkaYjCFPJjVOR4h0SDl8LnFtj77VPJ9b8Jta+HJDz914inFogqTxE2YIhE+j61CdINwdDAdllpylYs/24XWaLOD0kJPyIl4k6TZhv0AAfumUfw/xLZvYzSj/Q2q0OBlfruEmRrsqWvAi82Y0rtDBjAoSB6uGk7Qr9QhLl1of8vfihfZCj9lfT9rFQEZFpVc/VPY2dbJH1vFhzTmij8D4b9RkMgHzytu+Pi5IpFVc6eS2c0slYFJTO74Q/lwrry" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="rDt3jsV1R5cKXKSKJ+kJ5haNF4ID/ZeeiF7paMiZ/H/swUEe0r4VtWOIyZw/QIH/OL7ltmYHKgJt/Afgm7WA6xqQ/r3751v61B/6EAPwYwnJzDAL42vP53pCbDzdfazCoNIsv7YaBrIWVj6wOOXH6NbR60E=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="W2hfrlapPPMYCVIBlOB98Au2W+IEatfCqJRwZ+/sPf6XAu5c3aVdZrQCIBcgdQRK6aNrF/l+KoGVL4M97wk+04svVuXixAsiKZa9hKSUp8fdBxlyVazJApqSKHN+PdLtZxltXp/w5QUm/LHGWRvjpfKjP4U=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1493,7 +1493,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="fwJu82sdbFt17j44gGXZAOf0QGBwZrUEVMJvWVYvQbXK4OEBUv7-6L1ibuXRw91DYmUQ3A2" />
+        <input name="__RequestVerificationToken" type="hidden" value="RZ0CDb0kx-uaIvHoracFOF-Gvqk73MzVfNjDDRYWWaoPwDfbFF1xwPH-jZBndTmRe4Ib7A2" />
     
 <script type='text/javascript'>
 //<![CDATA[

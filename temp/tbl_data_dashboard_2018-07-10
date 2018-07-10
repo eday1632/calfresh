@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hCRNkcx8BWrTJT0/zFbe2Mbb4Sf0YPpHVHX0D1lGqSsBAygPjnv/L2OlNR5iXmMU8SHcYXK7bZqpXe1u9D7GywT63NyC7/xUB+7870NwLLXcbbEfm7TgrThLYsT85RmPZPYHdxWP9h/v/e3WbK0BFFVKMxUxyp/RccBOMoGApvTkHzLFx4wY514QhXaNp29Pw+z1z1fLOfmsmI2xq9/kV9LY7ZwI8CofC1WWdezbyKkqkYOzijucFd1317o=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="gSqKjB/7uk7gsJyzjM6ZmLYyyCrS8OUx3YD7HaE4vi4JCigbgPQab+fzHLyk18+653c3qPLhAX563ERrEOndyjmpu7yEzP0yFQUxrUeCxDKYyVCmqSgyBEV4uegg58DuIcao/fe24bqV4zzLHVwY/7FhgfC7o3IH09Fl2FYwaFpnGPuU" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="h9hkMscsAvFQEykn2HSG8xJFzGpv6dhJm1EMEPH95m2uVOo9rrXsPTuxLMp8vIiAAoSC4sgNKPyWiPZkciZnwbiy5B0ROqjSnRPl8qQmZFxWe9BSoW3R6poLp7CyYRWqylU+lILlqoDaRiFJVgL0AmKbbsg=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="IVZaFiaVRQVxInQtZ+jyDXG6HXXpEbs2yQELDiPbw7D7cm6sI3ogbsVjRCoNpvANzRfarzfz25fDcsEsxTqKdfAHjxU3ou7jImxXPcBQfUX9ska2RpQWoaaYn7n8QzN+U4Nvw+Exsi0FS9UVlH5wRC0qed8=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1302,9 +1302,9 @@ Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo
         <tr>
             <td><strong>CalFresh Dashboard</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
-            <td>06/11/18&nbsp;&nbsp;&nbsp;
+            <td>07/10/18&nbsp;&nbsp;&nbsp;
             </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2018-06-11-101950-827"><span style="text-decoration: underline;">Excel</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard.xlsx?ver=2018-07-10-082443-143"><span style="text-decoration: underline;">Excel</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
             <td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><span style="text-decoration: underline;">Getting Started</span></a>&nbsp;&nbsp;&nbsp;
             </td>
@@ -1397,7 +1397,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="m7ZgI9xMgXNQwSYhX1n6mDrpBCLCfv5SqZTFrn-tAm88zRNxi7Yo4MbRw4tVrl_dtcDfbQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="aTaIOD2eVU5ynjbTlxgDFLdTFB3ELf9pxQM9pjlSfra_k3o0DRocks7Esr4bXUwRc412-w2" />
     
 <script type='text/javascript'>
 //<![CDATA[

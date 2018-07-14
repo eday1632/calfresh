@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="pMpgGlKU5IP+/bcjRZIeu6b7V8auIbKyKgMs9ia3Xu9BnwWiq8MUvEmlGn8Jk40s8WHtGT28wFT1GP2m5U67uHUrABjPsG3Yzx/0fY2QEzTdnn1fGC2lCAfv01u/EJqCfdXtk3cxJ1pH2jWq5PU81BMjkEUy6jB5kAnOCorRPaFHSF1txjvHiT1kZ00qa0FrzPCOZs72PQJ603CglQqtqOuv+72lTcoMAwLbPz0SyRzKxMXTghWddEVRse7FUX4n8x7Ns3opyWutp+VlXiTw6uw7dlPNMFCWhwGDKJ5BlNV8Z8Dn" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="j8RMBFmh/ck8OS+MUWbk7nAHZh/Sl0iRxJUaN/JYWDAlLStYFnsuyBu6sWLgFvz4DFnwTziZfbdphPiFUtxHSDJ1IFAvkDzAmYwoi7dLFFoGcC381OF4LuRUD+d6QMPC5Pfh3baTs/Xb+83d/eXcQeLBuVt9cNYFwCZRP3F+lxwAA2l301d0jztJgoeqqKT7Z4PkdT909r45MtYvL+wxFi/PMtc1mT3WeUaXQ+Tr2Njayx51R0ndY6I4rlLXaeDD1LVuus7Rzzv08kcLYFQv3+ACXevEijan/M/dyU5kr45wkPFC" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="8bw9aXZzNDK4XC/Pmg2RWvFIQR7KkqFUBEIDzBZ3LwdxvJLQxNVjzADpbOUhtHZX7696+GoKSi7mAOIDuYCVlbZJWlgwrGP7vS9/npEV5gm2REiSyXRQvEeGShGEt9rTCC7sDF15k1T2dIsG6IuC4WowT7E=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ypFiPNjmYL0b28a6/5/XF6PAmh+aiOXBls/xE6f1/dhwa9QG9Vv/0SvJftJgEfrsSB96msNcNnTWPGE+nxU0ArlZM2Lkx+L5XaSVNeDde28BDaneAw9FzT8F2iX7tOyMXIf2iklKpXIJC56UTnwbHBVtjWM=" />
 </div><script src="/js/dnn.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=392" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=392" type="text/javascript"></script><script src="/js/dnncore.js?cdv=392" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=392" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=392" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=392" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=392" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1278,8 +1278,8 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 </ul>
 <h4>Error Rates</h4>
 <ul>
-    <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CalFreshACTIVECounty%20PMC%2001-18.pdf?ver=2018-06-19-082200-547">Actives</a></span></li>
-    <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CAPER012018.pdf?ver=2018-06-19-083044-740">Case and Procedural Error Rate </a></span><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CAPER012018.pdf?ver=2018-06-19-083044-740">(CAPER)</a></li>
+    <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/ACTIVECounty%20PMC%2002-18.pdf?ver=2018-07-09-111336-050">Actives</a></span></li>
+    <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CAPER2.2018.pdf?ver=2018-07-03-135601-233">Case and Procedural Error Rate </a></span><a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CAPER2.2018.pdf?ver=2018-07-03-135601-233">(CAPER)</a></li>
     <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/Top10ErrorCausesQCGraphs.pdf?ver=2017-08-28-140623-057">FFY 2015 Top 10 Error Causes </a></span></li>
     <li><a href="/inforesources/CalFresh-Resource-Center/Timeliness-of-Application-Processing"><span style="text-decoration: underline;">Timeliness of Application Processing</span></a></li>
     <li><span style="text-decoration: underline;"><a href="/Portals/9/CalFreshResourceCenter/FFY15_CalFreshCoCaseloads.xlsx?ver=2017-08-28-140900-607">Caseload Information </a></span></li>
@@ -1376,7 +1376,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3350`,`evoq_TabId`:`3350`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fCalFresh-Resource-Center%2fData`,`evoq_UrlQuery`:`%3fTabId%3d3350%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="W87P3Y_ebVVKqdodsdWR8vmdDVjEvu_2OhO8fuoOxLlVKLGbybdSrCMcpMPBZbaLoI7WsA2" />
+        <input name="__RequestVerificationToken" type="hidden" value="pwsSaAbjZHGpFjxIHwbi67gDZNPQ04GpM0cgjRUiMsG4OxvtgVcLUzth0rSnIKYZJkKypg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

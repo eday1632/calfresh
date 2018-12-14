@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="HvK3FYdDWSxIeA0/Yx9BKg6shKYOGqJ9p1IPB3QES4HJz8Q8II+Z20JkCrCiC85UfFvRW/z9cwcq2SOD0oRS2/h480Wvq9SNx2ih/dsFSaldPYyd3TgrOCT3tmBU0Rzk/jyv/bdn3gve0Cvvw8EPfYjesko7pNESfPw/xw+g5HyVFJpE4FbKSSl4syrbRvF9mKLc++HuKrhLPruuIR4lVt6Mq2LOr70YwOh1Uk3l9UAKl8FotXsDbE8Rorkkc4P96zDajnVtFV6+7pJrkpKOpqFALCAmUjGn8UQf+wpt3k/JBwtG" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Ij5He2/ADLCJBhfsjS4VZDSHtZ4vuUPR40//VGpXAnJ3SWIVH8ILNm+NdbD1APLduIP4L/KnC6Hcs3NdY1+fhGHPDEHVjcpEkWjOlPisLqy7K27ul1hSMN0Fs5POecSRcjYsTXVRmQwDwFUMrgnUbGIW+Ad/H9L0hXUryuqhUlQlD25OonT0+Bzryk6eRA0gCu0h2IVS6I2KI/Kicebcyl7wMS2CLyFd/2JVFcs3aZJJjvO3pMdJHV9cYYJHeY3V+0Mx74lP/c5yArGgNSe469/4huEKG4YDvjlRVdw6nSNBqhr4" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="7FxfM8Rim9t929J7PvDPFlwC2ixsF7PHlCI0bNkzvWD0w4W35tjChBs7J5CiEwamp70yPxOCCYuPzYEgP8Et1fwwwTOTslMane1L74Bb0EAcmK0ysaItqc/hOqZ0gJYVPV35yekVKMqX2QAlSO9g4tAgZbU=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="8LIROFBshpBWM9PDyudIYMDFneKF7hQ9XQF20wzYTsc5QPlf4XPGIHjzzq2AKfQoWjsvJTpKx3HTfnFWK1OWLL2KSM9FQyyvXTd0gRxZFRQk16+4wa8Oc5nHJLshpqSRUOdQLEXRhZwV46TvM8MRY8nafcU=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1321,7 +1321,7 @@ Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo
             <td>12/10/18&nbsp;&nbsp;&nbsp;
             <span style="text-decoration: underline;"></span>
             </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20-%20no%20MC.xlsx?ver=2018-12-10-140716-337">Excel</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20-%20no%20MC.xlsx?ver=2018-12-12-080033-980">Excel</a>&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
             <td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><span style="text-decoration: underline;">Getting Started</span></a>&nbsp;&nbsp;&nbsp;
             </td>
@@ -1434,7 +1434,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="ytyAyqED_fvOfFcQV4L7fpOug3Ut0UrKbwJjNyHLKRYicJlkUQ-cOnQjHoRdwuE72JYKpg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="vNB_sjiWJEGQ2RNi7sQ2yZIXbfyLtIZu08IexHkHPqk4DFeJ_eJHuB8VpLOx1LRP7P0mqA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

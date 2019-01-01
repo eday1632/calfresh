@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="D80Cztn79ego0S8ZfDekrB+BsmwA9etLzye9v1utCGKLHSdF2yyiQrJlzTU5hcR7Wmzm+bgj6OsDg3YoDCV6VgcMuNyrXZr+B1vL5pNEqX7E8QuExs+WX/TCbHpKnsPt3GJHJGHkbVo1B+xHUimxnK8fm/x9qNkMkW4J/i+yFNpqla4LGbJYj0zERE9c/JhaOnLaeTLY7GdFtXDV90/VLSlpQ0/nBdWR9jzOU5Wv2ZPmPZaJmURfyC8y8TtVjHha1x3IIuc8zDFHHhODSPLALD9C0wU4qA1nlZU8jTLvMuiafAMu" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="9K1LBDMUdvKt8lV9XvVZC9OBQAbC9KrNXfEqAZ0ICOvDolfwaSbNpndA8fgnd7OzI5N7+OEgeLvI7n9AuLFNR9iFGm+3xhemHH3DRFtOQTyskaiwmEsRfBD7CmpXreiJ3nhJLwf89fho1dl3VjvMxIcI+YwLaf3Yd6F4gKCKAYOXyW9eZBxosE3ttP0pRj7uiM2/tNgZEYZ/giDpr+dRhRY2hy3BtLkKjAFN7r94DSI5z2ivWCd2vAQ+zkmjbR1D9Kr24QzY36ZkvZcXFKThIe6vvrY6kour3Ng16iHbnJmRwHcl" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ByrHRb48KwhEDgMvHqTOHkUzTsCTS/al4VaHqyZ+Pfld/nb/hohI9ZmpFyPputwzZnJRPHN5DuJrW/jZ/+shVnQZGN9+WZZEtc3EsvzBIFPLkf1S/6tGlABYBK+etuUvBZRfTHlAx7LJF5E2eYkGCXomxTY=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="q7tUF7G2Y3frVVSoLLeF60xRmGS6K7jtqtNFRUcIYPmCMBlrY4/T+cg1aMLeJt7K9dOABCWxKhp5b0qo2QkMuh4bKzYqwpnfUWg7sPrUPFkt8PqOxBuTj+3xEhfEnyz2eWb+WaHW4Pgro4Gure91p1JX7lU=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1441,7 +1441,7 @@ Instructions
     
     <!-- Copyright Statement -->
     <div class="copyright">
-      <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="Copyright">Copyright  2018 State of California</span>
+      <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="Copyright">Copyright  2019 State of California</span>
 
     </div>
     <!--<div class="LoginPane">
@@ -1474,7 +1474,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2957`,`evoq_TabId`:`2957`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x`,`evoq_UrlQuery`:`%3fTabId%3d2957%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="pbl-9YsE0Pyj84xxfKTQ-Leala5EueLE4rPNj9XudgPOyhin7GpIZg-ze65VjOdA_5qmkQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="XhTC_U0dRinT0nxIX7kiLcVhqSr4EXjoz2GBuJTc3EwgXV2_4ndyBT6dl8QKs1ezAtPlXA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

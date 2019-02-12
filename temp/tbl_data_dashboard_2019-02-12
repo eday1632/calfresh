@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Fuc49XxpAP0YEeCR4gOwd3ZT51BCtVHEPwJOtlgB8KLJ+rJVc2lOcgOEO5Xff+4tUC3wV15aiU8jIPl3awzfBoDkMeARYaVzpQ01IOwzFHbnQPnldMhjyDGcH3TT0+TU9HsR2sPaneOKEl99AwkBgQQ/Ne4cBCtpYIGBXz1Ilo6d3jVFA+AkCrivYUhLPazSkdURNWR6JFCrQDhCjqhefZzygzkaO2GPGS/CKbO792cM1zFDJo9hyY3nr+UXBJytr85/uBMGhBTKfO0IK5bs1LVBUBwmFicE8UkQ10uiwF7gJWdU" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Dtz4sO7GlXzw+JBRq3Ta95LKRbSix3Wb6mvk4V5p78kFeFTF/RJPuJs3sBSK5ZkEiUOrXk0beU6gv7ZXHjsDiP4SOUCoiuWQxXBoT8VzlAVDaBZ0TYZhXBj/Xk3S5MYs5bzaaVI+074Xp0ZKgEzQedp+s8UlVE2/XE0hGqFM8bBeQ8qrgS2VtaZu0GBsG8z+ZESh9OFqg0OoLsE/7dDobf07eMsFeFREWEbyAaqinvCfwnLcrxVcyKjiSlMlh675xAIrAdTTjmOJPSiImF1W/AjoQyq8Zyuna43l6kGFhwaoMmMT" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="anATjK6L+nTIBoaMoIrzmIIhx5DFDsRBWS3NfdVnUUb/Vf/XxZXW19F+2PnUDB700po1PbAfAFoRN1dMGXY6xzgskXOod5DU4tuXtCeJkrUcIic3bpAv6lxD0dyHeFQsv275KfUr+fRM/TEtYyDwGyeqn28=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="xOD+5IPnGaZMqLPJQNKbShGNuDJxpKFKWq+ejQqzgpEmRcMJ/zjsJpCOKdHBUbTtCy+atM7SaxKxNPhtELOCqDstrtc6JpJOyU8z9OGKP1swvN7tBiKYP4g02i6aDtzzeFYBXoUMBikjJnx2eQIQetrmUvc=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1292,61 +1292,61 @@ data. CDSS strives to deliver excellent services and resources to our internal
 and external partners. This dashboard will provide you with information to
 analyze trends in CalFresh demographics, participation rates, timeliness,
 benefit accuracy and churn rates by county. Please refer to the
-<em>Resources
+	<em>Resources
 and Tools
-</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-12-20-071230-350">.</a><a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-01-23-125426-893"><br />
-</a><br />
-Contact Us<br />
-If you have additional questions regarding the CalFresh Data
-Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo; to
-<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.&nbsp;&nbsp;
+	</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-12-20-071230-350">.</a><a href="/Portals/9/DSSDB/Dashboards/CalFresh/Definitions_Sources.pdf?ver=2018-01-23-125426-893"><br>
+	</a><br>
+	Contact Us<br>
+	If you have additional questions regarding the CalFresh Data
+Dashboard, please title your email CalFresh Data Dashboard Question to
+	<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov</a>.
 </p>
-<span style="text-decoration: underline;">
-</span>
+<u>
+</u>
 <table>
-    <tbody>
-        <tr>
-            <th>
-            </th>
-            <th>Updated &nbsp; &nbsp; &nbsp;&nbsp;
-            </th>
-            <th>File
-            </th>
-            <th>
-            </th>
-        </tr>
-        <tr>
-            <td><strong>CalFresh Dashboard</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>01/30/19&nbsp;&nbsp;
-            <span style="text-decoration: underline;"></span>
-            </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-01-31-100932-503">Excel</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><span style="text-decoration: underline;">Getting Started</span></a>&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td><strong>2016 PRI</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>07/23/18&nbsp;&nbsp;&nbsp;
-            </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/PRI2016.pdf?ver=2018-07-23-092239-503"><span style="text-decoration: underline;">PDF</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>&nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td><strong>2010 - 2016 PRI</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>08/17/18&nbsp;&nbsp;&nbsp;
-            </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/GISDashBoard_11-16_PRI.pdf"><span style="text-decoration: underline;">Dashboard</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/FinalPRI.PDF?ver=2018-08-20-125427-107"><span style="text-decoration: underline;">Trends</span></a>&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-    </tbody>
+<tbody>
+<tr>
+	<th>
+	</th>
+	<th>Updated   
+	</th>
+	<th>File
+	</th>
+	<th>
+	</th>
+</tr>
+<tr>
+	<td><strong>CalFresh Dashboard</strong>
+	</td>
+	<td>02/11/19
+		<u></u>
+	</td>
+	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-02-11-084846-367">Excel</a>
+	</td>
+	<td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><u>Getting Started</u></a>
+	</td>
+</tr>
+<tr>
+	<td><strong>2016 PRI</strong>
+	</td>
+	<td>07/23/18
+	</td>
+	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/PRI2016.pdf?ver=2018-07-23-092239-503"><u>PDF</u></a>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td><strong>2010 - 2016 PRI</strong>
+	</td>
+	<td>08/17/18
+	</td>
+	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/GISDashBoard_11-16_PRI.pdf"><u>Dashboard</u></a>
+	</td>
+	<td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/FinalPRI.PDF?ver=2018-08-20-125427-107"><u>Trends</u></a>
+	</td>
+</tr>
+</tbody>
 </table>
 <p>
 </p>
@@ -1434,7 +1434,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="ShbTbaJotJ1sBmrQkij2Ugib1CHtZnaFPyrfySTAC6brqG3ALDKCM6pVijX0ROTS-HgYrg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="d8Hm8K22Th8ddP9gU5hfF3p8TjWHzqQVWFvo40ipXWwWKCXEb0F6XdL0-gWnTz5IilO9TA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

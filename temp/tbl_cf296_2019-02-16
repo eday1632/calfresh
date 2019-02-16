@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="KdrP+h2DT3NZ8eADZ/n1sjlCjaz72grPWt7Js2odC/bYT8BoBgP0dTxnwnlr8M019LwJq5HcdCJehswn5dA+UjBOeq7AtLWwMdJ8GEFXAUtEfCGt05KeoSzbtkKADqHUVxi+3JlLIfidsUXg1NuKO+O3hqwJ/v7SRQmqpxorOWb71z9RvXlL5hbdniIYGnx3RXfin5GsCVUTRvlYlQzIuFvRuoKd3hCbaKAOxVyFtkJ9cFpLfH/kJHt+XdKJ9+c2xH0aQlRAdJIcvWoIUPNvCO9tZs1hSf0z1H5fXhNSdaEolPX7" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nEvY0xR4KtQ6cP+B3UZY4RcgfrxwiM70qjwGdF0Tng89t7Wju/222fC/TUoLh/mI66iEvxEtPNxDWAaoONuxUefcj9lNVbxu6J9Q+2YBRM7oMIoXXVPlBmyAU1LpfH/hwmpi/ojIFWbK9duEuxCSKz2bLop25fpLYTwFc13boVsdx6tRC9czZtg5Usku31iKLpfgX889GTLV1KsRkhaEDupdktiR/mPTqbKX+KDj3v568BkB/ec9wuVVnPs1DKPnYlq5e49NnxOYjLEY32MkU870lVDikc9ciuJluMzXXi8jE0/C" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="KId0Bc+9p23AOWlbsIPHElkcpZ2KDzFKWp34E6UCJ9LsBN6ikMT67HRV/Rpd1kJwNLvDIOXqmdnmecEq8lVhHlCUUOLl1/Ovo9nNJr73rcIBknRG20Y3NXcLQQC2LYEohdbvY+nlPC4wfWXpq2amFj9KWQI=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="X0qw/GWT/6CRQeujQ6rk0Jh3sTgvGqwzWwZe2n8AiZPntnCsRRK1bOeBhlJpgccha9isp/W+cbP9Spzi4EWe8qbhTR0Q2l0VtNt49p+GpO/k/W7u/z6GacJJZnfjg8i4kAijcmHjvpCMUZqjayE2UuxYynk=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1286,39 +1286,39 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Tables</span></a><meta itemprop="position" content="3" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296" class="Breadcrumb" itemprop="item"><span itemprop="name">CF296</span></a><meta itemprop="position" content="4" /></span></span></span></div>
         <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9453 DnnVersionableControl"><a name="9453"></a><div id="dnn_ctr9453_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9453 --><div id="dnn_ctr9453_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr9453_HtmlModule_lblContent"><h2>CF 296 - CalFresh Monthly Caseload Movement Statistical Report</h2>
-<p><strong></strong>The CF 296 replaces the DFA 296 and DFA 296X reports effective July 2016 report month (ACL 16-39). The monthly CF 296 report contains data on the number of CalFresh applications received, approved, denied and withdrawn. This includes data on the number of CalFresh applications processed under expedited service (ES), processing timeframes and discontinuances due to recipients&rsquo; failure to complete the application process for ongoing CalFresh benefits. The report also includes the number of cases eligible; Inter-County Transfers (ICT) received; restoration of prorated benefits; recertifications disposed of and the number of overdue recertifications during the month.
+<p><strong></strong>The CF 296 replaces the DFA 296 and DFA 296X reports effective July 2016 report month (ACL 16-39). The monthly CF 296 report contains data on the number of CalFresh applications received, approved, denied and withdrawn. This includes data on the number of CalFresh applications processed under expedited service (ES), processing timeframes and discontinuances due to recipients failure to complete the application process for ongoing CalFresh benefits. The report also includes the number of cases eligible; Inter-County Transfers (ICT) received; restoration of prorated benefits; recertifications disposed of and the number of overdue recertifications during the month.
 </p>
 <table>
-    <tbody>
-        <tr>
-            <th>Report Period
-            </th>
-            <th>Updated
-            </th>
-        </tr>
-        <tr>
-            <td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY18-19.xlsx?ver=2019-01-24-065944-740"><span style="text-decoration: underline;">Fiscal Year&nbsp;2018-19</span></a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>01/24/19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY17-18.xlsx"><span style="text-decoration: underline;">Fiscal Year&nbsp;2017-18</span></a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>09/19/18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY16-17.xlsx"><span style="text-decoration: underline;">Fiscal Year&nbsp;2016-17</span></a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>09/19/18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-    </tbody>
+<tbody>
+<tr>
+	<th>Report Period
+	</th>
+	<th>Updated
+	</th>
+</tr>
+<tr>
+	<td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY18-19.xlsx"><u>Fiscal Year2018-19</u></a></strong>
+	</td>
+	<td>02/15/19
+	</td>
+</tr>
+<tr>
+	<td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY17-18.xlsx"><u>Fiscal Year2017-18</u></a></strong>
+	</td>
+	<td>09/19/18
+	</td>
+</tr>
+<tr>
+	<td><strong><a href="/Portals/9/DSSDB/DataTables/CF296FY16-17.xlsx"><u>Fiscal Year2016-17</u></a></strong>
+	</td>
+	<td>09/19/18
+	</td>
+</tr>
+</tbody>
 </table>
 <p>
 </p>
-<br /></div>
+<br></div>
 
 
 
@@ -1397,7 +1397,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3036`,`evoq_TabId`:`3036`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fCF296`,`evoq_UrlQuery`:`%3fTabId%3d3036%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="w3gLiYybTYTuyG9hHWCm9O4p5VnUT5hTmpplb1cEk8S4Lnf5bWrx6sx3YpYf-bI8MOibrQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="dMFwFSYRUAH01rq2oh1ZXFbc7ueUAWO8c3gcpmQFevjuNfkUW63Ly1Mht6b6YsnQsk-rvQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[

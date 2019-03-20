@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DP0bxkElS8WmYHlHb5owqP54YQDzCzv5/HXyJc7zgibo4WH7p8JwfTE+YSKotkXkd3dr8unoynRONCezJBdgjZG55Oj3Gv7j3L/RyIZddG1m029o6/qO33muUW1QR7DiNZtMvrK+XUENWfononJ0UzuD7dY6UKzBDluPNVEe9+1RZA1qq8ZnmQLyMW40LHQunEiPIDeEhxAFw6bElm2IH8aCkY4YZHokSaIO2nHHAHrT5JjIMOap343NwjcBrrRWsTRdu8XVA43aUufoyaSJ5yXgxizuq9zGculKAb/dRK1PshlL" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="xpGu88mXt9mwD8QflMxdFcRbbw9l9IOBjAA5PHhli2RnrKR2vEZ7r55MpWEPQT9g14bD49G9geb/pcsnVQlbPYnSPK4f4z8UZ0QVL0FRSEo63MjPzPgRp+/Z1fRyLijEGfx2qVgIEfw2kKA6GdrSn77AHA9mNwncoldc5dQZkwr4vA27U22u8/hJQ/RYT2KjexpaCrX+dOFBkuYF8W2j7hRnRlNAITJVVUwYGvNExPiGUA3Yo45Bn4O4gRDh1qvAuJLRks3WUL7AuJCEZ9ZSpsbCbeFBrf61FWAiuVdoxCVDr/D5" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/aMl3wD6eyVbADZmimGQt02BqOQ8yasDg4/vtQNm6AUXMA5EXBRWgKlGEi4j21TQbRBdcEpaAphCl1CnoFEhbMmJRzLLbqf1ok+jIb+XIi2njvL7h1XxXUJKQFCvUPW36raJ6krVY1UpiLtXnq3A0YBFTok=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="aJYCIIkRLVuoyUWj+hlxrTOEGSnuH9KvcMSaSkkSaqyQWNX0RveuXferdUh+lbiUUugGRhyhOAsIWijea5oQ+8gXQLlJVcl7GSWi0QPAXJ86p7lGJvGjtTtOB+THeS/6yc+y6x29I2/9knozgXh5kOlGp9Y=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -436,10 +436,36 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 	    <div class="subMenuRight">
 			 <ul>
 				 
-	<li class="item first">
+	<li class="item first haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/CDSS-Regulations-Home-Page" target=""><div>CDSS Regulations Home Page</div></a>
 			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first last haschild">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target=""><div>CDSS Regulation Changes In Process and Completed Regulations</div></a>
+			
+	    <div class="subMenuRight">
+			 <ul>
+				 
+	<li class="item first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2019-Completed-Regulations" target=""><div>2019 Completed Regulations</div></a>
+			
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
+	</li>
+
+			 </ul>
+			 <div class="clearfix"></div>
+	     </div>
+		
 	</li>
 
 	<li class="item haschild">
@@ -485,29 +511,10 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 			
 	</li>
 
-	<li class="item">
+	<li class="item last">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adult-Services-Regulations" target=""><div>Adult Services Regulations</div></a>
 			
-	</li>
-
-	<li class="item last haschild">
-		
-			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target=""><div>CDSS Regulation Changes In Process and Completed Regulations</div></a>
-			
-	    <div class="subMenuRight">
-			 <ul>
-				 
-	<li class="item first last">
-		
-			<a href="http://www.cdss.ca.gov/inforesources/2019-Completed-Regulations" target=""><div>2019 Completed Regulations</div></a>
-			
-	</li>
-
-			 </ul>
-			 <div class="clearfix"></div>
-	     </div>
-		
 	</li>
 
 			 </ul>
@@ -979,11 +986,35 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 			<ul id="mobmenu1720" class="collapse subMenu ">
 			
-		<li class="menuItem first">
-		
+		<li class="menuItem first haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1883"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/CDSS-Regulations-Home-Page" target="" >
 				CDSS Regulations Home Page
 			</a>
+		
+			<ul id="mobmenu1883" class="collapse subMenu ">
+			
+		<li class="menuItem first last haschild">
+		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1892"></span>
+			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target="" >
+				CDSS Regulation Changes In Process and Completed Regulations
+			</a>
+		
+			<ul id="mobmenu1892" class="collapse subMenu ">
+			
+		<li class="menuItem first last">
+		
+			<a href="http://www.cdss.ca.gov/inforesources/2019-Completed-Regulations" target="" >
+				2019 Completed Regulations
+			</a>
+		
+		</li>
+	
+			</ul>
+		
+		</li>
+	
+			</ul>
 		
 		</li>
 	
@@ -1039,31 +1070,11 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 		</li>
 	
-		<li class="menuItem">
+		<li class="menuItem last">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/Adult-Services-Regulations" target="" >
 				Adult Services Regulations
 			</a>
-		
-		</li>
-	
-		<li class="menuItem last haschild">
-		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1892"></span>
-			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Legislation-and-Regulations/CDSS-Regulation-Changes-In-Process-and-Completed-Regulations" target="" >
-				CDSS Regulation Changes In Process and Completed Regulations
-			</a>
-		
-			<ul id="mobmenu1892" class="collapse subMenu ">
-			
-		<li class="menuItem first last">
-		
-			<a href="http://www.cdss.ca.gov/inforesources/2019-Completed-Regulations" target="" >
-				2019 Completed Regulations
-			</a>
-		
-		</li>
-	
-			</ul>
 		
 		</li>
 	
@@ -1493,7 +1504,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2958`,`evoq_TabId`:`2958`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA358F`,`evoq_UrlQuery`:`%3fTabId%3d2958%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="yjAkt3qUVqiDLRKfBEhGcKoMm73lSkgXC6nAa3LQvRMDEzsKVuNr2U1FkSsS_T-loR3RMA2" />
+        <input name="__RequestVerificationToken" type="hidden" value="3_Ovs72ZgIEiYSOSJUa-rkr8yYd68L7bwycPY1jhTPqKJh4HogeCzvu0J3hLxOeJiMMjrg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

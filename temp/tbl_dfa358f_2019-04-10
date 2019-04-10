@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1k7QGYPpo7inz/pXtCfzOGnPhQcdryXKJfvre6MrHG7mv6WWD5R5E9Jiq7Te2yMh7EB1R0VCIKN+slixftUwsLuQN00+aB9EmHXxUvQjVV36Z28IzyiKoBl6UG6H4swU8pXFo9LYeDkhZLrZLqVzOfkyAfgd375ma/JdMr9Mr0RtcaZKXEOsfItH1+p2ozR/vABtu7hO7t8CdKhdXYP+TWBGLL8vqoXw3uglN2CzVe6DrYsuGLMF3cHVg3h7iGaOh1+4u73zhUrs6EsRiuyzNan9hWdoqwDTh/YlPxi3Fg3hl9qz" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5QI+T8nRZINQHBH06EYfxA+ynpQmxfOWD8upRDgjJBQBfTA4WNTHxAU5js94I1BaD4kZ2UIj+zoRMAKR6Y+GmRyfj99VOSOrV1IkrA6iHuK7uCVQ7Tht6tEXVPw57bBDmgFyC7CMu6bsSWUtE6nQOKCLaiBkqX5SMoDd0heC7EjQNTRF2UCntcfJMNLHX9m3UV8LhEtW0zutZt7laLKUqJ07EV1d9pH5gx5BMyuWSDwCY3FNUxwWnbZZ/dv0RGHq9bGemqKUVW3IzcUVQdrvmzUkQ1/QtIeDmxcj9wZTO+NWiayj" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="IuS7RfMEweakb/wYNa9gL39hrMdysOjeaohu6nNRa0sOPKFCGqlm6DZwzczAYBsWCNccMA1K91a4xViePcx2atekS3RMV/R/5iyAMwgYqGf/arEYsIbkJTcxlcPZ+pn6vAcARG9v13QPaipE2d6Jy/435d0=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="dRswS19PInbx2B58IMd9Y8UlY6b0OZPZ5jdyVkC3C7UytquyQLgcfNK29fArghGE3+3jn175dKwImTl5tU5V6iYa9oekjoHYwa0eUlQdWf/LlEGLhoDywopvwAJxn8ea+bknl4MKsk4rfXjA6PGORwdYt4Q=" />
 </div><script src="/js/dnn.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=393" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=393" type="text/javascript"></script><script src="/js/dnncore.js?cdv=393" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=393" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=393" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=393" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=393" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1437,19 +1437,20 @@ Help</a>&nbsp;is available for questions regarding the Excel file format.&nbsp;
       </div>
       <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9244 DnnVersionableControl"><a name="9244"></a><div id="dnn_ctr9244_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9244 --><div id="dnn_ctr9244_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr9244_HtmlModule_lblContent"><h1 style="margin-left: 20px;">Contact Us</h1>
-<p style="margin-left: 20px;">For questions regarding this report, contact the Data Systems and Survey Design Bureau at <a href="mailto:admdfa358f@dss.ca.gov?subject=DFA358F%20Website%20Inquiry">admdfa358f@dss.ca.gov</a>.
+<p style="margin-left: 20px;">For questions regarding this report, contact the Data Systems and Survey DesignSection at <a href="mailto:admdfa358f@dss.ca.gov?subject=DFA358F%20Website%20Inquiry">admdfa358f@dss.ca.gov</a>.
 </p>
 <p style="margin-left: 20px;"><strong></strong>
-<a href="/inforesources/Research-and-Data/CalFresh-Data-Tables"><strong><span style="text-decoration: underline;">CalFresh Data Tables</span></strong></a>
+	<a href="/inforesources/Research-and-Data/CalFresh-Data-Tables"><strong><u>CalFresh Data Tables</u></strong></a>
 </p>
-<p style="margin-left: 20px;"><span style="text-decoration: underline;"></span>
-<a href="/inforesources/Research-and-Data/CalFresh-Data-Trends"><strong><span style="text-decoration: underline;">CalFresh Data Trends</span></strong></a>
-<br />
-<a href="/Portals/9/DSSDB/Trends/DFA358FSA6Ethnicity.pdf?ver=2017-03-29-074816-297">Households by Ethnicity/Race</a></p>
+<p style="margin-left: 20px;"><u></u>
+	<a href="/inforesources/Research-and-Data/CalFresh-Data-Trends"><strong><u>CalFresh Data Trends</u></strong></a>
+	<br>
+	<a href="/Portals/9/DSSDB/Trends/DFA358FSA6Ethnicity.pdf?ver=2017-03-29-074816-297">Households by Ethnicity/Race</a>
+</p>
 <p style="margin-left: 20px;">
-<a href="/inforesources/Research-and-Data/Report-Form-and-Instructions"><strong><span style="text-decoration: underline;">Report Form and
+	<a href="/inforesources/Research-and-Data/Report-Form-and-Instructions"><strong><u>Report Form and
 Instructions
-</span></strong></a>
+	</u></strong></a>
 </p></div>
 
 
@@ -1504,7 +1505,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2958`,`evoq_TabId`:`2958`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA358F`,`evoq_UrlQuery`:`%3fTabId%3d2958%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="u0qwgp0R7pY3BACXnKfVHoQAAMyZL5iCFbvyoBHFH38BREUwfkpue-Szjllk2NZzD1hAQQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="jdaAy3mgieU_C-lBZ53xpS4mWflhNjv2gspgh-AtHP3pMOkWUuxSElelPbBOWbzv5tBZ5A2" />
     
 <script type='text/javascript'>
 //<![CDATA[

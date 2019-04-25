@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="W9e6lYTdZa2WGwY7uIIhZm3/qBZrXoWM71rQa0jlqQJZjsh73OsN3P6r/vm1PerZAccGfv7D5T+ejsOeypxerbqMsNtYd6xwmvsPQYjCAhBOR25ZzfaVx2e6CfYBkZgm6PyGumrxwVEkOYZUSNmIkYwO4vq+//tJG+1bRALtCQpRj9tLRC7eCo+mUiqU+97NiymNUeciG18jkwNa9kg7frQ6oJbxdPrmk7w2yDg6Tu6R/5R0vHjx/rzWSKJYqx+SFkq+kBghYSLkhgAzcKrRFBg4Qt36+VWe9monpX0wR86HkJGi" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XlaN62E79HQKa5Wa8E4LDC3uYwqALpM0tX2EAa56JB1qEltql/pfjpGVQ4AuH5QMpEQ3/7/PXukk8upF2TL5PmHP/kBehV6QQ7iuiHDIWsNC/s3yUKKMTcEs5pruLmthwA6nk5rMVmJByazbVEzYP220LuQdU79/GZ5J5etYhq26gi1l7VqePjNkYGyNswcKh7fv/joz2N52Ex8+skmSYtURMTGiNCztHcV/l4FtGMDUxPoUgSjSljA/Cg2G3RSEedde0wE6CUVQ2wGo9JsDWQVGfOhQKc1UeKXXFhWGWqMPvlfI" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="kqucA5DyHilwbq/RAfWfT+SLLAhT6oBFO0z7YwbPaf9wlmKJ0wlCftE/JMpI2WGnW3WMRYRs/qkSiq48BJM0lygEP71MiDVjhjQIJEpo8RpADfhGRH9mqwuHsisk0634m9hWa6DPsefG5NuYalpEKzVyBOo=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="9fAAesKdPS7q7Hmnco5Y1kG5RXbAuA1QQxDIvcDj1CduqZiEH53GYMfPNYe1Dh6D7H/9XFle4+L01mJt5pGxfj2RvF5kaRYUXT7IKhieYhuyTwKgOtLL97RN4EMYX5jiSO5+mkuUgXULm4RKSmT3o4xiLP4=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -122,9 +122,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <!-- Include Branding --> 
     <!-- header branding -->
     <div class="branding">
-      <div class="skip-to-content">
-        <a href="#main-content">Skip to Content</a>
-      </div>
+      <!-- <div class="skip-to-content"><a href="#main-content">Skip to Content</a></div> -->
       <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="/portals/_default/skins/cagov-santabarbara - partner/images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
       <div class="header-organization-banner">
         <a id="dnn_dnnLOGOd_hypLogo" title="Info &amp; Resources" href="http://www.cdss.ca.gov/inforesources"><img id="dnn_dnnLOGOd_imgLogo" src="/Portals/9/cdss-logo.png?ver=2016-10-04-165132-000" alt="Info &amp; Resources" /></a>
@@ -224,23 +222,10 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 			
 	</li>
 
-	<li class="item haschild">
+	<li class="item">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target=""><div>All County Letters</div></a>
 			
-	    <div class="subMenuRight">
-			 <ul>
-				 
-	<li class="item first last">
-		
-			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Letters" target=""><div>2018 All County Letters</div></a>
-			<span class="menuDescription">2018 All County Letters</span>
-	</li>
-
-			 </ul>
-			 <div class="clearfix"></div>
-	     </div>
-		
 	</li>
 
 	<li class="item">
@@ -746,23 +731,11 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 		</li>
 	
-		<li class="menuItem haschild">
-		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1723"></span>
+		<li class="menuItem">
+		
 			<a href="http://www.cdss.ca.gov/inforesources/Letters-Regulations/Letters-and-Notices/All-County-Letters" target="" >
 				All County Letters
 			</a>
-		
-			<ul id="mobmenu1723" class="collapse subMenu ">
-			
-		<li class="menuItem first last">
-		
-			<a href="http://www.cdss.ca.gov/inforesources/2018-All-County-Letters" target="" >
-				2018 All County Letters
-			</a>
-		
-		</li>
-	
-			</ul>
 		
 		</li>
 	
@@ -1485,7 +1458,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2957`,`evoq_TabId`:`2957`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x`,`evoq_UrlQuery`:`%3fTabId%3d2957%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="uMJcdF0f-fFUUeX6mMmFEDcj1LmMIixQBIl4I_EcAVHusqx__7QJ_CUINA0k3x6mMqga6g2" />
+        <input name="__RequestVerificationToken" type="hidden" value="-9gT1AJt6PzZiD4SuuLMHYC9pysJ8tfyV62iy7fhAuQ8l6AhbYdPGAy7LOnlMmdxaHrGUg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

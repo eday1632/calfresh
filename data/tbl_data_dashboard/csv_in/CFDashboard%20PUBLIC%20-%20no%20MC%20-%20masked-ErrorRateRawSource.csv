@@ -4987,3 +4987,62 @@ County,Consortium,Month,Calendar_Year,FFY,SFY,CF_HHs,CF_Persons,MC_Enrollment,Ti
 56 Ventura,CalWIN,November,2018.0,2019.0,2018/19,,,,,,1.0,0.0201
 57 Yolo,CalWIN,November,2018.0,2019.0,2018/19,,,,,,0.313,0.0186
 58 Yuba,C-IV,November,2018.0,2019.0,2018/19,,,,,,0.313,0.0186
+00 Statewide,n/a,December ,2018.0,2019.0,2018/19,,,,,,0.335,0.0682
+01 Alameda,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0293
+02 Alpine,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+03 Amador,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+04 Butte,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+05 Calaveras,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+06 Colusa,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+07 Contra Costa,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0139
+08 Del Norte,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+09 El Dorado,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+10 Fresno,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.571,0.0425
+11 Glenn,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+12 Humboldt,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+13 Imperial,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+14 Inyo,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+15 Kern,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.2,0.0177
+16 Kings,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+17 Lake,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+18 Lassen,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+19 Los Angeles,LRS,December ,2018.0,2019.0,2018/19,,,,,,0.304,0.071
+20 Madera,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+21 Marin,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+22 Mariposa,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+23 Mendocino,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+24 Merced,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.0,0.0665
+25 Modoc,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+26 Mono,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+27 Monterey,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.5,0.0645
+28 Napa,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+29 Nevada,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+30 Orange,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.3,0.0184
+31 Placer,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+32 Plumas,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+33 Riverside,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.286,0.0285
+34 Sacramento,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.222,0.0946
+35 San Benito,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+36 San Bernardino,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.364,0.0361
+37 San Diego,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.4,0.1496
+38 San Francisco,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.1094
+39 San Joaquin,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.0,0.0239
+40 San Luis Obispo,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+41 San Mateo,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+42 Santa Barbara,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+43 Santa Clara,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.4,0.1124
+44 Santa Cruz,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+45 Shasta,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+46 Sierra,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+47 Siskiyou,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+48 Solano,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.0,0.0272
+49 Sonoma,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+50 Stanislaus,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.667,0.0308
+51 Sutter,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+52 Tehama,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+53 Trinity,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+54 Tulare,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0686
+55 Tuolumne,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+56 Ventura,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.667,0.0494
+57 Yolo,CalWIN,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222
+58 Yuba,C-IV,December ,2018.0,2019.0,2018/19,,,,,,0.333,0.0222

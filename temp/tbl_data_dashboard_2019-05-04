@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="NsNwr4lQNPTEAiuHRoTGxQFRKt3oQDneERarbm1yHdTRRC6T+IDDuJ0b1tRzRyqEP6CLYWnFv1rnE2R6H3TTVQmY40uEJigzAZq4us56LjDDwjhD+Sj9Z9nXlbW62BhUoemwvPYliz0pIz4xgPogxBfCHduYOYA+QG0Q4i/eqKE9nhR7cLmQ8/BLI7CAEqKSrbs2K1k1fYJT4/lnQg48H5RBAUJLDbLOBBcUz4HUnecA66UDrmpbWga5NXtJaQ7p95SrydhIqu0xOOdkXUM+zFxUJZG/QolcMhH9ULGbltpq70Sq" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="MMwJjIZxm1EshjFru/V7//5F2srw7fkzQosI7eSnbXpKkv/cpU3aM1i9ex3YhLH6ilsY3qatg+0NP5oItrh2M9XLg60yKExgJBxmC+YtiHvFIubcJY6jEinp0eeaEoJQdLDf4x/TgTDRaW4KkZNNCpqiWlFYVFkQO+aUTrPkyIeY1ERS0V0BoyQfMIw0doPNVJLf9Nyk3gSgXDsQ4ZaeIClRhxAIcXMl//ERMzit9ODtO16zReEKAip2XoKd3OjeAzLq2qxn0C015A0ODvSuIrbB+GWuoftB5cSMc+iruUN3Sd+8" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="3MX55ujE0DkpCoxxJpALMAxrgpKkozOc+4oRVmyn7Q/wqDlMbVSqWookH6KL4uepjHvfgaM92U7XCAT0l2soVgsjKkkczQ4Ye3SSewhClyrTq1nKOe3+05EciidcG/IeQ5cKc3gbwJQ8eOU0MnhPX1I/lyE=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="jxzzegaPiyVbmiR+bvP9u0osw3D/S9//IPXGzYAWzofZcpaWgvFdhgtidvU1A7xYdUx5L3/n0bvW5LAcDdIHc6+8gDwwM7dkMtcrcx77cvUCc1FFz0ketY8yTfINLkHdzi/NRNwCs7S1u/DXMDLPjId5tc0=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1302,11 +1302,11 @@ Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo
         <tr>
             <td><strong>CalFresh Dashboard</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
-            <td>04/30/19&nbsp;&nbsp;
+            <td>05/02/19&nbsp;&nbsp;
             <a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-04-02-085042-260"><span style="text-decoration: underline;"></span>
             </a>
             </td>
-            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-04-30-144018-213">Excel</a>&nbsp; &nbsp;&nbsp;
+            <td><a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-05-02-155729-847">Excel</a>&nbsp; &nbsp;&nbsp;
             </td>
             <td><a href="http://www.cdss.ca.gov/Portals/9/DSSDB/Dashboards/CalFresh/Getting_Started.pdf?ver=2017-05-25-073509-557"><span style="text-decoration: underline;">Getting Started</span></a>&nbsp;&nbsp;&nbsp;
             </td>
@@ -1421,7 +1421,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="Z12dwhibZhJt_n6yGhU4z7egrU-ZNKWJYTbkQDICJ1pi9tZW3EHXbGa1rVDPGFCfO2VQKw2" />
+        <input name="__RequestVerificationToken" type="hidden" value="ws8yLZVfKxozGgv9bUIjVzYF0mOk-HFvJJCAnBwD8FjULdhyUKYtErNGM_8nP8FmmL2W7w2" />
     
 <script type='text/javascript'>
 //<![CDATA[

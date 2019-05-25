@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GeRhRGqTIo+ReA8rT3CKMcDF9jutjCnX52twE5KZGshNlC3BgaBgMrlUMQCxJYyPd2ZnGJdkZdnQa5sFzoF+EKPdMKG1dQg/LHKFs4ab1g/s9ATjMl0CodyCqZtITO7A5k7myaOkjk3Du1qlz8Q11GmWBTUVXt1JaYk0ZOAvRnR+wiBH" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="aRD+i6wENnrhnRZOkC7yl6zmHxJAdx0oEd7BRj3SrdpwFV9OJ5wleGZA+Ad/9wCwvNN8kXua5eCyuT7UUWJVsJ7FPehZL35YyLUmNAQy0ZxIme6NtpMAb6FqJyavH3my3OM9hNyc2+rc1WL8JOm8iJArUIuTYciGCqFGPk/KlwghRT4MBeC/HMHAtY2Go/ToVdrriUVJVhtraxGXeQ2iov5JZzLzh8WWAj2/n0lm4keqKiONvq8xy2BucQ0cQ076ZFfVitTr3zxzmAzKthM/jVYd0ARwq6oEjheNGrXdcg/r1+P6" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="1peYxo9nmFBk8X+wO/4BfvtSVxfNOl/wRm/USrqqVKbMsYj9CBP4NjNtYmgrhw2mDkLmTGHbZt+rhIBmsf2pIkasp36AbHH20u51laCBV4ndYiRdVzFzmWMOm3Ebqdk9Mdh3ZB+R08Gqg1BhN2MCSP87hkA=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="zywRYYXxlJ/FePZLLlNcKjyi2tcVpfMByR4cAVNW1tUc2VGi9KiHrhaZd51fAkUBxuU4R5AYYjlFuaYiHivxshAZIDpn7+Wm5aS6SRs7eiGGQdLBO7KS1D8MUk1FWvnRo9sJkoMD9D3ZS3Y6Dg1hFux5AA8=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1299,7 +1299,7 @@ Dashboard, please title your email CalFresh Data Dashboard Question to
 	</th>
 </tr>
 <tr>
-	<td><strong><a href="https://public.tableau.com/profile/patrick.delaney#!/vizhome/CFdashboard-PUBLIC5_13_19/Home">CalFresh Dashboard</a></strong>
+	<td><strong></strong><a href="https://public.tableau.com/profile/patrick.delaney#!/vizhome/CFdashboard-PUBLIC51319/Home">CalFresh Dashboard</a>
 	</td>
 	<td>05/10/19
 		<a href="/Portals/9/DSSDB/Dashboards/CalFresh/CFDashboard%20PUBLIC%20-%20no%20MC%20-%20masked.xlsx?ver=2019-04-02-085042-260"><u></u>
@@ -1397,7 +1397,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="6XFMonE9sNSuXtGDAV9BfwBSCwI5NGLmvhFIqvYck37NLZRnsdba1q2pXRH45qXG3bIMWw2" />
+        <input name="__RequestVerificationToken" type="hidden" value="CMDLDflch_K29XyT61jHL8rPr_7K5t5inK6B446SjiGEJCQoGUxI2QeVzryjwvQDH2wjhg2" />
     
 <script type='text/javascript'>
 //<![CDATA[

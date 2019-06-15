@@ -1,4 +1,4 @@
-"This data table captures quarterly churn data on the percentage of reapplications in 30 days, 90 days, and the percentage of scheduled recertifications for 30 days, and 90 days. The data table begins in cell A2. ",,,,,,,,,,,
+"This data table captures quarterly churn data on the percentage of reapplications in 30 days, 90 days, and the percentage of scheduled recertifications for 30 days, and 90 days. In addition, the data table captures average days to approve benefits. The data table begins in cell A2. ",,,,,,,,,,,
 County,FIPS,County Center X,County Center Y,Consortium,Calendar Year,Quarter,30 Day Churn Pct of Reapplications,90 Day Churn Pct of Reapplications,30 Day Percentage of Scheduled Recertifications,90 Day Percentage of Scheduled Recertifications,Average Days to Approve
 Statewide,,,,,2014.0,Q1,0.128700959,0.204143501,0.102449219,0.12872455,14.1
 Alameda,US-06001,-121.7871814,37.680185,CalWIN,2014.0,Q1,0.106765395,0.194418075,0.0595532,0.11106892,15.3

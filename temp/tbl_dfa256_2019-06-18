@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1VZYfgvH08p3shTklvrROfAMEEwryGk++leRkvax8H8A+xQDFJ6KzygILkjnPW0fwBDRw1K+1ha9IGCmar3ODO0RUN9FB4x6qSJxbqBICDZ6Z8ABvxOMmd1gEPwHgXglKXS+tk1YkEMM7/0+UeYX835FpgeYTAbCEWyQvDlltZL152pni2jDHTtxtlasZhzprYIoWwXImjhq/k4rOU7IyA1N6L/juAHNQ2h+TaO2rXawgK5HrTgdNEPzbMuvmx2I9YJkF4g2dpDYPBbndTcAKj9ebceogZl8/Glsx7PSdUvI7niH" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="bpYfSdz9Kz6kR06mBjrtCQw4DB1W1ItsZIycC/YbIwv74Gb6pf2+8eIopkjsPXTBn4awdxeQfiq6U3bLupzmeFxwVydgVQF40jV+DdlylnJzj6nUi8JG+S1TMB49smOu90zXP1sboxDLyGXxRIMqfHnXTDHayZuwfRdOb6APrpph0BALZgcQmUlACHkLGUrPsErIFg0UIdkFr/IqURSmjERmlT5fGkyeUzRSCnpPVcNXEFJS6cT/R+r28oM8VN+trgb2V//xcVPpNLgkciBZ1ejF7JsdQmPnIAKne+60CPCefzah" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="+N8evEQ8bBIgOzH1AyAICUcnBNQ3+UqBCF6OG3kQSAoMTm2M0y/gs9FoVGFV17J17ikz7ukCTBxqF6f8ahY/1HFB7m6kgyxjjIaeSLPE/gLeEXaHWb8+V9PAG3Wkt/pgWoD8X881Hh+N+cwVXsdZMOwqIDY=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HUEo9umevnimNKg3Zzg9o8eC6edOhSJMc2sAapbiY7/Q7dBXrz7P8Mc0PsioYqLBCW8xPHvC2MT29JzZ4IfNB5tC4U+ikbxBCy/TGU0j7YiPotSZx1mJE2LYQMyAwni+X/26fFncZMaLFys77EFzSFVc2AY=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1278,114 +1278,131 @@ revisions may be submitted for current and prior years. Please check this page
 regularly for updated data.
 	</strong>
 </p>
-<table>
+<table style="padding: 10px; border: 1px solid rgb(128, 128, 128); border-image: none; width: 100%;">
 <tbody>
-<tr height="40">
-	<th>Report Period
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(196, 215, 155);">
+	<th style="padding: 10px; width: 50%; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;" scope="col">Report Period
 	</th>
-	<th>Updated
+	<th style="padding: 10px; width: 50%; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;" scope="col">Updated
 	</th>
 </tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY18-19.xlsx?ver=2019-06-10-090923-170">Fiscal Year 2018-19</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="/Portals/9/DSSDB/DataTables/DFA256FY18-19.xlsx">Fiscal Year 2018-19</a>
 	</td>
-	<td>06/10/19
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY17-18.xlsx">Fiscal Year 2017-18</a></strong>
-	</td>
-	<td>11/21/18
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">06/10/19
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY16-17.xlsx">Fiscal Year 2016-17</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="/Portals/9/DSSDB/DataTables/DFA256FY17-18.xlsx">Fiscal Year 2017-18</a>
 	</td>
-	<td>05/11/18
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY15-16.xlsx">Fiscal Year 2015-16</a></strong>
-	</td>
-	<td>05/11/18
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">11/21/18
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="/Portals/9/DSSDB/DataTables/DFA256FY14-15.xls?ver=2017-08-04-083012-853">Fiscal Year 2014-15</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="/Portals/9/DSSDB/DataTables/DFA256FY16-17.xlsx">Fiscal Year 2016-17</a>
 	</td>
-	<td>08/04/17
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY13-14.xls">Fiscal Year 2013-14</a></strong>
-	</td>
-	<td>10/13/14
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">05/11/18
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY12-13.xls">Fiscal Year 2012-13</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="/Portals/9/DSSDB/DataTables/DFA256FY15-16.xlsx">Fiscal Year 2015-16</a>
 	</td>
-	<td>08/13/13
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY11-12.xls">Fiscal Year 2011-12</a></strong>
-	</td>
-	<td>02/06/13
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">05/11/18
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY10-11.xls">Fiscal Year 2010-11</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="/Portals/9/DSSDB/DataTables/DFA256FY14-15.xls">Fiscal Year 2014-15</a>
 	</td>
-	<td>02/06/13
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY09-10.xls">Fiscal Year 2009-10</a></strong>
-	</td>
-	<td>05/09/12
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">08/04/17
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY08-09.xls">Fiscal Year 2008-09</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY13-14.xls">Fiscal Year 2013-14</a>
 	</td>
-	<td>05/01/12
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY07-08.xls">Fiscal Year 2007-08</a></strong>
-	</td>
-	<td>03/24/09
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">10/13/14
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY06-07.xls">Fiscal Year 2006-07</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY12-13.xls">Fiscal Year 2012-13</a>
 	</td>
-	<td>09/09/08
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY05-06.xls">Fiscal Year 2005-06</a></strong>
-	</td>
-	<td>09/09/08
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">08/13/13
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY04-05.xls">Fiscal Year 2004-05</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY11-12.xls">Fiscal Year 2011-12</a>
 	</td>
-	<td>09/28/07
-	</td>
-</tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY03-04.xls">Fiscal Year 2003-04</a></strong>
-	</td>
-	<td>03/17/06
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">02/06/13
 	</td>
 </tr>
-<tr>
-	<td><strong><a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY02-03.xls">Fiscal Year 2002-03</a></strong>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY10-11.xls">Fiscal Year 2010-11</a>
 	</td>
-	<td>08/25/05
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">02/06/13
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY09-10.xls">Fiscal Year 2009-10</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">05/09/12
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY08-09.xls">Fiscal Year 2008-09</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">05/01/12
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY07-08.xls">Fiscal Year 2007-08</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">03/24/09
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY06-07.xls">Fiscal Year 2006-07</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">09/09/08
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY05-06.xls">Fiscal Year 2005-06</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">09/09/08
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY04-05.xls">Fiscal Year 2004-05</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">09/28/07
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY03-04.xls">Fiscal Year 2003-04</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">03/17/06
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		<a href="http://www.cdss.ca.gov/research/res/pdf/DFA256/.FiscalYears/DFA256FY02-03.xls">Fiscal Year 2002-03</a>
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">08/28/05
 	</td>
 </tr>
 </tbody>
@@ -1496,7 +1513,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="NCfTj2iq4BcBidpssbnwirvNEWLG3z_BxpOTcn72-h57i79e9Fau84R8YqUsMr4KqWv-cg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="A_kn9bG10uKik78acMZLjZwMfN1GKJk2zZBY-pnnAB8D7YnMAFxJPWZEw2uQWHr38UnhAA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

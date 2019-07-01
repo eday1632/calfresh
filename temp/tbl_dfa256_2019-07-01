@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="iXCEt9qqxr1F3CgygcwGroNjXF6D78bESrRU6PMdOvd0gh94ksmhETkhkz0sAbQnQC28FpGo4aYMCDBoK9kc5ilX3X86dKuniCUhmJojtFjvK+cMidI8/nXGE8dZLo8NUVTFmgWM4YvOA+bI6e5cXVMnxLdsb+Alvv/i12kvoMzWfyoQvsJ4LNmfdRwfVndaJouNxZmfjra8XnHGi9PTOVe2LVzHLMwhZKQEy07OVpSJaPbecNRgdoe8uzKhm9GRmhA4i603YYiHWtRgBJ6GWeT8G5UHPi5/GjueLWgcO3/6Xuc+" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SD+rYdlIsed30g49zzGGjhoJXsquGpSrF4Ppykiq9wiZ2eWn2AyJftZnX3f4IfBUd1OovAe3k3DFdxoFXgTYLSCQW8+b8iDa89Ywn6wsP8Pr7CmN9mzKFweqXDC76DYtfSg/o2OiTlr6I9N0a1tSPV7pvogTQMdlUvVCpy/boTIQugZC4vCzcCLvw98FfiqWUEhOzKDS00D07s9mypsk/zbArSTPFtuNSREazp+Mp2iMM4XC0I7kshzO5+5FNIxGUjTZ3Ul+5hGAGjyq7hv8Rxy/gadZ0s+1u3obuCo1ghoiDboB" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="lI+c/ppJECSqmnE0R2/ooUqrDZly79HnRPlGX7Ywn9oaZ8gcVjfIvxrPNN8rzZG45IleauTzVYSIErUQTMwGSvyPl+Kxed4ccHrL8nJY56YCIBpax0Nf5gZKGmPcgPT+lg6U7BGhigPoitl4+WxknFmN/rc=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="BHtOIjMYdpAA3z09/qFd2DoMAoTsJUP+CQTvxyBfmAJAGQ4r6zs2x8uUmFCIZLoBqCDx67fQLGRFX/haZssErM+vqcm7HVnsUUVT7toj30Xx0yJ0Kx+fQsOq+5e7sUXHO2uMWlEnmRjVuZAzCwAW5m7HhM0=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1374,6 +1374,7 @@ Instructions
   
   <!-- Global Footer -->
   <footer id="footer" class="global-footer">
+<div><a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
     
     <!-- Copyright Statement -->
     <div class="copyright">
@@ -1410,7 +1411,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="hmSBvZRygHHX778GeWpNLhZn5IqXy76YKdChggu0nBvPSY-aRUIKffchxKrLJyBw5haU_Q2" />
+        <input name="__RequestVerificationToken" type="hidden" value="SLsrmnJE7EcIOjlN3-ygXHzuXnJSaIkdZmc_Myx7G2W4Qy_IQbaWOYDKEEh58Jy21BYHoQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[

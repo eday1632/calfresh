@@ -43,8 +43,8 @@ window.onload = function(){
 
 </script>
 <title>
-	User Log In
-</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="NOINDEX, NOFOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/DesktopModules/Admin/Authentication/module.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=395" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=395" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=395" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=395" type="text/javascript"></script><script type='text/javascript'>
+	Info & Resources > Data Portal > Research and Data > CalFresh Data Tables > DFA256
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=395" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=395" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=395" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=395" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=395" type="text/javascript"></script><script type='text/javascript'>
 //<![CDATA[
     var analytics_page_startTime = (new Date()).getTime();
 //]]>
@@ -52,11 +52,11 @@ window.onload = function(){
 <link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
 <body id="Body">
     
-    <form method="post" action="/inforesources/Login?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x" id="Form" enctype="multipart/form-data">
+    <form method="post" action="/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="mFjxeCu9yJw89i4Ay1AjEjm2rIj1ACYfXlCrC9CuWV5i3rdvQ0dQ6YKMAVft9HzXWBGcZdT9+8BoX+f2Y5lTJIgjYkGAs/JAKIcgl/tS+D+Mg7lV1Eb2WhTjhAdcRLwfeB/PsOvx92jq+U+RNVPLGAZlSVwv/OPgF5HXqmmHB4w8HWwsN3YcR8maOI8ARXX7PELUyGtoaBFtsBEpowOxkj7An9uI1Pf9tsYH7OTB6UXW0pOcJ/YCqJ0EJsoysMv/fyGR/98fjha8i7TOsgl6i00KmTRYP+0BWdZZJBTBEEQM6UxoMXOCDCJd9yB6kkFuV38KzlfUcwPRoQgPovWqepm5u2RufgX3G3xVjje4n4QIYqPi0VSo0C0a2QZA17MVlAwRCYaPyeSNCNHpH3KbAX6v6vFQkIKLwUuk9EMJr0bleOZKZnjCT40iFI2s0pJ8+evrXOZ/Ar2+eqVTA1ClgKfA5cwYpzIol520JIdZk4484LyRKdIOgMqUxuPBVr0CyFU3Wg==" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="HGTltgZ1cbLY3hA3TFEryZnHjgsnVQJzC71SlEvqDxDJUKx0ARn9BTvWhTFIAdlwmm/cgRVDYvqR3g+IswZXO4MpOHa5RIwsHvPQlgytL4MwrqfxuEMJmIKN+ZSBMl3o4PEHPWqNeMj+q+nqQvo4PVzAlZc59lGF9IvqMzgBFKKaBblRLDcJmiFABu4o60osz22NrAGfnGdQ8rBx1lM+J10h4HPAT1bNUbsUiu+vAfElLmVL1LHnvCx3j+SSbUF+C02MFT8UXWUwXA2nNdgZZqU0hqcGpOzTLs3uOL06/JtXqFs9" />
 </div>
 
 
@@ -65,8 +65,8 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="wBDRC3dEO1Knm2sdCvcQWy5CnzdBU2XwjOqoTdRG+8y91JazQjYbIEj2w+nXK8OUUSpvCWXeBPHGBEWXeP0MQIw8htUh/r7XPZ0PYEIYMpjvhWedL/B7OoR8Ta2njw+tCh4uZ8vyNqKpgo2rAXZo/4zInateI9RxXSNgmTg2IGvm3CIKY7GG+ah1gaG3mXoqPynuXCvHn56e83TQ+KTK+nqLvre0uhS7eOnfTgOTOxOGmT43" />
-</div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/dnn.jquery.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qmpasEBzyDzbDV8hWSt89Sent0tsqGG8/MzcJOjsmYG1jUKIDITXgz/NNBoQM1nzAh7T+neca/JvMeRYQ/1t6X1WflQ15Gg9ngsLYYBnfKIyJjnmcVwWLtIAmK/RjHhYNVJZj3VLBNzyIER9p6Ts4yt26IA=" />
+</div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
 //]]>
@@ -196,7 +196,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 	<ul class="rootMenu" role="tablist">
 		<li class="home-link item"></li>
 		
-	<li class="item first TWbreadcrumb TWselected">
+	<li class="item first">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Guide" alt="Information &amp; Resources" target=""><strong>Information &amp; Resources</strong></a>
 		
@@ -631,14 +631,14 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 	</li>
 
-	<li class="item last haschild">
+	<li class="item last TWbreadcrumb haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal" alt="Data Portal" target=""><strong>Data Portal</strong></a>
 		
         <div class="subMenu">
 			<ul>
 				 
-	<li class="item first haschild">
+	<li class="item first TWbreadcrumb haschild">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" alt="Research and Data" target=""><div>Research and Data</div></a>
 			
@@ -705,7 +705,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 	<ul role="tablist">
 		<li class="home-link item MobileHomeLink"></li>
 		
-		<li class="menuItem first menubreadcrumb">
+		<li class="menuItem first">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Guide" target="" >
 				Information &amp; Resources
@@ -1197,21 +1197,21 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 		
 		</li>
 	
-		<li class="menuItem last haschild">
+		<li class="menuItem last menubreadcrumb haschild">
 		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1219"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Data-Portal" target="" >
 				Data Portal
 			</a>
 		
-			<ul id="mobmenu1219" class="collapse subMenu ">
+			<ul id="mobmenu1219" class="collapse subMenu  in">
 			
-		<li class="menuItem first haschild">
+		<li class="menuItem first menubreadcrumb haschild">
 		<span class="collapseArrow collapsed" data-toggle="collapse" data-target="#mobmenu1116"></span>
 			<a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" target="" >
 				Research and Data
 			</a>
 		
-			<ul id="mobmenu1116" class="collapse subMenu ">
+			<ul id="mobmenu1116" class="collapse subMenu  in">
 			
 		<li class="menuItem first last">
 		
@@ -1281,113 +1281,109 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <div class="wrapper">
       <div class="main-primary">
       <div class="BreadcrumbPane">
-        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Guide" class="Breadcrumb" itemprop="item"><span itemprop="name">Information & Resources</span></a><meta itemprop="position" content="1" /></span></span></span></div>
-        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule- DnnModule--1 DnnModule-Admin"><div id="dnn_ctr_ContentPane" class="NoTitlePaddingContentPane"><div id="dnn_ctr_ModuleContent" class="DNNModuleContent ModC">
-	
-<div class="dnnForm dnnLogin dnnClear">
-    <div id="dnn_ctr_Login_pnlLogin">
-		
-        <div class="loginContent">
-            
-            <div id="dnn_ctr_Login_pnlLoginContainer" class="LoginPanel">
-			<div id="dnn_ctr_Login_DNN" onkeydown="return __dnn_KeyDown(&#39;13&#39;, &#39;javascript:__doPostBack(%27dnn$ctr$Login$Login_DNN$cmdLogin%27,%27%27)&#39;, event);">
-<div class="dnnForm dnnLoginService dnnClear">
-    <div class="dnnFormItem">
-		<div class="dnnLabel">
-			<label for="dnn_ctr_Login_Login_DNN_txtUsername" id="dnn_ctr_Login_Login_DNN_plUsername" class="dnnFormLabel">Username:</label>
-		</div>        
-        <input name="dnn$ctr$Login$Login_DNN$txtUsername" type="text" id="dnn_ctr_Login_Login_DNN_txtUsername" AUTOCOMPLETE="off" />
-    </div>
-    <div class="dnnFormItem">
-		<div class="dnnLabel">
-			<label for="dnn_ctr_Login_Login_DNN_txtPassword" id="dnn_ctr_Login_Login_DNN_plPassword" class="dnnFormLabel">Password:</label>
-		</div>
-        <input name="dnn$ctr$Login$Login_DNN$txtPassword" type="password" id="dnn_ctr_Login_Login_DNN_txtPassword" AUTOCOMPLETE="off" />
-    </div>
-    
-    
-    <div class="dnnFormItem">
-        <label for="dnn_ctr_Login_Login_DNN_cmdLogin" id="dnn_ctr_Login_Login_DNN_lblLogin" class="dnnFormLabel"></label>
-        <a id="dnn_ctr_Login_Login_DNN_cmdLogin" title="Login" class="dnnPrimaryAction" href="javascript:__doPostBack(&#39;dnn$ctr$Login$Login_DNN$cmdLogin&#39;,&#39;&#39;)">Login</a>
-		<a id="dnn_ctr_Login_Login_DNN_cancelLink" class="dnnSecondaryAction" CausesValidation="false" href="/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x">Cancel</a>
-        
-    </div>
-	<div class="dnnFormItem">
-		<label for="dnn_ctr_Login_Login_DNN_cmdLogin" id="dnn_ctr_Login_Login_DNN_lblLoginRememberMe" class="dnnFormLabel"></label>
-		<span class="dnnLoginRememberMe"><input id="dnn_ctr_Login_Login_DNN_chkCookie" type="checkbox" name="dnn$ctr$Login$Login_DNN$chkCookie" /><label for="dnn_ctr_Login_Login_DNN_chkCookie">Remember Login</label></span>
-	</div>
-    <div class="dnnFormItem">
-        <label class="dnnFormLabel">&nbsp;</label>
-        <div class="dnnLoginActions">
-            <ul class="dnnActions dnnClear">
-                <!--<li id="dnn_ctr_Login_Login_DNN_liRegister"><a id="dnn_ctr_Login_Login_DNN_registerLink" class="dnnSecondaryAction" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Register?returnurl=%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x&amp;popUp=true&#39;,/*showReturn*/true,600,950,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Register?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x">Register</a></li>                -->
-                <li id="dnn_ctr_Login_Login_DNN_liPassword"><a id="dnn_ctr_Login_Login_DNN_passwordLink" class="dnnSecondaryAction" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Guide/ctl/SendPassword?returnurl=%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Guide/ctl/SendPassword?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x">Reset Password</a></li>
-            </ul>
-        </div>
-    </div>
-	<div class="panel panel-default panel-body">
-		For all DNN related questions, issues, etc. please contact the ISD Service Desk at <a href="mailto:servicedesk@dss.ca.gov">ServiceDesk@dss.ca.gov</a> or (844) IT1-5333 (481-5333).
-	</div>
-</div>
-<script type="text/javascript">
-	/*globals jQuery, window, Sys */
-	(function ($, Sys) {
-		function setUpLogin() {
-			var actionLinks = $("a#dnn_ctr_Login_Login_DNN_cmdLogin");
-			actionLinks.click(function () {
-				if ($(this).hasClass("dnnDisabledAction")) {
-					return false;
-				}
+        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Data-Portal" class="Breadcrumb" itemprop="item"><span itemprop="name">Data Portal</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Research and Data</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Data Tables</span></a><meta itemprop="position" content="3" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256" class="Breadcrumb" itemprop="item"><span itemprop="name">DFA256</span></a><meta itemprop="position" content="4" /></span></span></span></div>
+        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-11142 DnnVersionableControl"><a name="11142"></a><div id="dnn_ctr11142_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_11142 --><div id="dnn_ctr11142_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr11142_HtmlModule_lblContent"><h2>DFA 256 - Food Stamp Program Participation and Benefit Issuance Report</h2>
+<p>This monthly report includes data on the number of Food Stamp Public Assistance and Non-Public Assistance households and persons participating in the federal and state Food Stamp programs; the number of issuances provided by mail and contracted over the counter; and the value of documented coupon issuances.
+</p>
+<p><strong><u>NOTES</u></strong>
+</p>The California Department of Social Services (CDSS), Data Systems and Survey Design Section (DSSDS) is in the process of updating reports to comply with CDSS de-identification requirements. As a result, reports that do not comply with de-identification requirements have been removed until the de-identification process is complete.  If you are in need of a report during this transition time, please contact CDSS DSSDS via <a href="mailto:admdfa256@dss.ca.gov">email</a>at or by phone at (916) 651-8269<em>.</em>
+<p>
+</p><strong></strong>
+<p>Effective July 1, 2019, CDSS must meet ADA accessibility standards per<a title="Assembly Bill 434" href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB434"><u>Assembly Bill 434</u></a>. As a result, the DSSDS website will only post data files from FY 2015-16 through the current fiscal year. Please contact DSSDS to request data for prior fiscal years.
+</p><strong></strong>
+<p><strong>
+	</strong>
+</p>
+<table style="padding: 10px; border: 1px solid rgb(128, 128, 128); border-image: none; width: 100%;">
+<tbody>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(196, 215, 155);">
+	<th style="padding: 10px; width: 50%; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;" scope="col">Report Period
+	</th>
+	<th style="padding: 10px; width: 50%; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;" scope="col">Updated
+	</th>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		Fiscal Year 2018-19
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		Fiscal Year 2017-18
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		Fiscal Year 2016-17
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+	</td>
+</tr>
+<tr style="padding: 10px; border-bottom-color: rgb(128, 128, 128); border-bottom-width: 1px; border-bottom-style: solid;">
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+		Fiscal Year 2015-16
+	</td>
+	<td style="padding: 10px; border-right-color: rgb(128, 128, 128); border-right-width: 1px; border-right-style: solid;">
+	</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/Tips-for-Using-Adobe-PDF-Files"><br>
+	Help</a>is available for questions regarding the Excel file format.
+</p>
+<br>
+<p>
+</p>
+<style>
+    table.styled-table {
+    width: 100%;
+    }
+    table.styled-table td {
+    vertical-align: top;
+    }
+</style></div>
 
-				actionLinks.addClass("dnnDisabledAction");
-			});
-		}
-		
-		$(document).ready(function () {
 
-			$('.dnnLoginService').on('keydown', function(e) {
-				if (e.keyCode === 13) {
-					var $loginButton = $('#dnn_ctr_Login_Login_DNN_cmdLogin');
-					if ($loginButton.hasClass("dnnDisabledAction")) {
-						return false;
-					}
 
-					$loginButton.addClass("dnnDisabledAction");
-					eval($loginButton.attr('href'));
-					e.preventDefault();
-					return false;
-				}
-			});
 
-			setUpLogin();
-			Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
-				setUpLogin();
-			});
-		});
-	}(jQuery, window.Sys));
-</script>  
-</div>
-		</div>
-            <div class="dnnSocialRegistration">
-                <div id="socialControls">
-                    <ul class="buttonList">
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-	</div>
-    
-    
-    
-    
-</div>
-</div></div>
+
+
+
+
+
+</div><!-- End_Module_11142 --></div>
 
 </div></div>
       </div>
-      
+      <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-9238 DnnVersionableControl"><a name="9238"></a><div id="dnn_ctr9238_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_9238 --><div id="dnn_ctr9238_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr9238_HtmlModule_lblContent"><h1 style="margin-left: 20px;">Contact Us</h1>
+<p style="margin-left: 20px;">For questions regarding this report, contact the Data Systems and Survey DesignSection at <a href="mailto:admdfa256@dss.ca.gov?subject=DFA256%20Website%20Inquiry">admdfa256@dss.ca.gov</a>.
+</p>
+<p style="margin-left: 20px;"><strong></strong>
+	<a href="/inforesources/Research-and-Data/CalFresh-Data-Tables"><strong>CalFresh Data Tables</strong></a>
+</p>
+<p style="margin-left: 20px;">
+	<a href="/inforesources/Research-and-Data/Report-Form-and-Instructions"><strong>Report Form and
+Instructions
+	</strong></a>
+</p></div>
+
+
+
+
+
+
+
+
+
+</div><!-- End_Module_9238 --></div>
+
+</div></div>
     </div>
   </div>
   
@@ -1403,7 +1399,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <!--<div class="LoginPane">
       
 <div id="dnn_dnnLOGIN_loginGroup" class="loginGroup">
-    <a id="dnn_dnnLOGIN_enhancedLoginLink" title="Login" class="Login" rel="nofollow" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Login?returnurl=/inforesources/Login&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Login?returnurl=%2finforesources%2fLogin">Login</a>
+    <a id="dnn_dnnLOGIN_enhancedLoginLink" title="Login" class="Login" rel="nofollow" onclick="return dnnModal.show(&#39;http://www.cdss.ca.gov/inforesources/Login?returnurl=/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA256&amp;popUp=true&#39;,/*showReturn*/true,300,650,true,&#39;&#39;)" href="http://www.cdss.ca.gov/inforesources/Login?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256">Login</a>
 </div>
     </div>-->
   </footer>
@@ -1429,8 +1425,8 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
-        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3011`,`evoq_TabId`:`3011`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fLogin%3freturnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x`,`evoq_UrlQuery`:`%3fPortalId%3d9%26ctl%3dLogin%26returnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="3cA6-bwM3sfEbkmiwdrjIeqr4OKaaT6tqUd72Txok59azDuKko-Ep7q_9WZE7PAfcgSJpQ2" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2955`,`evoq_TabId`:`2955`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA256`,`evoq_UrlQuery`:`%3fTabId%3d2955%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="ovKSe34gaXz_akUFvET8ydFu5WgNoIgbgBsHEgErH-2riGV2QgwOI21gyLlFGSh-rr8AUQ2" />
     
 <script type='text/javascript'>
 //<![CDATA[
@@ -1442,10 +1438,6 @@ function googleTranslateElementInit() {
       pageStart: analytics_page_startTime,
       servicesFramework: $.ServicesFramework(-1)
     };
-    if(dnn && dnn.analytics) {
-         dnn.analytics.bindLinks();
-}
-
   };
   if(window.addEventListener) {
     window.addEventListener('load', initAnalyticsSettings, false);
@@ -1474,7 +1466,7 @@ function googleTranslateElementInit() {
 //]]>
 </script>
 </form>
-    <!--CDF(Javascript|/js/dnncore.js?cdv=395)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=395)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=395)--><!--CDF(Css|/DesktopModules/Admin/Authentication/module.css?cdv=395)--><!--CDF(Css|/Portals/9/portal.css?cdv=395)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=395)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=395)--><!--CDF(Javascript|/js/dnn.js?cdv=395)--><!--CDF(Javascript|/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=395)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=395)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395)--><!--CDF(Javascript|/Resources/Shared/Scripts/dnn.jquery.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=395)-->
+    <!--CDF(Javascript|/js/dnncore.js?cdv=395)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=395)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/skin.css?cdv=395)--><!--CDF(Css|/Portals/9/portal.css?cdv=395)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=395)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=395)--><!--CDF(Javascript|/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395)--><!--CDF(Javascript|/js/dnn.js?cdv=395)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.css?cdv=395)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=395)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=395)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=395)-->
     
 </body>
 </html>

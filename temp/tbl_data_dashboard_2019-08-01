@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="I4RAWtGntzYC7p08Gm9LabhZriOaDDP4PQKGfFDHwxt5SxQ2WWrfgSZEOexm+GIOMXt7m1ZhYK7nOrD2V1pKS9afq5DdTJjbgiRbslADma5zlwkvt/Se6846/ALLA4a+G9hVvL7ngbPKOBMWzL0N1btCtZdKusWdt6FdOqVObrM2F/sVA/aAXr5jDdVDfVmHGKo1WNhpx8HULTlaasX9ykVIEGDGNmDWXGvnIKXamgSrDEpFiEFA+ExRh1GmAut408AZhz9aWfsdJDAbRFx+Ax4CzwT7dRMDI5BE/i1qxorLeuGX" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3kjSX6Z1Lbn/zDpqsT0GWvrvzS0j/ruIc0NDn8udzf/j21DC/wy4UoaNDLuj41BrDpP48y9Zn4BIRDqpkFJ8/K9MmtsRJ8LIDgu4kdwuO7JUlNkPSv5T+4u/X+CvMycSQF0EMd2r38FCIgGFrA8GH3SRrcASSStbnvz9LrtGBm2QGsW4B5/j5lfz48dzZJujE1bGLL494vgzK6xRzLPlZpz/KH6pGJxkKqHSDK51r1+YLVWPa0LSZR1OFDx3PPg/IeqzkKuA1dIUytHaLGnzAZ2voIXqwsUa5pzd2QTwxVXdlrHJ" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HNCl/6Q8gB6BFfHljCcp6B5g0S5aL9rzlm1DS4qlA75IUNz4h6BaE8Ka4ZdReUn+BQySzBhoO7RQJQ0EFh4yvb/eK9OfRbNdBUOLFx9dq/ad6kGEuz19NpAy0DW77tN98fAcyOvFc1Kxrv94RFwbA5+ricY=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="7C4E8o9XC6jMfDPT/mWe43rves0LYIAnuQ/CnKdX6BrOe8CVOcP0OzEGEgNF9LyV+prxnxkTcaC9FWEQbtIIgyzB0R1AtskZcp2MkribsgdLL0nRd54yQBeS7fRhj18bYG1ioVkq7TtudTmOdcyXZsQhA7E=" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1285,18 +1285,20 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-8038 DnnVersionableControl"><a name="8038"></a><div id="dnn_ctr8038_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_8038 --><div id="dnn_ctr8038_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr8038_HtmlModule_lblContent"><h1>CalFresh Data Dashboard</h1>
 <p>
-Welcome to the CalFresh Data Dashboard. This is a full service, one-stop dashboard where you can find all of the most current CalFresh data. CDSS strives to deliver excellent services and resources to our internal and external partners. This dashboard will provide you with information to analyze trends in CalFresh demographics, participation rates, timeliness, benefit accuracy and churn rates by county. Please refer to the <em>Resources and Tools 	</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalOAR/DashboardDocumentation.pdf?ver=2019-06-27-144305-243">.</a>
+	Welcome to the CalFresh Data Dashboard. This is a full service, one-stop dashboard where you can find all of the most current CalFresh data. CDSS strives to deliver excellent services and resources to our internal and external partners. This dashboard will provide you with information to analyze trends in CalFresh demographics, participation rates, timeliness, benefit accuracy and churn rates by county. Please refer to the <em>Resources and Tools 	</em> section available in the dashboard for additional assistance<a href="/Portals/9/DSSDB/Dashboards/CalOAR/DashboardDocumentation.pdf?ver=2019-06-27-144305-243">.</a>
 </p>
 <h4>
 Contact Us</h4>
-<p>If you have additional questions regarding the CalFresh Data Dashboard, please title your email &ldquo;CalFresh Data Dashboard Question&rdquo; to
-<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov.</a>
+<p>If you have additional questions regarding the CalFresh Data Dashboard, please title your email CalFresh Data Dashboard Question to
+	<a href="mailto:calfreshaccess@dss.ca.gov">calfreshaccess@dss.ca.gov.</a>
 </p>
-<hr />
+<hr>
 <h4>CalFresh Data Dashboard</h4>
 <p>
-<a href="https://public.tableau.com/profile/california.department.of.social.services#!/vizhome/CFdashboard-PUBLIC/Home?publish=yes">CalFresh Dashboard</a> | Updated: 06/28/19 |<a href="/Portals/9/DSSDB/Dashboards/CalFresh/Master%20data%20PUBLIC%20ACCESSIBLE.xlsx?ver=2019-06-28-150637-673">Raw Data (Excel)</a>&nbsp;</p>
-<p>CalFresh Dashboard I <a href="/Portals/9/DSSDB/Dashboards/CalFresh/Getting%20Started%20Tableau%20(Accessible)%2006.27.19.pdf?ver=2019-07-03-084311-467">Getting Started </a></p></div>
+	<a href="https://public.tableau.com/profile/california.department.of.social.services#!/vizhome/CFdashboard-PUBLIC/Home?publish=yes">CalFresh Dashboard</a> | Updated: 07/31/19 |<a href="/Portals/9/DSSDB/Dashboards/CalFresh/Master%20data%20PUBLIC%20ACCESSIBLE.xlsx?ver=2019-07-31-091422-857">Raw Data (Excel)</a>
+</p>
+<p>CalFresh Dashboard I <a href="/Portals/9/DSSDB/Dashboards/CalFresh/Getting%20Started%20Tableau%20(Accessible)%2006.27.19.pdf?ver=2019-07-03-084311-467">Getting Started </a>
+</p></div>
 
 
 
@@ -1366,7 +1368,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="PJSnhqQgDSpAG58hpprOdn04HD9AXn05fihSbqhH_cokq51fyhtek-suy5A4r_5wWTfRJg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="LV50fVYL6Ue4nPlWSsTbDD6DiTqUl8gJO21zUiiWBYOr1b_GwZa_AdZvh0F-VkDT2p8HhA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

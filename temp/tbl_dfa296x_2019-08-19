@@ -56,7 +56,7 @@ window.onload = function(){
 <div class="aspNetHidden">
 <input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
 <input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Mfd65YVKLlSlMMyfWFrvG4laCKyN5ieQDKDRGKQXmRSX90F8aWPbpopJnNllfgrvD+lRCYEeXdvZOvtQjq4XJST8GBYS5LEdUEFUhP0f0v6GroAgeP8Zev7OSqnuMLPnt8REFJ6Wqq+xB/bMy7zALvB6BGl1BjkGQ99zx6WNgwQAUX+Bg8DBZG4p+gwn6WgfZP/k4y9ASKUZmHu5qYWnQra5TBv7J23/xzSQgiQgCy0HNZ/yEE7CJ9D5kJWyJTpH2uWlNEn5kh7kpJeRprYALn9DclV6GFLcx7MX3Qxfd4Qmooyt5DO0+1RO1m31nsGpVCG8u2gBguyUkh+5fKLDCkvJuYFew/R3jblRoiFYGqCM8OLBRXLLEliUA7KBYbTXBUs1oiImbr3e720Ak7HqbCqOLA7yPng+1N4Qemr/VPim2mU6MqVhZu+ygzuFdc7pwokUJ3hFKHHAv9K7OxLL1JznP0uIjF3MkT7MrUjxz4rprGHDeNVOqKP2xHeVCgCRugwO7w==" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3uuJ+hFr1GOVhwUOly3mVpQ+M1/YqLOzQWIgjQ89wQtz+5vDgKM+2zPUcBjwTVdvWIn8Ln0VNlr3bNOL+IGNj/xcy4BnhIWxyuozCvZOKfraL/dcBoqxEYCAyZVx2yG51Q+780efF0VjoD+lck9hYjf+KddhQMCH14uK2czBt4Ogw2upo84Fy+X+zKfBIokTkfvqScR1kF9ZURcduFw7SpbX3PamwaYw/C2C/l0HVOwAwi/g8XN9JjI9cmuyu4033XdPgXlAf/zpRc6vJ7A+t+0OKi3/t8qdM7IxbyGR+yVo2CawX8TSsfiTqfKqAnFD859QwdDuFcOlq6tv4CZ2+OJXEWJotYMxgcE3Qfj2Fst5TDv8qqIYOU7A69ogdr+hbwW7E6BPw7UMWiipyOAGHwgJr2yxzdcsr6n6JqNHP/XUdWUkkor4N4puyYL4ronLW7TFR5kUKg46bO+uBGZOu0S4as2HKdMp6cLjbPQjX/ERCH6RxOZFOS6Ct5u2D6j3f1tt2g==" />
 </div>
 
 
@@ -65,7 +65,7 @@ window.onload = function(){
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="VjJvEWxn1QRj/VJgjrCYO34lf0hdwZo/P9p1MiaYA5Q9hX2M3Se29PlrrX3SJzAH0AvBlbjtzlqO+Bw6gJko9hv+nN6YhcQMTv41w3QPBcW4mpkUQnkJ2apNBYPWJSAiMWzqwkWVO+7iXtEeSdtZmB/L74CVJrU7EzkJDYbR43UrHZ1Ho/bQOpgtd8WkiC+4+kNugQhtNgJySlvvhVZyjRZT3mL8nhSTJjlesPgKSQqibCeJ" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="goe+CzGO1nT2mekxhFXmjguXNWUwyxhHQsT43nUmpk1fl9YkaDk51MAVXl6yRf5NRzvS21WtsvmoOuukPCHjqz9CADRw14yzSJasVAYzwfFBJh51hR8WHHVYA/Jt+ubrgkraI6uor5v0Y0JWJUzkNioozZO+X3rlvOjRjDUpPJh2eWNsCx9RfRa61Afm3SqHbtvAD/cqnFRQZBeuE+dEcIVAPvuTVeCnKl0mmjawCC7K4Ytp" />
 </div><script src="/js/dnn.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=395" type="text/javascript"></script><script src="/js/dnncore.js?cdv=395" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=395" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=395" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=395" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/DDRMenu/TWMenu/TWMenu.js?cdv=395" type="text/javascript"></script><script src="/Resources/Shared/Scripts/dnn.jquery.js?cdv=395" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1427,7 +1427,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3011`,`evoq_TabId`:`3011`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fLogin%3freturnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x`,`evoq_UrlQuery`:`%3fPortalId%3d9%26ctl%3dLogin%26returnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="VBYVBB1egQ-DzjvmszHIhkZumOC1ND9UZMZrdFFRqZ4KcdQx5V5SamoVTCEve3AwRhgHSg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="RgqH4aFu7erA_QQc0XQy2CRingVjR8pfUQMwmnox7kUSEPx5pp6w1ShhkkP7w328_tvebA2" />
     
 <script type='text/javascript'>
 //<![CDATA[

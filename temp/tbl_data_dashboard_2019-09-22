@@ -12,7 +12,7 @@
     
     <form method="post" action="/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5Va34ES6V+0ZikZVSli90reENC8kqxz5v0I0nhF5ckWoGTsuXDy4Aj3W7DFW5dI24apRoLecAAdiHuDFVIs7KDVU0PPqp2B+euIV+1bZkB/SJHCiy7JldezdLZK1d9Ep9Sqq6XLUI38EHoMVX9rK8giGpj2aqUTYrbTS1dyjE4MS7Kign4ffmQtADycYzKTETQnL8c59Sk4Fj36hMxl2hVXDVCYBez41UT4Wah96SbX9pf/ASVpxVeO27i8cDAfADNzdUaMPr/30cir0oIGBpEU0T34=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="AJkcHpGIdaU5YpSvACqUQUL12efqrSau2+3cGNEv4M0BkwJL+Bk6EL81iDvoFDJLjmbgiJioRbp+pCHnkRzB67P/CSq5bn9BD6yBdGxnukcAiYqI25RC31EJzZ+CggLm8yPMRLbI+BTTFzG6iZ/UQn0rdPd75o//ljGHOrwpcIlHSbo5XcTnBUumx91+At/4TBAlxZksURI+og8nFSr2t+xpWmJkkt3YJXG5/RQXC3+i+R/SLOHnnvUVW8CoiS2JftXWCN0ErxqBx6KWCqFcL7Cma3E=" />
 </div>
 
 
@@ -22,7 +22,7 @@
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Fzu6rcI2XdzpSE1cPXvQ6SfZX3uKwgS2CSOhc+macVjTo9fSkHc+1ssdTn+1m5WJAKsiGd6XzpH53+iC27/tY9Eb4Y4+vH1Dixqp1rsgHr4c5dfnS/vF/InQtdJ7EV5MC0uypFf7ih45X7KsrFmz+MECd/U=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="vnMM0KcflMkNXNts3OzjcMwG65TxPI0PX7PRsvKy8jeT3a8/QNYe0FFv/Q/rzk2zaKHRfDHCrA78D3Ou7gAqrPiwvpYi8c2XFFX1yvG161YHCYShWB+vGHhchKj3lesUb3mgv0W0zfijePY0NSzGVB7VPQA=" />
 </div><script src="/js/dnn.js?cdv=607" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607" type="text/javascript"></script><script src="/js/dnncore.js?cdv=607" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=607" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=607" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -1325,7 +1325,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`trackLinks`:`false`,`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`2425`,`evoq_TabId`:`2425`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fData-Portal%2fResearch-and-Data%2fCalFresh-Data-Dashboard`,`evoq_UrlQuery`:`%3fTabId%3d2425%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="05bVL-Tlx06iIsztPuHncxHBgsGvT0cs7ysSl3ulAlKXQaFd9yiL3WzYkuSphpgFjSHeEQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="aXB2INu5xtovZ8tDQhuQxicdqiyBXm2rORVEHJOUQY0ENqTgoJgaGjtuA2tKk-a6Ua65bA2" />
     </form>
     <!--CDF(Javascript|/js/dnncore.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/skin.css?cdv=607|DnnPageHeaderProvider|15)--><!--CDF(Css|/Portals/_default/admin.css?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=607|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=607|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607|DnnPageHeaderProvider|5)-->
     

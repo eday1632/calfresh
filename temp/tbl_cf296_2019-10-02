@@ -12,7 +12,7 @@
     
     <form method="post" action="/inforesources/Research-and-Data/CalFresh-Data-Tables/CF296" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8Vafr1ccAoxbR8wy0wCpMW8Yj3IOAwhgD0qmSI8fHx/jYl1uFF2GBB5QPLWO3Kdi72AGo2ykWNguWcngeLvpt34EJQJvtq/kkVHCT1SPWrfsimCzMejOZ/f19rywYMFHY2KZV6XWBzdRO04g5iuBIhe2r04P6M6vkF7AHz6cM26EK6NEOYIYJ03O0JpHOs9StZIPdc7gFFSItOK+Hns4XTYJ785ZxDInWH3eipcR4EJFKWJEWPNnrq6NMO31PIcGU6PSDd3PvWwQinTny+jpBerjaAI=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="UlFHwkfoT0wDtnUB8QS+E7n2eZ5wD7DeW3AvClR0gjq+DeSG6vjgb0du7xEpBG7fMm6DXNArqpg5dhTrmO7wcgMLPrKlA1JAOowpVHBPHOP0oDs27WgMlCvD3MAQXctdE3lVmeID71uhbZ7pYnNJF+c79nA+z61ymphasJ44YyPuPJDCKnT2zP1EmjpAzuk6YdLvpPKK2vm07AjPh5HhRJBKpVNzB+DLiz5zF0aZPPv0+MJkYh3lO9gAHhN1vrIEFREGSZeKh9ElsPPVn4uAAInNBzM=" />
 </div>
 
 
@@ -22,7 +22,7 @@
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="dJhUpRnNxPesoJpKiLX/Bs3Vch4piiM8J7DGdlzYXNZNKjdaUMOxeDl+XWo15+HFA/Wo0L8mlcanY03XtOt58r6pIAVu/H2n82qQoy7IC3pc4OKeyJc2m6fx/pPTTLnLwI4UwJg2H7mJfagiyH5B6US3jNw=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="xFMKkGE/UuuZuxOQTUwUHJ3mWzLkYjHV7enhHEf+9AV3yFC0b5qiozao5BsXqJrhJbAm7u+6FlBTt620/6NOxTxIZIAeBnH6/we4KyE/Wy5P7YmeGczjdNqBktB8oej5dZuZO1cagICXMcpYT65JgCVkfoo=" />
 </div><script src="/js/dnn.js?cdv=607" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607" type="text/javascript"></script><script src="/js/dnncore.js?cdv=607" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=607" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=607" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -80,7 +80,9 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <!-- Include Branding --> 
     <!-- header branding -->
     <div class="branding">
-      <div class="skip-to-content"><a href="#main-content">Skip to Content</a></div>
+      <div class="skip-to-content">
+      <a href="#main-content">Skip to Content</a>
+      </div>
       <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="/portals/_default/skins/cagov-santabarbara - partner/images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
       <div class="header-organization-banner">
         <a id="dnn_dnnLOGOd_hypLogo" title="Info &amp; Resources" href="http://www.cdss.ca.gov/inforesources"><img id="dnn_dnnLOGOd_imgLogo" src="/Portals/9/cdss-logo.png?ver=2016-10-04-165132-000" alt="Info &amp; Resources" /></a>
@@ -144,11 +146,10 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <div id="google_translate_element"></div>
         <a href="/Translation-Disclaimer" title="Google Translate Disclaimer">Disclaimer</a>
       </div>
-      
       <!-- Include Navigation -->
       
       <nav id="navigation" class="main-navigation single off-canvas auto-highlight">
-        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container"></span><span class="sr-only">Home</span></div></div></a>
+        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/"><div><div><span aria-hidden="true" class="ca-gov-icon-home" title="Home Icon"></span><span class="sr-only">Home</span></div></div></a>
           <div id="dnnMenu">
 	<ul class="rootMenu" role="tablist">
 		<li class="home-link item"></li>
@@ -1305,7 +1306,8 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 			<a href="/Accessibility">Accessibility</a>  <span style="color: white">|</span>
 			<a href="/Tips-for-Using-Adobe-PDF-Files">Get Free Reader</a>
   </div>
-<div style="margin-bottom: 10px"><a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
+<div style="margin-bottom: 10px">
+<a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
     
     <!-- Copyright Statement -->
     <div class="copyright">
@@ -1339,7 +1341,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`trackLinks`:`false`,`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3036`,`evoq_TabId`:`3036`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fCF296`,`evoq_UrlQuery`:`%3fTabId%3d3036%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="9GCQ0_CBsN9GemOb-FXpiL9V8KRd62YjjGSSV2Od3xM3XU2ZGZmAi9vONYSPJbtqFcszCg2" />
+        <input name="__RequestVerificationToken" type="hidden" value="DfJ3Bcdg1EgsUe-i9Se98j44mjG_JpqV8Hc-AmhKPVgunA3WGyk7-5N2T232EE6q4-O_Jw2" />
     </form>
     <!--CDF(Javascript|/js/dnncore.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/skin.css?cdv=607|DnnPageHeaderProvider|15)--><!--CDF(Css|/Portals/_default/admin.css?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=607|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=607|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607|DnnPageHeaderProvider|5)-->
     

@@ -6,13 +6,13 @@
 <!-- Copyright (c) 2002-2018, by DNN Corporation -->
 <!--*********************************************-->
 <title>
-	Info & Resources > CDSS Programs > CalFresh Resource Center > Data
-</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/admin.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/skin.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607" type="text/javascript"></script><link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
+	User Log In
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="NOINDEX, NOFOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/admin.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/DesktopModules/Admin/Authentication/module.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=607" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=607" type="text/javascript"></script><link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
 <body id="Body">
     
-    <form method="post" action="/inforesources/CalFresh-Resource-Center/Data" id="Form" enctype="multipart/form-data">
+    <form method="post" action="/inforesources/Login?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ucqpcrdfCGCCnRrFGn6E6yHkJ8D0UhyDCWQy7AeSGh5TAswR0p1EljWxZumP6oCjwt7bFjvVWerpbwirvELLMyquq+tJPyp5mvXynR0NuJ6OgzjccVrQeJfd7NQrLQlFnQg0kfJdju+fpYYF921wzxfIxpcKLSQQIlyXWCrgYbhjKvpbjR/DiazJDCzU3gUcRgaQJtdKb2K9K2rZp0DEurfzsXDSxvkj/Y38JAHJnm3rTYqHHF6qiFr38lO8+AzVYouMbP47Uyg+QpuCS5XRKO8O0oY=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0IJXpMyVNxjV4LF7RbGyTl+55l2D8lKK6DU0ov8L9a7Cx6blkus9ov8AWae9V1YjH/BszLIPmu/NImSlMisCWJgdoWH/2SD60vZnVlptTMWr26EKwbP5izBbie4H7Pr6Gz54yKK+TLTbs3VFz3yyVlavGar+pGK1zCBKbi6QMOuoTK9eshX07TffAx6mu565kHoqbJKzf/ixWHZ0/5xUCj80S5EXTIDGRh+P1r26KSrVkZFSQi+i+te/NegRU6lK0nqx1Amz86B3f90OFKOwsG4lvy1L6TxxsC9g/09lOvfyr4jYV9WLMfVZT3iuNEdKK/9wyEFuWUd/w8uU3zZjVbfHawpiy2J44GBWwKHjsFhopDPZMasm4Ydhzki0PW2gtj7dJaOXe52nzm2lkfNn0zWdbfoJ2In2jKTEgrKP4myvf+ce37JmOyluF5Ky6P+3Yy5+tzB6yq3AeYxLz/fO73mjylY=" />
 </div>
 
 
@@ -22,8 +22,8 @@
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="hVs6X/ROGozc2eqIjt2/j0x9qlUFK43ecAuGNJdfGjrDpz6758UTtMiIrGyuj4B5LMCLV06Y30Gpemv1BENi4TF939Bxdw7VCcpj5tcOSjFGgexe6U04OLbTZbc2CwGb9fPTE/3R7bbWe35ZQIN8CtbBYhA=" />
-</div><script src="/js/dnn.js?cdv=607" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607" type="text/javascript"></script><script src="/js/dnncore.js?cdv=607" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=607" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=607" type="text/javascript"></script><script src="/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607" type="text/javascript"></script><script type="text/javascript">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="byONKNQuHgZqw/v2fmLA99rC7YxzemGJKaLcTNexXfddMDIIq+yOYzwc3f4RjhnujZrO4EfmVKxwECq9Q+EPhR+yhXoBfv1PEXkCw30cfb9Md4STpUmHIbiuz6g7fyOc895fz4QeS6qgTwE86WbcG0jInvKIckZ1d7rmyyd3qhUGZa5EvPObPho7fhw4aBjq1Ubex/g0qh71cfuKHdL+lFVJMKNSst1yXOfJtx3rPUkVei4/" />
+</div><script src="/js/dnn.js?cdv=607" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607" type="text/javascript"></script><script src="/js/dnncore.js?cdv=607" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=607" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=607" type="text/javascript"></script><script src="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=607" type="text/javascript"></script><script src="/Resources/Shared/Scripts/dnn.jquery.js?cdv=607" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
 //]]>
@@ -51,10 +51,10 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 <!-- Use highest compatibility mode, enable Chrome Frame -->
 
 <!-- For all browsers -->
-<!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/cagov.core.css?cdv=607|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara - Partner/css/colorscheme-santabarbara.css?cdv=607|DnnPageHeaderProvider|100)-->
+<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=607|DnnPageHeaderProvider|100)-->
+<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=607|DnnPageHeaderProvider|100)-->
 <!-- Custom CSS -->
-<link rel="stylesheet" href="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//css/custom.css">
+<link rel="stylesheet" href="/Portals/_default/skins/cagov-santabarbara - partner//css/custom.css">
 
 <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
 <!--[if (lt IE 9) & (!IEMobile)]>
@@ -62,7 +62,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 <![endif]-->
 
 <!-- modernizr.com, feature detection -->
-<script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/libs/modernizr-2.0.6.min.js"></script>
+<script src="/Portals/_default/skins/cagov-santabarbara - partner//js/libs/modernizr-2.0.6.min.js"></script>
 <!-- Activate ClearType for Mobile IE -->
 <!--[if]>
 <meta http-equiv="cleartype" content="on">
@@ -75,15 +75,18 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 <![endif]-->
 
 
-<div class="two-column colTwo">
+<div class="primaryNoRib colOne">
   <header role="banner" id="header" class="global-header"> 
     <!-- Include Branding --> 
     <!-- header branding -->
     <div class="branding">
-      <div class="skip-to-content">
-      <a href="#main-content">Skip to Content</a>
-      </div>
-      <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="/portals/_default/skins/cagov-santabarbara - partner/images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
+      <!-- <div class="skip-to-content"><a href="#main-content">Skip to Content</a></div>  -->
+      <div class="header-cagov-logo">
+	  <a href="http://www.ca.gov/">
+	  <img src="/portals/_default/skins/cagov-santabarbara - partner/images/template2014/header-ca.gov.png" alt="CA.gov" />
+	  </a>
+	  </div>
+	  
       <div class="header-organization-banner">
         <a id="dnn_dnnLOGOd_hypLogo" title="Info &amp; Resources" href="http://www.cdss.ca.gov/inforesources"><img id="dnn_dnnLOGOd_imgLogo" src="/Portals/9/cdss-logo.png?ver=2016-10-04-165132-000" alt="Info &amp; Resources" /></a>
         <span class="header-text hidden-xs hidden-sm">Department of Social Services</span>
@@ -146,15 +149,16 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
         <div id="google_translate_element"></div>
         <a href="/Translation-Disclaimer" title="Google Translate Disclaimer">Disclaimer</a>
       </div>
+      
       <!-- Include Navigation -->
       
       <nav id="navigation" class="main-navigation single off-canvas auto-highlight">
-        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/"><div><div><span aria-hidden="true" class="ca-gov-icon-home" title="Home Icon"></span><span class="sr-only">Home</span></div></div></a>
+        <div class="NavPane clearfix hidden-xs" role="tablist"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container"></span><span class="sr-only">Home</span></div></div></a>
           <div id="dnnMenu">
 	<ul class="rootMenu" role="tablist">
 		<li class="home-link item"></li>
 		
-	<li class="item first">
+	<li class="item first TWbreadcrumb TWselected">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Guides" alt="Information Resources Guide" target=""><strong>Information Resources Guide</strong></a>
 		
@@ -652,12 +656,12 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 
 
         </div>
-        <div class="MobileNav visible-xs"><a class="twMobHomeLink  visible-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container2"></span><span class="sr-only">Home</span></div></div></a>
+        <div class="MobileNav visible-xs" role="tablist"><a class="twMobHomeLink  visible-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container2"></span><span class="sr-only">Home</span></div></div></a>
           <div class="collapseaa" id="CollapseMenuMob">
 	<ul role="tablist">
 		<li class="home-link item MobileHomeLink"></li>
 		
-		<li class="menuItem first">
+		<li class="menuItem first menubreadcrumb">
 		
 			<a href="http://www.cdss.ca.gov/inforesources/Guides" target="" >
 				Information Resources Guide
@@ -1225,123 +1229,149 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     <div class="wrapper">
       <div class="main-primary">
       <div class="BreadcrumbPane">
-        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Guide" class="Breadcrumb" itemprop="item"><span itemprop="name">CDSS Programs</span></a><meta itemprop="position" content="1" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center" class="Breadcrumb" itemprop="item"><span itemprop="name">CalFresh Resource Center</span></a><meta itemprop="position" content="2" /></span><span class="bSep"></span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center/Data" class="Breadcrumb" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3" /></span></span></span></div>
-        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule-DNN_HTML DnnModule-10585 DnnVersionableControl"><a name="10585"></a><div id="dnn_ctr10585_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_10585 --><div id="dnn_ctr10585_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr10585_HtmlModule_lblContent"><h1>CalFresh Data</h1>
-<h4>Data Dashboard</h4>
-<ul>
-    <li>
-    <a href="/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard">Data Dashboard</a> (all available data)
-    </li>
-</ul>
-<br />
-<h4>Error Rates</h4>
-<ul>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/Operations/QC/CFActiveErrorRate09-18.pdf?ver=2019-02-12-220253-750">Actives</a>
-    </li>
-    <li>
-    <a href="/LinkClick.aspx?fileticket=3lqoN_qIIdw%3d&amp;portalid=9">Case and Procedural Error Rate (CAPER)</a>	</li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/Top10ErrorCausesQCGraphs.pdf?ver=2017-08-28-140623-057">FFY 2015 Top 10 Error Causes</a>
-    </li>
-    <li>
-    <a href="/inforesources/CalFresh-Resource-Center/Timeliness-of-Application-Processing">Timeliness of Application Processing</a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/FFY15_CalFreshCoCaseloads.xlsx?ver=2017-08-28-140900-607">Caseload Information </a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/CountyCaseloadGrowth.xlsx?ver=2017-08-28-141015-193">County Caseload Growth </a>
-    </li>
-</ul>
-<br />
-<h4>Churn Rates</h4>
-<ul>
-    <li>
-    <a href="/Portals/9/CalFresh/2016_Churn.xlsx?ver=2017-08-10-100328-107">Churn Data CY 2016</a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFresh/2015_Churn.xlsx?ver=2017-05-08-121017-643">Churn Data CY 2015</a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/CY2014_Q1_Churn.xlsx?ver=2017-08-28-141230-033">Churn Data CY 2014 </a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/CY2013Churn.xlsx?ver=2017-08-28-141315-647">Churn Data CY 2013 </a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/CY2012Churn.xlsx?ver=2017-08-28-141408-233">Churn Data CY 2012 </a>
-    </li>
-</ul>
-<br />
-<h4>Medi-Cal</h4>
-<ul>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/FSP_MEDS_Q32013.xlsx?ver=2017-08-28-141720-363">Medi-Cal In-Reach </a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/Medi-CalFFY2014.xlsx?ver=2017-08-28-141820-327">FFY 2014 data</a>
-    </li>
-    <li>
-    <a href="/Portals/9/CalFreshResourceCenter/Medi-CalFFY2013.xlsx?ver=2017-08-28-142105-323">FFY 2013 data </a>
-    </li>
-</ul></div>
+        <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.cdss.ca.gov/inforesources/Guides" class="Breadcrumb" itemprop="item"><span itemprop="name">Information Resources Guide</span></a><meta itemprop="position" content="1" /></span></span></span></div>
+        <div id="dnn_ContentPane" class="ContentPane NoPaneBorder"><div class="DnnModule DnnModule- DnnModule--1 DnnModule-Admin">
+<!-- CA.gov Sacramento Containers | H2 Title Container | 01.00.00 -->
+<div class="clearfix"></div>
+<div class="container-wrap">
+	<div class="TitleWidth padThis">
+	  <div class="TitleIcon">
+		<img id="dnn_ctr_ICON_imgIcon" src="/DesktopModules/~/Icons/Sigma/Authentication_32X32_Standard.png" style="border-width:0px;" />
+	  </div>
+	  <div class="TitleTitle">
+		<h2>
+		  <span id="dnn_ctr_Title_titleLabel" class="noClass">User Log In</span>
 
 
 
+		</h2>
+	  </div>
+	  <div id="dnn_ctr_ContentPane" class="TitleContentpane"><div id="dnn_ctr_ModuleContent" class="DNNModuleContent ModC">
+	
+<div class="dnnForm dnnLogin dnnClear">
+    <div id="dnn_ctr_Login_pnlLogin">
+		
+        <div class="loginContent">
+            
+            <div id="dnn_ctr_Login_pnlLoginContainer" class="LoginPanel">
+			<div id="dnn_ctr_Login_DNN">
+<div class="dnnForm dnnLoginService dnnClear">
+    <div class="dnnFormItem">
+		<div class="dnnLabel">
+			<label for="dnn_ctr_Login_Login_DNN_txtUsername" id="dnn_ctr_Login_Login_DNN_plUsername" class="dnnFormLabel">Username:</label>
+		</div>        
+        <input name="dnn$ctr$Login$Login_DNN$txtUsername" type="text" id="dnn_ctr_Login_Login_DNN_txtUsername" AUTOCOMPLETE="off" />
+    </div>
+    <div class="dnnFormItem">
+		<div class="dnnLabel">
+			<label for="dnn_ctr_Login_Login_DNN_txtPassword" id="dnn_ctr_Login_Login_DNN_plPassword" class="dnnFormLabel">Password:</label>
+		</div>
+        <input name="dnn$ctr$Login$Login_DNN$txtPassword" type="password" id="dnn_ctr_Login_Login_DNN_txtPassword" AUTOCOMPLETE="off" />
+    </div>
+    
+    
+    <div class="dnnFormItem">
+        <span id="dnn_ctr_Login_Login_DNN_lblLogin" class="dnnFormLabel"></span>
+        <a id="dnn_ctr_Login_Login_DNN_cmdLogin" title="Login" class="dnnPrimaryAction" href="javascript:__doPostBack(&#39;dnn$ctr$Login$Login_DNN$cmdLogin&#39;,&#39;&#39;)">Login</a>
+		<a id="dnn_ctr_Login_Login_DNN_cancelLink" class="dnnSecondaryAction" CausesValidation="false" href="/inforesources/Research-and-Data/CalFresh-Data-Tables/DFA296x">Cancel</a>
+        
+    </div>
+	<div class="dnnFormItem">
+		<span id="dnn_ctr_Login_Login_DNN_lblLoginRememberMe" class="dnnFormLabel"></span>
+		<span class="dnnLoginRememberMe"><input id="dnn_ctr_Login_Login_DNN_chkCookie" type="checkbox" name="dnn$ctr$Login$Login_DNN$chkCookie" /><label for="dnn_ctr_Login_Login_DNN_chkCookie">Remember Login</label></span>
+	</div>
+    <div class="dnnFormItem">
+        <span class="dnnFormLabel">&nbsp;</span>
+        <div class="dnnLoginActions">
+            <ul class="dnnActions dnnClear">
+                                
+                <li id="dnn_ctr_Login_Login_DNN_liPassword"><a id="dnn_ctr_Login_Login_DNN_passwordLink" class="dnnSecondaryAction" href="http://www.cdss.ca.gov/inforesources/Guides/ctl/SendPassword?returnurl=http://www.cdss.ca.gov/inforesources/Guides">Reset Password</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-</div><!-- End_Module_10585 --></div>
+    <script type="text/javascript">
+        /*globals jQuery, window, Sys */
+        (function ($, Sys) {
+            const disabledActionClass = "dnnDisabledAction";
+            const actionLinks = $('a[id^="dnn_ctr_Login_Login_DNN"]');
+            function isActionDisabled($el) {
+                return $el && $el.hasClass(disabledActionClass);
+            }
+            function disableAction($el) {
+                if ($el == null || $el.hasClass(disabledActionClass)) {
+                    return;
+                }
+                $el.addClass(disabledActionClass);
+            }
+            function enableAction($el) {
+                if ($el == null) {
+                    return;
+                }
+                $el.removeClass(disabledActionClass);
+            }
+            function setUpLogin() {                
+                $.each(actionLinks || [], function (index, action) {
+                    var $action = $(action);
+                    $action.click(function () {
+                        var $el = $(this);
+                        if (isActionDisabled($el)) {
+                            return false;
+                        }
+                        disableAction($el);
+                    });
+                });
+            }
+		
+            $(document).ready(function () {
+                $(document).on('keydown', '.dnnLoginService', function (e) {
+                    if ($(e.target).is('input:text,input:password') && e.keyCode === 13) {
+                        var $loginButton = $('#dnn_ctr_Login_Login_DNN_cmdLogin');
+                        if (isActionDisabled($loginButton)) {
+                            return false;
+                        }
+                        disableAction($loginButton);
+                        window.setTimeout(function () { eval($loginButton.attr('href')); }, 100);
+                        e.preventDefault();
+                        return false;
+                    }
+                });
 
+                setUpLogin();
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+                    $.each(actionLinks || [], function (index, item) {
+                        enableAction($(item));
+                    });
+                    setUpLogin();
+                });
+            });
+        }(jQuery, window.Sys));
+    </script>
+
+</div>
+		</div>
+            <div class="dnnSocialRegistration">
+                <div id="socialControls">
+                    <ul class="buttonList">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+	</div>
+    
+    
+    
+    
+</div>
+</div></div>
+	  <div class="clearfix"></div>
+	</div>
+</div>
 </div></div>
       </div>
-      <div id="dnn_RightPane" class="main-secondary"><div class="DnnModule DnnModule-DNN_HTML DnnModule-10586 DnnVersionableControl"><a name="10586"></a><div id="dnn_ctr10586_ContentPane" class="NoTitlePaddingContentPane"><!-- Start_Module_10586 --><div id="dnn_ctr10586_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
-	<div id="dnn_ctr10586_HtmlModule_lblContent"><p>
-	<strong>Programs</strong>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/CalFresh/CalFresh-Outreach">CalFresh Outreach</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/CalFresh/Disaster-CalFresh">Disaster CalFresh</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/EFAP">Food Distribution Unit (FDU)</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/CalFresh/Employment-and-Training-E-T">Employment and Training (E&T)</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CalFresh/Supplemental-Nutrition-Assistance-Program-Education">Nutrition Education (SNAP-Ed)</a>
-</p>
-<p>
-	<strong>Hot Topics</strong>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CalFresh/ABAWD">Able-Bodied Adults Without Dependents (ABAWDs)</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CalFresh/State-Hub-Roadmap">State Hub Roadmap</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CalFresh/Supplemental-Security-Income">Reversing SSI Cash Out</a>
-</p>
-<p>
-	<strong>Quick Links</strong>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/CalFresh-Resource-Center">CalFresh Resource Center</a>
-	<br>
-	<a href="http://www.cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard">CalFresh Data Dashboard</a>
-</p>
-<h1>Want to Apply?</h1>
-<p>
-	<a href="http://cdss.ca.gov/food-nutrition/calfresh">Learn More About CalFresh</a><br>
-	CalFresh Benefits Helpline<br>
-	1-877-847-3663<br>
-	<br>
-	<a href="/inforesources/CalFresh">
-	<img width="150" height="26" alt="Yellow CalFresh Home Button" src="/portals/9/CalFreshOutreach/CalFreshHomeButton-4.png?ver=2017-08-10-125549-487" unselectable="on">
-	</a>
-</p></div>
-
-
-
-
-</div><!-- End_Module_10586 --></div>
-
-</div></div>
     </div>
   </div>
   
@@ -1354,8 +1384,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 			<a href="/Accessibility">Accessibility</a>  <span style="color: white">|</span>
 			<a href="/Tips-for-Using-Adobe-PDF-Files">Get Free Reader</a>
   </div>
-<div style="margin-bottom: 10px">
-<a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
+<div style="margin-bottom: 10px"><a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
     
     <!-- Copyright Statement -->
     <div class="copyright">
@@ -1366,11 +1395,10 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
       
     </div>-->
   </footer>
-  
   <!-- Extra Decorative Content -->
   <div class="decoration-last">&nbsp;</div>
-</div><script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/cagov.core.js"></script> 
-<script src="/Portals/_default/Skins/CaGov-SantaBarbara - Partner//js/common.js "></script>
+</div><script src="/Portals/_default/skins/cagov-santabarbara - partner//js/cagov.core.js"></script> 
+<script src="/Portals/_default/skins/cagov-santabarbara - partner//js/common.js "></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1388,10 +1416,10 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
-        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`trackLinks`:`false`,`__scdoff`:`1`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`3350`,`evoq_TabId`:`3350`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fCalFresh-Resource-Center%2fData`,`evoq_UrlQuery`:`%3fTabId%3d3350%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="NBKMcooikFmDPo35anUIQ9Kc1HsOG9uDCVVdL_-QflRr0_98dybBjgeb_vd1qIyDwkviXQ2" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`trackLinks`:`false`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`5296`,`evoq_TabId`:`5296`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fLogin%3freturnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x`,`evoq_UrlQuery`:`%3fPortalId%3d9%26ctl%3dLogin%26returnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="dsW-tXlx9iw8-JkCPPqBc6_L56WSak642MuWTBXtjVyS-0bhocxmlSHJEUyLI2aiMmFuzg2" />
     </form>
-    <!--CDF(Javascript|/js/dnncore.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/skin.css?cdv=607|DnnPageHeaderProvider|15)--><!--CDF(Css|/Portals/_default/admin.css?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=607|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=607|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TWMenu/TWMenu.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/Skins/CaGov-SantaBarbara%20-%20Partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607|DnnPageHeaderProvider|5)-->
+    <!--CDF(Javascript|/js/dnncore.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=607|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=607|DnnPageHeaderProvider|15)--><!--CDF(Css|/DesktopModules/Admin/Authentication/module.css?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Css|/Portals/_default/admin.css?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=607|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=607|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=607|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=607|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/dnn.jquery.js?cdv=607|DnnBodyProvider|100)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=607|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=607|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=607|DnnPageHeaderProvider|5)-->
     
 </body>
 </html>

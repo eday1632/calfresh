@@ -7,12 +7,12 @@
 <!--*********************************************-->
 <title>
 	User Log In
-</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="NOINDEX, NOFOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/admin.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/DesktopModules/Admin/Authentication/module.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=608" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=608" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=608" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=608" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=608" type="text/javascript"></script><link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="NOINDEX, NOFOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/admin.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/DesktopModules/Admin/Authentication/module.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/9/portal.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=609" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=609" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=609" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=609" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=609" type="text/javascript"></script><link rel='SHORTCUT ICON' href='/Portals/9/favicon.ico?ver=2017-02-13-093117-423' type='image/x-icon' /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" /><meta name="apple-mobile-web-app-capable" content="yes" /></head>
 <body id="Body">
     
     <form method="post" action="/inforesources/Login?returnurl=%2finforesources%2fResearch-and-Data%2fCalFresh-Data-Tables%2fDFA296x" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="F3anEkL9HiS+hHaH9VgdjJTYVvHZdtDpOy7GohuCoHEKik855hZwpc+NYFOzSjTdDThhsI174yygFu74VPZ5N3lrARS+z0ILaq5DiL0jmBFcMpNRY+QFDKBrtjWF2MvqJZZPVE2G8nNgRUpzv+zApB6nY+a5GIXs7oMhFJzUJ82AguhmNqIIB9lOlzc901TWaqu3LmP009mSfg2lccWtsHRIipU138SV5Yr6+9pPap66iRDa7dTj7/cT+ytX6s4vEx7ukv9q4LGcmcwhFAirk31RUQWynaou+PlKdVU2S19wd4BUJdwrhBq5/KoE+SnaLWskyB/2GCPvGJtjrf7rXpPoRuiEgTALp5xJyZo8p1od5jQ0AM5o18obpYRkBw1D9X/3TEpTLHvFgFxExxM8JPN5+odr58IhPJuaN6Rgrwi/IQhL6y77AmNTvtUEs8EIM7CK9XSe7CumQDfm1ErsImLmD7Q=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="WN7/zu5O2Xz3vB961P6u9SHqqvBDcY8YulWIKYBaAj9wOm4VZzAUlTzXg1Kr+iLM//3GjbMKLcfw7plbkLwbR1IjUYtjVxQIL0iMHlaNS3K/NjqLQziD73UR+yEsuevDmuhqONVUWDOr3F43VE9jVTalvcj4cYKbx4AczS6fewB77DloTxTB2vsxYUvuOCL26lvSr58SCYw3r6lX1BgJrVOsbJ1Ku3eMoi9FhnkSfdrDNkUiOl170PVeCGcQONkInA/m+aeLQdqkTczH2G0sC2STtNPqnU9H7I6ZJm5mFKCCVEQzDIbsFS4SyEQiLT2Guz6Z9bApXkUBb0UF4jwkNKBRdngbBrsSq3IAEUuo+7EtBTsCq/JcHneZFygz2nM0OYiRk/kyHsQdlFkSYZKhxZDDDDsRZpYDaMyjb/SaRPO6Dn7kpFkQTe/lotJqx3ZXG77xwzghCv3b236O1rC0njA5IR0=" />
 </div>
 
 
@@ -22,8 +22,8 @@
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ehU5jpwB9rbuxfQu5M4jt94UTJ9qjq6ZMdK9lVGMAMRsE4UTBJNQOoarOaqy7EB1yApRfbEUrCWa4XBR1OZv+qkqKfInOagmFDPdjbI3jOQqhxwnGHpWHFCwIifV0MfzCtyMIHoivsrm95LIgUE3QwWNyAdZbCyOE2JtZKES3rCvEWPlAqCIc9ouBhcxsXHklOprLABum1WOF5dmFV82krdjIVAW43YuyVhcg58qw4wKf5sl" />
-</div><script src="/js/dnn.js?cdv=608" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=608" type="text/javascript"></script><script src="/js/dnncore.js?cdv=608" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=608" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=608" type="text/javascript"></script><script src="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=608" type="text/javascript"></script><script src="/Resources/Shared/Scripts/dnn.jquery.js?cdv=608" type="text/javascript"></script><script type="text/javascript">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="vZMnk5lzC9ABxRqeRWloIEdpXOq+j3GYtJwuho177++/jZ0TVQjizrAlKvtXXJpRQ+6cauArDHZ1ChYj7pFxp7bDxHswtHiRzk7dRcj/jZe7Qesi3BAYXnprC42PIRjzAdw2MzBsdRz7ZCDtIe7XfhuErKMKt3pg41KruZvzC3G24DEv6qRF86AUGF4/hywc4nVQZUCO9kaj5G85Rfow/nks/oB5OFxHk5lotew0XSBc9ihL" />
+</div><script src="/js/dnn.js?cdv=609" type="text/javascript"></script><script src="/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=609" type="text/javascript"></script><script src="/js/dnncore.js?cdv=609" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=609" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=609" type="text/javascript"></script><script src="/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=609" type="text/javascript"></script><script src="/Resources/Shared/Scripts/dnn.jquery.js?cdv=609" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
 //]]>
@@ -51,8 +51,8 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 <!-- Use highest compatibility mode, enable Chrome Frame -->
 
 <!-- For all browsers -->
-<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=608|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=608|DnnPageHeaderProvider|100)-->
+<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/cagov.core.css?cdv=609|DnnPageHeaderProvider|100)-->
+<!--CDF(Css|/Portals/_default/skins/cagov-santabarbara - partner/css/colorscheme-santabarbara.css?cdv=609|DnnPageHeaderProvider|100)-->
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/Portals/_default/skins/cagov-santabarbara - partner//css/custom.css">
 
@@ -107,7 +107,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     
     
     <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
-        <input name="dnn$dnnSEARCH$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="NormalTextBox" title="Search Box" autocomplete="off" placeholder="Search..." />
+        <input name="dnn$dnnSEARCH$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="NormalTextBox" title="Enter Text to Search for" autocomplete="off" placeholder="Search..." />
         <a class="dnnSearchBoxClearText" title="Clear search text"></a>
     </span>
     <a id="dnn_dnnSEARCH_cmdSearch" class="SearchInput" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH$cmdSearch&#39;,&#39;&#39;)"></a>
@@ -153,7 +153,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
       <!-- Include Navigation -->
       
       <nav id="navigation" class="main-navigation single off-canvas auto-highlight">
-        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home" id="nav_home_container"></span><span class="sr-only">Home</span></div></div></a>
+        <div class="NavPane clearfix hidden-xs"><a class="twHomeLink hidden-xs" href="http://www.cdss.ca.gov/inforesources/Home"><div><div><span aria-hidden="true" class="ca-gov-icon-home"></span><span class="sr-only">Home</span></div></div></a>
           <div id="dnnMenu">
 	<ul class="rootMenu">
 		<li class="home-link item"></li>
@@ -1352,14 +1352,16 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
   
   <!-- Global Footer -->
   <footer id="footer" class="global-footer">
-   <div style="margin-bottom: 10px">
-	 		<a href="/Conditions-Of-Use">Conditions of Use</a>  <span style="color: white">|</span>
-			<a href="/Privacy-Policy">Privacy Policy</a>  <span style="color: white">|</span>
-			<a href="/Notice-on-Collection">Notice on Collection</a>  <span style="color: white">|</span>
-			<a href="/Accessibility">Accessibility</a>  <span style="color: white">|</span>
-			<a href="/Tips-for-Using-Adobe-PDF-Files">Get Free Reader</a>
-  </div>
-<div style="margin-bottom: 10px"><a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
+      <div style="padding-bottom: 10px; color: white;" >
+   <a href="#head-search">Back to Top</a>&emsp;
+   <a href="/Conditions-of-Use">Conditions of Use</a>&emsp;
+   <a href="/Privacy-Policy">Privacy Policy</a>&emsp;
+   <a href="/Notice-on-Collection">Notice on Collection</a>&emsp;
+   <a href="/Accessibility">Accessibility</a>&emsp;
+   <a href="/Tips-for-Using-Adobe-PDF-Files">Get Free Reader</a>&emsp;
+   <a href="/Contact-Us">Contact Us</a>&emsp;
+   </div>
+  <div style="margin-bottom: 10px"><a href="http://www.cdss.ca.gov/accessibility-certification" target="_blank"><img title="Accessibility Certificate" style="width: 225px; max-width: 100%; border-radius: 5px;" alt="Accessibility Certification Image" src="/Portals/13/Images/Admin/Certification Image.png"></a></div>
     
     <!-- Copyright Statement -->
     <div class="copyright">
@@ -1392,9 +1394,9 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`trackLinks`:`false`,`sf_siteRoot`:`/inforesources/`,`sf_tabId`:`5296`,`evoq_TabId`:`5296`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.cdss.ca.gov%2finforesources%2fLogin%3freturnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x`,`evoq_UrlQuery`:`%3fPortalId%3d9%26ctl%3dLogin%26returnurl%3d%252finforesources%252fResearch-and-Data%252fCalFresh-Data-Tables%252fDFA296x%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="kksCuvg3jtA52HxVB9l2MZI4wMpSL2DO1lHSGNzO4hQku5ZEpG1zEP9cYhSbU_SVazBPXQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="-xjjRy2_lakBTFvQxw8dY8nd0F_Z_Md4uyA3AuBeyODLifAXlcm8Qon6xeMchNKNhC6PuQ2" />
     </form>
-    <!--CDF(Javascript|/js/dnncore.js?cdv=608|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=608|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=608|DnnPageHeaderProvider|15)--><!--CDF(Css|/DesktopModules/Admin/Authentication/module.css?cdv=608|DnnPageHeaderProvider|10)--><!--CDF(Css|/Portals/_default/admin.css?cdv=608|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=608|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=608|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=608|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=608|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=608|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=608|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=608|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=608|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=608|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=608|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/dnn.jquery.js?cdv=608|DnnBodyProvider|100)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=608|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=608|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=608|DnnPageHeaderProvider|5)-->
+    <!--CDF(Javascript|/js/dnncore.js?cdv=609|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=609|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/skin.css?cdv=609|DnnPageHeaderProvider|15)--><!--CDF(Css|/DesktopModules/Admin/Authentication/module.css?cdv=609|DnnPageHeaderProvider|10)--><!--CDF(Css|/Portals/_default/admin.css?cdv=609|DnnPageHeaderProvider|6)--><!--CDF(Css|/Portals/9/portal.css?cdv=609|DnnPageHeaderProvider|35)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=609|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=609|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.js?cdv=609|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=609|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.css?cdv=609|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TWMenu/TWMenu.js?cdv=609|DnnBodyProvider|100)--><!--CDF(Css|/Portals/_default/skins/cagov-santabarbara%20-%20partner/DDRMenu/TwMobMenu/TWMobMenu.css?cdv=609|DnnPageHeaderProvider|100)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=609|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/jquery/jquery.hoverIntent.min.js?cdv=609|DnnBodyProvider|55)--><!--CDF(Javascript|/Resources/Shared/Scripts/dnn.jquery.js?cdv=609|DnnBodyProvider|100)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=609|DnnPageHeaderProvider|6)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=609|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=609|DnnPageHeaderProvider|5)-->
     
 </body>
 </html>
